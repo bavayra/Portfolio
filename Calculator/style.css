@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #030303;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bgCircle{
+    background-color: #ffdb89;
+    height: 45vmin; 
+    width: 45vmin;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.calcWrap{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    perspective: 1500px;
+}
+
+.calcContainer{
+    width: 200px;
+    height: 360px;
+    padding: 20px 25px;
+    transform-origin: center;
+    transform: rotateX(45deg) rotateY(0);
+    transition: transform 1s ease;
+    background: linear-gradient(145deg, #2c2c2e 30%, #030303 100%);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .4),
+                0 8px 20px rgba(0, 0, 0, .6),
+                inset 0 2px 4px rgba(255, 255, 255, 0.3),
+                inset 0 -3px 6px rgba(0, 0, 0, 0.7);
+}
+
+.calcContainer:hover{
+    transform: rotateX(0) rotateY(0);
+}
+
+.calcBtns{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 80%;
+    align-items:center;   
+    column-gap: 8px;
+}
+
+#acBtn,
+#clearBtn{
+    grid-column: span 2;
+}
+
+#display{
+    height: 15%;
+    width: 95%;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 10px;
+    padding-right: 25px;
+    cursor: auto;
+    color: #ffdb89;
+    font-size: 2rem;
+}
+
+button{
+    background-color: #2c2c2e;
+    color: #ffdb89;
+    font-size: 1rem;
+    height: 75%;
+    border-radius: 100px;
+}
+
+button:hover{
+    background-color: #20202083;
+}
+
+button.operatorBtn{
+    background-color: #ffdb89;
+    color: #2c2c2e;
+    font-weight: bold;
+}
+
+button.operatorBtn:hover{
+    background-color: #dab868;
+}
+ 
+/*при выведении результата (=) ебани поворот на 360
+/* и музыку ебани
