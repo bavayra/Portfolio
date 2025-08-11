@@ -72,6 +72,7 @@ body{
 #display{
     height: 15%;
     width: 95%;
+    text-wrap: nowrap;
     background: none;
     border: none;
     display: flex;
@@ -82,6 +83,7 @@ body{
     cursor: auto;
     color: #ffdb89;
     font-size: 2rem;
+    overflow: hidden;
 }
 
 button{
