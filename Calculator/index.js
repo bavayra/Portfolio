@@ -4,12 +4,13 @@ let currentNum = "";
 let operator = ""; 
 
 function pressedNum(num){
+    if(num == null) return;
     currentNum += num;
     display.textContent = currentNum;
 }
 
 function pressedOperator(op){
-    if (currentNum = ""){
+    if (currentNum === ""){
         return;
     }
     previousNum = currentNum;
@@ -18,6 +19,7 @@ function pressedOperator(op){
 }
 
 function calculate(){
+
     let result;
     const prev = parseFloat(previousNum);
     const curr = parseFloat(currentNum); //I used parseFloat() because it allows us to work with decimals unlike Number()
@@ -44,24 +46,21 @@ function calculate(){
             }
                 result = prev / curr;
                 break;
-
-            default: return;
+        default: return;
     }
 
     display.textContent = String(result);
     currentNum = String(result);
     previousNum = "";
     operator = "";
-    console.log(result);
-};
-
+}
 
 function clearResult(){
     display.textContent = ""; 
     currentNum = "";
     previousNum = "";
     operator = "";
-};
+}
 
 function deleteLastInput(){
     currentNum = currentNum.slice(0, -1);

@@ -49,6 +49,11 @@ body{
 
 .calcContainer:hover{
     transform: rotateX(0) rotateY(0);
+    transition-delay: 0s;
+}
+
+.calcContainer:not(:hover){
+    transition-delay: 1s;
 }
 
 .calcBtns{
@@ -101,5 +106,4 @@ button.operatorBtn{
 button.operatorBtn:hover{
     background-color: #dab868;
 }
- 
-/*при обнулении результата АС ебани поворот на 360
+
