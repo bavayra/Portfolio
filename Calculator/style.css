@@ -85,6 +85,7 @@ button{
     font-size: 1rem;
     height: 75%;
     border-radius: 100px;
+    cursor: pointer;
 }
 
 button:hover{
@@ -101,5 +102,4 @@ button.operatorBtn:hover{
     background-color: #dab868;
 }
  
-/*при выведении результата (=) ебани поворот на 360
-/* и музыку ебани
+/*при обнулении результата АС ебани поворот на 360

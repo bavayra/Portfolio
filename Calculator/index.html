@@ -15,32 +15,32 @@
     <div class="calcWrap">
     <div class="calcContainer">
     
-        <div id="display">1+1+=3</div>
+        <div id="display"></div> 
 
         <div class="calcBtns">
 
-                <button class="operatorBtn" onclick="function2()">+</button>
-            <button onclick="function1()">7</button>
-            <button onclick="function1()">8</button>
-            <button onclick="function1()">9</button>
+                <button class="operatorBtn" onclick="pressedOperator('+')">+</button>
+            <button onclick="pressedNum('7')">7</button>
+            <button onclick="pressedNum('8')">8</button>
+            <button onclick="pressedNum('9')">9</button>
 
-                <button class="operatorBtn" onclick="function2()">-</button>
-            <button onclick="function1()">4</button>
-            <button onclick="function1()">5</button>
-            <button onclick="function1()">6</button>
+                <button class="operatorBtn" onclick="pressedOperator('-')">-</button>
+            <button onclick="pressedNum('4')">4</button>
+            <button onclick="pressedNum('5')">5</button>
+            <button onclick="pressedNum('6')">6</button>
 
-                <button class="operatorBtn" onclick="function2()">*</button>
-            <button onclick="function1()">1</button>
-            <button onclick="function1()">2</button>
-            <button onclick="function1()">3</button>
+                <button class="operatorBtn" onclick="pressedOperator('*')">*</button>
+            <button onclick="pressedNum('1')">1</button>
+            <button onclick="pressedNum('2')">2</button>
+            <button onclick="pressedNum('3')">3</button>
 
-                <button class="operatorBtn" onclick="function2()">/</button>
-            <button onclick="function1()">0</button>
-            <button onclick="function1()">.</button>
-                <button class="operatorBtn" onclick="function2()">=</button> <!--там в калькулейт не только саму операцию, но и поворот-->
+                <button class="operatorBtn" onclick="pressedOperator('/')">/</button>
+            <button onclick="pressedNum('0')">0</button>
+            <button onclick="pressedNum('.')">.</button>
+                <button class="operatorBtn" onclick="calculate()">=</button> 
 
-                <button  id="clearBtn" onclick="function2()">&#x232B</button>
-                <button id="acBtn" onclick="function2()">AC</button>
+                <button id="clearBtn" onclick="deleteLastInput()">&#x232B</button>
+                <button id="acBtn" onclick="clearResult()">AC</button> <!--там не только саму операцию, но и поворот-->
  
           </div>  
         </div>
