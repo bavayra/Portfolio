@@ -29,16 +29,16 @@ function calculate(){
     }
 
     switch (operator){
-        case '+':
+        case "+":
             result = prev + curr;
             break;
-        case '-':
+        case "-":
             result = prev - curr;
             break;
-        case '*':
+        case "*":
             result = prev * curr;
             break;
-        case '/': 
+        case "/": 
             if(curr === 0){
                 display.textContent = "You cannot divide by 0";
                 display.style.fontSize = "1.1rem";

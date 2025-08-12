@@ -70,6 +70,11 @@ body{
     column-gap: 8px;
 }
 
+.calcBtns:focus-visible{
+    outline: 1px solid var(--accent-color);
+    outline-offset: 2px;
+}
+
 #acBtn,
 #clearBtn{
     grid-column: span 2;
@@ -109,7 +114,7 @@ button.operatorBtn{
     background-color: #ffdb89;
     color: var(--main-color);
     font-weight: bold;
-}
+} 
 
 button.operatorBtn:hover{
     background-color: #dab868;
