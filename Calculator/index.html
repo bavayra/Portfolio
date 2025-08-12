@@ -15,32 +15,32 @@
     <div class="calcWrap">
         <div class="calcContainer">
     
-            <div id="display"></div> 
+            <div id="display" role="status" aria-live="polite"></div> 
 
                 <div class="calcBtns">
 
-                    <button class="operatorBtn" onclick="pressedOperator('+')">+</button>
-                <button onclick="pressedNum('7')">7</button>
-                <button onclick="pressedNum('8')">8</button>
-                <button onclick="pressedNum('9')">9</button>
+                    <button type="button" class="operatorBtn" onclick="pressedOperator('+')" aria-label="plus">+</button>
+                <button type="button" onclick="pressedNum('7')" aria-label="seven">7</button>
+                <button type="button" onclick="pressedNum('8')" aria-label="eight">8</button>
+                <button type="button" onclick="pressedNum('9')" aria-label="nine">9</button>
 
-                    <button class="operatorBtn" onclick="pressedOperator('-')">-</button>
-                <button onclick="pressedNum('4')">4</button>
-                <button onclick="pressedNum('5')">5</button>
-                <button onclick="pressedNum('6')">6</button>
+                    <button type="button" class="operatorBtn" onclick="pressedOperator('-')" aria-label="minus">-</button>
+                <button type="button" onclick="pressedNum('4')" aria-label="four">4</button>
+                <button type="button" onclick="pressedNum('5')" aria-label="five">5</button>
+                <button type="button" onclick="pressedNum('6')" aria-label="six">6</button>
 
-                    <button class="operatorBtn" onclick="pressedOperator('*')">*</button>
-                <button onclick="pressedNum('1')">1</button>
-                <button onclick="pressedNum('2')">2</button>
-                <button onclick="pressedNum('3')">3</button>
+                    <button type="button" class="operatorBtn" onclick="pressedOperator('*')" aria-label="multiply">*</button>
+                <button type="button" onclick="pressedNum('1')" aria-label="one">1</button>
+                <button type="button" onclick="pressedNum('2')" aria-label="two">2</button>
+                <button type="button" onclick="pressedNum('3')" aria-label="three">3</button>
 
-                    <button class="operatorBtn" onclick="pressedOperator('/')">/</button>
-                <button onclick="pressedNum('0')">0</button>
-                <button onclick="pressedNum('.')">.</button>
-                    <button class="operatorBtn" onclick="calculate()">=</button> 
+                    <button type="button" class="operatorBtn" onclick="pressedOperator('/')" aria-label="divide">/</button>
+                <button type="button" onclick="pressedNum('0')" aria-label="zero">0</button>
+                <button type="button" onclick="pressedNum('.')" aria-label="point">.</button>
+                    <button type="button" class="operatorBtn" onclick="calculate()" aria-label="equal">=</button> 
 
-                    <button id="clearBtn" onclick="deleteLastInput()">&#x232B</button>
-                    <button id="acBtn" onclick="clearResult()">AC</button> 
+                    <button type="button" id="clearBtn" onclick="deleteLastInput()" aria-label="delete">&#x232B</button>
+                    <button type="button" id="acBtn" onclick="clearResult()" aria-label="clear">AC</button> 
           </div>  
         </div>
     </div>
