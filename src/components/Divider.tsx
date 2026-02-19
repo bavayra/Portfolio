@@ -1,0 +1,43 @@
+import React from "react";
+
+interface DividerProps {
+  widthPx: 1 | 2 | 3 | number;
+  heightPx: number;
+  color: "grey-extra-dark" | "grey-medium";
+  topPx?: number;
+  bottomPx?: number;
+  leftPx?: number;
+  className?: string;
+}
+
+export const Divider: React.FC<DividerProps> = ({
+  widthPx,
+  heightPx,
+  color,
+  topPx,
+  bottomPx,
+  leftPx = 0,
+  className = "",
+}) => {
+  const colorMap: Record<DividerProps["color"], string> = {
+    "grey-extra-dark": "var(--color-grey-extra-dark)",
+    "grey-medium": "var(--color-grey-medium)",
+  };
+
+  const style: React.CSSProperties = {
+    width: `${widthPx}px`,
+    height: `${heightPx}px`,
+    backgroundColor: colorMap[color],
+    top: topPx !== undefined ? `${topPx}px` : undefined,
+    bottom: bottomPx !== undefined ? `${bottomPx}px` : undefined,
+    left: `${leftPx}px`,
+  };
+
+  return (
+    <div
+      className={`pointer-events-none absolute ${className}`}
+      style={style}
+      aria-hidden="true"
+    />
+  );
+};
