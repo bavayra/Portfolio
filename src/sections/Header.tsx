@@ -21,18 +21,18 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-transform duration-300 ${
+      className={`fixed top-0 text-xs text-grey-dark font-medium left-0 w-full z-50 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div
-        className={`py-4 flex items-center justify-between w-full ${visible ? "bg-white/90 shadow-md backdrop-blur" : "bg-transparent"}`}
+        className={`py-2 flex items-center justify-end w-full ${visible ? "bg-white/90 shadow-sm backdrop-blur" : "bg-transparent"}`}
       >
         <nav className="pr-4">
           <ul className="flex gap-4">
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Contact</li>
+            <li>ABOUT</li>
+            <li>PROJECTS</li>
+            <li>CONTACTS</li>
           </ul>
         </nav>
       </div>
