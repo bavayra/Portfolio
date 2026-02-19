@@ -91,3 +91,9 @@ body {
   -webkit-text-size-adjust: 100%;
   background: var(--color-white);
 }
+
+html,
+body,
+:root {
+  height: 100%;
+}
