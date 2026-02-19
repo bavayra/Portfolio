@@ -59,6 +59,16 @@
   src: url("/fonts/Raleway-ExtraBold.woff2") format("woff2");
 }
 
+:root {
+  --vh: 1vh;
+}
+
+.app-fullscreen {
+  min-height: calc(var(--vh) * 100); /* JS fallback */
+  min-height: 100dvh;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
