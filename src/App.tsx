@@ -12,16 +12,18 @@ function App() {
   return (
     <div>
       <Header />
-      <Hero />
-      <SectionTitle />
-      <Suspense fallback={<div>Loading...</div>}>
-        <About />
+      <main className="container mx-auto px-4">
+        <Hero />
         <SectionTitle />
-        <Projects />
-        <SectionTitle />
-        <Contacts />
-        <Footer />
-      </Suspense>
+        <Suspense fallback={<div>Loading...</div>}>
+          <About />
+          <SectionTitle />
+          <Projects />
+          <SectionTitle />
+          <Contacts />
+        </Suspense>
+      </main>
+      <Footer />
     </div>
   );
 }
