@@ -30,9 +30,15 @@ const Header = () => {
       >
         <nav className="pr-4">
           <ul className="flex gap-4">
-            <li>ABOUT</li>
-            <li>PROJECTS</li>
-            <li>CONTACTS</li>
+            <li>
+              <a href="#about">ABOUT</a>
+            </li>
+            <li>
+              <a href="#projects">PROJECTS</a>
+            </li>
+            <li>
+              <a href="#contacts">CONTACTS</a>
+            </li>
           </ul>
         </nav>
       </div>
