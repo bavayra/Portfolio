@@ -59,6 +59,23 @@
   src: url("/fonts/Raleway-ExtraBold.woff2") format("woff2");
 }
 
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   font-family:
     "Raleway",
@@ -67,4 +84,10 @@ body {
     "Segoe UI",
     Roboto,
     sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: var(--color-white);
 }
