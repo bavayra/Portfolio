@@ -1,8 +1,9 @@
 import Header from "./sections/Header.tsx";
 import Hero from "./sections/Hero.tsx";
-import SectionTitle from "./sections/SectionTitle.tsx";
+import { SectionTitle } from "./sections/SectionTitle.tsx";
 import { lazy, Suspense } from "react";
 import useVh from "./hooks/useVh";
+import Skills from "./sections/Skills.tsx";
 
 const About = lazy(() => import("./sections/About.tsx"));
 const Projects = lazy(() => import("./sections/Projects.tsx"));
@@ -16,12 +17,13 @@ function App() {
       <Header />
       <main className="container mx-auto px-4">
         <Hero />
-        <SectionTitle />
+        <SectionTitle title="ABOUT HER" />
         <Suspense fallback={<div>Loading...</div>}>
           <About />
-          <SectionTitle />
+          <Skills />
+          <SectionTitle title="HER PROJECTS" />
           <Projects />
-          <SectionTitle />
+          <SectionTitle title="HER CONTACTS" />
           <Contacts />
         </Suspense>
       </main>
