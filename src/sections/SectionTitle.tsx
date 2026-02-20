@@ -1,6 +1,7 @@
 import React from "react";
 import { Circle } from "../components/Circle";
 import { Divider } from "../components/Divider";
+import { useInViewOnce } from "../hooks/useInViewOnce";
 
 type Theme = "light" | "dark";
 
@@ -17,12 +18,14 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   partLabel = "Part",
   dotsCount = 1,
   theme = "light",
-  className = "",
 }) => {
   const titleColor =
     theme === "dark" ? "text-grey-medium" : "text-grey-extra-dark";
   const partColor =
     theme === "dark" ? "text-grey-medium" : "text-grey-extra-dark";
+  const { ref, inViewOnce } = useInViewOnce<HTMLHeadingElement>({
+    threshold: 0.1,
+  });
 
   return (
     <div className="section-vh-50 flex flex-col justify-center relative ml-3">
@@ -38,18 +41,20 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
           {partLabel}
         </span>
 
-        <div className="flex items-center gap-1">
-          {Array.from({ length: dotsCount }).map((_, i) => (
-            <Circle key={i} sizes={{ mobile: 1, tablet: 0.8, desktop: 1.2 }} />
-          ))}
-        </div>
+        {inViewOnce && (
+          <Circle
+            className="circle-drop"
+            sizes={{ mobile: 1, tablet: 0.8, desktop: 1.2 }}
+          />
+        )}
       </div>
       <h2
-        className={`font-extrabold tracking-[0.2em] ${titleColor}
-                    text-2xl`}
+        ref={ref}
+        className={`font-extrabold tracking-[0.2em] ${titleColor} text-2xl`}
       >
         {title}
       </h2>
+
       <Divider
         widthPx={2}
         heightPx={108}
