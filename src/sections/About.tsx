@@ -1,4 +1,5 @@
 import { Divider } from "../components/Divider";
+import Button from "../components/Button";
 
 const About = () => {
   return (
@@ -20,6 +21,9 @@ const About = () => {
         code. I’m eager to learn new technologies and contribute to real
         projects.
       </p>
+      <Button variant="secondary" size="small">
+        Download CV
+      </Button>
     </section>
   );
 };

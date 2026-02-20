@@ -22,15 +22,15 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   const baseStyles =
-    " rounded-full transform transition-all duration-200 px-6 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
+    " rounded-sm transform transition-all duration-200 drop-shadow-md px-6 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const variantStyles: Record<ButtonVariant, string> = {
     primary:
       "bg-primary-700 text-white hover:bg-primary-900 hover:scale-105 focus:ring-primary-500 active:bg-primary-800",
     secondary:
-      "bg-primary-200 text-primary-700 hover:bg-primary-300 hover:scale-105 focus:ring-gray-500 active:bg-gray-800",
+      "bg-accent-red text-white  hover:bg-grey-dark hover:scale-105 focus:ring-gray-dark active:bg-gray-medium",
   };
   const sizeStyles: Record<ButtonSize, string> = {
-    small: "px-3 py-1.5 text-sm ",
+    small: "px-3 py-2 text-xs font-medium",
     medium: "px-4 py-2 text-base ",
     large: "px-4 py-1 text-lg",
   };
