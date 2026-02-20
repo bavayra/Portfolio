@@ -3,17 +3,18 @@ import Button from "../components/Button";
 
 const About = () => {
   return (
-    <section id="about" className="relative py-12">
+    <section id="about" className="relative py-12 ml-3">
       <Divider
         widthPx={2}
-        heightPx={88}
+        heightPx={260}
         leftPx={0}
         color="grey-medium"
-        topPx={8}
+        topPx={116}
       />
-      <p>01</p>
-      <h2 className="text-2xl font-semibold">WHO IS SHE</h2>
-      <p className="mt-2 text-sm text-gray-600">
+      <p className="text-grey-dark">01</p>
+      <h2 className="text-2xl text-grey-medium font-medium">WHO IS SHE</h2>
+
+      <p className="mt-2 text-xs text-grey-dark leading-loose tracking-wide ml-3 w-full max-w-[16rem] break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,
@@ -21,7 +22,12 @@ const About = () => {
         code. I’m eager to learn new technologies and contribute to real
         projects.
       </p>
-      <Button variant="secondary" size="small">
+
+      <Button
+        variant="secondary"
+        size="small"
+        className="mt-2 flex justify-end ml-auto mr-4"
+      >
         Download CV
       </Button>
     </section>
