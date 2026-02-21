@@ -9,6 +9,7 @@ const Skills = lazy(() => import("./sections/Skills.tsx"));
 const Description = lazy(() => import("./sections/Description.tsx"));
 const WeatherApp = lazy(() => import("./sections/WeatherApp.tsx"));
 const DogShelter = lazy(() => import("./sections/DogShelter.tsx"));
+const Portfolio = lazy(() => import("./sections/Portfolio.tsx"));
 const Contacts = lazy(() => import("./sections/Contacts.tsx"));
 const Footer = lazy(() => import("./sections/Footer.tsx"));
 
@@ -27,6 +28,7 @@ function App() {
           <SectionTitle title="HER PROJECTS" dotsCount={2} />
           <WeatherApp />
           <DogShelter />
+          <Portfolio />
           <SectionTitle title="HER CONTACTS" dotsCount={3} />
           <Contacts />
         </Suspense>
