@@ -9,7 +9,7 @@ export const WeatherApp = () => {
         heightPx={272}
         leftPx={0}
         color="grey-medium"
-        topPx={116}
+        topPx={100}
       />
       <p className="text-grey-dark">04</p>
       <h2 className="text-2xl text-grey-medium font-medium">WEATHER APP</h2>

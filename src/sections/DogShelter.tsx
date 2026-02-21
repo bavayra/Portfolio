@@ -6,10 +6,10 @@ export const DogShelter = () => {
     <section className="relative h-auto py-8 ml-3">
       <Divider
         widthPx={2}
-        heightPx={222}
+        heightPx={216}
         leftPx={0}
         color="grey-medium"
-        topPx={116}
+        topPx={100}
       />
       <p className="text-grey-dark">06</p>
       <h2 className="text-2xl text-grey-medium font-medium">DOG SHELTER WEB</h2>
