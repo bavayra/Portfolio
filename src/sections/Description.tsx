@@ -2,10 +2,10 @@ import { Divider } from "../components/Divider";
 
 export const Description = () => {
   return (
-    <section className="relative py-12 ml-3">
+    <section className="relative h-144 py-12 ml-3">
       <Divider
         widthPx={2}
-        heightPx={288}
+        heightPx={420}
         leftPx={0}
         color="grey-medium"
         topPx={116}
@@ -22,6 +22,15 @@ export const Description = () => {
         detail-oriented and strive for perfection, learn quickly, and stay
         self-motivated to deliver reliable results.
       </p>
+      <img
+        src="/fonts/images/AuthorImgAI.webp"
+        alt="AI-generated portrait of the author"
+        width={160}
+        height={200}
+        style={{ position: "absolute", right: 0, bottom: 0 }}
+        loading="lazy"
+        className="object-cover h-auto "
+      />
     </section>
   );
 };
