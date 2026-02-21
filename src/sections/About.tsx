@@ -14,7 +14,7 @@ const About = () => {
       <p className="text-grey-dark">01</p>
       <h2 className="text-2xl text-grey-medium font-medium">WHO IS SHE</h2>
 
-      <p className="mt-2 text-xs text-grey-dark leading-loose tracking-wide ml-3 w-full max-w-[16rem] break-words whitespace-normal">
+      <p className="mt-2 text-xs text-grey-dark leading-loose tracking-wide ml-3 w-full max-w-[15rem] break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,
