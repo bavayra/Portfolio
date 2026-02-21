@@ -2,29 +2,35 @@ import { Divider } from "../components/Divider";
 import CircleStatic from "../components/SkillBadge";
 
 const Skills = () => {
+  const skills = [
+    { percent: 75, label: "TypeScript" },
+    { percent: 90, label: "HTML5" },
+    { percent: 90, label: "SCSS" },
+    { percent: 75, label: "JavaScript" },
+    { percent: 80, label: "Figma" },
+    { percent: 50, label: "Vite" },
+    { percent: 75, label: "Tailwind CSS" },
+    { percent: 90, label: "Grid/Layout" },
+    { percent: 55, label: "ReactJS" },
+  ];
   return (
     <section id="about" className="relative py-12 ml-3">
       <Divider
         widthPx={2}
-        heightPx={260}
+        heightPx={288}
         leftPx={0}
         color="grey-medium"
         topPx={116}
       />
       <p className="text-grey-dark">02</p>
       <h2 className="text-2xl text-grey-medium font-medium">HER SKILLS</h2>
-      <div className="grid grid-cols-2 gap-4 mt-4">
-        <CircleStatic percent={90} />
-        <CircleStatic percent={75} />
-        <CircleStatic percent={60} />
-        <CircleStatic percent={60} />
-        <CircleStatic percent={60} />
-        <CircleStatic percent={60} />
-        <CircleStatic percent={60} />
-        <CircleStatic percent={60} />
-        <CircleStatic percent={60} />
-        <CircleStatic percent={60} />
-        <CircleStatic percent={60} />
+      <div className="grid grid-cols-3 gap-3 mt-4 justify-items-center gap-x-0 w-3xs mx-auto">
+        {skills.map(({ percent, label }) => (
+          <div key={label} className="flex flex-col items-center gap-1">
+            <CircleStatic percent={percent} ariaLabel={label} />
+            <span className="text-[0.65rem] text-grey-dark">{label}</span>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -11,7 +11,7 @@ type Props = {
 
 export const CircleStatic: React.FC<Props> = ({
   percent,
-  size = 80,
+  size = 60,
   stroke = 8,
   color = "#991d1d",
   className = "",
