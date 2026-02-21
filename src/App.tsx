@@ -4,6 +4,7 @@ import { SectionTitle } from "./sections/SectionTitle.tsx";
 import { lazy, Suspense } from "react";
 import useVh from "./hooks/useVh";
 import Skills from "./sections/Skills.tsx";
+import { Description } from "./sections/Description.tsx";
 
 const About = lazy(() => import("./sections/About.tsx"));
 const Projects = lazy(() => import("./sections/Projects.tsx"));
@@ -21,9 +22,10 @@ function App() {
         <Suspense fallback={<div>Loading...</div>}>
           <About />
           <Skills />
-          <SectionTitle title="HER PROJECTS" />
+          <Description />
+          <SectionTitle title="HER PROJECTS" dotsCount={2} />
           <Projects />
-          <SectionTitle title="HER CONTACTS" />
+          <SectionTitle title="HER CONTACTS" dotsCount={3} />
           <Contacts />
         </Suspense>
       </main>

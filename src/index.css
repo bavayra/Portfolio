@@ -116,11 +116,16 @@ body,
 
 .circle-drop {
   animation: dropBounce 800ms ease-out forwards;
+  animation-fill-mode: both;
 }
 
 @keyframes dropBounce {
   0% {
+    opacity: 0;
     transform: translateY(-96px);
+  }
+  5% {
+    opacity: 1;
   }
   60% {
     transform: translateY(0);
@@ -135,6 +140,7 @@ body,
     transform: translateY(-5px);
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }

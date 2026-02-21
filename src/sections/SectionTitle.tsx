@@ -42,12 +42,19 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
         </span>
 
         {inViewOnce && (
-          <Circle
-            className="circle-drop"
-            sizes={{ mobile: 1, tablet: 0.8, desktop: 1.2 }}
-          />
+          <>
+            {Array.from({ length: dotsCount }).map((_, index) => (
+              <Circle
+                key={`dot-${index}`}
+                className="circle-drop"
+                sizes={{ mobile: 1, tablet: 0.8, desktop: 1.2 }}
+                style={{ animationDelay: `${index * 0.6}s` }}
+              />
+            ))}
+          </>
         )}
       </div>
+
       <h2
         ref={ref}
         className={`font-extrabold tracking-[0.2em] ${titleColor} text-2xl`}

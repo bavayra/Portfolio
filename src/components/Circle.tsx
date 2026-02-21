@@ -7,6 +7,7 @@ interface CircleProps {
   className?: string;
   topRem?: number;
   leftRem?: number;
+  style?: React.CSSProperties;
 }
 
 const FIXED_COLOR = "#991d1d";
@@ -16,6 +17,7 @@ export const Circle: React.FC<CircleProps> = ({
   className = "",
   topRem,
   leftRem,
+  style: styleProp,
 }) => {
   const [sizeRem, setSizeRem] = useState<number>(sizes.desktop);
 
@@ -42,6 +44,7 @@ export const Circle: React.FC<CircleProps> = ({
     top: topRem !== undefined ? `${topRem}rem` : undefined,
     left: leftRem !== undefined ? `${leftRem}rem` : undefined,
     pointerEvents: "none",
+    ...styleProp,
   };
 
   return <span className={className} style={style} aria-hidden="true" />;
