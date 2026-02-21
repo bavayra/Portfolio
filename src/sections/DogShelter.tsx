@@ -3,7 +3,7 @@ import GitHubLink from "../components/GitHubLink";
 
 export const DogShelter = () => {
   return (
-    <section className="relative h-auto py-12 ml-3">
+    <section className="relative h-auto py-8 ml-3">
       <Divider
         widthPx={2}
         heightPx={222}
