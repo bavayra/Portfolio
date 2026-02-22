@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from "react";
 import { sanitizeFormData } from "../utils/sanitize.ts";
 import ContactInput from "../components/ContactInput";
+import SocialLinks from "../components/SocialLink.tsx";
 import Button from "../components/Button";
 import { Divider } from "../components/Divider";
 
@@ -102,12 +103,12 @@ const ContactSection = () => {
         color="grey-medium"
         topPx={-68}
       />
-      <h2 className=" relative self-start text-3xl text-accent-red font-bold">
+      <h2 className=" relative self-start text-4xl text-accent-red font-bold">
         LET'S TALK?
       </h2>
       <Divider
         widthPx={2}
-        heightPx={416}
+        heightPx={440}
         leftPx={0}
         color="grey-medium"
         topPx={52}
@@ -210,6 +211,10 @@ const ContactSection = () => {
           </form>
         </div>
       </div>
+      <SocialLinks
+        size="md"
+        className=" grid grid-rows-2 grid-cols-3 gap-y-2 gap-x-4 mt-8"
+      />
     </section>
   );
 };
