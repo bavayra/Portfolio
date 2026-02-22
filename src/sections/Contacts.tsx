@@ -1,10 +1,196 @@
-const Contacts = () => {
+import { useState, type FormEvent } from "react";
+import { sanitizeFormData } from "../utils/sanitize.ts";
+import ContactInput from "../components/ContactInput";
+import Button from "../components/Button";
+
+const ContactSection = () => {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errors, setErrors] = useState<{
+    name?: string;
+    email?: string;
+    message?: string;
+  }>({});
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const isValidEmail = (s: string) => {
+    const emailRegex =
+      /^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$/;
+    return emailRegex.test(s);
+  };
+  const validateAll = (data: {
+    name: string;
+    email: string;
+    message: string;
+  }) => {
+    const e: typeof errors = {};
+    if (!data.name) e.name = "Name is required";
+    if (!data.email) e.email = "Email is required";
+    else if (!isValidEmail(data.email)) e.email = "Invalid email format";
+    if (!data.message || data.message.length < 5)
+      e.message = "Message is too short";
+    setErrors(e);
+    return Object.keys(e).length === 0;
+  };
+
+  const [lastSubmitTime, setLastSubmitTime] = useState(0);
+  const MIN_SUBMIT_INTERVAL = 30000;
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    const now = Date.now();
+    if (now - lastSubmitTime < MIN_SUBMIT_INTERVAL) {
+      setErrorMessage("Please wait 30 seconds before submitting again.");
+      return;
+    }
+
+    setSuccessMessage("");
+    setErrorMessage("");
+    setErrors({});
+
+    const rawData = {
+      name: name.trim(),
+      email: email.trim(),
+      message: message.trim(),
+    };
+
+    if (!validateAll(rawData)) return;
+
+    const sanitizedData = sanitizeFormData(rawData);
+
+    setIsSubmitting(true);
+    try {
+      const resp = await fetch("https://httpbin.org/post", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(sanitizedData),
+      });
+      if (!resp.ok) {
+        const body = await resp.text();
+        throw new Error(`Server error: ${resp.status} ${body}`);
+      }
+      setLastSubmitTime(now);
+      setSuccessMessage("Thank you! Your message has been sent.");
+      setName("");
+      setEmail("");
+      setMessage("");
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "Unknown error";
+      if (import.meta.env.DEV) {
+        console.error("Form submission error:", message);
+      }
+      setErrorMessage("Something went wrong. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
-    <section id="contacts" className="py-12">
-      <h2 className="text-2xl font-semibold">Contact</h2>
-      <p className="mt-2 text-sm text-gray-600">Contact details here.</p>
+    <section
+      id="contact"
+      className="relative z-10 mt-20 mb-20 flex flex-col items-center"
+    >
+      <h2 className=" relative z-11 mb-4 text-center text-base">Contact Us</h2>
+      <div className="  relative flex justify-center ">
+        <div className=" max-w-md ">
+          <form id="contact-form" onSubmit={handleSubmit} className="space-y-2">
+            <div>
+              <ContactInput
+                id="input-name"
+                label="Name"
+                type="text"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                disabled={isSubmitting}
+                required
+              />
+              {errors.name && (
+                <p className="-mt-6 text-sm text-red-600" role="alert">
+                  {errors.name}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <ContactInput
+                id="input-email"
+                label="Email"
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                inputMode="email"
+                disabled={isSubmitting}
+                required
+              />
+              {errors.email && (
+                <p className="-mt-6 text-sm text-red-600" role="alert">
+                  {errors.email}
+                </p>
+              )}
+            </div>
+
+            <div>
+              <label
+                htmlFor="input-message"
+                className="typography-body xs:text-base 5xl:text-2xl 5xl:font-normal mb-4 block sm:text-lg md:text-xl"
+              >
+                Message
+              </label>
+              <textarea
+                id="input-message"
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                placeholder="Write your message..."
+                required
+                disabled={isSubmitting}
+                className="4xl:text-xl 5xl:text-2xl focus:border-primary-500 xs:text-lg 4xl:min-h-40 mb-2 min-h-24 w-full resize-none rounded-md border-2 border-neutral-500 bg-transparent px-4 py-3 text-xs placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+              />
+              {errors.message && (
+                <p className="-mt-6 text-sm text-red-600" role="alert">
+                  {errors.message}
+                </p>
+              )}
+            </div>
+
+            <div className="flex justify-center pt-4">
+              <Button
+                type="submit"
+                variant="secondary"
+                size="small"
+                disabled={isSubmitting}
+                ariaLabel="Submit this form"
+                className=" w-auto text-center font-semibold"
+              >
+                {isSubmitting ? "Sending..." : "SEND MESSAGE"}
+              </Button>
+            </div>
+
+            {successMessage && (
+              <div
+                role="status"
+                aria-live="polite"
+                className="mt-4 rounded-md bg-green-100 p-3 text-center text-sm text-green-700"
+              >
+                {successMessage}
+              </div>
+            )}
+            {errorMessage && (
+              <div
+                role="alert"
+                className="mt-4 rounded-md bg-red-100 p-3 text-center text-sm text-red-700"
+              >
+                {errorMessage}
+              </div>
+            )}
+          </form>
+        </div>
+      </div>
     </section>
   );
 };
 
-export default Contacts;
+export default ContactSection;
