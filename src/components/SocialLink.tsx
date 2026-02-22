@@ -1,9 +1,9 @@
-import DiscordIcon from "../assets/Icons/DiscordIcon.svg?component";
-import GitHubIcon from "../assets/icons/GitHubIcon.svg?component";
-import GmailIcon from "../assets/icons/GmailIcon.svg?component";
-import InstagramIcon from "../assets/icons/InstagramIcon.svg?component";
-import LinkedInIcon from "../assets/icons/LinkedInIcon.svg?component";
-import TelegramIcon from "../assets/icons/TelegramIcon.svg?component";
+import DiscordIcon from "../assets/Icons/DiscordIcon.svg?react";
+import GitHubIcon from "../assets/Icons/GitHubIcon.svg?react";
+import GmailIcon from "../assets/Icons/GmailIcon.svg?react";
+import InstagramIcon from "../assets/Icons/InstagramIcon.svg?react";
+import LinkedInIcon from "../assets/Icons/LinkedInIcon.svg?react";
+import TelegramIcon from "../assets/Icons/TelegramIcon.svg?react";
 
 import Icon from "./Icon";
 
