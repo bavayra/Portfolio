@@ -3,18 +3,18 @@ import Button from "../components/Button";
 
 const About = () => {
   return (
-    <section id="about" className="relative py-12 ml-3">
+    <section id="about" className="relative py-8 ml-3">
       <Divider
         widthPx={2}
         heightPx={260}
         leftPx={0}
         color="grey-medium"
-        topPx={116}
+        topPx={100}
       />
       <p className="text-grey-dark">01</p>
       <h2 className="text-2xl text-grey-medium font-medium">WHO IS SHE</h2>
 
-      <p className="mt-2 text-xs text-grey-dark leading-loose tracking-wide ml-3 w-full max-w-[15rem] break-words whitespace-normal">
+      <p className="mt-2 text-xs text-grey-dark leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,
