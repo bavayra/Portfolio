@@ -20,11 +20,12 @@ const TextInput = ({
 }: TextInputProps) => {
   const baseInputStyles = `
     w-full
-    mb-4
+    mb-2
     bg-transparent
     border-0
-    border-b-2
-    text-lg
+    border-b-1
+    border-accent-grey
+    text-base
     focus:outline-none
     focus:ring-0
     ${className}
@@ -33,7 +34,7 @@ const TextInput = ({
     .replace(/\s+/g, " ");
   return (
     <div>
-      <label htmlFor={id} className="text-base ">
+      <label htmlFor={id} className="text-sm text-accent-grey ">
         {label}
       </label>
 

@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import { sanitizeFormData } from "../utils/sanitize.ts";
 import ContactInput from "../components/ContactInput";
 import Button from "../components/Button";
+import { Divider } from "../components/Divider";
 
 const ContactSection = () => {
   const [name, setName] = useState("");
@@ -92,12 +93,32 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="relative z-10 mt-20 mb-20 flex flex-col items-center"
+      className="relative z-10 mt-32 ml-3 h-auto flex flex-col items-center"
     >
-      <h2 className=" relative z-11 mb-4 text-center text-base">Contact Us</h2>
-      <div className="  relative flex justify-center ">
-        <div className=" max-w-md ">
-          <form id="contact-form" onSubmit={handleSubmit} className="space-y-2">
+      <Divider
+        widthPx={2}
+        heightPx={56}
+        leftPx={0}
+        color="grey-medium"
+        topPx={-68}
+      />
+      <h2 className=" relative self-start text-3xl text-accent-red font-bold">
+        LET'S TALK?
+      </h2>
+      <Divider
+        widthPx={2}
+        heightPx={416}
+        leftPx={0}
+        color="grey-medium"
+        topPx={52}
+      />
+      <div className="relative flex justify-center ">
+        <div className=" max-w-md  ">
+          <form
+            id="contact-form"
+            onSubmit={handleSubmit}
+            className="space-y-2 mt-6 "
+          >
             <div>
               <ContactInput
                 id="input-name"
@@ -136,7 +157,7 @@ const ContactSection = () => {
             <div>
               <label
                 htmlFor="input-message"
-                className="typography-body xs:text-base 5xl:text-2xl 5xl:font-normal mb-4 block sm:text-lg md:text-xl"
+                className="text-sm text-accent-grey mb-4 block "
               >
                 Message
               </label>
@@ -147,7 +168,7 @@ const ContactSection = () => {
                 placeholder="Write your message..."
                 required
                 disabled={isSubmitting}
-                className="4xl:text-xl 5xl:text-2xl focus:border-primary-500 xs:text-lg 4xl:min-h-40 mb-2 min-h-24 w-full resize-none rounded-md border-2 border-neutral-500 bg-transparent px-4 py-3 text-xs placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                className=" focus:border-primary-500  mb-2 min-h-24 w-full resize-none rounded-md border border-accent-grey bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
               />
               {errors.message && (
                 <p className="-mt-6 text-sm text-red-600" role="alert">
@@ -156,10 +177,10 @@ const ContactSection = () => {
               )}
             </div>
 
-            <div className="flex justify-center pt-4">
+            <div className="flex justify-center">
               <Button
                 type="submit"
-                variant="secondary"
+                variant="primary"
                 size="small"
                 disabled={isSubmitting}
                 ariaLabel="Submit this form"
