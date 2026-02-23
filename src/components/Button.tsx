@@ -22,12 +22,12 @@ const Button = ({
   ...props
 }: ButtonProps) => {
   const baseStyles =
-    " rounded-sm transform transition-all duration-200 drop-shadow-md px-6 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
+    "rounded-sm transform transition-all duration-300 drop-shadow-md px-6 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const variantStyles: Record<ButtonVariant, string> = {
     primary:
-      "bg-grey-dark text-white hover:bg-primary-900 hover:scale-105 focus:ring-primary-500 active:bg-primary-800",
+      "bg-grey-dark text-white hover:bg-grey-extra-dark hover:scale-105 focus:ring-accent-red active:bg-grey-extra-dark",
     secondary:
-      "bg-accent-red text-white  hover:bg-grey-dark hover:scale-105 focus:ring-gray-dark active:bg-gray-medium",
+      "bg-accent-red text-white hover:bg-grey-dark hover:scale-105 focus:ring-accent-red active:bg-grey-dark",
   };
   const sizeStyles: Record<ButtonSize, string> = {
     small: "px-3 py-2 text-xs font-medium",
