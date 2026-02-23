@@ -28,16 +28,31 @@ const Header = () => {
       <div
         className={`py-2 flex items-center justify-end w-full ${visible ? "bg-white/90 shadow-sm backdrop-blur" : "bg-transparent"}`}
       >
-        <nav className="pr-4">
+        <nav className="pr-4 ">
           <ul className="flex gap-4">
-            <li>
-              <a href="#about">ABOUT</a>
+            <li className="hover:text-accent-red hover:scale-110 duration-300 hover:font-semibold">
+              <a
+                href="#about"
+                className="inline-flex px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-4 focus-visible:rounded-md focus-visible:ring-offset-white"
+              >
+                ABOUT
+              </a>
             </li>
-            <li>
-              <a href="#projects">PROJECTS</a>
+            <li className="hover:text-accent-red hover:scale-110 duration-300 hover:font-semibold">
+              <a
+                href="#projects"
+                className="inline-flex px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-4 focus-visible:rounded-md focus-visible:ring-offset-white"
+              >
+                PROJECTS
+              </a>
             </li>
-            <li>
-              <a href="#contacts">CONTACTS</a>
+            <li className="hover:text-accent-red hover:scale-110 duration-300 hover:font-semibold">
+              <a
+                href="#contacts"
+                className="inline-flex px-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-4 focus-visible:rounded-md focus-visible:ring-offset-white"
+              >
+                CONTACTS
+              </a>
             </li>
           </ul>
         </nav>
