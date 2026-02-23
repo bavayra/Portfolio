@@ -93,7 +93,7 @@ const ContactSection = () => {
   };
   return (
     <section
-      id="contact"
+      id="contacts"
       className="relative z-10 mt-32 ml-3 h-auto mb-8 flex flex-col items-center"
     >
       <Divider

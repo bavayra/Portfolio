@@ -3,7 +3,7 @@ import GitHubLink from "../components/GitHubLink";
 
 export const WeatherApp = () => {
   return (
-    <section className="relative h-auto py-8 ml-3">
+    <section id="projects" className="relative h-auto py-8 ml-3">
       <Divider
         widthPx={2}
         heightPx={272}
@@ -13,7 +13,7 @@ export const WeatherApp = () => {
       />
       <p className="text-grey-dark">04</p>
       <h2 className="text-2xl text-grey-medium font-medium">WEATHER APP</h2>
-      <p className="mt-2 text-xs text-grey-dark leading-loose tracking-wide ml-3 w-full max-w-[15rem] break-words whitespace-normal">
+      <p className="mt-2 text-xs text-grey-dark leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         A responsive weather app built with vanilla JavaScript that displays
         current conditions, hourly and daily forecasts using the OpenWeather
         API. Features city search, unit toggle (°C/°F), optional browser
