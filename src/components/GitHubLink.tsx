@@ -8,7 +8,7 @@ const GitHubLink = () => {
         href="https://github.com/bavayra"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-grey-dark"
+        className="text-text"
         aria-label="Open GitHub profile"
       >
         <GitHubIcon

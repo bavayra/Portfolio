@@ -1,7 +1,7 @@
 import React from "react";
 
 interface DividerProps {
-  widthPx: 1 | 2 | 3 | number;
+  widthPx: 2 | 3 | number;
   heightPx: number;
   color: "grey-extra-dark" | "grey-medium";
   topPx?: number;

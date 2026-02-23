@@ -17,12 +17,9 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   title,
   partLabel = "Part",
   dotsCount = 1,
-  theme = "light",
 }) => {
-  const titleColor =
-    theme === "dark" ? "text-grey-medium" : "text-grey-extra-dark";
-  const partColor =
-    theme === "dark" ? "text-grey-medium" : "text-grey-extra-dark";
+  const titleColor = "text-section-title";
+  const partColor = "text-section-title";
   const { ref, inViewOnce } = useInViewOnce<HTMLHeadingElement>({
     threshold: 0.1,
   });

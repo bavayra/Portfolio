@@ -22,13 +22,13 @@ const Skills = () => {
         color="grey-medium"
         topPx={100}
       />
-      <p className="text-grey-dark">02</p>
+      <p className="text-text">02</p>
       <h2 className="text-2xl text-grey-medium font-medium">HER SKILLS</h2>
       <div className="grid grid-cols-3 gap-3 mt-4 justify-items-center gap-x-0 w-3xs mx-auto">
         {skills.map(({ percent, label }) => (
           <div key={label} className="flex flex-col items-center gap-1">
             <CircleStatic percent={percent} ariaLabel={label} />
-            <span className="text-[0.65rem] text-grey-dark">{label}</span>
+            <span className="text-[0.65rem] text-text">{label}</span>
           </div>
         ))}
       </div>

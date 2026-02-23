@@ -11,11 +11,11 @@ export const Portfolio = () => {
         color="grey-medium"
         topPx={100}
       />
-      <p className="text-grey-dark">08</p>
+      <p className="text-text">08</p>
       <h2 className="text-2xl text-grey-medium font-medium">
         THIS PORTFOLIO <span className="text-accent-red font-bold">:)</span>
       </h2>
-      <p className="mt-2 text-xs text-grey-dark leading-loose tracking-wide ml-3 w-full max-w-[15rem] break-words whitespace-normal">
+      <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         A responsive, performance‑focused personal portfolio showcasing my
         projects, process and measurable improvements. Built with modern tooling
         to demonstrate UI implementation, accessibility and deployment

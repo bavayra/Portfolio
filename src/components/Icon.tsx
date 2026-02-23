@@ -1,0 +1,38 @@
+import type { ComponentType, SVGProps } from "react";
+
+export interface IconProps extends SVGProps<SVGSVGElement> {
+  title?: string;
+  size?: "sm" | "md";
+}
+
+const sizeMap = {
+  sm: "w-4 h-4",
+  md: "w-5 h-5",
+};
+
+const Icon = ({
+  title,
+  size = "md",
+  className = "",
+  as: Component,
+  ...restProps
+}: IconProps & { as?: ComponentType<SVGProps<SVGSVGElement>> }) => {
+  if (!Component) {
+    return null;
+  }
+
+  const sizeClass = sizeMap[size];
+  const combinedClassName = `${className}`.trim();
+
+  return (
+    <Component
+      role={title ? "img" : "presentation"}
+      aria-hidden={title ? undefined : "true"}
+      aria-label={title}
+      className={`${combinedClassName} ${sizeClass} flex shrink-0 items-center justify-center`}
+      {...restProps}
+    />
+  );
+};
+
+export default Icon;

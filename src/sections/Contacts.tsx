@@ -94,7 +94,7 @@ const ContactSection = () => {
   return (
     <section
       id="contacts"
-      className="relative z-10 mt-32 ml-3 h-auto mb-8 flex flex-col items-center"
+      className="relative z-10 mt-32 ml-3 h-auto flex flex-col items-center border-t border-accent-grey"
     >
       <Divider
         widthPx={2}
@@ -169,7 +169,7 @@ const ContactSection = () => {
                 placeholder="Write your message..."
                 required
                 disabled={isSubmitting}
-                className=" focus:border-grey-dark  mb-2 min-h-24 w-full resize-none rounded-md border border-accent-grey bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                className=" focus:border-text  mb-2 min-h-24 w-full resize-none rounded-md border border-accent-grey bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
               />
               {errors.message && (
                 <p className="-mt-6 text-sm text-red-600" role="alert">

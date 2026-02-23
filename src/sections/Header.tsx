@@ -21,12 +21,12 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 text-xs text-grey-dark font-medium left-0 w-full z-50 transition-transform duration-300 ${
+      className={`fixed top-0 text-xs text-text font-medium left-0 w-full z-50 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div
-        className={` flex items-center justify-end w-full ${visible ? "bg-white/90 shadow-sm backdrop-blur" : "bg-transparent"}`}
+        className={` flex items-center justify-end w-full ${visible ? "bg-white/90 shadow-sm backdrop-blur" : "bg-transparent"} `}
       >
         <nav className="pr-4 ">
           <ul className="flex gap-0">

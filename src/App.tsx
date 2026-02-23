@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <Header />
-      <main className="container mx-auto px-4">
+      <main className="container mx-auto px-4 bg-bg ">
         <Hero />
         <SectionTitle title="ABOUT HER" />
         <Suspense fallback={<div>Loading...</div>}>
