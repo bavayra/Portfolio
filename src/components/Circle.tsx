@@ -7,6 +7,7 @@ interface CircleProps {
   className?: string;
   topRem?: number;
   leftRem?: number;
+  rightRem?: number;
   style?: React.CSSProperties;
 }
 
@@ -17,6 +18,7 @@ export const Circle: React.FC<CircleProps> = ({
   className = "",
   topRem,
   leftRem,
+  rightRem,
   style: styleProp,
 }) => {
   const [sizeRem, setSizeRem] = useState<number>(sizes.desktop);
@@ -43,6 +45,7 @@ export const Circle: React.FC<CircleProps> = ({
       topRem !== undefined || leftRem !== undefined ? "absolute" : "relative",
     top: topRem !== undefined ? `${topRem}rem` : undefined,
     left: leftRem !== undefined ? `${leftRem}rem` : undefined,
+    right: rightRem !== undefined ? `${rightRem}rem` : undefined,
     pointerEvents: "none",
     ...styleProp,
   };
