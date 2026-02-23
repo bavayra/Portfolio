@@ -9,10 +9,10 @@ const GitHubLink = () => {
         target="_blank"
         rel="noopener noreferrer"
         className="text-grey-dark"
+        aria-label="Open GitHub profile"
       >
         <GitHubIcon
           role="img"
-          aria-label="GitHub"
           className="w-6 h-6 inline-block ml-1 hover:scale-110 active:scale-95 duration-300 "
         />
       </a>
