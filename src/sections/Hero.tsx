@@ -12,7 +12,7 @@ const Hero = () => {
         color="grey-medium"
         topPx={112}
       />
-      <div className="grid [grid-cols:200px_1fr_1fr] [grid-rows:auto_240px_auto]">
+      <div className="grid grid-cols-1fr grid-rows-1fr">
         <p className="text-md text-grey-medium col-start-1 row-start-1 pl-1">
           2026
         </p>
