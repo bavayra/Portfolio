@@ -15,59 +15,86 @@ The React Compiler is not enabled on this template because of its impact on dev 
 
 If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-```js
+````js
 export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+  # Frontend Developer Portfolio
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+  A fast, typography-forward portfolio built with React and TypeScript. The page is composed of clean, focused sections (About, Skills, Projects, Contacts) and optimized for smooth navigation and quick initial paint.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  ## Highlights
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+  - Single-page layout with clear section structure and smooth flow.
+  - Projects showcase: Weather App, Dog Shelter, plus a general portfolio block.
+  - Lazy-loaded sections to keep the first render light.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+  ## Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+  - React 19, TypeScript
+  ## Frontend Developer Portfolio
+
+  A warm, modern single-page portfolio built with React + TypeScript. The layout highlights projects, skills, and contact info with clean sections, smooth reading flow, and fast first paint. ✨
+
+  ## At a Glance
+
+  - Single-page structure with clear section rhythm.
+  - Projects spotlight: Weather App, Dog Shelter, plus a general portfolio block.
+  - Lazy-loaded sections to keep the initial render snappy.
+  - Polished visuals: icons, typography, and spacing tuned for readability.
+
+  ## Sections
+
+  - Hero: quick intro and positioning.
+  - About: a concise personal snapshot.
+  - Skills: key technologies and strengths.
+  - Description: deeper context and focus areas.
+  - Projects: featured work with visuals and links.
+  - Contacts: simple, direct ways to reach out.
+
+  ## Tech Stack
+
+  - React 19, TypeScript
+  - Vite
+  - Tailwind CSS + PostCSS
+  - SVGR for SVG icons
+
+  ## Scripts
+
+  ```bash
+  npm run dev       # local development
+  npm run build     # production build
+  npm run preview   # preview the build
+  npm run lint      # lint
+  ```
+
+  ## Project Structure
+
+  ```text
+  src/
+    components/     # shared UI components
+    sections/       # page sections
+    hooks/          # custom hooks
+    data/           # content and data
+    utils/          # utilities
+  ```
+
+  ## Quick Start
+
+  ```bash
+  npm install
+  npm run dev
+  ```
+
+  ## Configuration Notes
+
+  - Meta description and icons are configured in [index.html](index.html).
+  - Section content lives in [src/sections](src/sections).
+  - Global styles are in [src/index.css](src/index.css) and [src/App.css](src/App.css).
+
+  ## Why It Works
+
+  - Minimal layout noise: the viewer sees what matters first.
+  - Clear hierarchy: titles, dividers, and spacing guide the eye.
+  - Performance-friendly: lazy loading keeps the first paint light.
+
+  If you want, I can add badges, a live demo link, or screenshots. 😊
+````
