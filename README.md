@@ -1,100 +1,72 @@
-# React + TypeScript + Vite
+# Portfolio Website ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, single-page portfolio that introduces me, showcases my work, and makes it easy to get in touch. Built with React + TypeScript and optimized for fast initial load and smooth section flow.
 
-Currently, two official plugins are available:
+## About 💫
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project is a clean, typography-focused landing page composed of clear sections (Hero, About, Skills, Projects, Contacts). It emphasizes clarity, spacing, and a confident visual rhythm while keeping performance in mind.
 
-## React Compiler
+## Highlights ✨
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- 📌 Single-page structure with an intuitive section order.
+- 🧩 Modular sections that are easy to edit and reuse.
+- 🗂️ Featured projects: Weather App, Dog Shelter, and a portfolio gallery.
+- 🧭 Smooth reading flow from intro to contact.
 
-## Expanding the ESLint configuration
+## Sections 🧭
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Hero: quick intro and positioning.
+- About: a concise personal snapshot.
+- Skills: key technologies and strengths.
+- Description: deeper context and focus areas.
+- Projects: featured work with visuals and links.
+- Contacts: simple, direct ways to reach out.
 
-````js
-export default defineConfig([
-  # Frontend Developer Portfolio
+## Experience & Performance ⚡
 
-  A fast, typography-forward portfolio built with React and TypeScript. The page is composed of clean, focused sections (About, Skills, Projects, Contacts) and optimized for smooth navigation and quick initial paint.
+- Fast first paint with lazy-loaded sections.
+- Responsive layout across mobile to desktop.
+- Clean hierarchy and readable typography.
+- Subtle visual polish via icons, dividers, and spacing.
 
-  ## Highlights
+## Tech Stack 🧰
 
-  - Single-page layout with clear section structure and smooth flow.
-  - Projects showcase: Weather App, Dog Shelter, plus a general portfolio block.
-  - Lazy-loaded sections to keep the first render light.
+- React 19, TypeScript
+- Vite
+- Tailwind CSS + PostCSS
+- SVGR
 
-  ## Tech Stack
+## Scripts 🛠️
 
-  - React 19, TypeScript
-  ## Frontend Developer Portfolio
+```bash
+npm run dev       # local development
+npm run build     # production build
+npm run preview   # preview the build
+npm run lint      # lint
+```
 
-  A warm, modern single-page portfolio built with React + TypeScript. The layout highlights projects, skills, and contact info with clean sections, smooth reading flow, and fast first paint. ✨
+## Project Structure 🧱
 
-  ## At a Glance
+```text
+src/
+  components/     # shared UI components
+  sections/       # page sections
+  hooks/          # custom hooks
+  data/           # content and data
+  utils/          # utilities
+```
 
-  - Single-page structure with clear section rhythm.
-  - Projects spotlight: Weather App, Dog Shelter, plus a general portfolio block.
-  - Lazy-loaded sections to keep the initial render snappy.
-  - Polished visuals: icons, typography, and spacing tuned for readability.
+## Quick Start 🚀
 
-  ## Sections
+```bash
+npm install
+npm run dev
+```
 
-  - Hero: quick intro and positioning.
-  - About: a concise personal snapshot.
-  - Skills: key technologies and strengths.
-  - Description: deeper context and focus areas.
-  - Projects: featured work with visuals and links.
-  - Contacts: simple, direct ways to reach out.
+## Notes 📝
 
-  ## Tech Stack
+- Meta description and icons are configured in [index.html](index.html).
+- Section content lives in [src/sections](src/sections).
+- Global styles are in [src/index.css](src/index.css) and [src/App.css](src/App.css).
 
-  - React 19, TypeScript
-  - Vite
-  - Tailwind CSS + PostCSS
-  - SVGR for SVG icons
-
-  ## Scripts
-
-  ```bash
-  npm run dev       # local development
-  npm run build     # production build
-  npm run preview   # preview the build
-  npm run lint      # lint
-  ```
-
-  ## Project Structure
-
-  ```text
-  src/
-    components/     # shared UI components
-    sections/       # page sections
-    hooks/          # custom hooks
-    data/           # content and data
-    utils/          # utilities
-  ```
-
-  ## Quick Start
-
-  ```bash
-  npm install
-  npm run dev
-  ```
-
-  ## Configuration Notes
-
-  - Meta description and icons are configured in [index.html](index.html).
-  - Section content lives in [src/sections](src/sections).
-  - Global styles are in [src/index.css](src/index.css) and [src/App.css](src/App.css).
-
-  ## Why It Works
-
-  - Minimal layout noise: the viewer sees what matters first.
-  - Clear hierarchy: titles, dividers, and spacing guide the eye.
-  - Performance-friendly: lazy loading keeps the first paint light.
-
-  If you want, I can add badges, a live demo link, or screenshots. 😊
-````
+If you want, I can add badges, a live demo link, or screenshots. 😊
