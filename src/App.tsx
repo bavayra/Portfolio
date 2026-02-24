@@ -18,19 +18,39 @@ function App() {
   return (
     <div>
       <Header />
-      <main className="container mx-auto px-4 bg-bg ">
-        <Hero />
-        <SectionTitle title="ABOUT HER" />
+      <main className="bg-bg">
+        <div className="container mx-auto px-4">
+          <Hero />
+        </div>
+        <section className="bg-(--color-section-title-bg)">
+          <div className="container mx-auto px-4">
+            <SectionTitle title="ABOUT HER" />
+          </div>
+        </section>
         <Suspense fallback={<div>Loading...</div>}>
-          <About />
-          <Skills />
-          <Description />
-          <SectionTitle title="HER PROJECTS" dotsCount={2} />
-          <WeatherApp />
-          <DogShelter />
-          <Portfolio />
-          <SectionTitle title="HER CONTACTS" dotsCount={3} />
-          <Contacts />
+          <div className="container mx-auto px-4">
+            <About />
+            <Skills />
+            <Description />
+          </div>
+          <section className="bg-(--color-section-title-bg)">
+            <div className="container mx-auto px-4">
+              <SectionTitle title="HER PROJECTS" dotsCount={2} />
+            </div>
+          </section>
+          <div className="container mx-auto px-4">
+            <WeatherApp />
+            <DogShelter />
+            <Portfolio />
+          </div>
+          <section className="bg-(--color-section-title-bg)">
+            <div className="container mx-auto px-4">
+              <SectionTitle title="HER CONTACTS" dotsCount={3} />
+            </div>
+          </section>
+          <div className="container mx-auto px-4">
+            <Contacts />
+          </div>
         </Suspense>
       </main>
       <Footer />
