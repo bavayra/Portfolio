@@ -3,20 +3,26 @@
 @theme {
   --color-bg: #ffffff;
   --color-section-title: #4f4f4f;
-  --color-grey-medium: #8c8c8c;
+  --color-grey-1: #d8d8d8;
+  --color-grey-2: #8c8c8c;
   --color-text: #646464;
+  --color-section-title-bg: #ffffff;
   --color-grey-extra-dark: #4f4f4f;
 
-  --color-accent-red: #991d1d;
   --color-accent-grey: #928a97;
+
+  --color-accent-red: #991d1d;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #4f4f4f;
+    --color-bg: #646464;
     --color-section-title: #8c8c8c;
+
     --color-text: #ffffffb1;
     --color-grey-extra-dark: #ffffffb1;
+    --color-accent-red: #632626;
+    --color-section-title-bg: #4f4f4f;
   }
 }
 
