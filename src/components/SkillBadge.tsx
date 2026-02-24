@@ -13,7 +13,7 @@ export const CircleStatic: React.FC<Props> = ({
   percent,
   size = 60,
   stroke = 8,
-  color = "#991d1d",
+  color = "var(--color-accent-red)",
   className = "",
   ariaLabel,
 }) => {
@@ -59,7 +59,11 @@ export const CircleStatic: React.FC<Props> = ({
           textAnchor="middle"
           dominantBaseline="middle"
           transform={`rotate(90 ${size / 2} ${size / 2})`}
-          style={{ fontSize: "0.65rem", fill: "#646464" }}
+          style={{
+            fontSize: "0.65rem",
+            fill: "var(--color-grey-medium)",
+            fontWeight: "bold",
+          }}
         >
           {percent}%
         </text>
