@@ -30,7 +30,7 @@ const Button = ({
       "bg-accent-red text-white hover:bg-text hover:scale-105 focus:ring-accent-red active:bg-text",
   };
   const sizeStyles: Record<ButtonSize, string> = {
-    small: "px-3 py-2 text-xs font-medium",
+    small: "px-3 py-2 text-xs ",
     medium: "px-4 py-2 text-base ",
     large: "px-4 py-1 text-lg",
   };
