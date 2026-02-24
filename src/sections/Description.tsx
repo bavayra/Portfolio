@@ -5,7 +5,7 @@ export const Description = () => {
     <section className="relative h-130 py-8 ml-3">
       <Divider
         widthPx={2}
-        heightPx={380}
+        heightPx={396}
         leftPx={0}
         color="grey-medium"
         topPx={100}

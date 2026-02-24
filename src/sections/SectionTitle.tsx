@@ -28,10 +28,10 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
     <div className="section-vh-50 flex flex-col justify-center relative ml-3">
       <Divider
         widthPx={2}
-        heightPx={88}
+        heightPx={82}
         leftPx={0}
         color="grey-medium"
-        topPx={8}
+        topPx={16}
       />
       <div className="flex items-center gap-2">
         <span className={`text-base tracking-wide font-medium ${partColor}`}>
