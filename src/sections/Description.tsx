@@ -2,10 +2,10 @@ import { Divider } from "../components/Divider";
 
 export const Description = () => {
   return (
-    <section className="relative h-144 py-8 ml-3">
+    <section className="relative h-130 py-8 ml-3">
       <Divider
         widthPx={2}
-        heightPx={420}
+        heightPx={380}
         leftPx={0}
         color="grey-medium"
         topPx={100}
@@ -25,7 +25,7 @@ export const Description = () => {
       <img
         src="/fonts/images/AuthorImgAI.webp"
         alt="AI-generated portrait of the author"
-        width={160}
+        width={140}
         height={200}
         style={{ position: "absolute", right: 0, bottom: 0 }}
         loading="lazy"
