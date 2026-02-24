@@ -7,7 +7,7 @@ const Hero = () => {
     <section id="hero" className="py-8 app-fullscreen">
       <Divider
         widthPx={2}
-        heightPx={88}
+        heightPx={68}
         leftPx={20}
         color="grey-2"
         topPx={112}
@@ -25,13 +25,13 @@ const Hero = () => {
       <Circle
         className="circle-drop"
         sizes={{ mobile: 0.6, tablet: 0.8, desktop: 1.2 }}
-        topRem={11.25}
+        topRem={10}
         rightRem={1.35}
       />
       <Circle
         className="circle-drop"
         sizes={{ mobile: 0.6, tablet: 0.8, desktop: 1.2 }}
-        topRem={11.25}
+        topRem={10}
         rightRem={3.2}
         style={{ animationDelay: "0.75s" }}
       />
