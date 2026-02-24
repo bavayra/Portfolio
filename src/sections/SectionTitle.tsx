@@ -61,10 +61,10 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
       <Divider
         widthPx={2}
-        heightPx={108}
+        heightPx={88}
         leftPx={0}
         color="grey-medium"
-        topPx={168}
+        topPx={162}
       />
     </div>
   );
