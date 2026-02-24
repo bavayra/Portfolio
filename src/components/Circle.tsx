@@ -11,7 +11,7 @@ interface CircleProps {
   style?: React.CSSProperties;
 }
 
-const FIXED_COLOR = "#991d1d";
+const FIXED_COLOR = "var(--color-accent-red)";
 
 export const Circle: React.FC<CircleProps> = ({
   sizes,

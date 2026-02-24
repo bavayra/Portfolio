@@ -9,7 +9,7 @@ const DotPattern = () => {
             height="20"
             patternUnits="userSpaceOnUse"
           >
-            <circle cx="3" cy="3" r="3" fill="#991b1b" />
+            <circle cx="3" cy="3" r="3" fill="var(--color-accent-red)" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#dot-pattern)" />
