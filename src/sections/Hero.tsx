@@ -19,7 +19,7 @@ const Hero = () => {
         <h1 className="text-5xl font-semibold text-grey-medium col-start-1 col-span-3 row-start-2 pl-1">
           Portfolio
         </h1>
-        <p className=" text-accent-red font-semibold text-md col-start-3 row-start-3 pr-12">
+        <p className=" text-accent-red font-bold tracking-wider text-md col-start-3 row-start-3 pr-12">
           ALIX BELL
         </p>
       </div>
