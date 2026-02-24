@@ -100,7 +100,7 @@ const ContactSection = () => {
         widthPx={2}
         heightPx={56}
         leftPx={0}
-        color="grey-medium"
+        color="grey-2"
         topPx={-68}
       />
       <h2 className=" relative self-start text-4xl text-accent-red font-bold">
@@ -110,7 +110,7 @@ const ContactSection = () => {
         widthPx={2}
         heightPx={460}
         leftPx={0}
-        color="grey-medium"
+        color="grey-2"
         topPx={52}
       />
       <div className="relative flex justify-center ">

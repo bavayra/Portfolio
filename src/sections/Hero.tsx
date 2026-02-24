@@ -9,14 +9,12 @@ const Hero = () => {
         widthPx={2}
         heightPx={88}
         leftPx={20}
-        color="grey-medium"
+        color="grey-2"
         topPx={112}
       />
       <div className="grid grid-cols-1fr grid-rows-1fr">
-        <p className="text-md text-grey-medium col-start-1 row-start-1 pl-1">
-          2026
-        </p>
-        <h1 className="text-5xl font-semibold text-grey-medium col-start-1 col-span-3 row-start-2 pl-1">
+        <p className="text-md text-grey-2 col-start-1 row-start-1 pl-1">2026</p>
+        <h1 className="text-5xl font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-1">
           Portfolio
         </h1>
         <p className=" text-accent-red font-bold tracking-wider text-md col-start-3 row-start-3 pr-12">

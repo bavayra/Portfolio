@@ -8,11 +8,11 @@ export const Portfolio = () => {
         widthPx={2}
         heightPx={192}
         leftPx={0}
-        color="grey-medium"
+        color="grey-2"
         topPx={100}
       />
       <p className="text-text">08</p>
-      <h2 className="text-2xl text-grey-medium font-medium">
+      <h2 className="text-2xl text-grey-2 font-medium">
         THIS PORTFOLIO <span className="text-accent-red font-bold">:)</span>
       </h2>
       <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">

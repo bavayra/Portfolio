@@ -3,7 +3,7 @@ import React from "react";
 interface DividerProps {
   widthPx: 2 | 3 | number;
   heightPx: number;
-  color: "grey-extra-dark" | "grey-medium";
+  color: "grey-extra-dark" | "grey-2";
   topPx?: number;
   bottomPx?: number;
   leftPx?: number;
@@ -21,7 +21,7 @@ export const Divider: React.FC<DividerProps> = ({
 }) => {
   const colorMap: Record<DividerProps["color"], string> = {
     "grey-extra-dark": "var(--color-grey-extra-dark)",
-    "grey-medium": "var(--color-grey-medium)",
+    "grey-2": "var(--color-grey-2)",
   };
 
   const style: React.CSSProperties = {

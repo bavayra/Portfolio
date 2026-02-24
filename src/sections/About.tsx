@@ -8,11 +8,11 @@ const About = () => {
         widthPx={2}
         heightPx={260}
         leftPx={0}
-        color="grey-medium"
+        color="grey-2"
         topPx={100}
       />
       <p className="text-text">01</p>
-      <h2 className="text-2xl text-grey-medium font-medium">WHO IS SHE</h2>
+      <h2 className="text-2xl text-grey-2 font-medium">WHO IS SHE</h2>
 
       <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,

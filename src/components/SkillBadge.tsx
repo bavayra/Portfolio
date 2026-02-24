@@ -61,7 +61,7 @@ export const CircleStatic: React.FC<Props> = ({
           transform={`rotate(90 ${size / 2} ${size / 2})`}
           style={{
             fontSize: "0.65rem",
-            fill: "var(--color-grey-medium)",
+            fill: "var(--color-grey-2)",
             fontWeight: "bold",
           }}
         >

@@ -19,11 +19,11 @@ const Skills = () => {
         widthPx={2}
         heightPx={288}
         leftPx={0}
-        color="grey-medium"
+        color="grey-2"
         topPx={100}
       />
       <p className="text-text">02</p>
-      <h2 className="text-2xl text-grey-medium font-medium">HER SKILLS</h2>
+      <h2 className="text-2xl text-grey-2 font-medium">HER SKILLS</h2>
       <div className="grid grid-cols-3 gap-3 mt-4 justify-items-center gap-x-0 w-3xs mx-auto">
         {skills.map(({ percent, label }) => (
           <div key={label} className="flex flex-col items-center gap-1">
