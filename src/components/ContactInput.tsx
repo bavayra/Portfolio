@@ -34,7 +34,7 @@ const TextInput = ({
     .replace(/\s+/g, " ");
   return (
     <div>
-      <label htmlFor={id} className="text-sm text-accent-grey ">
+      <label htmlFor={id} className="text-sm text-grey-3 ">
         {label}
       </label>
 
