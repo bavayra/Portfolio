@@ -1,6 +1,8 @@
 import DotPattern from "../components/DotPattern";
 import { Divider } from "../components/Divider";
-import { Circle } from "../components/Circle";
+{
+  /*import { Circle } from "../components/Circle";*/
+}
 
 const Hero = () => {
   return (
@@ -22,7 +24,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <Circle
+      {/* <Circle
         className="circle-drop"
         sizes={{ mobile: 0.6, tablet: 0.8, desktop: 1.2 }}
         topRem={10}
@@ -34,7 +36,7 @@ const Hero = () => {
         topRem={10}
         rightRem={3.2}
         style={{ animationDelay: "0.75s" }}
-      />
+      />*/}
       <DotPattern />
     </section>
   );
