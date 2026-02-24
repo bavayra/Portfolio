@@ -26,7 +26,7 @@ const Header = () => {
       }`}
     >
       <div
-        className={` flex items-center justify-end w-full ${visible ? "bg-white/90 shadow-sm backdrop-blur" : "bg-transparent"} `}
+        className={` flex items-center justify-end w-full ${visible ? "bg-[var(--color-bg)/90] shadow-sm backdrop-blur" : "bg-transparent"} `}
       >
         <nav className="pr-4 ">
           <ul className="flex gap-0">
