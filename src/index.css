@@ -5,9 +5,9 @@
   --color-section-title: #4f4f4f;
   --color-grey-1: #d8d8d8;
   --color-grey-2: #8c8c8c;
+  --color-grey-3: #4f4f4f;
   --color-text: #646464;
   --color-section-title-bg: #ffffff;
-  --color-grey-extra-dark: #4f4f4f;
 
   --color-accent-grey: #928a97;
 
@@ -20,7 +20,7 @@
     --color-section-title: #8c8c8c;
 
     --color-text: #ffffffb1;
-    --color-grey-extra-dark: #ffffffb1;
+    --color-grey-3: #ffffffb1;
     --color-accent-red: #632626;
     --color-section-title-bg: #4f4f4f;
   }
