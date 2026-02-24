@@ -185,7 +185,7 @@ const ContactSection = () => {
                 size="small"
                 disabled={isSubmitting}
                 ariaLabel="Submit this form"
-                className=" w-auto text-center font-semibold"
+                className=" w-auto text-center "
               >
                 {isSubmitting ? "Sending..." : "SEND MESSAGE"}
               </Button>
