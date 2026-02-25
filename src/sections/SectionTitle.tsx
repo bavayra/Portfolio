@@ -64,7 +64,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
         heightPx="var(--title-divider-h)"
         leftPx={0}
         color="grey-2"
-        topPx={232}
+        topPx="var(--title-divider-top)"
       />
     </div>
   );
