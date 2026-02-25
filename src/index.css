@@ -3,14 +3,14 @@
 @theme {
   --color-bg: #ffffff;
   --color-section-title: #4f4f4f;
+  --color-section-title-bg: #ffffff;
+  --color-text: #646464;
+
   --color-grey-1: #d8d8d8;
   --color-grey-2: #8c8c8c;
   --color-grey-3: #4f4f4f;
-  --color-text: #646464;
-  --color-section-title-bg: #ffffff;
 
   --color-accent-grey: #928a97;
-
   --color-accent-red: #991d1d;
 }
 
@@ -18,11 +18,12 @@
   :root {
     --color-bg: #646464;
     --color-section-title: #8c8c8c;
-
     --color-text: #ffffffb1;
-    --color-grey-3: #ffffffb1;
-    --color-accent-red: #632626;
     --color-section-title-bg: #4f4f4f;
+
+    --color-grey-3: #ffffffb1;
+
+    --color-accent-red: #632626;
   }
 }
 
@@ -76,6 +77,9 @@
 
 :root {
   --vh: 1vh;
+
+  --hero-divider-h-base: clamp(75px, calc(50vh - 175px), 155px);
+  --hero-divider-top-base: clamp(108px, calc(10.7vh + 54.5px), 124px);
 }
 
 .app-fullscreen {
