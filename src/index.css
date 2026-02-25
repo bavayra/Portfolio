@@ -80,6 +80,9 @@
 
   --hero-divider-h-base: clamp(75px, calc(50vh - 175px), 155px);
   --hero-divider-top-base: clamp(108px, calc(10.7vh + 54.5px), 124px);
+
+  --title-divider-h-base: clamp(78px, calc(20vh - 22px), 108px);
+  --title-divider-top-base: clamp(160px, calc(24vh + 40px), 196px);
 }
 
 .app-fullscreen {
