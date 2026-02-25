@@ -9,10 +9,10 @@ const Hero = () => {
     <section id="hero" className="py-8 app-fullscreen">
       <Divider
         widthPx={2}
-        heightPx={68}
-        leftPx={20}
+        heightPx="clamp(75px, calc(70vh - 275px), 180px)"
+        leftPx="clamp(16px, 2vw, 24px)"
         color="grey-2"
-        topPx={112}
+        topPx="clamp(108px, 12vh, 160px)"
       />
       <div className="grid grid-cols-1fr grid-rows-1fr">
         <p className="text-md text-grey-2 col-start-1 row-start-1 pl-1">2026</p>
