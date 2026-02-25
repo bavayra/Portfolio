@@ -15,11 +15,13 @@ const Hero = () => {
         topPx="clamp(108px, 12vh, 160px)"
       />
       <div className="grid grid-cols-1fr grid-rows-1fr">
-        <p className="text-md text-grey-2 col-start-1 row-start-1 pl-1">2026</p>
-        <h1 className="text-5xl font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-1">
+        <p className="text-base min-[360px]:text-xl text-grey-2 col-start-1 row-start-1 pl-1">
+          2026
+        </p>
+        <h1 className="text-5xl min-[360px]:text-6xl font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-1">
           Portfolio
         </h1>
-        <p className=" text-accent-red font-bold tracking-wider text-md col-start-3 row-start-3 pr-12">
+        <p className=" text-accent-red min-[360px]:text-xl font-bold tracking-wider text-base col-start-3 row-start-3 pr-12">
           ALIX BELL
         </p>
       </div>
