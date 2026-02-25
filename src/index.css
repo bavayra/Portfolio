@@ -89,8 +89,8 @@
   :root {
     --hero-divider-h: clamp(100px, calc(89vh - 433px), 260px);
 
-    --title-divider-h: clamp(78px, calc(20vh - 22px), 108px);
-    --title-divider-top: clamp(160px, calc(24vh + 40px), 196px);
+    --title-divider-h: clamp(98px, calc(21vh - 28.6px), 136px);
+    --title-divider-top: clamp(184px, calc(26.6vh + 24px), 232px);
   }
 }
 
