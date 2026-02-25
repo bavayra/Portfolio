@@ -6,6 +6,7 @@ export default {
     screens: {
       /*default-320px*/
       "phone-sm": "375px",
+      "phone-md": "412px",
       sm: "640px",
       md: "768px",
       tablet: "820px",
