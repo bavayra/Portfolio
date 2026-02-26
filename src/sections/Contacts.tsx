@@ -103,7 +103,7 @@ const ContactSection = () => {
         color="grey-2"
         topPx={-68}
       />
-      <h2 className=" relative self-start text-4xl text-accent-red font-bold">
+      <h2 className=" relative self-start text-4xl phone-md:text-5xl text-accent-red font-bold">
         LET'S TALK?
       </h2>
       <Divider
@@ -114,11 +114,11 @@ const ContactSection = () => {
         topPx={52}
       />
       <div className="relative flex justify-center ">
-        <div className=" max-w-md  ">
+        <div>
           <form
             id="contact-form"
             onSubmit={handleSubmit}
-            className="space-y-2 mt-6 "
+            className="space-y-2 mt-6 phone-md:w-72"
           >
             <div>
               <ContactInput
@@ -169,7 +169,7 @@ const ContactSection = () => {
                 placeholder="Write your message..."
                 required
                 disabled={isSubmitting}
-                className=" focus:border-text  mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                className=" focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
               />
               {errors.message && (
                 <p className="-mt-6 text-sm text-red-600" role="alert">
