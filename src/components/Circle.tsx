@@ -1,6 +1,11 @@
 import React, { useEffect, useState } from "react";
 
-type Sizes = { mobile: number; tablet: number; desktop: number };
+type Sizes = {
+  mobile: number;
+  mobileLg: number;
+  tablet: number;
+  desktop: number;
+};
 
 interface CircleProps {
   sizes: Sizes;
@@ -26,7 +31,8 @@ export const Circle: React.FC<CircleProps> = ({
   useEffect(() => {
     const calc = () => {
       const w = window.innerWidth;
-      if (w < 640) setSizeRem(sizes.mobile);
+      if (w < 412) setSizeRem(sizes.mobile);
+      else if (w < 640) setSizeRem(sizes.mobileLg);
       else if (w < 1024) setSizeRem(sizes.tablet);
       else setSizeRem(sizes.desktop);
     };

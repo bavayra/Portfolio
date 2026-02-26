@@ -34,7 +34,9 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
         topPx={16}
       />
       <div className="flex items-center gap-2">
-        <span className={`text-base tracking-wide font-medium ${partColor}`}>
+        <span
+          className={`text-base phone-md:text-2xl tracking-wide font-medium ${partColor}`}
+        >
           {partLabel}
         </span>
 
@@ -44,7 +46,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
               <Circle
                 key={`dot-${index}`}
                 className="circle-drop"
-                sizes={{ mobile: 1, tablet: 0.8, desktop: 1.2 }}
+                sizes={{ mobile: 1, mobileLg: 1.6, tablet: 0.8, desktop: 1.2 }}
                 style={{ animationDelay: `${index * 0.6}s` }}
               />
             ))}
@@ -54,7 +56,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
       <h2
         ref={ref}
-        className={`font-extrabold tracking-[0.2em] ${titleColor} text-2xl`}
+        className={`font-extrabold phone-md:text-4xl tracking-[0.2em] ${titleColor} text-2xl`}
       >
         {title}
       </h2>
