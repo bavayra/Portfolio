@@ -24,7 +24,10 @@ export const CircleStatic: React.FC<Props> = ({
   return (
     <div
       className={className}
-      style={{ width: size, height: size }}
+      style={{
+        width: size,
+        height: size,
+      }}
       role="img"
       aria-label={ariaLabel ?? `Progress ${percent}%`}
     >
@@ -60,7 +63,7 @@ export const CircleStatic: React.FC<Props> = ({
           dominantBaseline="middle"
           transform={`rotate(90 ${size / 2} ${size / 2})`}
           style={{
-            fontSize: "0.65rem",
+            fontSize: "var(--skill-percent-size, 0.65rem)",
             fill: "var(--color-grey-2)",
             fontWeight: "bold",
           }}
