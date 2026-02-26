@@ -9,19 +9,19 @@ const Hero = () => {
     <section id="hero" className="py-8 app-fullscreen">
       <Divider
         widthPx={2}
-        heightPx="var(--hero-divider-h)"
+        heightPx={300}
         color="grey-2"
         topPx="var(--hero-divider-top)"
         className="ml-6"
       />
       <div className="grid grid-cols-1fr grid-rows-1fr">
-        <p className="text-base min-[360px]:text-xl text-grey-2 col-start-1 row-start-1 pl-1">
+        <p className="text-base min-[360px]:text-xl text-grey-2 phone-md:text-2xl col-start-1 row-start-1 pl-1">
           2026
         </p>
-        <h1 className="text-5xl min-[360px]:text-6xl font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-1">
+        <h1 className="text-5xl phone-md:text-6xl font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-1">
           Portfolio
         </h1>
-        <p className=" text-accent-red min-[360px]:text-xl font-bold tracking-wider text-base col-start-3 row-start-3 pr-12">
+        <p className=" text-accent-red min-[360px]:text-xl phone-md:text-3xl font-bold tracking-wider text-base col-start-3 row-start-3 pr-12">
           ALIX BELL
         </p>
       </div>
