@@ -15,7 +15,7 @@ export const WeatherApp = () => {
       <h2 className="text-2xl phone-sm:text-3xl text-grey-2 font-medium">
         WEATHER APP
       </h2>
-      <p className="mt-2 text-xs phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 text-xs min-[480px]:max-w-80 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         A responsive weather app built with vanilla JavaScript that displays
         current conditions, hourly and daily forecasts using the OpenWeather
         API. Features city search, unit toggle (°C/°F), optional browser
