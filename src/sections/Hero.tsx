@@ -16,13 +16,13 @@ const Hero = () => {
         className="ml-6"
       />
       <div className="grid grid-cols-1fr grid-rows-1fr">
-        <p className="text-base min-[360px]:text-xl text-grey-2 phone-md:text-2xl col-start-1 row-start-1 pl-1">
+        <p className="text-base phone-sm:text-xl text-grey-2 phone-md:text-2xl col-start-1 row-start-1 pl-1">
           2026
         </p>
         <h1 className="text-5xl phone-md:text-6xl font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-1">
           Portfolio
         </h1>
-        <p className=" text-accent-red min-[360px]:text-xl phone-md:text-3xl font-bold tracking-wider text-base col-start-3 row-start-3 pr-12">
+        <p className=" text-accent-red phone-sm:text-xl phone-md:text-3xl font-bold tracking-wider text-base col-start-3 row-start-3 pr-12">
           ALIX BELL
         </p>
       </div>

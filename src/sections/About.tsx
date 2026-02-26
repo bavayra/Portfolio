@@ -14,7 +14,7 @@ const About = () => {
       <p className="text-text">01</p>
       <h2 className="text-2xl text-grey-2 font-medium">WHO IS SHE</h2>
 
-      <p className="mt-2 text-xs min-[360px]:text-sm min-[360px]:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 text-xs phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,
@@ -26,7 +26,7 @@ const About = () => {
       <Button
         variant="secondary"
         size="small"
-        className="mt-2 flex justify-end ml-auto min-[360px]:mt-4 min-[360px]:mr-8 mr-4"
+        className="mt-2 flex justify-end ml-auto phone-sm:mt-4 phone-sm:mr-8 mr-4"
       >
         Download CV
       </Button>

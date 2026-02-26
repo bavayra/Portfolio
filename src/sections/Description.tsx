@@ -12,7 +12,7 @@ export const Description = () => {
       />
       <p className="text-text">03</p>
       <h2 className="text-2xl text-grey-2 font-medium">WHAT IS SHE LIKE</h2>
-      <p className="mt-2 text-xs min-[360px]:text-sm min-[360px]:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 text-xs phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I'm a curious and disciplined developer who enjoys solving UI problems
         with clean, maintainable code. I prioritize performance and
         accessibility, and I'm committed to continuous learning. I work well in
