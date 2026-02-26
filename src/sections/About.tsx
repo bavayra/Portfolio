@@ -11,8 +11,10 @@ const About = () => {
         color="grey-2"
         topPx={100}
       />
-      <p className="text-text">01</p>
-      <h2 className="text-2xl text-grey-2 font-medium">WHO IS SHE</h2>
+      <p className="text-text phone-sm:text-xl">01</p>
+      <h2 className="text-2xl text-grey-2 phone-sm:text-3xl font-medium">
+        WHO IS SHE
+      </h2>
 
       <p className="mt-2 text-xs phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,
