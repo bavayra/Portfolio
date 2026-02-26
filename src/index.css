@@ -12,6 +12,9 @@
 
   --color-accent-grey: #928a97;
   --color-accent-red: #991d1d;
+
+  /*breakpoints*/
+  --breakpoint-phone-md: 412px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -78,21 +81,55 @@
 :root {
   --vh: 1vh;
 
-  --hero-divider-h: clamp(75px, calc(50vh - 175px), 155px);
-  --hero-divider-top: clamp(108px, calc(10.7vh + 54.5px), 124px);
+  /* 320px - 480px devices */
+  --hero-divider-h: clamp(72px, calc(44.44vh - 150.22px), 232px);
+  --hero-divider-top: clamp(110px, calc(9.44vh + 62.8px), 144px);
+}
+/*@media (max-width: 359px) {
+  :root {
+    --hero-divider-h: clamp(72px, calc(36vh - 216px), 108px);
+    --hero-divider-top: clamp(108px, calc(10.7vh + 54.5px), 124px);
 
-  --title-divider-h: clamp(78px, calc(20vh - 22px), 108px);
-  --title-divider-top: clamp(160px, calc(24vh + 40px), 196px);
+    --title-divider-h-top: clamp(78px, calc(20vh - 22px), 108px);
+    --title-divider-h-b: clamp(78px, calc(20vh - 22px), 108px);
+    --title-divider-top: clamp(160px, calc(24vh + 40px), 196px);
+  }
 }
 
-@media (min-width: 375px) and (max-width: 390px) {
+:root {
+  --title-divider-h-top: clamp(98px, calc(21vh - 28.6px), 136px);
+  --title-divider-h-b: clamp(98px, calc(21vh - 28.6px), 136px);
+  --title-divider-top: clamp(184px, calc(26.6vh + 24px), 232px);
+}
+@media (min-width: 375px) and (max-width: 411px) {
   :root {
     --hero-divider-h: clamp(100px, calc(89vh - 433px), 260px);
 
-    --title-divider-h: clamp(98px, calc(21vh - 28.6px), 136px);
+    --title-divider-h-top: clamp(98px, calc(21vh - 28.6px), 136px);
+    --title-divider-h-b: clamp(98px, calc(21vh - 28.6px), 136px);
     --title-divider-top: clamp(184px, calc(26.6vh + 24px), 232px);
   }
 }
+
+@media (min-width: 412px) and (max-width: 427px) {
+  :root {
+    --hero-divider-h: clamp(100px, calc(89vh - 433px), 260px);
+
+    --title-divider-h-top: clamp(98px, calc(21vh - 28.6px), 136px);
+    --title-divider-h-b: clamp(98px, calc(21vh - 28.6px), 136px);
+    --title-divider-top: clamp(184px, calc(26.6vh + 24px), 232px);
+  }
+}
+
+@media (min-width: 428px) and (max-width: 480px) {
+  :root {
+    --hero-divider-h: clamp(100px, calc(89vh - 433px), 260px);
+
+    --title-divider-h-top: clamp(132px, calc(47vh - 410px), 140px);
+    --title-divider-h-b: clamp(132px, calc(47vh - 410px), 140px);
+    --title-divider-top: clamp(240px, calc(24vh - 235px), 248px);
+  }
+}*/
 
 .app-fullscreen {
   min-height: calc(var(--vh) * 100); /* JS fallback */

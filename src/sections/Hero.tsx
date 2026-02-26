@@ -9,7 +9,8 @@ const Hero = () => {
     <section id="hero" className="py-8 app-fullscreen">
       <Divider
         widthPx={2}
-        heightPx={300}
+        heightPx="var(--hero-divider-h)"
+        leftPx={0}
         color="grey-2"
         topPx="var(--hero-divider-top)"
         className="ml-6"
