@@ -33,33 +33,40 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
         color="grey-2"
         topPx={16}
       />
-      <div className="flex items-center gap-2">
-        <span
-          className={`text-base phone-md:text-2xl tracking-wide font-medium ${partColor}`}
+      <div className="mb-4">
+        <div className="flex items-center gap-2">
+          <span
+            className={`text-base min-[360px]:text-xl tracking-wide font-medium ${partColor}`}
+          >
+            {partLabel}
+          </span>
+
+          {inViewOnce && (
+            <>
+              {Array.from({ length: dotsCount }).map((_, index) => (
+                <Circle
+                  key={`dot-${index}`}
+                  className="circle-drop"
+                  sizes={{
+                    mobile: 1,
+                    mobileLg: 1.6,
+                    tablet: 0.8,
+                    desktop: 1.2,
+                  }}
+                  style={{ animationDelay: `${index * 0.6}s` }}
+                />
+              ))}
+            </>
+          )}
+        </div>
+
+        <h2
+          ref={ref}
+          className={`font-extrabold phone-md:text-4xl min-[360px]:text-3xl tracking-[0.2em] ${titleColor} text-2xl`}
         >
-          {partLabel}
-        </span>
-
-        {inViewOnce && (
-          <>
-            {Array.from({ length: dotsCount }).map((_, index) => (
-              <Circle
-                key={`dot-${index}`}
-                className="circle-drop"
-                sizes={{ mobile: 1, mobileLg: 1.6, tablet: 0.8, desktop: 1.2 }}
-                style={{ animationDelay: `${index * 0.6}s` }}
-              />
-            ))}
-          </>
-        )}
+          {title}
+        </h2>
       </div>
-
-      <h2
-        ref={ref}
-        className={`font-extrabold phone-md:text-4xl tracking-[0.2em] ${titleColor} text-2xl`}
-      >
-        {title}
-      </h2>
 
       <Divider
         widthPx={2}
