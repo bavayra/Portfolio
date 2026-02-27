@@ -2,10 +2,10 @@ import { Divider } from "../components/Divider";
 
 export const Description = () => {
   return (
-    <section className="relative h-screen phone-md:max-h-[74vh] py-8 ml-3">
+    <section className="relative h-[84vh] min-[375px]:h-[92vh] min-[390px]:h-[70vh] phone-md:max-h-[74vh] py-8 ml-3">
       <Divider
         widthPx={2}
-        heightPx="var(--block-divider-h)"
+        heightPx={420}
         leftPx={0}
         color="grey-2"
         topPx={100}
@@ -29,7 +29,7 @@ export const Description = () => {
         height={200}
         style={{ position: "absolute", right: 0, bottom: 0 }}
         loading="lazy"
-        className="object-cover phone-md:w-40 "
+        className="object-cover phone-md:w-36 "
       />
     </section>
   );
