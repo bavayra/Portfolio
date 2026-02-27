@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="py-3 text-center text-[0.75rem] border-t-2 border-accent-red text-white bg-[#4f4f4f]">
-      <div className="grid grid-cols-[1fr_max-content_1fr] max-w-52 mx-auto text-[0.75rem]  text-grey-1 font-semibold">
+    <footer className="py-3 text-center text-[0.75rem] border-t-2 border-accent-red text-grey-1 bg-[#4f4f4f]">
+      <div className="grid grid-cols-[1fr_max-content_1fr] max-w-52 mx-auto text-[0.75rem] opacity-65 font-semibold">
         <a href="tel:+15550100000" aria-label="Call example number">
           +1 (555) 010‑0000
         </a>
@@ -10,10 +10,10 @@ const Footer = () => {
           Prague, Czechia
         </p>
       </div>
-      <p className="tracking-wider leading-relaxed">
+      <p className="tracking-wider leading-relaxed opacity-65">
         All Rights Reserved © {new Date().getFullYear()}
       </p>
-      <p className="tracking-wider">Created by bavayra with ❤️</p>
+      <p className="tracking-wider opacity-65">Created by bavayra with ❤️</p>
     </footer>
   );
 };
