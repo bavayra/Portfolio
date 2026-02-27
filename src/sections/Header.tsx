@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 text-xs phone-sm:text-base text-text font-medium  phone-sm:py-2 left-0 w-full z-50 transition-transform duration-300 ${
+      className={`fixed top-0 text-xs phone-sm:text-base text-text font-medium  py-2 left-0 w-full z-50 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
