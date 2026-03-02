@@ -144,23 +144,19 @@
   :root {
     --block-div-sm-h: 288px;
     --block-div-md-h: 320px;
-    --block-div-lg-h: 380px;
+    --block-div-lg-h: 360px;
     --block-div-xl-h: 380px;
     --block-div-2xl-h: 360px;
 
     --block-div-top: 110px;
 
-    --hero-div-h: 200px;
+    --hero-div-h: 180px;
   }
 }
 
-@media (min-width: 481px) {
+@media (min-width: 480px) {
   :root {
-    --block-div-sm-h: 268px;
-    --block-div-md-h: 300px;
-    --block-div-lg-h: 360px;
-
-    --hero-div-top: 6px;
+    --section-div-top-h: 128px;
   }
 }
 
