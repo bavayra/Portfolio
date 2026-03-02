@@ -29,7 +29,7 @@ export const Description = () => {
         height={200}
         style={{ position: "absolute", right: 0, bottom: 0 }}
         loading="lazy"
-        className="object-cover phone-md:w-36 "
+        className="object-cover phone-md:w-36 phone-lg:w-40"
       />
     </section>
   );
