@@ -102,6 +102,8 @@
 @media (min-width: 376px) and (max-width: 390px) {
   :root {
     --hero-div-h: clamp(104px, calc(73vh - 336px), 236px);
+
+    --section-div-top-h: clamp(88px, calc(22vh - 45.3px), 128px);
   }
 }
 
