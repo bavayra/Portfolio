@@ -82,8 +82,8 @@
 :root {
   --vh: 1vh;
 
-  /* 320px - 480px devices */
-  --hero-divider-h: clamp(72px, calc(44.44vh - 150.22px), 232px);
+  /* 320px - 480px devices 
+  --hero-divider-h: clamp(72px, calc(44.44vh - 150.22px), 232px);*/
   --hero-divider-top: clamp(110px, calc(9.44vh + 62.8px), 144px);
 
   --section-divider-h-top: clamp(76px, calc(15vh - 1.8px), 132px);
@@ -96,6 +96,18 @@
 @media (min-width: 360px) and (max-width: 375px) {
   :root {
     --hero-div-h: clamp(104px, calc(112vh - 568px), 160px);
+  }
+}
+
+@media (min-width: 376px) and (max-width: 390px) {
+  :root {
+    --hero-div-h: clamp(104px, calc(73vh - 336px), 236px);
+  }
+}
+
+@media (min-width: 391px) and (max-width: 428px) {
+  :root {
+    --hero-div-h: clamp(236px, calc(52vh - 169.6px), 288px);
   }
 }
 
