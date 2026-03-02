@@ -37,7 +37,7 @@ const Skills = () => {
               ariaLabel={label}
               className="phone-sm:scale-120 phone-sm:[--skill-percent-size:.8rem]"
             />
-            <span className="text-[0.65rem] text-text phone-sm:text-xs">
+            <span className="text-[0.65rem] text-text phone-sm:text-xs phone-lg:text-sm">
               {label}
             </span>
           </div>
