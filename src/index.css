@@ -89,6 +89,14 @@
   --section-divider-h-top: clamp(76px, calc(15vh - 1.8px), 132px);
   --section-divider-h-bot: clamp(80px, calc(23.3vh - 37px), 164px);
   --section-divider-bot-top: clamp(160px, calc(24vh + 38px), 248px);
+
+  --block-divider-h: clamp(384px, calc(23vh + 267px), 468px);
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  :root {
+    --hero-div-h: clamp(104px, calc(112vh - 568px), 160px);
+  }
 }
 
 .app-fullscreen {
