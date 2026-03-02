@@ -12,7 +12,7 @@ const Hero = () => {
         heightPx="var(--hero-div-h)"
         leftPx={0}
         color="grey-2"
-        topPx={"var(--hero-divider-top)"}
+        topPx={"var(--hero-div-top)"}
         className="ml-8 min-[390px]:ml-10 min-[428px]:ml-12 phone-lg:ml-10"
       />
       <div className="grid grid-cols-1fr phone-md:ml-4 phone-lg:mt-10 grid-rows-1fr">
