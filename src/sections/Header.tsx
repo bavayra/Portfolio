@@ -28,7 +28,7 @@ const Header = () => {
       <div
         className={` flex items-center justify-end w-full ${visible ? "bg-[var(--color-bg)/90] shadow-sm backdrop-blur" : "bg-transparent"} `}
       >
-        <nav className="pr-4 ">
+        <nav className="pr-4 phone-lg:py-2">
           <ul className="flex gap-0">
             <li className="hover:text-accent-red hover:scale-110 active:scale-95 duration-300 hover:font-semibold">
               <a
