@@ -9,7 +9,7 @@ export const Portfolio = () => {
         heightPx="var(--block-div-sm-h)"
         leftPx={0}
         color="grey-2"
-        topPx={100}
+        topPx="var(--block-div-top)"
       />
       <p className="text-text phone-sm:text-xl">08</p>
       <h2 className="text-2xl phone-sm:text-3xl phone-lg:text-4xl text-grey-2 font-medium">

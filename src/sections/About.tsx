@@ -9,7 +9,7 @@ const About = () => {
         heightPx="var(--block-div-lg-h)"
         leftPx={0}
         color="grey-2"
-        topPx={100}
+        topPx="var(--block-div-top)"
       />
       <p className="text-text phone-sm:text-xl">01</p>
       <h2 className="text-2xl text-grey-2 phone-sm:text-3xl phone-lg:text-4xl font-medium">

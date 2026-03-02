@@ -16,6 +16,7 @@
   /*breakpoints*/
   --breakpoint-phone-sm: 360px;
   --breakpoint-phone-md: 412px;
+  --breakpoint-phone-lg: 480px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -122,6 +123,8 @@
     --block-div-lg-h: 320px;
     --block-div-xl-h: 340px;
     --block-div-2xl-h: 360px;
+
+    --block-div-top: 104px;
   }
 }
 
@@ -132,6 +135,8 @@
     --block-div-lg-h: 380px;
     --block-div-xl-h: 380px;
     --block-div-2xl-h: 360px;
+
+    --block-div-top: 110px;
   }
 }
 
