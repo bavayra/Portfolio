@@ -6,7 +6,7 @@ const About = () => {
     <section id="about" className="relative py-8 ml-3">
       <Divider
         widthPx={2}
-        heightPx={260}
+        heightPx="var(--block-div-lg-h)"
         leftPx={0}
         color="grey-2"
         topPx={100}

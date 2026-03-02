@@ -3,10 +3,10 @@ import GitHubLink from "../components/GitHubLink";
 
 export const Portfolio = () => {
   return (
-    <section className="relative h-auto py-8 ml-3">
+    <section className="relative h-auto pt-8 pb-16 ml-3">
       <Divider
         widthPx={2}
-        heightPx={192}
+        heightPx="var(--block-div-sm-h)"
         leftPx={0}
         color="grey-2"
         topPx={100}

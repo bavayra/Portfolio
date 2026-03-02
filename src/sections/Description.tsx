@@ -5,7 +5,7 @@ export const Description = () => {
     <section className="relative h-[84vh] min-[375px]:h-[92vh] min-[390px]:h-[70vh] phone-md:max-h-[74vh] py-8 ml-3">
       <Divider
         widthPx={2}
-        heightPx={420}
+        heightPx="var(--block-div-xl-h)"
         leftPx={0}
         color="grey-2"
         topPx={100}

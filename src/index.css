@@ -87,8 +87,6 @@
 
   --section-div-bot-h: clamp(80px, calc(23.3vh - 37px), 164px);
   --section-divider-bot-top: clamp(160px, calc(24vh + 38px), 248px);
-
-  --block-divider-h: clamp(384px, calc(23vh + 267px), 468px);
 }
 
 @media (min-width: 360px) and (max-width: 375px) {
@@ -96,6 +94,8 @@
     --hero-div-h: clamp(104px, calc(112vh - 568px), 160px);
 
     --section-div-top-h: clamp(88px, calc(24vh - 56px), 100px);
+
+    --block-div-h: clamp(290px, calc(16vh + 194px), 330px);
   }
 }
 
@@ -110,6 +110,36 @@
 @media (min-width: 391px) and (max-width: 428px) {
   :root {
     --hero-div-h: clamp(236px, calc(52vh - 169.6px), 288px);
+
+    --section-div-top-h: clamp(88px, calc(22vh - 45.3px), 128px);
+  }
+}
+
+@media (min-width: 360px) and (max-width: 411px) {
+  :root {
+    --block-div-sm-h: 260px;
+    --block-div-md-h: 290px;
+    --block-div-lg-h: 320px;
+    --block-div-xl-h: 340px;
+    --block-div-2xl-h: 360px;
+  }
+}
+
+@media (min-width: 412px) and (max-width: 480px) {
+  :root {
+    --block-div-sm-h: 288px;
+    --block-div-md-h: 320px;
+    --block-div-lg-h: 380px;
+    --block-div-xl-h: 380px;
+    --block-div-2xl-h: 360px;
+  }
+}
+
+@media (min-width: 480px) {
+  :root {
+    --block-div-sm-h: 268px;
+    --block-div-md-h: 300px;
+    --block-div-lg-h: 360px;
   }
 }
 
