@@ -2,7 +2,7 @@ import GitHubIcon from "../assets/Icons/GitHubIcon.svg?react";
 
 const GitHubLink = () => {
   return (
-    <div className="flex flex-row mt-4 items-center gap-1 ml-3 tracking-wide">
+    <div className="flex flex-row mt-4 items-center phone-lg:pl-2 gap-1 ml-3 tracking-wide">
       <p className="text-grey-3  phone-md:text-base text-sm">
         Check the code on
       </p>
