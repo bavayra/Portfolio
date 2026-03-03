@@ -144,15 +144,18 @@
 
 @media (min-width: 412px) and (max-width: 480px) {
   :root {
+    --block-div-top: 110px;
+    --hero-div-h: 180px;
+  }
+}
+
+@media (min-width: 412px) and (max-width: 600px) {
+  :root {
     --block-div-sm-h: 288px;
     --block-div-md-h: 320px;
-    --block-div-lg-h: 360px;
+    --block-div-lg-h: 372px;
     --block-div-xl-h: 380px;
     --block-div-2xl-h: 360px;
-
-    --block-div-top: 110px;
-
-    --hero-div-h: 180px;
   }
 }
 
@@ -170,6 +173,8 @@
     --section-div-top-h: 112px;
     --section-div-top-top: 28px;
     --section-div-bot-h: 180px;
+
+    --block-div-top: 114px;
   }
 }
 
