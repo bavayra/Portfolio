@@ -89,6 +89,7 @@
 
   --section-div-bot-h: clamp(80px, calc(23.3vh - 37px), 164px);
   --section-divider-bot-top: clamp(160px, calc(24vh + 38px), 248px);
+  --section-div-top-top: 16px;
 }
 
 @media (min-width: 360px) and (max-width: 375px) {
@@ -165,6 +166,10 @@
   :root {
     --hero-div-top: 28px;
     --hero-div-h: 100px;
+
+    --section-div-top-h: 112px;
+    --section-div-top-top: 28px;
+    --section-div-bot-h: 180px;
   }
 }
 
