@@ -28,7 +28,7 @@ const About = () => {
       <Button
         variant="secondary"
         size="small"
-        className="mt-2 flex justify-end ml-auto phone-sm:mt-4 phone-sm:mr-8 mr-4"
+        className="mt-2 flex justify-end ml-auto phone-sm:mt-4 phone-sm:mr-8 mr-4 tablet-sm:mr-16"
       >
         Download CV
       </Button>
