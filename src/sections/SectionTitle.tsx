@@ -25,13 +25,13 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   });
 
   return (
-    <div className="section-vh-50 flex flex-col phone-md:pb-10 justify-center relative ml-3">
+    <div className="section-vh-50 flex flex-col phone-md:pb-10 justify-center relative ml-3 tablet-sm:ml-12">
       <Divider
         widthPx={2}
         heightPx="var(--section-div-top-h)"
         leftPx={0}
         color="grey-2"
-        topPx={16}
+        topPx="var(--section-div-top-top)"
       />
       <div className="mb-4">
         <div className="flex items-center gap-2">
@@ -62,7 +62,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
         <h2
           ref={ref}
-          className={`font-extrabold phone-md:text-4xl phone-sm:text-3xl min-[390px]:text-3xl tracking-[0.2em] ${titleColor} text-2xl`}
+          className={`font-extrabold phone-md:text-4xl tablet-sm:text-5xl phone-sm:text-3xl min-[390px]:text-3xl tracking-[0.2em] ${titleColor} text-2xl`}
         >
           {title}
         </h2>
