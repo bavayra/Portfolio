@@ -97,7 +97,7 @@ const ContactSection = () => {
       className="relative z-10 mt-20 ml-3 h-auto tablet-sm:ml-12 flex pb-8 flex-col items-center "
     >
       <Divider
-        widthPx={2}
+        widthPx="var(--hero-div-w)"
         heightPx={56}
         leftPx={0}
         color="grey-2"
@@ -107,7 +107,7 @@ const ContactSection = () => {
         LET'S TALK?
       </h2>
       <Divider
-        widthPx={2}
+        widthPx="var(--hero-div-w)"
         heightPx={460}
         leftPx={0}
         color="grey-2"

@@ -5,7 +5,7 @@ export const DogShelter = () => {
   return (
     <section className="relative h-auto py-8 ml-3 tablet-sm:ml-12">
       <Divider
-        widthPx={2}
+        widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-md-h)"
         leftPx={0}
         color="grey-2"
