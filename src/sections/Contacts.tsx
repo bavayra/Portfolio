@@ -103,7 +103,7 @@ const ContactSection = () => {
         color="grey-2"
         topPx={-68}
       />
-      <h2 className=" relative self-start text-4xl phone-md:text-5xl text-accent-red font-bold">
+      <h2 className=" relative self-start text-4xl phone-md:text-5xl tablet-md:text-6xl text-accent-red font-bold">
         LET'S TALK?
       </h2>
       <Divider
@@ -111,7 +111,7 @@ const ContactSection = () => {
         heightPx={460}
         leftPx={0}
         color="grey-2"
-        topPx={52}
+        topPx="var(--contacts-div-bot-top)"
       />
       <div className="relative flex justify-center ">
         <div>

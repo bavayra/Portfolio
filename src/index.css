@@ -91,6 +91,8 @@
   --section-div-bot-h: clamp(80px, calc(23.3vh - 37px), 164px);
   --section-divider-bot-top: clamp(160px, calc(24vh + 38px), 248px);
   --section-div-top-top: 16px;
+
+  --contacts-div-bot-top: 52px;
 }
 
 @media (min-width: 360px) and (max-width: 375px) {
@@ -187,6 +189,16 @@
     --section-div-top-h: 130px;
     --section-div-bot-h: 184px;
     --section-divider-bot-top: 280px;
+
+    --block-div-sm-h: 2px;
+    --block-div-md-h: 280px;
+    --block-div-lg-h: 320px;
+    --block-div-xl-h: 380px;
+    --block-div-2xl-h: clamp(350px, 84.95vw, 460px);
+
+    --block-div-top: 130px;
+
+    --contacts-div-bot-top: 76px;
   }
 }
 
