@@ -93,6 +93,8 @@
   --section-div-top-top: 16px;
 
   --contacts-div-bot-top: 52px;
+
+  --h1-size: clamp(48px, calc(20vw - 24px), 72px);
 }
 
 @media (min-width: 360px) and (max-width: 375px) {

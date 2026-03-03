@@ -19,7 +19,7 @@ const Hero = () => {
         <p className="text-base phone-sm:text-xl text-grey-2 min-[390px]:text-2xl phone-lg:text-3xl col-start-1 row-start-1 pl-3 ">
           2026
         </p>
-        <h1 className="text-5xl phone-sm:text-6xl font-semibold text-grey-2 col-start-1  tablet-sm:text-8xl col-span-3 row-start-2 pl-3 phone-lg:text-7xl min-[375px]:pl-1">
+        <h1 className=" text-[length:var(--h1-size)] font-semibold text-grey-2 col-start-1  tablet-sm:text-8xl col-span-3 row-start-2 pl-3 min-[375px]:pl-1">
           Portfolio
         </h1>
         <p className=" text-accent-red  phone-sm:text-2xl tablet-md:pr-30 phone-md:text-3xl tablet-sm:text-4xl font-bold tracking-wider text-base col-start-3 min-[375px]:pr-10 row-start-3 pr-8">
