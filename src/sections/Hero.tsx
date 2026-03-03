@@ -11,14 +11,14 @@ const Hero = () => {
       className="py-8 app-fullscreen relative overflow-hidden "
     >
       <Divider
-        widthPx={2}
+        widthPx="var(--hero-div-w)"
         heightPx="var(--hero-div-h)"
         leftPx={0}
         color="grey-2"
-        topPx={"var(--hero-div-top)"}
-        className="ml-8 min-[390px]:ml-10 min-[428px]:ml-12 phone-lg:ml-10"
+        topPx="var(--hero-div-top)"
+        className="ml-8 min-[390px]:ml-10 min-[428px]:ml-12 tablet-sm:ml-6 phone-lg:ml-10"
       />
-      <div className="grid grid-cols-1fr phone-md:ml-4 phone-lg:mt-10 grid-rows-1fr">
+      <div className="grid grid-cols-1fr phone-md:ml-4 phone-lg:mt-10 tablet-sm:mt-26 grid-rows-1fr">
         <p className="text-base phone-sm:text-xl text-grey-2 min-[390px]:text-2xl phone-lg:text-3xl col-start-1 row-start-1 pl-3 ">
           2026
         </p>
@@ -29,20 +29,6 @@ const Hero = () => {
           ALIX BELL
         </p>
       </div>
-
-      {/* <Circle
-        className="circle-drop"
-        sizes={{ mobile: 0.6, tablet: 0.8, desktop: 1.2 }}
-        topRem={10}
-        rightRem={1.35}
-      />
-      <Circle
-        className="circle-drop"
-        sizes={{ mobile: 0.6, tablet: 0.8, desktop: 1.2 }}
-        topRem={10}
-        rightRem={3.2}
-        style={{ animationDelay: "0.75s" }}
-      />*/}
 
       <DotPattern />
     </section>

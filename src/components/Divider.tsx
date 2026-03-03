@@ -1,12 +1,14 @@
 import React from "react";
 
+type CssLength = number | string;
+
 interface DividerProps {
-  widthPx: 2 | 3 | number;
-  heightPx: number;
+  widthPx: 2 | 3 | number | string;
+  heightPx: CssLength;
   color: "grey-3" | "grey-2";
-  topPx?: number;
-  bottomPx?: number;
-  leftPx?: number;
+  topPx?: CssLength;
+  bottomPx?: CssLength;
+  leftPx?: CssLength;
   className?: string;
 }
 
@@ -24,13 +26,18 @@ export const Divider: React.FC<DividerProps> = ({
     "grey-2": "var(--color-grey-2)",
   };
 
+  const toCssLength = (value: CssLength | undefined) => {
+    if (value === undefined) return undefined;
+    return typeof value === "number" ? `${value}px` : value;
+  };
+
   const style: React.CSSProperties = {
-    width: `${widthPx}px`,
-    height: `${heightPx}px`,
+    width: toCssLength(widthPx),
+    height: toCssLength(heightPx),
     backgroundColor: colorMap[color],
-    top: topPx !== undefined ? `${topPx}px` : undefined,
-    bottom: bottomPx !== undefined ? `${bottomPx}px` : undefined,
-    left: `${leftPx}px`,
+    top: toCssLength(topPx),
+    bottom: toCssLength(bottomPx),
+    left: toCssLength(leftPx ?? 0),
   };
 
   return (

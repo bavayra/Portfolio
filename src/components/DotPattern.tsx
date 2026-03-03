@@ -1,6 +1,6 @@
 const DotPattern = () => {
   return (
-    <div className="absolute bottom-0 right-0 w-full pl-4 tablet-sm:-bottom-22 tablet-sm:mb-6">
+    <div className="absolute bottom-0 right-0 w-full pl-4 tablet-sm:-bottom-28 tablet-sm:mb-6">
       <svg
         width="100%"
         height="100%"
