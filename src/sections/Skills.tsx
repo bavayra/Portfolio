@@ -22,7 +22,7 @@ const Skills = () => {
         color="grey-2"
         topPx="var(--block-div-top)"
       />
-      <p className="text-text phone-sm:text-xl">02</p>
+      <p className="text-text phone-sm:text-xl tablet-sm:text-2xl ">02</p>
       <h2 className="text-2xl phone-lg:text-4xl text-grey-2 phone-sm:text-3xl font-medium">
         HER SKILLS
       </h2>

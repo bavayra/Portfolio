@@ -11,12 +11,12 @@ const About = () => {
         color="grey-2"
         topPx="var(--block-div-top)"
       />
-      <p className="text-text phone-sm:text-xl">01</p>
+      <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">01</p>
       <h2 className="text-2xl text-grey-2 phone-sm:text-3xl phone-lg:text-4xl font-medium">
         WHO IS SHE
       </h2>
 
-      <p className="mt-2 text-xs phone-lg:max-w-80 phone-md:text-base phone-lg:pl-2 phone-md:max-w-76 phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 text-xs phone-lg:max-w-80 phone-md:text-base tablet-sm:text-lg tablet-sm:max-w-92 phone-lg:pl-2 phone-md:max-w-76 phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,
