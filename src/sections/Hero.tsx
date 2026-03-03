@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="py-8 app-fullscreen relative overflow-hidden "
+      className="py-8 app-fullscreen relative  overflow-hidden"
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -16,9 +16,9 @@ const Hero = () => {
         leftPx={0}
         color="grey-2"
         topPx="var(--hero-div-top)"
-        className="ml-8 min-[390px]:ml-10 min-[428px]:ml-12 tablet-sm:ml-6 phone-lg:ml-10"
+        className="ml-8 min-[390px]:ml-10 min-[428px]:ml-12 tablet-sm:ml-12 phone-lg:ml-10"
       />
-      <div className="grid grid-cols-1fr phone-md:ml-4 phone-lg:mt-10 tablet-sm:mt-26 grid-rows-1fr">
+      <div className="grid grid-cols-1fr phone-md:ml-4 phone-lg:mt-10 tablet-sm:mt-26 tablet-sm:ml-8 grid-rows-1fr">
         <p className="text-base phone-sm:text-xl text-grey-2 min-[390px]:text-2xl phone-lg:text-3xl col-start-1 row-start-1 pl-3 ">
           2026
         </p>
