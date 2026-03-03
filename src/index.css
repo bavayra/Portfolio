@@ -17,6 +17,7 @@
   --breakpoint-phone-sm: 360px;
   --breakpoint-phone-md: 412px;
   --breakpoint-phone-lg: 480px;
+  --breakpoint-tablet-sm: 600px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -83,7 +84,6 @@
 :root {
   --vh: 1vh;
 
-  /* 320px - 480px devices */
   --hero-div-top: clamp(110px, calc(9.44vh + 62.8px), 144px);
 
   --section-div-bot-h: clamp(80px, calc(23.3vh - 37px), 164px);
