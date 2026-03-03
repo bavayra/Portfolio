@@ -3,7 +3,7 @@ import GitHubLink from "../components/GitHubLink";
 
 export const Portfolio = () => {
   return (
-    <section className="relative h-auto pt-8 pb-16 ml-3">
+    <section className="relative h-auto pt-8 pb-16 ml-3 tablet-sm:ml-12">
       <Divider
         widthPx={2}
         heightPx="var(--block-div-sm-h)"

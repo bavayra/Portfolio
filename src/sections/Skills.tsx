@@ -14,7 +14,7 @@ const Skills = () => {
     { percent: 55, label: "ReactJS" },
   ];
   return (
-    <section className="relative py-8 ml-3">
+    <section className="relative py-8 ml-3 tablet-sm:ml-12">
       <Divider
         widthPx={2}
         heightPx="var(--block-div-2xl-h)"

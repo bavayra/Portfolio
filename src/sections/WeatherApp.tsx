@@ -3,7 +3,10 @@ import GitHubLink from "../components/GitHubLink";
 
 export const WeatherApp = () => {
   return (
-    <section id="projects" className="relative h-auto py-8 ml-3">
+    <section
+      id="projects"
+      className="relative h-auto py-8 ml-3 tablet-sm:ml-12"
+    >
       <Divider
         widthPx={2}
         heightPx="var(--block-div-lg-h)"
