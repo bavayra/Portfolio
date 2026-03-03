@@ -6,7 +6,10 @@ import { Divider } from "../components/Divider";
 
 const Hero = () => {
   return (
-    <section id="hero" className="py-8 app-fullscreen">
+    <section
+      id="hero"
+      className="py-8 app-fullscreen relative overflow-hidden "
+    >
       <Divider
         widthPx={2}
         heightPx="var(--hero-div-h)"
@@ -19,10 +22,10 @@ const Hero = () => {
         <p className="text-base phone-sm:text-xl text-grey-2 min-[390px]:text-2xl phone-lg:text-3xl col-start-1 row-start-1 pl-3 ">
           2026
         </p>
-        <h1 className="text-5xl phone-sm:text-6xl font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-3 phone-lg:text-7xl min-[375px]:pl-1">
+        <h1 className="text-5xl phone-sm:text-6xl font-semibold text-grey-2 col-start-1  tablet-sm:text-8xl col-span-3 row-start-2 pl-3 phone-lg:text-7xl min-[375px]:pl-1">
           Portfolio
         </h1>
-        <p className=" text-accent-red phone-sm:text-2xl phone-md:text-3xl font-bold tracking-wider text-base col-start-3 min-[375px]:pr-10 row-start-3 pr-8">
+        <p className=" text-accent-red phone-sm:text-2xl phone-md:text-3xl tablet-sm:text-4xl font-bold tracking-wider text-base col-start-3 min-[375px]:pr-10 row-start-3 pr-8">
           ALIX BELL
         </p>
       </div>
@@ -40,6 +43,7 @@ const Hero = () => {
         rightRem={3.2}
         style={{ animationDelay: "0.75s" }}
       />*/}
+
       <DotPattern />
     </section>
   );
