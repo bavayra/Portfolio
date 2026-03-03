@@ -26,18 +26,18 @@ const Skills = () => {
       <h2 className="text-2xl phone-lg:text-4xl text-grey-2 phone-sm:text-3xl font-medium">
         HER SKILLS
       </h2>
-      <div className="grid grid-cols-3 gap-3 mt-4 phone-sm:mt-8 justify-items-center phone-md:gap-x-12 gap-x-0 w-3xs phone-sm:gap-y-6 mx-auto">
+      <div className="grid grid-cols-3 gap-3 mt-4 tablet-sm:mt-10 phone-sm:mt-8 justify-items-center phone-md:gap-x-12 tablet-sm:gap-y-12 gap-x-0 w-3xs phone-sm:gap-y-6 tablet-sm:w-sm mx-auto">
         {skills.map(({ percent, label }) => (
           <div
             key={label}
-            className="flex flex-col items-center gap-1 phone-sm:gap-3"
+            className="flex flex-col items-center gap-1 tablet-sm:gap-5 phone-sm:gap-3"
           >
             <CircleStatic
               percent={percent}
               ariaLabel={label}
-              className="phone-sm:scale-120 phone-sm:[--skill-percent-size:.8rem]"
+              className="phone-sm:scale-120 tablet-sm:scale-150 phone-sm:[--skill-percent-size:.8rem]"
             />
-            <span className="text-[0.65rem] text-text phone-sm:text-xs phone-lg:text-sm">
+            <span className="text-[0.65rem] text-text phone-sm:text-xs tablet-sm:text-base phone-lg:text-sm">
               {label}
             </span>
           </div>
