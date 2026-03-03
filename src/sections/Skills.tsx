@@ -23,7 +23,7 @@ const Skills = () => {
         topPx="var(--block-div-top)"
       />
       <p className="text-text phone-sm:text-xl tablet-sm:text-2xl ">02</p>
-      <h2 className="text-2xl phone-lg:text-4xl text-grey-2 phone-sm:text-3xl font-medium">
+      <h2 className="text-2xl tablet-md:my-2 phone-lg:text-4xl text-grey-2 tablet-md:text-5xl phone-sm:text-3xl font-medium">
         HER SKILLS
       </h2>
       <div className="grid grid-cols-3 gap-3 mt-4 tablet-sm:mt-10 phone-sm:mt-8 justify-items-center phone-md:gap-x-12 tablet-sm:gap-y-12 gap-x-0 w-3xs phone-sm:gap-y-6 tablet-sm:w-sm mx-auto">
