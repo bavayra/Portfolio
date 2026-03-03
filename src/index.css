@@ -95,6 +95,7 @@
   --contacts-div-bot-top: 52px;
 
   --h1-size: clamp(48px, calc(20vw - 24px), 72px);
+  --year-size: clamp(16px, calc(12vw - 27.2px), 30px);
 }
 
 @media (min-width: 360px) and (max-width: 375px) {
