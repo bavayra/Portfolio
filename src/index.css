@@ -179,6 +179,13 @@
   }
 }
 
+@media (min-width: 768px) {
+  :root {
+    --hero-div-w: 3px;
+    --hero-div-h: 148px;
+  }
+}
+
 .app-fullscreen {
   min-height: calc(var(--vh) * 100); /* JS fallback */
   min-height: 100dvh;
