@@ -94,7 +94,7 @@ const ContactSection = () => {
   return (
     <section
       id="contacts"
-      className="relative z-10 mt-20 ml-3 h-auto flex pb-8 flex-col items-center "
+      className="relative z-10 mt-20 ml-3 h-auto tablet-sm:ml-12 flex pb-8 flex-col items-center "
     >
       <Divider
         widthPx={2}
@@ -118,7 +118,7 @@ const ContactSection = () => {
           <form
             id="contact-form"
             onSubmit={handleSubmit}
-            className="space-y-2 mt-6 phone-md:w-72"
+            className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88"
           >
             <div>
               <ContactInput
@@ -158,7 +158,7 @@ const ContactSection = () => {
             <div>
               <label
                 htmlFor="input-message"
-                className="text-sm text-grey-3 mb-4 block "
+                className="text-sm text-grey-3 mb-4 phone-md:text-lg  block "
               >
                 Message
               </label>
@@ -213,7 +213,7 @@ const ContactSection = () => {
       </div>
       <SocialLinks
         size="md"
-        className=" grid grid-rows-2 grid-cols-3 gap-y-2 gap-x-4 mt-8"
+        className=" grid grid-rows-2 grid-cols-3 gap-y-2 gap-x-4 mt-8 tablet-sm:gap-x-7 tablet-sm:gap-y-4"
       />
     </section>
   );

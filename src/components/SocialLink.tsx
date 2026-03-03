@@ -43,7 +43,9 @@ const SocialLinks = ({
   const iconClasses = [
     iconColor,
     " w-10 h-10",
-    size === "md" ? "border-none lg:w-6 lg:h-6" : "border-none",
+    size === "md"
+      ? "border-none lg:w-6 lg:h-6 tablet-sm:w-12 tablet-sm:h-12"
+      : "border-none",
     "rounded-full",
   ].join(" ");
 
