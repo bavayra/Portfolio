@@ -22,7 +22,7 @@ const Hero = () => {
         <h1 className=" text-[length:var(--h1-size)] font-semibold text-grey-2 col-start-1  tablet-sm:text-8xl col-span-3 row-start-2 pl-3 min-[375px]:pl-1">
           Portfolio
         </h1>
-        <p className=" text-accent-red  phone-sm:text-2xl tablet-md:pr-30 phone-md:text-3xl tablet-sm:text-4xl font-bold tracking-wider text-base col-start-3 min-[375px]:pr-10 row-start-3 pr-8">
+        <p className="text-[length:var(--name-size)]  text-accent-red tablet-md:pr-30 tablet-sm:text-4xl font-bold tracking-wider col-start-3 min-[375px]:pr-10 row-start-3 pr-8">
           ALIX BELL
         </p>
       </div>
