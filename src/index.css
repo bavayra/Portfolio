@@ -97,6 +97,7 @@
   --h1-size: clamp(48px, calc(20vw - 24px), 72px);
   --year-size: clamp(16px, calc(12vw - 27.2px), 30px);
   --name-size: clamp(18px, calc(10vw - 18px), 30px);
+  --section-title-size: clamp(24px, calc(10vw - 12px), 36px);
 }
 
 @media (min-width: 360px) and (max-width: 375px) {

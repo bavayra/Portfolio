@@ -62,7 +62,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
         <h2
           ref={ref}
-          className={`font-extrabold phone-md:text-4xl tablet-md:text-6xl tablet-sm:text-5xl phone-sm:text-3xl min-[390px]:text-3xl tracking-[0.2em] ${titleColor} text-2xl`}
+          className={`font-extrabold text-[length:var(--section-title-size)] tablet-md:text-6xl tablet-sm:text-5xl tracking-[0.2em] ${titleColor} `}
         >
           {title}
         </h2>
