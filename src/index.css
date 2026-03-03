@@ -183,6 +183,10 @@
   :root {
     --hero-div-w: 3px;
     --hero-div-h: 148px;
+
+    --section-div-top-h: 130px;
+    --section-div-bot-h: 184px;
+    --section-divider-bot-top: 280px;
   }
 }
 

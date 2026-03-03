@@ -27,7 +27,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   return (
     <div className="section-vh-50 flex flex-col phone-md:pb-10 justify-center relative ml-3 tablet-sm:ml-12">
       <Divider
-        widthPx={2}
+        widthPx="var(--hero-div-w)"
         heightPx="var(--section-div-top-h)"
         leftPx={0}
         color="grey-2"
@@ -36,7 +36,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
       <div className="mb-4">
         <div className="flex items-center gap-2">
           <span
-            className={`text-base phone-sm:text-xl min-[390px]:text-2xl tracking-wide font-medium ${partColor}`}
+            className={`text-base phone-sm:text-xl tablet-md:text-3xl min-[390px]:text-2xl tracking-wide font-medium ${partColor}`}
           >
             {partLabel}
           </span>
@@ -50,7 +50,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
                   sizes={{
                     mobile: 1,
                     mobileLg: 1.6,
-                    tablet: 0.8,
+                    tablet: 1.8,
                     desktop: 1.2,
                   }}
                   style={{ animationDelay: `${index * 0.6}s` }}
@@ -62,14 +62,14 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
         <h2
           ref={ref}
-          className={`font-extrabold phone-md:text-4xl tablet-sm:text-5xl phone-sm:text-3xl min-[390px]:text-3xl tracking-[0.2em] ${titleColor} text-2xl`}
+          className={`font-extrabold phone-md:text-4xl tablet-md:text-6xl tablet-sm:text-5xl phone-sm:text-3xl min-[390px]:text-3xl tracking-[0.2em] ${titleColor} text-2xl`}
         >
           {title}
         </h2>
       </div>
 
       <Divider
-        widthPx={2}
+        widthPx="var(--hero-div-w)"
         heightPx="var(--section-div-bot-h)"
         leftPx={0}
         color="grey-2"
