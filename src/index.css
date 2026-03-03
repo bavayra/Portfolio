@@ -18,6 +18,7 @@
   --breakpoint-phone-md: 412px;
   --breakpoint-phone-lg: 480px;
   --breakpoint-tablet-sm: 600px;
+  --breakpoint-tablet-md: 768px;
 }
 
 @media (prefers-color-scheme: dark) {
