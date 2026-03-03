@@ -155,7 +155,7 @@
     --block-div-md-h: 320px;
     --block-div-lg-h: 372px;
     --block-div-xl-h: 380px;
-    --block-div-2xl-h: 360px;
+    --block-div-2xl-h: clamp(350px, 84.95vw, 460px);
   }
 }
 
