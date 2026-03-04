@@ -101,7 +101,7 @@
   --section-title-size: clamp(24px, calc(10vw - 12px), 36px);
 }
 
-@media (min-width: 360px) and (max-width: 600px) {
+@media (min-width: 360px) and (max-width: 599px) {
   :root {
     --block-div-sm-h: clamp(260px, calc(5vw + 242px), 288px);
     --block-div-md-h: clamp(290px, calc(5vw + 272px), 320px);
@@ -166,27 +166,17 @@
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px) and (max-width: 820px) {
   :root {
-    --hero-div-top: 28px;
-    --hero-div-h: 100px;
-
-    --section-div-top-h: 112px;
-    --section-div-top-top: 28px;
-    --section-div-bot-h: 180px;
-
-    --block-div-top: 114px;
-  }
-}
-
-@media (min-width: 768px) {
-  :root {
+    --hero-div-h: clamp(110px, calc(41vh - 259px), 200px);
     --hero-div-w: 3px;
-    --hero-div-h: 148px;
+    --hero-div-top: 28px;
 
-    --section-div-top-h: 130px;
-    --section-div-bot-h: 184px;
-    --section-divider-bot-top: 280px;
+    --section-div-top-h: clamp(112px, calc(24vh - 104px), 164px);
+    --section-div-top-top: 28px;
+
+    --section-div-bot-h: clamp(180px, calc(16vh + 36px), 216px);
+    --section-div-bot-top: clamp(252px, calc(31vh - 27px), 320px);
 
     --block-div-sm-h: 244px;
     --block-div-md-h: 280px;
@@ -194,8 +184,7 @@
     --block-div-xl-h: 380px;
     --block-div-2xl-h: clamp(350px, 84.95vw, 460px);
 
-    --block-div-top: 130px;
-
+    --block-div-top: clamp(114px, calc(17.5vh - 43.5px), 128px);
     --contacts-div-bot-top: 76px;
   }
 }
