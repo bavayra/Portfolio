@@ -7,7 +7,8 @@ export default {
       /*default-320px*/
       "phone-sm": "360px",
       "phone-md": "412px",
-      sm: "640px",
+      "phone-lg": "480px",
+      "tablet-sm": "600px",
       "tablet-md": "768px",
       "tablet-lg": "820px",
       lg: "1024px",
