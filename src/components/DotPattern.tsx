@@ -1,11 +1,11 @@
 const DotPattern = () => {
   return (
-    <div className="absolute bottom-0 right-0 w-full pl-4 tablet-sm:-bottom-20 tablet-md:-bottom-72">
+    <div className="absolute bottom-0 inset-x-0 w-screen left-1/2 -translate-x-1/2 tablet-sm:-bottom-20 tablet-md:-bottom-72">
       <svg
         width="100%"
         height="100%"
-        viewBox="0 0 200 200"
-        className="tablet-sm:scale-140 tablet-sm:origin-bottom-center tablet-sm:pl-6"
+        viewBox="0 0 180 180"
+        className="tablet-sm:scale-140 w-full h-full pl-5 block tablet-sm:origin-bottom-center "
       >
         <defs>
           <pattern

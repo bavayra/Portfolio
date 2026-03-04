@@ -19,7 +19,7 @@ function App() {
     <div>
       <Header />
       <main className="bg-bg">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto ">
           <Hero />
         </div>
         <section className="bg-(--color-section-title-bg)">
