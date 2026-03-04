@@ -9,7 +9,7 @@ const Hero = () => {
     <section id="hero" className="py-8 app-fullscreen relative overflow-hidden">
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={164}
+        heightPx={112}
         leftPx={0}
         color="grey-2"
         topPx="var(--hero-div-top)"
@@ -19,7 +19,7 @@ const Hero = () => {
         <p className=" text-2xl text-grey-2 tablet-lg:text-4xl col-start-1 row-start-1 pl-3 ">
           2026
         </p>
-        <h1 className=" text-[length:var(--h1-size)] font-semibold text-grey-2 tablet-lg:text-9xl col-start-1 tablet-sm:text-8xl col-span-3 row-start-2 pl-3 min-[375px]:pl-1">
+        <h1 className=" text-[length:var(--h1-size)] font-semibold text-grey-2 tablet-lg:text-9xl col-start-1 tablet-sm:text-8xl col-span-3 row-start-2 pl-3 ">
           Portfolio
         </h1>
         <p className="text-2xl tablet-lg:text-5xl tablet-lg:pr-20  text-accent-red tablet-md:pr-30 tablet-sm:text-4xl font-bold tracking-wider col-start-3 min-[375px]:pr-10 row-start-3 pr-8">
