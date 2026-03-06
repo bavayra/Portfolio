@@ -179,6 +179,8 @@
     --hero-div-top: 196px;
 
     --section-top-div-height: clamp(118px, calc(20vh - 54px), 126px);
+
+    --section-bot-div-top: 236px;
   }
 }
 
@@ -198,7 +200,7 @@
 
 @media (min-width: 600px) and (max-width: 820px) {
   :root {
-    --hero-div-h: clamp(110px, calc(41vh - 259px), 200px);
+    --hero-div-height: clamp(148px, calc(23.18vh - 60.62px), 200px);
     --hero-div-w: 3px;
     --hero-div-top: 28px;
 
@@ -213,8 +215,8 @@
     --block-div-lg-h: 320px;
     --block-div-xl-h: 380px;
     --block-div-2xl-h: clamp(350px, 84.95vw, 460px);
-
     --block-div-top: clamp(114px, calc(17.5vh - 43.5px), 128px);
+
     --contacts-div-bot-top: 76px;
   }
 }
