@@ -102,15 +102,62 @@
   --section-title-size: clamp(24px, calc(10vw - 12px), 36px);
 }
 
+@media (min-width: 360px) and (max-width: 375px) {
+  :root {
+    --hero-div-height: clamp(112px, calc(104vh - 512px), 164px);
+
+    --section-top-div-height: clamp(84px, calc(28vh - 84px), 98px);
+
+    --section-bot-div-height: clamp(112px, calc(16vh + 16px), 120px);
+    --section-bot-div-top: clamp(176px, calc(24vh + 36px), 188px);
+  }
+}
+
 @media (min-width: 360px) and (max-width: 390px) {
   :root {
     --hero-div-top: clamp(120px, calc(36.92vh - 119.98px), 168px);
   }
 }
 
+@media (min-width: 360px) and (max-width: 411px) {
+  :root {
+    --block-div-top: 104px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 390px) {
+  :root {
+    --section-top-div-height: clamp(84px, calc(22.222vh - 49.32px), 124px);
+
+    --section-bot-div-top: clamp(176px, calc(27.77vh + 9.38px), 226px);
+  }
+}
+
+@media (min-width: 376px) and (max-width: 428px) {
+  :root {
+    --hero-div-height: clamp(112px, calc(60vh - 248px), 280px);
+  }
+}
+
 @media (min-width: 391px) and (max-width: 412px) {
   :root {
     --hero-div-top: clamp(164px, calc(5.714vh + 119.462px), 168px);
+
+    --section-bot-div-top: 226px;
+  }
+}
+
+@media (min-width: 391px) and (max-width: 480px) {
+  :root {
+    --section-top-div-height: clamp(118px, calc(7.5vh - 59.5px), 124px);
+  }
+}
+
+@media (min-width: 412px) and (max-width: 480px) {
+  :root {
+    --block-div-top: 110px;
+
+    --section-bot-div-top: clamp(226px, calc(100vh - 624px), 234px);
   }
 }
 
@@ -120,29 +167,6 @@
   }
 }
 
-@media (min-width: 360px) and (max-width: 375px) {
-  :root {
-    --hero-div-height: clamp(112px, calc(104vh - 512px), 164px);
-
-    --section-top-div-height: clamp(84px, calc(28vh - 84px), 98px);
-    --section-bot-div-height: clamp(112px, calc(16vh + 16px), 120px);
-  }
-}
-@media (min-width: 376px) and (max-width: 428px) {
-  :root {
-    --hero-div-height: clamp(112px, calc(60vh - 248px), 280px);
-  }
-}
-@media (min-width: 376px) and (max-width: 390px) {
-  :root {
-    --section-top-div-height: clamp(84px, calc(22.222vh - 49.32px), 124px);
-  }
-}
-@media (min-width: 391px) and (max-width: 480px) {
-  :root {
-    --section-top-div-height: clamp(118px, calc(7.5vh - 59.5px), 124px);
-  }
-}
 @media (min-width: 429px) and (max-width: 480px) {
   :root {
     --hero-div-height: clamp(180px, calc(500vh - 4120px), 280px);
@@ -167,19 +191,6 @@
     --block-div-2xl-h: clamp(350px, calc(20vw + 278px), 460px);
 
     --section-top-div-top: 20px;
-    --section-bot-div-top: clamp(188px, calc(24vh + 32px), 248px);
-  }
-}
-
-@media (min-width: 360px) and (max-width: 411px) {
-  :root {
-    --block-div-top: 104px;
-  }
-}
-
-@media (min-width: 412px) and (max-width: 480px) {
-  :root {
-    --block-div-top: 110px;
   }
 }
 
