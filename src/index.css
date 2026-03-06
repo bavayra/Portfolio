@@ -204,8 +204,8 @@
     --hero-div-w: 3px;
     --hero-div-top: 28px;
 
-    --section-top-div-height: clamp(112px, calc(24vh - 104px), 164px);
-    --section-top-div-top: 28px;
+    --section-top-div-height: clamp(126px, calc(19.09vh - 45.81px), 168px);
+    --section-top-div-top: 20px;
 
     --section-bot-div-height: clamp(180px, calc(16vh + 36px), 216px);
     --section-bot-div-top: clamp(252px, calc(31vh - 27px), 320px);
