@@ -157,6 +157,12 @@
   }
 }
 
+@media (min-width: 360px) and (max-width: 480px) {
+  :root {
+    --block-div-2xl-h: 352px;
+  }
+}
+
 @media (min-width: 391px) and (max-width: 480px) {
   :root {
     --section-top-div-height: clamp(118px, calc(7.5vh - 59.5px), 124px);
@@ -208,13 +214,12 @@
   :root {
     --block-div-lg-h: clamp(348px, calc(100vh - 512px), 388px);
     --block-div-xl-h: clamp(368px, calc(80vh - 320px), 400px);
+    --block-div-2xl-h: clamp(352px, calc(240vh - 1712px), 448px);
   }
 }
 
 @media (min-width: 360px) and (max-width: 599px) {
   :root {
-    --block-div-2xl-h: clamp(350px, calc(20vw + 278px), 460px);
-
     --section-top-div-top: 20px;
   }
 }
@@ -227,6 +232,12 @@
     --block-div-md-h: clamp(280px, calc(-30vh + 10px), 304px);
     --block-div-lg-h: clamp(328px, calc(-75vh - 297px), 388px);
     --block-div-xl-h: clamp(340px, calc(-75vh - 335px), 400px);
+  }
+}
+
+@media (min-width: 601px) {
+  :root {
+    --block-div-2xl-h: 448px;
   }
 }
 
@@ -251,7 +262,6 @@
     --section-bot-div-height: clamp(180px, calc(16vh + 36px), 216px);
     --section-bot-div-top: clamp(252px, calc(31vh - 27px), 320px);
 
-    --block-div-2xl-h: clamp(350px, 84.95vw, 460px);
     --block-div-top: clamp(114px, calc(17.5vh - 43.5px), 128px);
 
     --contacts-div-bot-top: 76px;
