@@ -120,10 +120,11 @@
     --block-div-sm-h: 248px;
     --block-div-md-h: 272px;
     --block-div-lg-h: 312px;
+    --block-div-xl-h: 340px;
   }
 }
 
-@media (min-width: 360px) and (max-width: 411px) {
+@media (min-width: 360px) and (max-width: 412px) {
   :root {
     --block-div-top: 104px;
   }
@@ -152,6 +153,7 @@
     --block-div-sm-h: clamp(248px, calc(34.28vh - 19.384px), 272px);
     --block-div-md-h: clamp(276px, calc(40vh - 36px), 304px);
     --block-div-lg-h: clamp(312px, calc(51.42vh - 89.076px), 348px);
+    --block-div-xl-h: clamp(340px, calc(40vh + 28px), 368px);
   }
 }
 
@@ -168,6 +170,7 @@
     --section-bot-div-top: clamp(226px, calc(100vh - 624px), 234px);
 
     --block-div-lg-h: 348px;
+    --block-div-xl-h: 368px;
   }
 }
 
@@ -204,12 +207,12 @@
 @media (min-width: 481px) and (max-width: 600px) {
   :root {
     --block-div-lg-h: clamp(348px, calc(100vh - 512px), 388px);
+    --block-div-xl-h: clamp(368px, calc(80vh - 320px), 400px);
   }
 }
 
 @media (min-width: 360px) and (max-width: 599px) {
   :root {
-    --block-div-xl-h: clamp(340px, calc(7vw + 88px), 380px);
     --block-div-2xl-h: clamp(350px, calc(20vw + 278px), 460px);
 
     --section-top-div-top: 20px;
@@ -223,6 +226,7 @@
     --block-div-sm-h: clamp(244px, calc(-35vh - 71px), 272px);
     --block-div-md-h: clamp(280px, calc(-30vh + 10px), 304px);
     --block-div-lg-h: clamp(328px, calc(-75vh - 297px), 388px);
+    --block-div-xl-h: clamp(340px, calc(-75vh - 335px), 400px);
   }
 }
 
@@ -230,6 +234,8 @@
   :root {
     --block-div-sm-h: 244px;
     --block-div-md-h: 280px;
+    --block-div-lg-h: 328px;
+    --block-div-xl-h: 340px;
   }
 }
 
@@ -245,7 +251,6 @@
     --section-bot-div-height: clamp(180px, calc(16vh + 36px), 216px);
     --section-bot-div-top: clamp(252px, calc(31vh - 27px), 320px);
 
-    --block-div-xl-h: 380px;
     --block-div-2xl-h: clamp(350px, 84.95vw, 460px);
     --block-div-top: clamp(114px, calc(17.5vh - 43.5px), 128px);
 
