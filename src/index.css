@@ -118,6 +118,7 @@
     --hero-div-top: clamp(120px, calc(36.92vh - 119.98px), 168px);
 
     --block-div-sm-h: 248px;
+    --block-div-md-h: 272px;
   }
 }
 
@@ -148,6 +149,7 @@
     --section-bot-div-top: 226px;
 
     --block-div-sm-h: clamp(248px, calc(34.28vh - 19.384px), 272px);
+    --block-div-md-h: clamp(276px, calc(40vh - 36px), 304px);
   }
 }
 
@@ -181,6 +183,7 @@
 @media (min-width: 413px) and (max-width: 600px) {
   :root {
     --block-div-sm-h: 272px;
+    --block-div-md-h: 304px;
   }
 }
 @media (min-width: 481px) {
@@ -196,7 +199,6 @@
 
 @media (min-width: 360px) and (max-width: 599px) {
   :root {
-    --block-div-md-h: clamp(290px, calc(5vw + 272px), 320px);
     --block-div-lg-h: clamp(320px, calc(10vw + 284px), 372px);
     --block-div-xl-h: clamp(340px, calc(7vw + 88px), 380px);
     --block-div-2xl-h: clamp(350px, calc(20vw + 278px), 460px);
@@ -210,12 +212,14 @@
 @media (min-width: 601px) and (max-width: 768px) {
   :root {
     --block-div-sm-h: clamp(244px, calc(-35vh - 71px), 272px);
+    --block-div-md-h: clamp(280px, calc(-30vh + 10px), 304px);
   }
 }
 
 @media (min-width: 769px) {
   :root {
     --block-div-sm-h: 244px;
+    --block-div-md-h: 280px;
   }
 }
 
@@ -231,7 +235,6 @@
     --section-bot-div-height: clamp(180px, calc(16vh + 36px), 216px);
     --section-bot-div-top: clamp(252px, calc(31vh - 27px), 320px);
 
-    --block-div-md-h: clamp(280px, calc(18.18vh + 116.38px), 320px);
     --block-div-lg-h: 320px;
     --block-div-xl-h: 380px;
     --block-div-2xl-h: clamp(350px, 84.95vw, 460px);
