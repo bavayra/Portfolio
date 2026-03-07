@@ -11,7 +11,7 @@ export default {
       "tablet-sm": "600px",
       "tablet-md": "768px",
       "tablet-lg": "820px",
-      lg: "1024px",
+      "desktop-sm": "1024px",
       xl: "1280px",
       "2xl": "1536px",
     },
