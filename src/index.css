@@ -116,6 +116,8 @@
 @media (min-width: 360px) and (max-width: 390px) {
   :root {
     --hero-div-top: clamp(120px, calc(36.92vh - 119.98px), 168px);
+
+    --block-div-sm-h: 248px;
   }
 }
 
@@ -144,6 +146,8 @@
     --hero-div-top: clamp(164px, calc(5.714vh + 119.462px), 168px);
 
     --section-bot-div-top: 226px;
+
+    --block-div-sm-h: clamp(248px, calc(34.28vh - 19.384px), 272px);
   }
 }
 
@@ -173,6 +177,12 @@
     --hero-div-top: clamp(164px, calc(62.75vw - 105.17px), 196px);
   }
 }
+
+@media (min-width: 413px) and (max-width: 600px) {
+  :root {
+    --block-div-sm-h: 272px;
+  }
+}
 @media (min-width: 481px) {
   :root {
     --hero-div-height: clamp(180px, calc(500vh - 4120px), 280px);
@@ -186,7 +196,6 @@
 
 @media (min-width: 360px) and (max-width: 599px) {
   :root {
-    --block-div-sm-h: clamp(260px, calc(5vw + 242px), 288px);
     --block-div-md-h: clamp(290px, calc(5vw + 272px), 320px);
     --block-div-lg-h: clamp(320px, calc(10vw + 284px), 372px);
     --block-div-xl-h: clamp(340px, calc(7vw + 88px), 380px);
@@ -197,6 +206,18 @@
 }
 
 /*600-820PX: TABLETS*/
+
+@media (min-width: 601px) and (max-width: 768px) {
+  :root {
+    --block-div-sm-h: clamp(244px, calc(-35vh - 71px), 272px);
+  }
+}
+
+@media (min-width: 769px) {
+  :root {
+    --block-div-sm-h: 244px;
+  }
+}
 
 @media (min-width: 600px) and (max-width: 820px) {
   :root {
@@ -210,8 +231,7 @@
     --section-bot-div-height: clamp(180px, calc(16vh + 36px), 216px);
     --section-bot-div-top: clamp(252px, calc(31vh - 27px), 320px);
 
-    --block-div-sm-h: 244px;
-    --block-div-md-h: 280px;
+    --block-div-md-h: clamp(280px, calc(18.18vh + 116.38px), 320px);
     --block-div-lg-h: 320px;
     --block-div-xl-h: 380px;
     --block-div-2xl-h: clamp(350px, 84.95vw, 460px);
