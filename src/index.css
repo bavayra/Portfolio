@@ -282,6 +282,13 @@
   min-height: 50dvh;
 }
 
+@media (min-width: 1024px) {
+  .section-vh-50 {
+    min-height: calc(var(--vh, 1vh) * 70);
+    min-height: 70dvh;
+  }
+}
+
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -351,3 +358,5 @@ body,
     transform: translateY(0);
   }
 }
+
+/*text-[length:var(--name-year-size)] */
