@@ -36,6 +36,10 @@
   }
 }
 
+#dot-pattern-rect {
+  fill: url(#dot-pattern);
+}
+
 @font-face {
   font-display: swap;
   font-family: "Raleway";
@@ -257,6 +261,13 @@
     --block-div-top: clamp(114px, calc(17.5vh - 43.5px), 128px);
 
     --contacts-div-bot-top: 76px;
+  }
+}
+
+/*DESKTOPS*/
+@media (min-width: 1024px) {
+  #dot-pattern-rect {
+    fill: url(#dot-pattern-lg);
   }
 }
 
