@@ -33,8 +33,11 @@ const TextInput = ({
     .trim()
     .replace(/\s+/g, " ");
   return (
-    <div>
-      <label htmlFor={id} className="text-sm text-grey-3 ">
+    <div className="desktop-xl:mb-6">
+      <label
+        htmlFor={id}
+        className="text-sm desktop-xl:text-xl phone-md:text-lg  text-grey-3 "
+      >
         {label}
       </label>
 
