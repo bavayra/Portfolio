@@ -113,7 +113,7 @@ const ContactSection = () => {
         color="grey-2"
         topPx="var(--contacts-div-bot-top)"
       />
-      <div className="flex flex-col desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-x-20">
+      <div className="flex flex-col desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-x-20 xl:gap-x-48">
         <div className="relative flex justify-center ">
           <div>
             <form
