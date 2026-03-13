@@ -36,7 +36,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
       <div className="mb-4">
         <div className="flex items-center gap-2">
           <span
-            className={`text-base phone-sm:text-xl tablet-md:text-3xl min-[390px]:text-2xl tracking-wide font-medium ${partColor}`}
+            className={`text-base phone-sm:text-xl desktop-lg:text-4xl tablet-md:text-3xl min-[390px]:text-2xl tracking-wide font-medium ${partColor}`}
           >
             {partLabel}
           </span>
@@ -62,7 +62,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
         <h2
           ref={ref}
-          className={`font-extrabold text-[length:var(--section-title-size)] desktop-sm:text-7xl tablet-md:text-6xl tablet-sm:text-5xl tracking-[0.2em] ${titleColor} `}
+          className={`font-extrabold text-[length:var(--section-title-size)] desktop-sm:text-7xl desktop-lg:text-8xl tablet-md:text-6xl tablet-sm:text-5xl tracking-[0.2em] ${titleColor} `}
         >
           {title}
         </h2>
