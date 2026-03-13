@@ -275,6 +275,10 @@
     --hero-div-2-height: 312px;
     --hero-div-2-top: 360px;
     --hero-div-w: 3px;
+
+    --section-top-div-height: 140px;
+    --section-bot-div-top: 280px;
+    --section-bot-div-height: 188px;
   }
 }
 

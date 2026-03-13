@@ -25,13 +25,13 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   });
 
   return (
-    <div className="section-vh-50 flex flex-col phone-md:pb-10 justify-center relative ml-3 tablet-sm:ml-12">
+    <div className="section-vh-50 flex flex-col phone-md:pb-10 justify-center relative ml-3 desktop-sm:ml-10 tablet-sm:ml-12">
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx="var(--section-div-top-h)"
+        heightPx="var(--section-top-div-height)"
         leftPx={0}
         color="grey-2"
-        topPx="var(--section-div-top-top)"
+        topPx="var(--section-top-div-top)"
       />
       <div className="mb-4">
         <div className="flex items-center gap-2">
@@ -62,7 +62,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
         <h2
           ref={ref}
-          className={`font-extrabold text-[length:var(--section-title-size)] tablet-md:text-6xl tablet-sm:text-5xl tracking-[0.2em] ${titleColor} `}
+          className={`font-extrabold text-[length:var(--section-title-size)] desktop-sm:text-7xl tablet-md:text-6xl tablet-sm:text-5xl tracking-[0.2em] ${titleColor} `}
         >
           {title}
         </h2>
@@ -70,10 +70,10 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx="var(--section-div-bot-h)"
+        heightPx="var(--section-bot-div-height)"
         leftPx={0}
         color="grey-2"
-        topPx={"var(--section-divider-bot-top)"}
+        topPx="var(--section-bot-div-top)"
       />
     </div>
   );
