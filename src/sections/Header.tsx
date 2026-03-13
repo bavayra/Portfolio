@@ -21,15 +21,15 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 text-xs phone-sm:text-base tablet-sm:text-xl text-text font-medium  py-2 left-0 w-full z-50 transition-transform duration-300 ${
+      className={`fixed top-0 text-xs  phone-sm:text-base tablet-sm:text-xl text-text font-medium  left-0 w-full z-50 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
       <div
         className={` flex items-center justify-end w-full ${visible ? "bg-[var(--color-bg)/90] shadow-sm backdrop-blur" : "bg-transparent"} `}
       >
-        <nav className="pr-4 phone-lg:py-2">
-          <ul className="flex gap-0">
+        <nav className="pr-4 phone-lg:py-2 desktop-sm:mx-auto">
+          <ul className="flex gap-0 desktop-sm:gap-x-4 ">
             <li className="hover:text-accent-red hover:scale-110 active:scale-95 duration-300 hover:font-semibold">
               <a
                 href="#about"
