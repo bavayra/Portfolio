@@ -2,7 +2,7 @@ import { Divider } from "../components/Divider";
 
 export const Description = () => {
   return (
-    <section className="relative h-[84vh] desktop-sm:h-[70vh] tablet-sm:ml-12 min-[375px]:h-[92vh] tablet-md:h-[60vh] min-[390px]:h-[70vh] phone-md:max-h-[74vh] min-[428px]:h-[68vh] phone-lg:h-[72vh] py-8 ml-3">
+    <section className="relative h-[84vh] desktop-sm:h-[70vh] desktop-lg:h-[60vh] tablet-sm:ml-12 min-[375px]:h-[92vh] tablet-md:h-[60vh] min-[390px]:h-[70vh] phone-md:max-h-[74vh] min-[428px]:h-[68vh] phone-lg:h-[72vh] py-8 ml-3">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-lg-h)"
