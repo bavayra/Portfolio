@@ -29,8 +29,10 @@ function App() {
         </section>
         <Suspense fallback={<div>Loading...</div>}>
           <div className="container mx-auto px-4">
-            <About />
-            <Skills />
+            <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
+              <About />
+              <Skills />
+            </div>
             <Description />
           </div>
           <section className="bg-(--color-section-title-bg)">

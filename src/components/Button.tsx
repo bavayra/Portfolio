@@ -31,7 +31,7 @@ const Button = ({
   };
   const sizeStyles: Record<ButtonSize, string> = {
     small:
-      "px-3 py-2 text-xs phone-sm:text-sm phone-lg:text-base tablet-sm:text-lg ",
+      "px-3 py-2 text-xs phone-sm:text-sm phone-lg:text-base tablet-sm:text-lg desktop-sm:text-base",
     medium: "px-4 py-2 text-base ",
     large: "px-4 py-1 text-lg",
   };
