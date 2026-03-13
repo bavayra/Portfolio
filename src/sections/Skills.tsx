@@ -14,19 +14,22 @@ const Skills = () => {
     { percent: 55, label: "ReactJS" },
   ];
   return (
-    <section className="relative py-8 ml-3 tablet-sm:ml-12">
+    <section className="relative py-8 ml-3 tablet-sm:ml-12 desktop-sm:ml-0">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-2xl-h)"
         leftPx={0}
         color="grey-2"
         topPx="var(--block-div-top)"
+        className="desktop-sm:hidden"
       />
-      <p className="text-text phone-sm:text-xl tablet-sm:text-2xl ">02</p>
-      <h2 className="text-2xl tablet-md:my-2 phone-lg:text-4xl text-grey-2 tablet-md:text-5xl phone-sm:text-3xl font-medium">
+      <p className="text-text desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 phone-sm:text-xl tablet-sm:text-2xl ">
+        02
+      </p>
+      <h2 className="text-2xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 tablet-md:my-2 desktop-sm:text-4xl phone-lg:text-4xl text-grey-2 tablet-md:text-5xl phone-sm:text-3xl font-medium">
         HER SKILLS
       </h2>
-      <div className="grid grid-cols-3 gap-3 mt-4 tablet-sm:mt-10 phone-sm:mt-8 justify-items-center phone-md:gap-x-12 tablet-sm:gap-y-12 gap-x-0 w-3xs phone-sm:gap-y-6 tablet-sm:w-sm mx-auto">
+      <div className="grid grid-cols-3 desktop-sm:gap-x-0 desktop-sm:gap-y-6 gap-3 mt-4 tablet-sm:mt-10 phone-sm:mt-8 justify-items-center phone-md:gap-x-12 tablet-sm:gap-y-12 gap-x-0 w-3xs phone-sm:gap-y-6 tablet-sm:w-sm mx-auto">
         {skills.map(({ percent, label }) => (
           <div
             key={label}
@@ -35,9 +38,9 @@ const Skills = () => {
             <CircleStatic
               percent={percent}
               ariaLabel={label}
-              className="phone-sm:scale-120 tablet-sm:scale-150 phone-sm:[--skill-percent-size:.8rem]"
+              className="phone-sm:scale-120 desktop-sm:scale-130 tablet-sm:scale-150 phone-sm:[--skill-percent-size:.8rem]"
             />
-            <span className="text-[0.65rem] text-text phone-sm:text-xs tablet-sm:text-base phone-lg:text-sm">
+            <span className="text-[0.65rem] desktop-sm:text-sm text-text phone-sm:text-xs tablet-sm:text-base phone-lg:text-sm">
               {label}
             </span>
           </div>
