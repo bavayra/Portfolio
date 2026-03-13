@@ -51,7 +51,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
                     mobile: 1,
                     mobileLg: 1.6,
                     tablet: 1.8,
-                    desktop: 1.2,
+                    desktop: 2,
                   }}
                   style={{ animationDelay: `${index * 0.6}s` }}
                 />
