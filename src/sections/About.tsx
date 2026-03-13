@@ -16,7 +16,7 @@ const About = () => {
         WHO IS SHE
       </h2>
 
-      <p className="mt-2 text-xs desktop-sm:max-w-92 desktop-lg:max-w-100 desktop-lg:text-lg   desktop-sm:text-base tablet-md:max-w-116 phone-lg:max-w-80 phone-md:text-base tablet-sm:text-lg tablet-sm:max-w-92 phone-lg:pl-2 phone-md:max-w-76 phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 text-xs desktop-sm:max-w-92 desktop-xl:max-w-120 desktop-xl:text-lg desktop-sm:text-base tablet-md:max-w-116 phone-lg:max-w-80 phone-md:text-base tablet-sm:text-lg tablet-sm:max-w-92 phone-lg:pl-2 phone-md:max-w-76 phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,

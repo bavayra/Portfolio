@@ -15,7 +15,7 @@ export const Portfolio = () => {
       <h2 className="text-2xl tablet-md:my-2 phone-sm:text-3xl desktop-sm:text-4xl tablet-md:text-5xl phone-lg:text-4xl text-grey-2 font-medium">
         THIS PORTFOLIO <span className="text-accent-red font-bold">:)</span>
       </h2>
-      <p className="mt-2 text-xs desktop-lg:max-w-100 desktop-lg:text-lg phone-lg:pl-2 desktop-sm:max-w-92 desktop-sm:text-base phone-lg:max-w-80 tablet-md:max-w-116 tablet-sm:text-lg tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 text-xs desktop-xl:max-w-120 desktop-xl:text-lg phone-lg:pl-2 desktop-sm:max-w-92 desktop-sm:text-base phone-lg:max-w-80 tablet-md:max-w-116 tablet-sm:text-lg tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         A responsive, performance‑focused personal portfolio showcasing my
         projects, process and measurable improvements. Built with modern tooling
         to demonstrate UI implementation, accessibility and deployment
