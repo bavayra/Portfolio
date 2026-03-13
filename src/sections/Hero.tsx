@@ -19,10 +19,10 @@ const Hero = () => {
         <p className=" text-[length:var(--name-year-size)] text-grey-2 tablet-lg:text-4xl col-start-1 row-start-1 pl-3 ">
           2026
         </p>
-        <h1 className="text-[length:var(--h1-size)] desktop-sm:text-8xl font-semibold text-grey-2 tablet-lg:text-9xl col-start-1 col-span-3 row-start-2 pl-3 ">
+        <h1 className="text-[length:var(--h1-size)] desktop-lg:text-9xl desktop-sm:text-8xl font-semibold text-grey-2 tablet-lg:text-9xl col-start-1 col-span-3 row-start-2 pl-3 ">
           Portfolio
         </h1>
-        <p className="text-[length:var(--name-year-size)] desktop-md:mr-80 desktop-sm:col-start-2 desktop-sm:text-4xl tablet-lg:text-5xl tablet-lg:pr-20  text-accent-red tablet-md:pr-30 font-bold tracking-wider col-start-3 min-[375px]:pr-10 row-start-3 pr-8">
+        <p className="text-[length:var(--name-year-size)] desktop-lg:text-5xl desktop-lg:mr-0 desktop-md:mr-80 desktop-sm:col-start-2 desktop-sm:text-4xl tablet-lg:text-5xl tablet-lg:pr-20  text-accent-red tablet-md:pr-30 font-bold tracking-wider col-start-3 min-[375px]:pr-10 row-start-3 pr-8">
           ALIX BELL
         </p>
       </div>
