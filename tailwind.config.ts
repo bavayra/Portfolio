@@ -14,6 +14,7 @@ export default {
       "desktop-sm": "1024px",
       "desktop-md": "1280px",
       "desktop-lg": "1440px",
+      "desktop-xl": "1728px",
     },
   },
   plugins: [],

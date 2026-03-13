@@ -23,6 +23,7 @@
   --breakpoint-desktop-sm: 1024px;
   --breakpoint-desktop-md: 1280px;
   --breakpoint-desktop-lg: 1440px;
+  --breakpoint-desktop-xl: 1728px;
 }
 
 @media (prefers-color-scheme: dark) {
