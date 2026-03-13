@@ -3,7 +3,7 @@ import GitHubLink from "../components/GitHubLink";
 
 export const DogShelter = () => {
   return (
-    <section className="relative h-auto py-8 ml-3 tablet-sm:ml-12">
+    <section className="relative desktop-lg:ml-10 h-auto py-8 ml-3 tablet-sm:ml-12">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-md-h)"

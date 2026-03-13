@@ -3,7 +3,10 @@ import Button from "../components/Button";
 
 const About = () => {
   return (
-    <section id="about" className="relative py-8 ml-3 tablet-sm:ml-12">
+    <section
+      id="about"
+      className="relative py-8 ml-3 tablet-sm:ml-12 desktop-lg:ml-10"
+    >
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-lg-h)"
