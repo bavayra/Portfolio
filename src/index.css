@@ -289,6 +289,12 @@
   }
 }
 
+@media (min-width: 1280px) {
+  :root {
+    --section-bot-div-top: 288px;
+  }
+}
+
 .app-fullscreen {
   min-height: calc(var(--vh) * 100); /* JS fallback */
   min-height: 100dvh;
