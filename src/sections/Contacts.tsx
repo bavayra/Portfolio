@@ -103,118 +103,120 @@ const ContactSection = () => {
         color="grey-2"
         topPx={-68}
       />
-      <h2 className=" relative self-start text-4xl phone-md:text-5xl tablet-md:text-6xl text-accent-red font-bold">
+      <h2 className=" relative self-start text-4xl phone-md:text-5xl desktop-sm:text-7xl tablet-md:text-6xl text-accent-red font-bold">
         LET'S TALK?
       </h2>
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={460}
+        heightPx="var(--contacts-div-bot-height)"
         leftPx={0}
         color="grey-2"
         topPx="var(--contacts-div-bot-top)"
       />
-      <div className="relative flex justify-center ">
-        <div>
-          <form
-            id="contact-form"
-            onSubmit={handleSubmit}
-            className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88"
-          >
-            <div>
-              <ContactInput
-                id="input-name"
-                label="Name"
-                type="text"
-                value={name}
-                onChange={(e) => setName(e.target.value)}
-                disabled={isSubmitting}
-                required
-              />
-              {errors.name && (
-                <p className="-mt-6 text-sm text-red-600" role="alert">
-                  {errors.name}
-                </p>
-              )}
-            </div>
-
-            <div>
-              <ContactInput
-                id="input-email"
-                label="Email"
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                inputMode="email"
-                disabled={isSubmitting}
-                required
-              />
-              {errors.email && (
-                <p className="-mt-6 text-sm text-red-600" role="alert">
-                  {errors.email}
-                </p>
-              )}
-            </div>
-
-            <div>
-              <label
-                htmlFor="input-message"
-                className="text-sm text-grey-3 mb-4 phone-md:text-lg  block "
-              >
-                Message
-              </label>
-              <textarea
-                id="input-message"
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="Write your message..."
-                required
-                disabled={isSubmitting}
-                className=" focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
-              />
-              {errors.message && (
-                <p className="-mt-6 text-sm text-red-600" role="alert">
-                  {errors.message}
-                </p>
-              )}
-            </div>
-
-            <div className="flex justify-center">
-              <Button
-                type="submit"
-                variant="primary"
-                size="small"
-                disabled={isSubmitting}
-                ariaLabel="Submit this form"
-                className=" w-auto text-center "
-              >
-                {isSubmitting ? "Sending..." : "SEND MESSAGE"}
-              </Button>
-            </div>
-
-            {successMessage && (
-              <div
-                role="status"
-                aria-live="polite"
-                className="mt-4 rounded-md bg-green-100 p-3 text-center text-sm text-green-700"
-              >
-                {successMessage}
+      <div className="flex flex-col desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-x-20">
+        <div className="relative flex justify-center ">
+          <div>
+            <form
+              id="contact-form"
+              onSubmit={handleSubmit}
+              className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88"
+            >
+              <div>
+                <ContactInput
+                  id="input-name"
+                  label="Name"
+                  type="text"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                  disabled={isSubmitting}
+                  required
+                />
+                {errors.name && (
+                  <p className="-mt-6 text-sm text-red-600" role="alert">
+                    {errors.name}
+                  </p>
+                )}
               </div>
-            )}
-            {errorMessage && (
-              <div
-                role="alert"
-                className="mt-4 rounded-md bg-red-100 p-3 text-center text-sm text-red-700"
-              >
-                {errorMessage}
+
+              <div>
+                <ContactInput
+                  id="input-email"
+                  label="Email"
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  inputMode="email"
+                  disabled={isSubmitting}
+                  required
+                />
+                {errors.email && (
+                  <p className="-mt-6 text-sm text-red-600" role="alert">
+                    {errors.email}
+                  </p>
+                )}
               </div>
-            )}
-          </form>
+
+              <div>
+                <label
+                  htmlFor="input-message"
+                  className="text-sm text-grey-3 mb-4 phone-md:text-lg  block "
+                >
+                  Message
+                </label>
+                <textarea
+                  id="input-message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Write your message..."
+                  required
+                  disabled={isSubmitting}
+                  className=" focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                />
+                {errors.message && (
+                  <p className="-mt-6 text-sm text-red-600" role="alert">
+                    {errors.message}
+                  </p>
+                )}
+              </div>
+
+              <div className="flex justify-center">
+                <Button
+                  type="submit"
+                  variant="primary"
+                  size="small"
+                  disabled={isSubmitting}
+                  ariaLabel="Submit this form"
+                  className=" w-auto text-center "
+                >
+                  {isSubmitting ? "Sending..." : "SEND MESSAGE"}
+                </Button>
+              </div>
+
+              {successMessage && (
+                <div
+                  role="status"
+                  aria-live="polite"
+                  className="mt-4 rounded-md bg-green-100 p-3 text-center text-sm text-green-700"
+                >
+                  {successMessage}
+                </div>
+              )}
+              {errorMessage && (
+                <div
+                  role="alert"
+                  className="mt-4 rounded-md bg-red-100 p-3 text-center text-sm text-red-700"
+                >
+                  {errorMessage}
+                </div>
+              )}
+            </form>
+          </div>
         </div>
+        <SocialLinks
+          size="md"
+          className=" grid grid-rows-2 desktop-sm:gap-0 grid-cols-3 gap-y-2 gap-x-4 mt-8 tablet-sm:gap-x-7 tablet-sm:gap-y-4 "
+        />
       </div>
-      <SocialLinks
-        size="md"
-        className=" grid grid-rows-2 grid-cols-3 gap-y-2 gap-x-4 mt-8 tablet-sm:gap-x-7 tablet-sm:gap-y-4"
-      />
     </section>
   );
 };

@@ -101,6 +101,7 @@
   --section-top-div-top: 16px;
 
   --contacts-div-bot-top: 52px;
+  --contacts-div-bot-height: 460px;
 
   --h1-size: clamp(48px, calc(20vw - 24px), 96px);
   --name-year-size: clamp(24px, calc(5vw + 6px), 36px);
@@ -282,6 +283,9 @@
 
     --block-div-top: 120px;
     --block-div-lg-h: 332px;
+
+    --contacts-div-bot-top: 80px;
+    --contacts-div-bot-height: 360px;
   }
 }
 
