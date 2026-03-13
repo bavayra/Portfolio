@@ -312,6 +312,12 @@
   }
 }
 
+@media (min-width: 1728px) {
+  :root {
+    --hero-div-2-height: 552px;
+  }
+}
+
 .app-fullscreen {
   min-height: calc(var(--vh) * 100); /* JS fallback */
   min-height: 100dvh;
