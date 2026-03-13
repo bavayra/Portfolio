@@ -315,6 +315,10 @@
 @media (min-width: 1728px) {
   :root {
     --hero-div-2-height: 552px;
+
+    --section-top-div-height: 220px;
+    --section-bot-div-top: 400px;
+    --section-bot-div-height: 272px;
   }
 }
 
