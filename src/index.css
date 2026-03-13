@@ -319,6 +319,11 @@
     --section-top-div-height: 220px;
     --section-bot-div-top: 400px;
     --section-bot-div-height: 272px;
+
+    --block-div-top: 132px;
+    --block-div-sm-h: 256px;
+    --block-div-md-h: 296px;
+    --block-div-lg-h: 376px;
   }
 }
 

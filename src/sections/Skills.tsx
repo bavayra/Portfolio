@@ -26,7 +26,7 @@ const Skills = () => {
       <p className="text-text desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 phone-sm:text-xl tablet-sm:text-2xl ">
         02
       </p>
-      <h2 className="text-2xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 tablet-md:my-2 desktop-sm:text-4xl phone-lg:text-4xl text-grey-2 tablet-md:text-5xl phone-sm:text-3xl font-medium">
+      <h2 className="text-2xl desktop-xl:text-5xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 tablet-md:my-2 desktop-sm:text-4xl phone-lg:text-4xl text-grey-2 tablet-md:text-5xl phone-sm:text-3xl font-medium">
         HER SKILLS
       </h2>
       <div className="grid grid-cols-3 desktop-sm:gap-x-0 desktop-sm:gap-y-6 gap-3 mt-4 desktop-xl:gap-y-10 desktop-xl:gap-x-16 tablet-sm:mt-10 phone-sm:mt-8 justify-items-center phone-md:gap-x-12 tablet-sm:gap-y-12 gap-x-0 w-3xs phone-sm:gap-y-6 tablet-sm:w-sm mx-auto">
