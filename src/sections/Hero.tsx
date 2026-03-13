@@ -28,10 +28,10 @@ const Hero = () => {
       </div>
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx="var(--hero-div-height)"
+        heightPx="var(--hero-div-2-height)"
         leftPx={0}
         color="grey-2"
-        topPx="var(--hero-div-top)"
+        topPx="var(--hero-div-2-top)"
         className="ml-8 tablet-sm:ml-14 hidden desktop-sm:block"
       />
       <DotPattern />

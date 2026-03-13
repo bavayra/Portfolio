@@ -269,6 +269,13 @@
   #dot-pattern-rect {
     fill: url(#dot-pattern-lg);
   }
+  :root {
+    --hero-div-height: 168px;
+    --hero-div-top: 28px;
+    --hero-div-2-height: 312px;
+    --hero-div-2-top: 360px;
+    --hero-div-w: 3px;
+  }
 }
 
 .app-fullscreen {
