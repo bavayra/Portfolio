@@ -15,7 +15,7 @@ export const DogShelter = () => {
       <h2 className="text-2xl desktop-sm:text-4xl text-grey-2 tablet-md:my-2  phone-sm:text-3xl phone-lg:text-4xl tablet-md:text-5xl font-medium">
         DOG SHELTER WEB
       </h2>
-      <p className="mt-2 phone-lg:max-w-80 desktop-sm:max-w-92 desktop-sm:text-base tablet-md:max-w-116 text-xs phone-lg:pl-2 tablet-sm:text-lg tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 phone-lg:max-w-80 desktop-lg:max-w-100 desktop-lg:text-lg desktop-sm:max-w-92 desktop-sm:text-base tablet-md:max-w-116 text-xs phone-lg:pl-2 tablet-sm:text-lg tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         A responsive web app for a dog shelter built with React and TypeScript.
         It features a searchable pet gallery with different filters, adoption
         rules, contact/donation section, and accessible modals for each dog. The

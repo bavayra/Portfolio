@@ -14,7 +14,7 @@ export const Description = () => {
       <h2 className="text-2xl text-grey-2 desktop-sm:text-4xl tablet-md:my-2 phone-lg:text-4xl tablet-md:text-5xl font-medium phone-sm:text-3xl">
         WHAT IS SHE LIKE
       </h2>
-      <p className="mt-2 desktop-sm:max-w-92 desktop-sm:text-base tablet-sm:text-lg tablet-md:max-w-116 tablet-sm:max-w-92 phone-md:max-w-80 text-xs phone-sm:text-sm phone-lg:pl-2 phone-md:text-base phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 desktop-lg:max-w-100 desktop-lg:text-lg desktop-sm:max-w-92 desktop-sm:text-base tablet-sm:text-lg tablet-md:max-w-116 tablet-sm:max-w-92 phone-md:max-w-80 text-xs phone-sm:text-sm phone-lg:pl-2 phone-md:text-base phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I'm a curious and disciplined developer who enjoys solving UI problems
         with clean, maintainable code. I prioritize performance and
         accessibility, and I'm committed to continuous learning. I work well in
