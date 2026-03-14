@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="py-3 text-center text-[0.75rem] tablet-md:text-sm border-t-2 border-accent-red text-grey-1 bg-[#4f4f4f]">
-      <div className="grid grid-cols-[1fr_max-content_1fr] tablet-md:text-sm tablet-md:max-w-64 max-w-52 mx-auto text-[0.75rem] opacity-65 font-semibold">
+      <div className="grid grid-cols-[1fr_max-content_1fr] desktop-xl:text-lg desktop-xl:max-w-88 tablet-md:text-sm tablet-md:max-w-64 max-w-52 mx-auto text-[0.75rem] opacity-65 font-semibold">
         <a href="tel:+15550100000" aria-label="Call example number">
           +1 (555) 010‑0000
         </a>
