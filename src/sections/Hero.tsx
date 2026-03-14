@@ -6,7 +6,10 @@ import { Divider } from "../components/Divider";
 
 const Hero = () => {
   return (
-    <section id="hero" className="py-8 app-fullscreen relative overflow-hidden">
+    <section
+      id="hero"
+      className="py-8 app-fullscreen relative overflow-y-hidden overflow-x-visible"
+    >
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--hero-div-height)"

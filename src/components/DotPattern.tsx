@@ -6,6 +6,7 @@ const DotPattern = () => {
         height="100%"
         viewBox="0 0 180 180"
         className="tablet-sm:pl-8 w-full h-full pl-5 block"
+        id="dot-pattern-svg"
       >
         <defs>
           <pattern
@@ -36,6 +37,37 @@ const DotPattern = () => {
           width="100%"
           height="100%"
           fill="url(#dot-pattern)"
+        />
+      </svg>
+
+      <svg
+        width="100%"
+        height="100%"
+        viewBox="0 0 240 240"
+        className="w-full h-full block"
+        id="dot-pattern-svg-xl"
+      >
+        <defs>
+          <pattern
+            id="dot-pattern-xl"
+            patternUnits="userSpaceOnUse"
+            width={16}
+            height={16}
+          >
+            <circle
+              cx="3"
+              cy="3"
+              fill="var(--color-accent-red)"
+              id="dot-xl"
+              r={3}
+            />
+          </pattern>
+        </defs>
+        <rect
+          id="dot-pattern-rect-xl"
+          width="100%"
+          height="100%"
+          fill="url(#dot-pattern-xl)"
         />
       </svg>
     </div>

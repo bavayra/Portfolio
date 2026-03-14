@@ -110,6 +110,12 @@
   --name-year-size: clamp(24px, calc(5vw + 6px), 36px);
   --section-title-size: clamp(24px, calc(10vw - 12px), 36px);
 }
+#dot-pattern-svg {
+  display: block;
+}
+#dot-pattern-svg-xl {
+  display: none;
+}
 
 @media (min-width: 360px) and (max-width: 599px) {
   :root {
@@ -292,6 +298,10 @@
     --contacts-div-bot-top: 80px;
     --contacts-div-bot-height: 360px;
   }
+  .section-vh-50 {
+    min-height: calc(var(--vh, 1vh) * 70);
+    min-height: 70dvh;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -309,6 +319,13 @@
     --section-top-div-height: 160px;
     --section-bot-div-top: 336px;
     --section-bot-div-height: 216px;
+  }
+
+  #dot-pattern-svg {
+    display: none;
+  }
+  #dot-pattern-svg-xl {
+    display: block;
   }
 }
 
@@ -338,13 +355,6 @@
 .section-vh-50 {
   min-height: calc(var(--vh, 1vh) * 50);
   min-height: 50dvh;
-}
-
-@media (min-width: 1024px) {
-  .section-vh-50 {
-    min-height: calc(var(--vh, 1vh) * 70);
-    min-height: 70dvh;
-  }
 }
 
 html {
