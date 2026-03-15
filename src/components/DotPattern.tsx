@@ -43,8 +43,8 @@ const DotPattern = () => {
       <svg
         width="100%"
         height="100%"
-        viewBox="0 0 240 240"
-        className="w-full h-full block"
+        viewBox="0 0 320 320"
+        className="w-full h-full block desktop-lg:w-[calc(100%+48px)]"
         id="dot-pattern-svg-xl"
       >
         <defs>
