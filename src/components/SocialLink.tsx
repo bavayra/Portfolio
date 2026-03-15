@@ -36,38 +36,39 @@ const SocialLinks = ({
   ];
 
   const sizeClasses = {
-    sm: "w-10 h-10",
-    md: "w-12  h-12",
+    sm: "w-10 h-10 desktop-sm:w-[120px] desktop-sm:h-[120px]",
+    md: "w-20 h-20 desktop-sm:w-[68px] desktop-sm:h-[68px]",
   };
+
+  const iconBaseSize = size === "md" ? "w-12 h-12" : "w-7 h-7";
+  const iconDesktopSize =
+    size === "md"
+      ? "desktop-sm:w-[68px] desktop-sm:h-[68px]"
+      : "desktop-sm:w-[48px] desktop-sm:h-[48px]";
 
   const iconClasses = [
     iconColor,
-    " w-10 h-10",
-    size === "md"
-      ? "border-none lg:w-6 lg:h-6 tablet-sm:w-12 tablet-sm:h-12"
-      : "border-none",
+    iconBaseSize,
+    iconDesktopSize,
+    "border-none",
     "rounded-full",
   ].join(" ");
 
-  const iconSizeMap = {
-    sm: "sm" as const,
-    md: "md" as const,
-  };
-
   return (
-    <div className={` flex items-center justify-center ${className || ""}`}>
+    <div
+      className={`flex items-center desktop-sm:mx-4 desktop-sm:my-16 justify-center ${className || ""}`}
+    >
       {socialNetworks.map((social) => (
         <a
           key={social.name}
           href={social.url}
           target="_blank"
           rel="noopener noreferrer"
-          className={`${sizeClasses[size]} shrink-0 items-center justify-center rounded-full transition-transform hover:scale-110`}
+          className={`${sizeClasses[size]} shrink-0 flex items-center justify-center rounded-full transition-transform hover:scale-110`}
           aria-label={social.name}
         >
           <Icon
             as={social.icon}
-            size={iconSizeMap[size]}
             className={`${iconColor} ${iconClasses}`}
             aria-hidden="true"
           />
