@@ -297,10 +297,10 @@
 
     --contacts-div-bot-top: 80px;
     --contacts-div-bot-height: 360px;
-  }
-  .section-vh-50 {
-    min-height: calc(var(--vh, 1vh) * 70);
-    min-height: 70dvh;
+    .section-vh-50 {
+      min-height: calc(var(--vh, 1vh) * 70);
+      min-height: 70dvh;
+    }
   }
 }
 
