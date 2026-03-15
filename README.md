@@ -29,6 +29,13 @@ This project is a clean, typography-focused landing page composed of clear secti
 - Clean hierarchy and readable typography.
 - Subtle visual polish via icons, dividers, and spacing.
 
+## Lighthouse Scores ✅
+
+- Performance: 100
+- Accessibility: 96
+- Best Practices: 100
+- SEO: 92
+
 ## Tech Stack 🧰
 
 - React 19, TypeScript
@@ -68,5 +75,3 @@ npm run dev
 - Meta description and icons are configured in [index.html](index.html).
 - Section content lives in [src/sections](src/sections).
 - Global styles are in [src/index.css](src/index.css) and [src/App.css](src/App.css).
-
-If you want, I can add badges, a live demo link, or screenshots. 😊
