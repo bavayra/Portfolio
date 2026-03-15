@@ -244,6 +244,8 @@
 
 @media (min-width: 601px) {
   :root {
+    --hero-div-top: 24px;
+
     --block-div-2xl-h: 448px;
   }
 }
@@ -261,7 +263,6 @@
   :root {
     --hero-div-height: clamp(148px, calc(23.18vh - 60.62px), 200px);
     --hero-div-w: 3px;
-    --hero-div-top: 28px;
 
     --section-top-div-height: clamp(126px, calc(19.09vh - 45.81px), 168px);
     --section-top-div-top: 20px;
@@ -273,6 +274,11 @@
     --contacts-div-bot-top: 76px;
   }
 }
+@media (min-width: 821px) and (max-width: 1023px) {
+  :root {
+    --hero-div-height: clamp(168px, calc(8vh + 162.24px), 200px);
+  }
+}
 
 /*DESKTOPS*/
 @media (min-width: 1024px) {
@@ -280,8 +286,6 @@
     fill: url(#dot-pattern-lg);
   }
   :root {
-    --hero-div-height: 168px;
-    --hero-div-top: 28px;
     --hero-div-2-height: 312px;
     --hero-div-2-top: 360px;
     --hero-div-w: 3px;
@@ -301,6 +305,12 @@
       min-height: calc(var(--vh, 1vh) * 70);
       min-height: 70dvh;
     }
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  :root {
+    --hero-div-height: clamp(168px, calc(-36.66vh - 88.62px), 212px);
   }
 }
 
