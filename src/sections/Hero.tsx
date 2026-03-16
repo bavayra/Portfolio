@@ -16,7 +16,7 @@ const Hero = () => {
         leftPx={0}
         color="grey-2"
         topPx="var(--hero-div-top)"
-        className="ml-8 tablet-sm:ml-14"
+        className="ml-8 tablet-sm:ml-16"
       />
       <div className="grid grid-cols-1fr ml-4 desktop-sm:translate-y-full desktop-sm:mt-0 min-[390px]:mt-10 phone-md:ml-4 phone-lg:leading-14 tablet-sm:leading-16 leading-10 tablet-md:mt-40 tablet-lg:mt-52 phone-lg:mt-10 tablet-sm:mt-36 tablet-sm:ml-8 grid-rows-1fr">
         <p className=" text-[length:var(--name-year-size)] text-grey-2 tablet-lg:text-4xl col-start-1 row-start-1 pl-3 ">
@@ -35,7 +35,7 @@ const Hero = () => {
         leftPx={0}
         color="grey-2"
         topPx="var(--hero-div-2-top)"
-        className="ml-8 tablet-sm:ml-14 hidden desktop-sm:block"
+        className="ml-8 tablet-sm:ml-16 hidden desktop-sm:block"
       />
       <DotPattern />
     </section>
