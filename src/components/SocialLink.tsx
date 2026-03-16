@@ -37,10 +37,14 @@ const SocialLinks = ({
 
   const sizeClasses = {
     sm: "w-10 h-10 desktop-sm:w-[120px] desktop-sm:h-[120px]",
-    md: "w-20 h-20 desktop-sm:w-[68px] desktop-sm:h-[68px]",
+    md: "w-20 h-20 tablet-sm:w-[58px] tablet-sm:h-[58px] desktop-sm:w-[68px] desktop-sm:h-[68px]",
   };
 
   const iconBaseSize = size === "md" ? "w-12 h-12" : "w-7 h-7";
+  const iconTabletSize =
+    size === "md"
+      ? "tablet-sm:w-[56px] tablet-sm:h-[56px]"
+      : "tablet-sm:w-[28px] tablet-sm:h-[28px]";
   const iconDesktopSize =
     size === "md"
       ? "desktop-sm:w-[68px] desktop-sm:h-[68px]"
@@ -49,6 +53,7 @@ const SocialLinks = ({
   const iconClasses = [
     iconColor,
     iconBaseSize,
+    iconTabletSize,
     iconDesktopSize,
     "border-none",
     "rounded-full",
