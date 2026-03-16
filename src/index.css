@@ -101,7 +101,7 @@
 
   --section-bot-div-height: clamp(80px, calc(23.3vh - 37px), 164px);
   --section-bot-div-top: clamp(160px, calc(24vh + 38px), 248px);
-  --section-top-div-top: 16px;
+  --section-top-div-top: 18px;
 
   --contacts-div-bot-top: 52px;
   --contacts-div-bot-height: 448px;
@@ -115,12 +115,6 @@
 }
 #dot-pattern-svg-xl {
   display: none;
-}
-
-@media (min-width: 360px) and (max-width: 599px) {
-  :root {
-    --section-top-div-top: 20px;
-  }
 }
 
 @media (min-width: 360px) and (max-width: 375px) {
@@ -175,7 +169,7 @@
   }
 }
 
-@media (min-width: 391px) and (max-width: 480px) {
+@media (min-width: 391px) {
   :root {
     --section-top-div-height: clamp(118px, calc(7.5vh - 59.5px), 124px);
   }
@@ -203,25 +197,29 @@
 
 @media (min-width: 429px) and (max-width: 480px) {
   :root {
-    --hero-div-height: clamp(180px, calc(500vh - 4120px), 280px);
     --hero-div-top: clamp(164px, calc(62.75vw - 105.17px), 196px);
+  }
+}
+
+@media (min-width: 429px) {
+  :root {
+    --hero-div-height: clamp(180px, calc(500vh - 4120px), 280px);
   }
 }
 
 @media (min-width: 481px) {
   :root {
-    --hero-div-height: clamp(180px, calc(500vh - 4120px), 280px);
     --hero-div-top: 196px;
 
-    --section-top-div-height: clamp(118px, calc(20vh - 54px), 126px);
     --section-bot-div-top: 236px;
   }
 }
 
 @media (min-width: 481px) and (max-width: 600px) {
   :root {
-    --block-div-lg-h: clamp(348px, calc(100vh - 512px), 388px);
+    --section-top-div-height: clamp(118px, calc(20vh - 54px), 126px);
 
+    --block-div-lg-h: clamp(348px, calc(100vh - 512px), 388px);
     --block-div-2xl-h: clamp(352px, calc(240vh - 1712px), 448px);
   }
 }
