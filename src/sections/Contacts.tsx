@@ -214,7 +214,7 @@ const ContactSection = () => {
         </div>
         <SocialLinks
           size="md"
-          className=" grid grid-rows-2 desktop-xl:my-28 desktop-xl:mx-4 desktop-sm:gap-0 grid-cols-3 gap-y-2 gap-x-4 mt-8 tablet-sm:gap-x-7 tablet-sm:gap-y-4 "
+          className="grid grid-rows-2 desktop-xl:my-28 desktop-xl:mx-4 grid-cols-3 gap-2 mt-8 tablet-sm:gap-x-0 tablet-sm:gap-y-4 "
         />
       </div>
     </section>
