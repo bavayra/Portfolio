@@ -25,7 +25,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   });
 
   return (
-    <div className="section-vh-50 flex flex-col phone-md:pb-10 justify-center relative ml-3 desktop-sm:ml-10 tablet-sm:ml-12">
+    <div className="section-vh flex flex-col phone-md:pb-10 justify-center desktop-lg:ml-10 relative ml-3 desktop-sm:ml-12 tablet-sm:ml-12">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--section-top-div-height)"
