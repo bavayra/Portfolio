@@ -98,7 +98,7 @@ const ContactSection = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={56}
+        heightPx={58}
         leftPx={0}
         color="grey-2"
         topPx={-68}
