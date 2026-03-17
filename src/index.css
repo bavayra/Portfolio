@@ -124,60 +124,33 @@
 @media (min-width: 360px) {
   :root {
     --section-bot-div-height: 114px;
+    --section-top-div-height: clamp(84px, calc(28vh - 84px), 98px);
+    --section-bot-div-top: clamp(176px, calc(24vh + 36px), 188px);
+
+    --hero-div-height: clamp(112px, calc(104vh - 512px), 164px);
+
+    --block-div-top: 104px;
+    --block-div-sm-h: clamp(248px, calc(185.6px + 9.6vh), 272px);
+    --block-div-md-h: clamp(276px, calc(40vh - 36px), 304px);
+    --block-div-lg-h: clamp(312px, calc(51.42vh - 89.076px), 348px);
+    --block-div-xl-h: 352px;
+  }
+}
+
+@media (min-width: 376px) {
+  :root {
+    --hero-div-height: clamp(112px, calc(60vh - 248px), 280px);
+
+    --section-top-div-height: clamp(84px, calc(22.222vh - 49.32px), 124px);
+    --section-bot-div-top: clamp(176px, calc(2.667px + 28.889vh), 228px);
+    --section-bot-div-height: clamp(114px, calc(-25.2px + 23.2vh), 172px);
   }
 }
 
 @media (min-width: 390px) {
   :root {
     --hero-div-top: 164px;
-  }
-}
 
-@media (min-width: 360px) and (max-width: 375px) {
-  :root {
-    --hero-div-height: clamp(112px, calc(104vh - 512px), 164px);
-
-    --section-top-div-height: clamp(84px, calc(28vh - 84px), 98px);
-    --section-bot-div-top: clamp(176px, calc(24vh + 36px), 188px);
-  }
-}
-
-@media (min-width: 360px) and (max-width: 412px) {
-  :root {
-    --block-div-top: 104px;
-  }
-}
-
-@media (min-width: 360px) and (max-width: 480px) {
-  :root {
-    --block-div-sm-h: clamp(248px, calc(34.28vh - 19.384px), 272px);
-    --block-div-md-h: clamp(276px, calc(40vh - 36px), 304px);
-    --block-div-lg-h: clamp(312px, calc(51.42vh - 89.076px), 348px);
-    --block-div-2xl-h: 352px;
-  }
-}
-
-@media (min-width: 376px) and (max-width: 390px) {
-  :root {
-    --section-top-div-height: clamp(84px, calc(22.222vh - 49.32px), 124px);
-    --section-bot-div-top: clamp(176px, calc(2.667px + 28.889vh), 228px);
-  }
-}
-
-@media (min-width: 376px) and (max-width: 412px) {
-  :root {
-    --section-bot-div-height: clamp(114px, calc(-25.2px + 23.2vh), 172px);
-  }
-}
-
-@media (min-width: 376px) and (max-width: 428px) {
-  :root {
-    --hero-div-height: clamp(112px, calc(60vh - 248px), 280px);
-  }
-}
-
-@media (min-width: 391px) {
-  :root {
     --section-top-div-height: 124px;
     --section-bot-div-top: 228px;
   }
@@ -185,15 +158,11 @@
 
 @media (min-width: 412px) {
   :root {
-    --contacts-div-bot-height: 464px;
-  }
-}
-
-@media (min-width: 413px) and (max-width: 480px) {
-  :root {
     --block-div-top: 110px;
 
     --section-bot-div-height: 172px;
+
+    --contacts-div-bot-height: 464px;
   }
 }
 
@@ -206,50 +175,34 @@
 @media (min-width: 480px) {
   :root {
     --hero-div-top: 196px;
-  }
-}
 
-@media (min-width: 481px) and (max-width: 600px) {
-  :root {
     --section-bot-div-top: clamp(228px, calc(-116px + 40vh), 244px);
+    --section-bot-div-height: clamp(172px, calc(26.462px + 16.923vh), 216px);
 
     --block-div-lg-h: clamp(348px, calc(100vh - 512px), 388px);
-    --block-div-2xl-h: clamp(352px, calc(240vh - 1712px), 448px);
-  }
-}
-
-@media (min-width: 481px) and (max-width: 820px) {
-  :root {
-    --section-bot-div-height: clamp(172px, calc(26.462px + 16.923vh), 216px);
+    --block-div-xl-h: clamp(352px, calc(240vh - 1712px), 448px);
   }
 }
 
 /*600-820PX: TABLETS*/
 
-@media (min-width: 601px) and (max-width: 768px) {
-  :root {
-    --block-div-sm-h: clamp(244px, calc(-35vh - 71px), 272px);
-    --block-div-md-h: clamp(280px, calc(-30vh + 10px), 304px);
-    --block-div-lg-h: clamp(328px, calc(-75vh - 297px), 388px);
-  }
-}
-
-@media (min-width: 601px) and (max-width: 820px) {
-  :root {
-    --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
-
-    --section-top-div-height: clamp(124px, calc(-56px + 20vh), 168px);
-  }
-}
-
 @media (min-width: 600px) {
   :root {
+    --hero-div-height: clamp(148px, calc(23.18vh - 60.62px), 200px);
     --hero-div-top: 36px;
     --hero-div-w: 3px;
 
-    --block-div-2xl-h: 448px;
+    --block-div-top: clamp(114px, calc(17.5vh - 43.5px), 128px);
+    --block-div-sm-h: clamp(244px, calc(-71px + 35vh), 272px);
+    --block-div-md-h: clamp(280px, calc(-30vh + 10px), 304px);
+    --block-div-lg-h: clamp(328px, calc(-75vh - 297px), 388px);
+    --block-div-xl-h: 448px;
+
+    --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
+    --section-top-div-height: clamp(124px, calc(-56px + 20vh), 168px);
 
     --contacts-div-bot-height: 436px;
+    --contacts-div-bot-top: 76px;
   }
 }
 
@@ -263,26 +216,11 @@
   }
 }
 
-@media (min-width: 600px) and (max-width: 820px) {
-  :root {
-    --hero-div-height: clamp(148px, calc(23.18vh - 60.62px), 200px);
-
-    --block-div-top: clamp(114px, calc(17.5vh - 43.5px), 128px);
-
-    --contacts-div-bot-top: 76px;
-  }
-}
-
-@media (min-width: 821px) and (max-width: 1023px) {
+@media (min-width: 820px) {
   :root {
     --hero-div-height: clamp(168px, calc(8vh + 162.24px), 200px);
-  }
-}
 
-@media (min-width: 821px) and (max-width: 1280px) {
-  :root {
     --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
-
     --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
     --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
   }
@@ -293,18 +231,19 @@
   #dot-pattern-rect {
     fill: url(#dot-pattern-lg);
   }
+
   :root {
     --hero-div-height: 168px;
     --hero-div-2-top: 360px;
     --hero-div-2-height: 312px;
 
     --block-div-top: 120px;
-    --block-div-sm-h: 224px;
     --block-div-md-h: 256px;
     --block-div-lg-h: 320px;
 
     --contacts-div-bot-top: 80px;
     --contacts-div-bot-height: 340px;
+
     .section-vh {
       min-height: calc(var(--vh, 1vh) * 70);
       min-height: 70dvh;
@@ -312,15 +251,10 @@
   }
 }
 
-@media (min-width: 1281px) and (max-width: 1728px) {
+@media (min-width: 1280px) {
   :root {
     --section-top-div-height: clamp(136px, calc(-69.714px + 28.571vh), 216px);
     --section-bot-div-height: clamp(188px, calc(-28px + 30vh), 272px);
-  }
-}
-
-@media (min-width: 1281px) and (max-width: 1920px) {
-  :root {
     --section-bot-div-top: clamp(280px, calc(-52.308px + 46.154vh), 400px);
   }
 }
@@ -345,19 +279,13 @@
     --hero-div-2-height: 552px;
 
     --block-div-top: 132px;
-    --block-div-sm-h: 256px;
     --block-div-md-h: 296px;
     --block-div-lg-h: 376px;
 
     --section-bot-div-height: 272px;
+    --section-top-div-height: clamp(188px, calc(-1184px + 140vh), 216px);
 
     --contacts-div-bot-height: 420px;
-  }
-}
-
-@media (min-width: 1729px) and (max-width: 1920px) {
-  :root {
-    --section-top-div-height: clamp(188px, calc(-1184px + 140vh), 216px);
   }
 }
 
