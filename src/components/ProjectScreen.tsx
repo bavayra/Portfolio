@@ -32,16 +32,16 @@ const ProjectScreen = (props: ProjectScreenProps) => {
 
   return (
     <>
-      <div className="grid gap-4 sm:grid-cols-2 desktop-sm:items-start">
+      <div className="grid gap-4 sm:grid-cols-2  desktop-sm:items-start">
         <div className="space-y-4">
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
 
-          <div className="flex items-center ml-3 text-accent-red text-base font-bold">
+          <div className="flex items-center ml-3 text-accent-red text-base font-semibold">
             {props.links?.live && (
               <a
                 href={props.links.live}
-                className="inline-flex items-center gap-2"
+                className="inline-flex items-center gap-2 "
               >
                 <span>Live Demo</span>
                 <img
@@ -71,7 +71,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
             />
           ))}
         </div>
-        <p className="text-center text-base text-accent-red font-bold tracking-wide">
+        <p className="text-center text-base bg-section-title w-72 p-2 mx-auto rounded-xl text-accent-red font-semibold tracking-wide">
           {props.technologies.join(", ")}
         </p>
       </div>
