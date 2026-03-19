@@ -1,7 +1,13 @@
 import { Divider } from "../components/Divider";
 import GitHubLink from "../components/GitHubLink";
 
+import ProjectScreen from "../components/ProjectScreen";
+import { projects } from "../../data/projects";
+
 export const DogShelter = () => {
+  const project = projects.find((p) => p.id === "dog-shelter");
+
+  if (!project) return null;
   return (
     <section className="relative desktop-lg:ml-10 h-auto py-8 ml-3 tablet-sm:ml-12">
       <Divider
@@ -22,6 +28,13 @@ export const DogShelter = () => {
         site is mobile‑first and performance‑minded.
       </p>
       <GitHubLink />
+      <ProjectScreen
+        title={project.title}
+        description={project.description}
+        images={project.images}
+        technologies={project.technologies}
+        links={{ live: project.liveUrl }}
+      />
     </section>
   );
 };
