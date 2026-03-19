@@ -1,11 +1,17 @@
 import { Divider } from "../components/Divider";
 import GitHubLink from "../components/GitHubLink";
 
+import ProjectScreen from "../components/ProjectScreen";
+import { projects } from "../../data/projects";
+
 export const WeatherApp = () => {
+  const project = projects.find((p) => p.id === "weather-app");
+  if (!project) return null;
+
   return (
     <section
       id="projects"
-      className="relative h-auto py-8 ml-3 desktop-lg:ml-10 tablet-sm:ml-12"
+      className="relative h-auto pt-8 pb-0 ml-3 desktop-lg:ml-10 tablet-sm:ml-12"
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -26,6 +32,23 @@ export const WeatherApp = () => {
         accessibility with client‑side caching and a clean mobile‑first UI.
       </p>
       <GitHubLink />
+
+      <Divider
+        widthPx="var(--hero-div-w)"
+        heightPx={640}
+        leftPx={0}
+        color="grey-2"
+        topPx={480}
+      />
+
+      <ProjectScreen
+        title={project.title}
+        description={project.description}
+        images={project.images}
+        technologies={project.technologies}
+        links={{ live: project.liveUrl }}
+        pageNumber={project.pageNumber}
+      />
     </section>
   );
 };

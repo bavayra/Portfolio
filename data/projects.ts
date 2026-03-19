@@ -9,6 +9,7 @@ export interface Project {
   technologies: string[];
   liveUrl?: string;
   githubUrl?: string;
+  pageNumber?: string | number;
   images: {
     thumbnail: string;
     full: string;
@@ -25,13 +26,14 @@ export const projects: Project[] = [
     title: "Dog Shelter",
     description: "Responsive landing page for dog adoption service",
     position: { row: 1, col: 1 },
-    technologies: ["React", "TypeScript", "Tailwind"],
-
+    technologies: ["React", "TypeScript", "Tailwind", "Vite"],
+    pageNumber: "07",
     githubUrl: "https://github.com/bavayra/dog-shelter.git",
+    liveUrl: "https://github.com/bavayra/dog-shelter.git",
     images: [
       {
-        thumbnail: "/screens/dog-shelter-screen/dog-shelter-390-thumb.webp",
-        full: "/screens/dog-shelter-screen/dog-shelter-375.webp",
+        thumbnail: "/screens/dog-shelter-screen/dog-shelter-1280-thumb.webp",
+        full: "/screens/dog-shelter-screen/dog-shelter-1280.webp",
         alt: "Dog Shelter",
         width: 375,
         height: 667,
@@ -43,15 +45,7 @@ export const projects: Project[] = [
         alt: "Dog Shelter",
         width: 375,
         height: 667,
-        className: "",
-      },
-      {
-        thumbnail: "/screens/dog-shelter-screen/dog-shelter-1280-thumb.webp",
-        full: "/screens/dog-shelter-screen/dog-shelter-1280.webp",
-        alt: "Dog Shelter",
-        width: 375,
-        height: 667,
-        className: "",
+        className: "-mt-8",
       },
       {
         thumbnail:
@@ -60,7 +54,15 @@ export const projects: Project[] = [
         alt: "Dog Shelter",
         width: 375,
         height: 667,
-        className: "",
+        className: "translate-y-8",
+      },
+      {
+        thumbnail: "/screens/dog-shelter-screen/dog-shelter-390-thumb.webp",
+        full: "/screens/dog-shelter-screen/dog-shelter-375.webp",
+        alt: "Dog Shelter",
+        width: 375,
+        height: 667,
+        className: "-mt-20",
       },
     ],
   },
@@ -70,15 +72,16 @@ export const projects: Project[] = [
     title: "Weather App",
     description: "Real-time weather forecast with OpenWeather API",
     position: { row: 1, col: 2 },
-    technologies: ["React", "TypeScript", "API"],
+    technologies: ["CSS3", "HTML5", "Vanilla JS", "API", "Vite"],
     liveUrl: "https://...",
     githubUrl: "https://github.com/bavayra/WeatherApp.git",
+    pageNumber: "05",
     images: [
       {
         thumbnail: "/screens/weather-app-screen/weather-app-main-thumb.webp",
         full: "/screens/weather-app-screen/weather-app-main.webp",
         alt: "Weather App Main",
-        width: 200,
+        width: 140,
         height: 667,
         className: "",
       },
@@ -88,7 +91,7 @@ export const projects: Project[] = [
         alt: "Weather App Cities",
         width: 375,
         height: 667,
-        className: "",
+        className: "-mt-10",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-map-thumb.webp",
@@ -102,9 +105,9 @@ export const projects: Project[] = [
         thumbnail: "/screens/weather-app-screen/weather-app-search-thumb.webp",
         full: "/screens/weather-app-screen/weather-app-search.webp",
         alt: "Weather App Search",
-        width: 200,
+        width: 140,
         height: 667,
-        className: "",
+        className: "-mt-6",
       },
     ],
   },

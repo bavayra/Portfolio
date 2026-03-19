@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Divider } from "./Divider";
 
 type ProjectScreenProps = {
   title: string;
@@ -16,6 +15,7 @@ type ProjectScreenProps = {
   links?: {
     live?: string;
   };
+  pageNumber?: string | number;
 };
 
 const ProjectScreen = (props: ProjectScreenProps) => {
@@ -32,17 +32,31 @@ const ProjectScreen = (props: ProjectScreenProps) => {
 
   return (
     <>
-      <div className="grid gap-4 -sm:grid-cols-2 desktop-sm:items-start">
+      <div className="grid gap-4 sm:grid-cols-2 desktop-sm:items-start">
         <div className="space-y-4">
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
 
-          <div className="flex items-center ml-3 text-accent-red text-lg font-bold">
-            {props.links?.live && <a href={props.links.live}>Live</a>}
+          <div className="flex items-center ml-3 text-accent-red text-base font-bold">
+            {props.links?.live && (
+              <a
+                href={props.links.live}
+                className="inline-flex items-center gap-2"
+              >
+                <span>Live Demo</span>
+                <img
+                  src="/external-link-icon.svg"
+                  className="w-7 h-7 -mt-1 inline-block"
+                  alt="Open live demo (opens in new tab)"
+                />
+              </a>
+            )}
           </div>
         </div>
-        <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">05</p>
-        <div className="grid grid-cols-2 gap-4 ml-12 ">
+        <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">
+          {props.pageNumber}
+        </p>
+        <div className="grid grid-cols-2 gap-4 ml-6 ">
           {props.images.map((img, index) => (
             <img
               key={`${img.thumbnail}-${index}`}
@@ -53,12 +67,13 @@ const ProjectScreen = (props: ProjectScreenProps) => {
               onClick={() => setOpenImage(img.full)}
               loading="lazy"
               decoding="async"
-              className={`transition-transform rotate-6 rounded-lg duration-300 ease-out hover:scale-105 cursor-zoom-in ${
-                index % 3 === 0 ? "col-span-2" : "col-span-1"
-              }`}
+              className={`... ${img.className ?? ""} transition-transform rounded-lg duration-300 ease-out hover:scale-105 cursor-zoom-in`}
             />
           ))}
         </div>
+        <p className="text-center text-base text-accent-red font-bold tracking-wide">
+          {props.technologies.join(", ")}
+        </p>
       </div>
 
       {openImage && (

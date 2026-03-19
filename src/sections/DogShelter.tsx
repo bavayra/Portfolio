@@ -9,7 +9,7 @@ export const DogShelter = () => {
 
   if (!project) return null;
   return (
-    <section className="relative desktop-lg:ml-10 h-auto py-8 ml-3 tablet-sm:ml-12">
+    <section className="relative desktop-lg:ml-10 h-auto pt-8 pb-2 ml-3 tablet-sm:ml-12">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-md-h)"
@@ -28,12 +28,20 @@ export const DogShelter = () => {
         site is mobile‑first and performance‑minded.
       </p>
       <GitHubLink />
+      <Divider
+        widthPx="var(--hero-div-w)"
+        heightPx={620}
+        leftPx={0}
+        color="grey-2"
+        topPx={448}
+      />
       <ProjectScreen
         title={project.title}
         description={project.description}
         images={project.images}
         technologies={project.technologies}
         links={{ live: project.liveUrl }}
+        pageNumber={project.pageNumber}
       />
     </section>
   );
