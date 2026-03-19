@@ -37,7 +37,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
 
-          <div className="flex items-center ml-3 text-accent-red text-base font-semibold">
+          <div className="flex items-center ml-3 tablet-sm:text-xl phone-lg:ml-5  text-accent-red text-base font-semibold">
             {props.links?.live && (
               <a
                 href={props.links.live}
@@ -56,7 +56,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
         <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">
           {props.pageNumber}
         </p>
-        <div className="grid grid-cols-2 gap-4 ml-6 ">
+        <div className="grid grid-cols-2 gap-4 phone-md:gap-x-0 ml-6 ">
           {props.images.map((img, index) => (
             <img
               key={`${img.thumbnail}-${index}`}
@@ -71,7 +71,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
             />
           ))}
         </div>
-        <p className="text-center text-base bg-section-title w-72 p-2 mx-auto rounded-xl text-accent-red font-semibold tracking-wide">
+        <p className="text-center text-sm tablet-sm:text-base bg-section-title w-72 p-2 mx-auto rounded-lg text-accent-red font-semibold tracking-wide">
           {props.technologies.join(", ")}
         </p>
       </div>
@@ -86,7 +86,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <img
             src={openImage}
             alt="Project full screen"
-            className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg"
+            className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg "
             onClick={(e) => e.stopPropagation()}
           />
         </div>
