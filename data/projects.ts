@@ -15,6 +15,7 @@ export interface Project {
     alt: string;
     width: number;
     height: number;
+    className?: string;
   }[];
 }
 
@@ -25,7 +26,7 @@ export const projects: Project[] = [
     description: "Responsive landing page for dog adoption service",
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind"],
-    liveUrl: "https://...",
+
     githubUrl: "https://github.com/bavayra/dog-shelter.git",
     images: [
       {
@@ -34,6 +35,7 @@ export const projects: Project[] = [
         alt: "Dog Shelter",
         width: 375,
         height: 667,
+        className: "",
       },
       {
         thumbnail: "/screens/dog-shelter-screen/dog-shelter-1440-thumb.webp",
@@ -41,6 +43,7 @@ export const projects: Project[] = [
         alt: "Dog Shelter",
         width: 375,
         height: 667,
+        className: "",
       },
       {
         thumbnail: "/screens/dog-shelter-screen/dog-shelter-1280-thumb.webp",
@@ -48,6 +51,7 @@ export const projects: Project[] = [
         alt: "Dog Shelter",
         width: 375,
         height: 667,
+        className: "",
       },
       {
         thumbnail:
@@ -56,6 +60,7 @@ export const projects: Project[] = [
         alt: "Dog Shelter",
         width: 375,
         height: 667,
+        className: "",
       },
     ],
   },
@@ -72,30 +77,34 @@ export const projects: Project[] = [
       {
         thumbnail: "/screens/weather-app-screen/weather-app-main-thumb.webp",
         full: "/screens/weather-app-screen/weather-app-main.webp",
-        alt: "Weather App",
-        width: 375,
+        alt: "Weather App Main",
+        width: 200,
         height: 667,
+        className: "",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-cities-thumb.webp",
         full: "/screens/weather-app-screen/weather-app-cities.webp",
-        alt: "Weather App",
+        alt: "Weather App Cities",
         width: 375,
         height: 667,
+        className: "",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-map-thumb.webp",
         full: "/screens/weather-app-screen/weather-app-map.webp",
-        alt: "Weather App",
+        alt: "Weather App Map",
         width: 375,
         height: 667,
+        className: "",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-search-thumb.webp",
         full: "/screens/weather-app-screen/weather-app-search.webp",
-        alt: "Weather App",
-        width: 375,
+        alt: "Weather App Search",
+        width: 200,
         height: 667,
+        className: "",
       },
     ],
   },

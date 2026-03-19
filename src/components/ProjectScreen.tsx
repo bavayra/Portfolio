@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Divider } from "./Divider";
 
 type ProjectScreenProps = {
   title: string;
@@ -10,6 +11,7 @@ type ProjectScreenProps = {
     alt: string;
     width: number;
     height: number;
+    className?: string;
   }[];
   links?: {
     live?: string;
@@ -30,7 +32,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
 
   return (
     <>
-      <div className="grid gap-6 desktop-sm:grid-cols-2 desktop-sm:items-start">
+      <div className="grid gap-4 -sm:grid-cols-2 desktop-sm:items-start">
         <div className="space-y-4">
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
@@ -39,7 +41,8 @@ const ProjectScreen = (props: ProjectScreenProps) => {
             {props.links?.live && <a href={props.links.live}>Live</a>}
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4">
+        <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">05</p>
+        <div className="grid grid-cols-2 gap-4 ml-12 ">
           {props.images.map((img, index) => (
             <img
               key={`${img.thumbnail}-${index}`}
@@ -50,7 +53,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
               onClick={() => setOpenImage(img.full)}
               loading="lazy"
               decoding="async"
-              className={`transition-transform duration-300 ease-out hover:scale-105 cursor-zoom-in ${
+              className={`transition-transform rotate-6 rounded-lg duration-300 ease-out hover:scale-105 cursor-zoom-in ${
                 index % 3 === 0 ? "col-span-2" : "col-span-1"
               }`}
             />
