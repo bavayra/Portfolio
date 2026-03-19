@@ -35,7 +35,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center ml-3 text-accent-red text-lg font-bold">
             {props.links?.live && <a href={props.links.live}>Live</a>}
           </div>
         </div>
