@@ -113,6 +113,12 @@
   --section-title-size: clamp(24px, calc(10vw - 12px), 36px);
 
   --hero-mt: 0px;
+
+  --weather-div-top: 480px;
+  --weather-div-height: 640px;
+
+  --shelter-div-top: 448px;
+  --shelter-div-height: 592px;
 }
 
 #dot-pattern-svg {
@@ -169,6 +175,12 @@
     --contacts-div-bot-height: 464px;
 
     --name-year-size: 1.875rem;
+
+    --weather-div-top: 556px;
+    --weather-div-height: 654px;
+
+    --shelter-div-top: 492px;
+    --shelter-div-height: 612px;
   }
 }
 
@@ -190,6 +202,9 @@
     --block-div-xl-h: clamp(352px, calc(240vh - 1712px), 448px);
 
     --name-year-size: 2.25rem;
+
+    --weather-div-top: 528px;
+    --weather-div-height: 784px;
   }
 }
 
@@ -211,6 +226,12 @@
 
     --contacts-div-bot-height: 436px;
     --contacts-div-bot-top: 76px;
+
+    --weather-div-top: 584px;
+    --weather-div-height: 920px;
+
+    --shelter-div-top: 508px;
+    --shelter-div-height: 888px;
   }
 }
 

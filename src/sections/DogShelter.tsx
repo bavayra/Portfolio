@@ -30,10 +30,10 @@ export const DogShelter = () => {
       <GitHubLink />
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={620}
+        heightPx="var(--shelter-div-height)"
         leftPx={0}
         color="grey-2"
-        topPx={448}
+        topPx="var(--shelter-div-top)"
       />
       <ProjectScreen
         title={project.title}
