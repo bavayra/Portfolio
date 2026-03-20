@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import GitHubLink from "./GitHubLink.tsx";
 
 type ProjectScreenProps = {
   title: string;
@@ -37,23 +38,9 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
 
-          <div className="flex items-center ml-3 tablet-sm:text-xl phone-lg:ml-5  text-accent-red text-base font-semibold">
-            {props.links?.live && (
-              <a
-                href={props.links.live}
-                className="inline-flex items-center gap-2 "
-              >
-                <span>Live Demo</span>
-                <img
-                  src="/external-link-icon.svg"
-                  className="w-7 h-7 -mt-1 inline-block"
-                  alt="Open live demo (opens in new tab)"
-                />
-              </a>
-            )}
-          </div>
+          <GitHubLink liveUrl={props.links?.live} />
         </div>
-        <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">
+        <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:hidden">
           {props.pageNumber}
         </p>
         <div className="grid grid-cols-2 gap-4 phone-md:gap-x-0 ml-6 tablet-md:ml-16 tablet-md:w-140">

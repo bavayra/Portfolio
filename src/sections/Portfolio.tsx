@@ -21,7 +21,6 @@ export const Portfolio = () => {
         to demonstrate UI implementation, accessibility and deployment
         practices.
       </p>
-      <GitHubLink />
     </section>
   );
 };

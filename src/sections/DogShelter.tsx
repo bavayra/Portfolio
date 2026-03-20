@@ -27,13 +27,12 @@ export const DogShelter = () => {
         rules, contact/donation section, and accessible modals for each dog. The
         site is mobile‑first and performance‑minded.
       </p>
-      <GitHubLink />
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx="var(--shelter-div-height)"
+        heightPx={1040}
         leftPx={0}
         color="grey-2"
-        topPx="var(--shelter-div-top)"
+        topPx={492}
       />
       <ProjectScreen
         title={project.title}
