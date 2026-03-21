@@ -37,8 +37,6 @@ const ProjectScreen = (props: ProjectScreenProps) => {
         <div className="space-y-4">
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
-
-          <GitHubLink liveUrl={props.links?.live} />
         </div>
         <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:hidden">
           {props.pageNumber}

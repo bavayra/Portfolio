@@ -33,7 +33,9 @@ export const WeatherApp = () => {
           and accessibility with client‑side caching and a clean mobile‑first
           UI.
         </p>
+        <GitHubLink liveUrl={project.liveUrl} />
       </div>
+
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx={1060}
