@@ -88,7 +88,7 @@ export const projects: Project[] = [
         width: 140,
         height: 667,
         className:
-          "phone-md:w-36 mx-auto phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60",
+          "phone-md:w-36 mx-auto desktop-sm:mt-4 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-cities-thumb.webp",
@@ -97,7 +97,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-10 mx-auto phone-md:w-36 tablet-sm:w-52 tablet-md:w-60 phone-lg:w-44 phone-lg:-mt-14",
+          "-mt-10 desktop-sm:-mt-6 mx-auto phone-md:w-36 tablet-sm:w-52 tablet-md:w-60 phone-lg:w-44 phone-lg:-mt-14",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-map-thumb.webp",
@@ -106,7 +106,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "phone-md:w-34 tablet-sm:w-52 tablet-md:w-60 phone-lg:w-44 mx-auto",
+          "phone-md:w-34 desktop-sm:mt-2 tablet-sm:w-52 tablet-md:w-60 phone-lg:w-44 mx-auto",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-search-thumb.webp",
@@ -115,7 +115,7 @@ export const projects: Project[] = [
         width: 140,
         height: 667,
         className:
-          "-mt-6 mx-auto phone-lg:w-44 phone-lg:-mt-10 tablet-sm:w-52 tablet-md:w-60 phone-md:w-36",
+          "-mt-6 mx-auto desktop-sm:-mt-4 phone-lg:w-44 phone-lg:-mt-10 tablet-sm:w-52 tablet-md:w-60 phone-md:w-36",
       },
     ],
   },
