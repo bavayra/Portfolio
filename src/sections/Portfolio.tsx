@@ -1,9 +1,12 @@
 import { Divider } from "../components/Divider";
 import GitHubLink from "../components/GitHubLink";
 
+import ProjectScreen from "../components/ProjectScreen";
+import { projects } from "../../data/projects";
+
 export const Portfolio = () => {
   return (
-    <section className="relative h-auto desktop-lg:ml-10 pt-8 pb-16 ml-3 tablet-sm:ml-12">
+    <section className="relative h-auto desktop-lg:ml-10 pt-8 desktop-md:pt-0 pb-16 ml-3 tablet-sm:ml-12">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-sm-h)"
@@ -21,6 +24,7 @@ export const Portfolio = () => {
         to demonstrate UI implementation, accessibility and deployment
         practices.
       </p>
+      <GitHubLink liveUrl={project.liveUrl} />
     </section>
   );
 };
