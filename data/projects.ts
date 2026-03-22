@@ -47,7 +47,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-10 tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 mx-auto phone-lg:w-44",
+          "-mt-10 tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 desktop-sm:-mt-6 mx-auto phone-lg:w-44",
       },
       {
         thumbnail:
@@ -66,7 +66,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-24 tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 phone-lg:w-44 phone-md:-mt-36 mx-auto",
+          "-mt-24 tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 desktop-sm:-mt-24 phone-lg:w-44 phone-md:-mt-36 mx-auto",
       },
     ],
   },
