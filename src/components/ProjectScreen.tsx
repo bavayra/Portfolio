@@ -62,7 +62,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
         <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:hidden">
           {displayPageNumber}
         </p>
-        <div className="grid grid-cols-2 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-sm:ml-0 desktop-md:w-2xl desktop-sm:w-100 desktop-sm:gap-x-6 gap-4 phone-md:gap-x-0 ml-6 tablet-md:ml-16 tablet-md:w-140">
+        <div className="grid grid-cols-2 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-sm:ml-0 desktop-md:w-2xl desktop-lg:w-3xl desktop-sm:w-100 desktop-sm:gap-x-6 gap-4 phone-md:gap-x-0 ml-6 tablet-md:ml-16 tablet-md:w-140">
           {props.images.map((img, index) => (
             <img
               key={`${img.thumbnail}-${index}`}

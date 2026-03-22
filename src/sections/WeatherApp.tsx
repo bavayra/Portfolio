@@ -11,7 +11,7 @@ export const WeatherApp = () => {
   return (
     <section
       id="projects"
-      className="relative h-auto desktop-sm:grid-cols-2 desktop-sm:grid pt-8 pb-0 ml-3 desktop-lg:ml-10 tablet-sm:ml-12"
+      className="relative h-auto desktop-sm:grid-cols-2 desktop-sm:grid pt-8 pb-0 ml-3 desktop-lg:ml-10 desktop-lg:mt-10 tablet-sm:ml-12"
     >
       <Divider
         widthPx="var(--hero-div-w)"
