@@ -17,7 +17,7 @@ const Skills = () => {
     <section className="relative py-8 ml-3 tablet-sm:ml-12 desktop-sm:ml-0">
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx="var(--block-div-2xl-h)"
+        heightPx="var(--block-div-xl-h)"
         leftPx={0}
         color="grey-2"
         topPx="var(--block-div-top)"

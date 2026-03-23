@@ -111,6 +111,7 @@
 
   --block-div-top: 94px;
   --block-div-lg-h: 280px;
+  --block-div-xl-h: 264px;
 
   --weather-screen-div-top: 504px;
   --weather-screen-div-height: clamp(640px, calc(301.29px + 67.742vh), 1060px);
