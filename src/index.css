@@ -254,6 +254,7 @@
 @media (min-width: 820px) {
   :root {
     --hero-div-height: clamp(168px, calc(8vh + 162.24px), 200px);
+    --hero-mt: 198px;
 
     --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
     --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
