@@ -9,7 +9,7 @@ const About = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx="var(--block-div-lg-h)"
+        heightPx={374}
         leftPx={0}
         color="grey-2"
         topPx="var(--block-div-top)"

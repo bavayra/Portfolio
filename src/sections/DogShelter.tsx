@@ -9,10 +9,10 @@ export const DogShelter = () => {
 
   if (!project) return null;
   return (
-    <section className="relative desktop-lg:ml-10 h-auto pt-8 pb-2 ml-3 desktop-sm:grid-cols-2 desktop-sm:grid tablet-sm:ml-12 ">
+    <section className="relative desktop-lg:ml-10 h-auto pt-8 pb-2 ml-3 desktop-sm:grid-cols-2  desktop-sm:grid tablet-sm:ml-12 ">
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx="var(--block-div-md-h)"
+        heightPx={310}
         leftPx={0}
         color="grey-2"
         topPx="var(--block-div-top)"
@@ -32,10 +32,10 @@ export const DogShelter = () => {
       </div>
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={1040}
+        heightPx={1068}
         leftPx={0}
         color="grey-2"
-        topPx={492}
+        topPx={488}
         className="desktop-sm:hidden"
       />
       <ProjectScreen
