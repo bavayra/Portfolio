@@ -142,6 +142,7 @@
 
     --block-div-top: 104px;
     --block-div-sm-h: clamp(248px, calc(185.6px + 9.6vh), 272px);
+    --block-div-md-h: 282px;
     --block-div-lg-h: 340px;
     --block-div-xl-h: 352px;
   }
@@ -162,7 +163,7 @@
     --hero-div-top: 164px;
     --hero-mt: 40px;
 
-    --block-div-md-h: clamp(284px, calc(-72.571px + 45.714vh), 316px);
+    --block-div-md-h: clamp(282px, calc(-275.143px + 71.429vh), 332px);
     --block-div-lg-h: clamp(340px, calc(-221.6px + 72vh), 412px);
 
     --weather-screen-div-top: clamp(504px, calc(-88.8px + 76vh), 580px);
@@ -174,7 +175,7 @@
 
 @media (min-width: 412px) {
   :root {
-    --block-div-md-h: 316px;
+    --block-div-md-h: 332px;
 
     --section-bot-div-height: 172px;
 
@@ -220,7 +221,7 @@
     --hero-mt: 140px;
 
     --block-div-sm-h: clamp(244px, calc(-71px + 35vh), 272px);
-    --block-div-md-h: clamp(270px, calc(-201.5px + 57.5vh), 316px);
+    --block-div-md-h: clamp(290px, calc(-182.5px + 52.5vh), 332px);
     --block-div-lg-h: clamp(364px, calc(-446px + 90vh), 436px);
     --block-div-xl-h: 448px;
 
@@ -240,6 +241,7 @@
   :root {
     --block-div-top: 132px;
     --block-div-sm-h: 244px;
+    --block-div-md-h: 290px;
     --block-div-lg-h: 364px;
 
     --contacts-div-bot-height: 448px;
@@ -255,6 +257,8 @@
   :root {
     --hero-div-height: clamp(168px, calc(8vh + 162.24px), 200px);
     --hero-mt: 198px;
+
+    --block-div-md-h: clamp(268px, calc(231.333px + 5.238vh), 290px);
 
     --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
     --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
@@ -277,6 +281,7 @@
     --hero-mt: 0px;
 
     --block-div-top: 124px;
+    --block-div-md-h: 268px;
 
     --contacts-div-bot-top: 80px;
     --contacts-div-bot-height: 340px;
@@ -308,7 +313,7 @@
     --hero-mt: 16px;
 
     --block-div-lg-h: clamp(364px, calc(54.222px + 37.778vh), 432px);
-    --block-div-md-h: clamp(270px, calc(69.556px + 24.444vh), 314px);
+    --block-div-md-h: clamp(268px, calc(76.667px + 23.333vh), 310px);
   }
 
   #dot-pattern-svg {
