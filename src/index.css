@@ -110,6 +110,7 @@
   --section-bot-div-top: 148px;
 
   --block-div-top: 94px;
+  --block-div-xs-h: 280px;
   --block-div-md-h: 230px;
   --block-div-lg-h: 300px;
   --block-div-xl-h: 264px;
@@ -141,6 +142,7 @@
     --hero-div-height: clamp(112px, calc(104vh - 512px), 164px);
 
     --block-div-top: 104px;
+    --block-div-xs-h: 332px;
     --block-div-sm-h: clamp(248px, calc(185.6px + 9.6vh), 272px);
     --block-div-md-h: 282px;
     --block-div-lg-h: 340px;
@@ -166,6 +168,7 @@
     --hero-div-top: 164px;
     --hero-mt: 40px;
 
+    --block-div-xs-h: clamp(332px, calc(-69.143px + 51.429vh), 368px);
     --block-div-md-h: clamp(282px, calc(-275.143px + 71.429vh), 332px);
     --block-div-lg-h: clamp(340px, calc(-221.6px + 72vh), 412px);
 
@@ -180,6 +183,7 @@
 
 @media (min-width: 412px) {
   :root {
+    --block-div-xs-h: 368px;
     --block-div-md-h: 332px;
 
     --section-bot-div-height: 172px;
@@ -230,6 +234,7 @@
     --hero-div-w: 3px;
     --hero-mt: 140px;
 
+    --block-div-xs-h: clamp(312px, calc(-318px + 70vh), 368px);
     --block-div-sm-h: clamp(244px, calc(-71px + 35vh), 272px);
     --block-div-md-h: clamp(290px, calc(-182.5px + 52.5vh), 332px);
     --block-div-lg-h: clamp(364px, calc(-446px + 90vh), 436px);
@@ -250,6 +255,7 @@
 @media (min-width: 768px) {
   :root {
     --block-div-top: 132px;
+    --block-div-xs-h: 312px;
     --block-div-sm-h: 244px;
     --block-div-md-h: 290px;
     --block-div-lg-h: 364px;
@@ -322,6 +328,7 @@
     --hero-div-2-height: 372px;
     --hero-mt: 16px;
 
+    --block-div-xs-h: clamp(312px, calc(29.556px + 34.444vh), 374px);
     --block-div-lg-h: clamp(364px, calc(54.222px + 37.778vh), 432px);
     --block-div-md-h: clamp(268px, calc(76.667px + 23.333vh), 310px);
   }
@@ -339,6 +346,7 @@
     --hero-div-2-height: 552px;
 
     --block-div-top: 134px;
+    --block-div-xs-h: 374px;
     --block-div-lg-h: 376px;
 
     --section-bot-div-height: 272px;
