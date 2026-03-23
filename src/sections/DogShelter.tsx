@@ -32,7 +32,7 @@ export const DogShelter = () => {
       </div>
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={1068}
+        heightPx="var(--shelter-screen-div-height)"
         leftPx={0}
         color="grey-2"
         topPx="var(--shelter-screen-div-top)"
