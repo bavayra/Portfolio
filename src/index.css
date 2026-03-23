@@ -110,11 +110,12 @@
   --section-bot-div-top: 148px;
 
   --block-div-top: 94px;
-  --block-div-lg-h: 280px;
+  --block-div-md-h: 230px;
+  --block-div-lg-h: 300px;
   --block-div-xl-h: 264px;
 
-  --weather-screen-div-top: 504px;
-  --weather-screen-div-height: clamp(640px, calc(301.29px + 67.742vh), 1060px);
+  --weather-screen-div-top: 452px;
+  --weather-screen-div-height: 540px;
 
   --shelter-screen-div-top: clamp(446px, calc(368.5px + 15.5vh), 508px);
   --shelter-screen-div-height: clamp(600px, calc(254.839px + 69.032vh), 1028px);
@@ -216,6 +217,7 @@
     --hero-div-height: clamp(148px, calc(23.18vh - 60.62px), 200px);
     --hero-div-top: 36px;
     --hero-div-w: 3px;
+    --hero-mt: 140px;
 
     --block-div-top: clamp(114px, calc(17.5vh - 43.5px), 128px);
     --block-div-sm-h: clamp(244px, calc(-71px + 35vh), 272px);
