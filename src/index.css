@@ -117,7 +117,7 @@
   --weather-screen-div-top: 452px;
   --weather-screen-div-height: 540px;
 
-  --shelter-screen-div-top: clamp(446px, calc(368.5px + 15.5vh), 508px);
+  --shelter-screen-div-top: 380px;
   --shelter-screen-div-height: clamp(600px, calc(254.839px + 69.032vh), 1028px);
 
   --contacts-div-bot-top: 52px;
@@ -145,6 +145,8 @@
     --block-div-md-h: 282px;
     --block-div-lg-h: 340px;
     --block-div-xl-h: 352px;
+
+    --shelter-screen-div-top: 448px;
   }
 }
 
@@ -166,6 +168,8 @@
     --block-div-md-h: clamp(282px, calc(-275.143px + 71.429vh), 332px);
     --block-div-lg-h: clamp(340px, calc(-221.6px + 72vh), 412px);
 
+    --shelter-screen-div-top: clamp(448px, calc(2.286px + 57.143vh), 488px);
+
     --weather-screen-div-top: clamp(504px, calc(-88.8px + 76vh), 580px);
 
     --section-top-div-height: 124px;
@@ -178,6 +182,8 @@
     --block-div-md-h: 332px;
 
     --section-bot-div-height: 172px;
+
+    --shelter-screen-div-top: 488px;
 
     --contacts-div-bot-height: 464px;
 
@@ -208,6 +214,8 @@
     --block-div-lg-h: clamp(384px, calc(-734px + 130vh), 436px);
     --block-div-xl-h: clamp(352px, calc(240vh - 1712px), 448px);
 
+    --shelter-screen-div-top: clamp(488px, calc(58px + 50vh), 508px);
+
     --weather-screen-div-top: clamp(556px, calc(-734px + 150vh), 616px);
   }
 }
@@ -225,9 +233,9 @@
     --block-div-lg-h: clamp(364px, calc(-446px + 90vh), 436px);
     --block-div-xl-h: 448px;
 
-    --weather-screen-div-top: clamp(560px, calc(-70px + 70vh), 616px);
+    --shelter-screen-div-top: clamp(488px, calc(263px + 25vh), 508px);
 
-    --shelter-screen-div-top: clamp(446px, calc(368.5px + 15.5vh), 508px);
+    --weather-screen-div-top: clamp(560px, calc(-70px + 70vh), 616px);
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: clamp(124px, calc(-56px + 20vh), 168px);

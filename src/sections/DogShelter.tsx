@@ -35,7 +35,7 @@ export const DogShelter = () => {
         heightPx={1068}
         leftPx={0}
         color="grey-2"
-        topPx={488}
+        topPx="var(--shelter-screen-div-top)"
         className="desktop-sm:hidden"
       />
       <ProjectScreen
