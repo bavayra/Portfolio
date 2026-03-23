@@ -109,7 +109,8 @@
   --section-bot-div-height: 88px;
   --section-bot-div-top: 148px;
 
-  --block-div-md-h: 284px;
+  --block-div-top: 94px;
+  --block-div-lg-h: 280px;
 
   --weather-screen-div-top: 504px;
   --weather-screen-div-height: clamp(640px, calc(301.29px + 67.742vh), 1060px);
