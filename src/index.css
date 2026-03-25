@@ -145,7 +145,7 @@
     --block-div-top: 104px;
     --block-div-xs-h: 332px;
     --block-div-md-h: 282px;
-    --block-div-lg-h: 340px;
+    --block-div-lg-h: 338px;
     --block-div-xl-h: 352px;
 
     --shelter-screen-div-top: 448px;
@@ -200,7 +200,7 @@
   :root {
     --hero-div-height: clamp(180px, calc(500vh - 4120px), 280px);
 
-    --block-div-lg-h: clamp(384px, calc(-820px + 140vh), 412px);
+    --block-div-lg-h: clamp(380px, calc(-1340px + 200vh), 420px);
 
     --weather-screen-div-top: clamp(556px, calc(-476px + 120vh), 580px);
     --shelter-screen-div-height: clamp(612px, calc(-1060px + 190vh), 1068px);
@@ -218,7 +218,7 @@
 
     --block-div-top: 112px;
     --block-div-sm-h: clamp(332px, calc(-1130px + 170vh), 400px);
-    --block-div-lg-h: clamp(384px, calc(-734px + 130vh), 436px);
+    --block-div-lg-h: clamp(380px, calc(-910px + 150vh), 440px);
     --block-div-xl-h: clamp(352px, calc(240vh - 1712px), 448px);
 
     --shelter-screen-div-top: clamp(488px, calc(58px + 50vh), 508px);
@@ -331,7 +331,7 @@
 
     --block-div-xs-h: clamp(312px, calc(29.556px + 34.444vh), 374px);
     --block-div-sm-h: clamp(300px, calc(99.556px + 24.444vh), 344px);
-    --block-div-lg-h: clamp(364px, calc(54.222px + 37.778vh), 432px);
+    --block-div-lg-h: clamp(364px, calc(63.333px + 36.667vh), 430px);
     --block-div-md-h: clamp(268px, calc(76.667px + 23.333vh), 310px);
   }
 
@@ -350,7 +350,7 @@
     --block-div-top: 134px;
     --block-div-xs-h: 374px;
     --block-div-sm-h: 344px;
-    --block-div-lg-h: 376px;
+    --block-div-lg-h: 430px;
 
     --section-bot-div-height: 272px;
     --section-top-div-height: clamp(188px, calc(-1184px + 140vh), 216px);

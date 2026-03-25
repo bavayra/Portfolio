@@ -15,7 +15,7 @@ export const WeatherApp = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={430}
+        heightPx="var(--block-div-lg-h)"
         leftPx={0}
         color="grey-2"
         topPx="var(--block-div-top)"
