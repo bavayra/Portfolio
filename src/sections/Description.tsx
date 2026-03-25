@@ -5,7 +5,7 @@ export const Description = () => {
     <section className="relative phone-sm:h-[84vh] h-screen desktop-lg:ml-10 desktop-sm:h-[68vh] desktop-lg:h-[60vh] tablet-lg:h-[48vh] desktop-xl:h-[56vh] tablet-sm:ml-12 min-[375px]:h-[92vh] tablet-md:h-[52vh] min-[390px]:h-[70vh] phone-md:max-h-[74vh] min-[428px]:h-[68vh] phone-lg:h-[72vh] py-8 ml-3">
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={344}
+        heightPx="var(--block-div-sm-h)"
         leftPx={0}
         color="grey-2"
         topPx="var(--block-div-top)"
