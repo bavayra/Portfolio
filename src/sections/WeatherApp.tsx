@@ -38,10 +38,10 @@ export const WeatherApp = () => {
 
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={1068}
+        heightPx="var(--weather-screen-div-height)"
         leftPx={0}
         color="grey-2"
-        topPx={562}
+        topPx="var(--weather-screen-div-top)"
         className="desktop-sm:hidden"
       />
       <ProjectScreen

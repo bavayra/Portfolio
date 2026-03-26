@@ -148,6 +148,9 @@
     --block-div-lg-h: 338px;
     --block-div-xl-h: 352px;
 
+    --weather-screen-div-top: 504px;
+    --weather-screen-div-height: 600px;
+
     --shelter-screen-div-top: 448px;
     --shelter-screen-div-height: 612px;
   }
@@ -174,7 +177,7 @@
 
     --shelter-screen-div-top: clamp(448px, calc(2.286px + 57.143vh), 488px);
 
-    --weather-screen-div-top: clamp(504px, calc(-88.8px + 76vh), 580px);
+    --weather-screen-div-top: clamp(504px, calc(-387.429px + 114.286vh), 584px);
 
     --section-top-div-height: 124px;
     --section-bot-div-top: 228px;
@@ -190,6 +193,8 @@
 
     --shelter-screen-div-top: 488px;
 
+    --weather-screen-div-height: clamp(600px, calc(33.333px + 66.667vh), 620px);
+
     --contacts-div-bot-height: 464px;
 
     --name-year-size: 1.875rem;
@@ -202,7 +207,8 @@
 
     --block-div-lg-h: clamp(380px, calc(-1340px + 200vh), 420px);
 
-    --weather-screen-div-top: clamp(556px, calc(-476px + 120vh), 580px);
+    --weather-screen-div-top: clamp(556px, calc(-648px + 140vh), 584px);
+    --weather-screen-div-height: clamp(620px, calc(-7120px + 900vh), 800px);
     --shelter-screen-div-height: clamp(612px, calc(-1060px + 190vh), 1068px);
   }
 }
@@ -224,6 +230,7 @@
     --shelter-screen-div-top: clamp(488px, calc(58px + 50vh), 508px);
 
     --weather-screen-div-top: clamp(556px, calc(-734px + 150vh), 616px);
+    --weather-screen-div-height: clamp(800px, calc(-1952px + 320vh), 928px);
   }
 }
 
@@ -243,7 +250,8 @@
 
     --shelter-screen-div-top: clamp(488px, calc(263px + 25vh), 508px);
 
-    --weather-screen-div-top: clamp(560px, calc(-70px + 70vh), 616px);
+    --weather-screen-div-top: clamp(562px, calc(-45.5px + 67.5vh), 616px);
+    --weather-screen-div-height: clamp(928px, calc(-647px + 175vh), 1068px);
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: clamp(124px, calc(-56px + 20vh), 168px);
