@@ -2,6 +2,7 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  descriptionFull?: string;
   position: {
     row: number;
     col: number;
@@ -25,6 +26,8 @@ export const projects: Project[] = [
     id: "dog-shelter",
     title: "Dog Shelter",
     description: "Responsive landing page for dog adoption service",
+    descriptionFull:
+      "Real dog shelter's landing page built with React 19, TypeScript, and Tailwind CSS. Features a custom useDogFilters hook for filtering dogs. Includes an interactive dog detail modal, photo carousel, shelter stats, and a fully validated contact form with DOMPurify sanitization and 30-second rate limiting. Mobile-first, accessible (ARIA, keyboard navigation), performance-optimized (lazy loading, AVIF/WebP images, code splitting). Clean component architecture with ESLint, Prettier, and Husky pre-commit hooks.",
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind", "Vite"],
     pageNumber: "07",
@@ -75,6 +78,8 @@ export const projects: Project[] = [
     id: "weather-app",
     title: "Weather App",
     description: "Real-time weather forecast with OpenWeather API",
+    descriptionFull:
+      "A mobile‑first weather app built with vanilla JavaScript and Vite, focused on clarity and speed for small screens. It combines real‑time OpenWeather data, hourly/daily forecasts, city search with saved favorites, and an interactive Leaflet map, plus optional geolocation and °C/°F switching. The UI is designed from a Figma mockup, optimized with lazy loading and lightweight assets, and built with accessibility in mind (semantic HTML and keyboard-friendly navigation).",
     position: { row: 1, col: 2 },
     technologies: ["CSS3", "HTML5", "Vanilla JS", "API", "Vite"],
     liveUrl: "https://...",
