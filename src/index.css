@@ -146,7 +146,7 @@
     --block-div-xs-h: 332px;
     --block-div-md-h: 282px;
     --block-div-lg-h: 338px;
-    --block-div-xl-h: 352px;
+    --block-div-xl-h: 332px;
 
     --weather-screen-div-top: 504px;
     --weather-screen-div-height: 600px;
@@ -225,7 +225,7 @@
     --block-div-top: 112px;
     --block-div-sm-h: clamp(332px, calc(-1130px + 170vh), 400px);
     --block-div-lg-h: clamp(380px, calc(-910px + 150vh), 440px);
-    --block-div-xl-h: clamp(352px, calc(240vh - 1712px), 448px);
+    --block-div-xl-h: clamp(332px, calc(-1775px + 245vh), 430px);
 
     --shelter-screen-div-top: clamp(488px, calc(58px + 50vh), 508px);
 
@@ -246,7 +246,7 @@
     --block-div-sm-h: clamp(300px, calc(-825px + 125vh), 400px);
     --block-div-md-h: clamp(290px, calc(-182.5px + 52.5vh), 332px);
     --block-div-lg-h: clamp(364px, calc(-446px + 90vh), 436px);
-    --block-div-xl-h: 448px;
+    --block-div-xl-h: 430px;
 
     --shelter-screen-div-top: clamp(488px, calc(263px + 25vh), 508px);
 
