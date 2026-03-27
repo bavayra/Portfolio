@@ -16,6 +16,7 @@ type ProjectScreenProps = {
     live?: string;
   };
   pageNumber?: string | number;
+  className?: string;
 };
 
 const ProjectScreen = (props: ProjectScreenProps) => {

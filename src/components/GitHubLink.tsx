@@ -8,7 +8,7 @@ const GitHubLink = ({ liveUrl }: GitHubLinkProps) => {
   return (
     <>
       <div>
-        <div className="flex flex-row mt-4 items-center phone-lg:pl-2 gap-1 ml-3 tracking-wide">
+        <div className="flex flex-row mt-4 items-center gap-1 ml-3 tracking-wide">
           <p className="text-grey-3 phone-md:text-base text-sm tablet-sm:text-lg">
             Check the code on
           </p>
@@ -26,7 +26,7 @@ const GitHubLink = ({ liveUrl }: GitHubLinkProps) => {
           </a>
         </div>
         {liveUrl && (
-          <div className="flex items-center ml-3 tablet-sm:text-xl phone-lg:ml-5 text-accent-red text-base font-semibold">
+          <div className="flex items-center ml-3 tablet-sm:text-xl phone-lg:ml-3 text-accent-red text-base font-semibold">
             <a href={liveUrl} className="inline-flex items-center gap-2">
               <span>Live Demo</span>
               <img
