@@ -148,10 +148,10 @@
     --block-div-xl-h: 332px;
 
     --weather-screen-div-top: 504px;
-    --weather-screen-div-height: 600px;
+    --weather-screen-div-height: 1100px;
 
     --shelter-screen-div-top: 448px;
-    --shelter-screen-div-height: 560px;
+    --shelter-screen-div-height: 1080px;
   }
 }
 
@@ -184,10 +184,10 @@
     --section-bot-div-height: 172px;
 
     --shelter-screen-div-top: 488px;
-    --shelter-screen-div-height: 584px;
+    --shelter-screen-div-height: 1170px;
 
     --weather-screen-div-top: 584px;
-    --weather-screen-div-height: 624px;
+    --weather-screen-div-height: 1180px;
 
     --contacts-div-bot-height: 464px;
 
@@ -213,12 +213,14 @@
     --section-bot-div-height: clamp(172px, calc(26.462px + 16.923vh), 216px);
 
     --block-div-top: 112px;
+    --block-div-md-h: 288px;
     --block-div-lg-h: 380px;
     --block-div-xl-h: clamp(332px, calc(-1775px + 245vh), 430px);
 
-    --shelter-screen-div-height: 716px;
+    --shelter-screen-div-height: 1224px;
+    --shelter-screen-div-top: 460px;
     --weather-screen-div-top: 556px;
-    --weather-screen-div-height: 750px;
+    --weather-screen-div-height: 1240px;
   }
 }
 
@@ -232,14 +234,15 @@
 
     --block-div-xs-h: 412px;
     --block-div-sm-h: 400px;
+    --block-div-md-h: 328px;
     --block-div-lg-h: 440px;
     --block-div-xl-h: 430px;
 
     --shelter-screen-div-top: 508px;
-    --shelter-screen-div-height: 852px;
+    --shelter-screen-div-height: 1312px;
 
     --weather-screen-div-top: 616px;
-    --weather-screen-div-height: 900px;
+    --weather-screen-div-height: 1320px;
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: clamp(124px, calc(-56px + 20vh), 168px);
@@ -263,10 +266,10 @@
     --hero-mt: 164px;
 
     --shelter-screen-div-top: 488px;
-    --shelter-screen-div-height: 1036px;
+    --shelter-screen-div-height: 1436px;
 
     --weather-screen-div-top: 562px;
-    --weather-screen-div-height: 1024px;
+    --weather-screen-div-height: 1400px;
   }
 }
 
@@ -298,7 +301,8 @@
     --hero-mt: 0px;
 
     --block-div-top: 124px;
-    --block-div-md-h: 268px;
+    --block-div-md-h: 750px;
+    --block-div-lg-h: 812px;
 
     --contacts-div-bot-top: 80px;
     --contacts-div-bot-height: 340px;
