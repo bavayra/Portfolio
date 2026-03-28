@@ -56,7 +56,7 @@ export const DogShelter = () => {
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-xl:max-w-120 desktop-xl:text-xl "
+          className="desktop-xl:max-w-120 desktop-xl:text-xl desktop-md:col-span-2 desktop-md:max-w-184 desktop-md:-translate-x-1/5 desktop-md:mt-2"
         />
       </div>
     </section>
