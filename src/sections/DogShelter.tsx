@@ -10,7 +10,7 @@ export const DogShelter = () => {
 
   if (!project) return null;
   return (
-    <section className="relative desktop-lg:ml-10 h-auto pt-8 pb-2 desktop-lg:pb-10 ml-3 tablet-sm:ml-12 ">
+    <section className="relative desktop-lg:ml-10 h-auto pt-8 pb-2 desktop-md:pb-10 ml-3 tablet-sm:ml-12 ">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-md-h)"
@@ -56,7 +56,7 @@ export const DogShelter = () => {
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-184 desktop-md:-translate-x-1/5 desktop-md:mt-2 desktop-xl:text-lg"
+          className="desktop-md:max-w-160 desktop-md:-translate-x-1/3 desktop-md:mt-2 desktop-xl:text-lg"
         />
       </div>
     </section>
