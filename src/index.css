@@ -335,7 +335,7 @@
     --hero-div-2-height: 372px;
     --hero-mt: 16px;
 
-    --block-div-md-h: clamp(268px, calc(76.667px + 23.333vh), 310px);
+    --block-div-md-h: 688px;
   }
 
   #dot-pattern-svg {

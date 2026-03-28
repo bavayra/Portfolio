@@ -10,7 +10,7 @@ export const DogShelter = () => {
 
   if (!project) return null;
   return (
-    <section className="relative desktop-lg:ml-10 h-auto pt-8 pb-2 ml-3 tablet-sm:ml-12 ">
+    <section className="relative desktop-lg:ml-10 h-auto pt-8 pb-2 desktop-lg:pb-10 ml-3 tablet-sm:ml-12 ">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-md-h)"
