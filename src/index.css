@@ -353,7 +353,8 @@
     --block-div-top: 134px;
     --block-div-xs-h: 374px;
     --block-div-sm-h: 344px;
-    --block-div-lg-h: 430px;
+    --block-div-md-h: 784px;
+    --block-div-lg-h: 700px;
 
     --section-bot-div-height: 272px;
     --section-top-div-height: clamp(188px, calc(-1184px + 140vh), 216px);

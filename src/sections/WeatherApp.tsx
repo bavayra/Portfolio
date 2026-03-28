@@ -12,7 +12,7 @@ export const WeatherApp = () => {
   return (
     <section
       id="projects"
-      className="relativ pt-8 pb-0 ml-3 desktop-lg:ml-10 desktop-lg:mt-10 tablet-sm:ml-12 py-8 "
+      className="relative pt-8 pb-0 ml-3 desktop-lg:ml-10 desktop-lg:mt-10 tablet-sm:ml-12 py-8 "
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -58,7 +58,7 @@ export const WeatherApp = () => {
         </div>
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-xl:max-w-120 desktop-md:col-span-2 desktop-xl:text-xl desktop-md:max-w-172 desktop-md:-translate-x-1/3"
+          className="desktop-md:max-w-172 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg"
         />
       </div>
     </section>
