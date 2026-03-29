@@ -124,4 +124,54 @@ export const projects: Project[] = [
       },
     ],
   },
+  {
+    id: "portfolio-project",
+    title: "This Portfolio",
+    description: "Responsive personal portfolio",
+    descriptionFull:
+      "A responsive, performance‑focused personal portfolio. Features lazy‑loaded sections via React.lazy and Suspense, fluid typography with clamp(), a custom useVh hook for mobile viewport fixes, and IntersectionObserver‑driven animations that trigger once on scroll. Includes a validated contact form with input sanitization and 30‑second rate limiting, 10 mobile‑first breakpoints, dark mode via prefers‑color‑scheme, self‑hosted WOFF2 fonts with font‑display: swap, and WebP‑optimized project screenshots with thumbnail previews and a zoom modal. Accessible throughout: ARIA labels, semantic HTML, keyboard navigation, and focus‑visible management.",
+    position: { row: 1, col: 1 },
+    technologies: ["React", "TypeScript", "Tailwind", "Vite"],
+    pageNumber: "08",
+    githubUrl: "https://github.com/bavayra/portfolio.git",
+    liveUrl: "https://github.com/bavayra/portfolio.git",
+    images: [
+      {
+        thumbnail: "/screens/portfolio-screen/portfolio-1280-thumb.webp",
+        full: "/screens/portfolio-screen/portfolio-1280.webp",
+        alt: "Portfolio Project",
+        width: 375,
+        height: 667,
+        className:
+          "phone-md:w-38 mx-auto phone-lg:w-44 tablet-md:w-62 tablet-sm:w-52",
+      },
+      {
+        thumbnail: "/screens/portfolio-screen/portfolio-1024-thumb.webp",
+        full: "/screens/portfolio-screen/portfolio-1024.webp",
+        alt: "Portfolio Project",
+        width: 375,
+        height: 667,
+        className:
+          "-mt-10 tablet-sm:w-52 tablet-md:w-62 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 mx-auto phone-lg:w-44",
+      },
+      {
+        thumbnail: "/screens/portfolio-screen/portfolio-820-thumb.webp",
+        full: "/screens/portfolio-screen/portfolio-820.webp",
+        alt: "Portfolio Project",
+        width: 375,
+        height: 667,
+        className:
+          "translate-y-8 tablet-sm:w-52 tablet-md:w-62  desktop-md:translate-y-full phone-md:w-38 mx-auto phone-lg:w-44",
+      },
+      {
+        thumbnail: "/screens/portfolio-screen/portfolio-390-thumb.webp",
+        full: "/screens/portfolio-screen/portfolio-390.webp",
+        alt: "Portfolio Project",
+        width: 375,
+        height: 667,
+        className:
+          "-mt-24 tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 phone-lg:w-44 phone-md:-mt-30 mx-auto",
+      },
+    ],
+  },
 ];
