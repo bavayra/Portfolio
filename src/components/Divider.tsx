@@ -5,7 +5,7 @@ type CssLength = number | string;
 interface DividerProps {
   widthPx: 2 | 3 | number | string;
   heightPx: CssLength;
-  color: "grey-3" | "grey-2";
+  color: "grey-3" | "grey-2" | "section-title-bg";
   topPx?: CssLength;
   bottomPx?: CssLength;
   leftPx?: CssLength;
@@ -24,6 +24,7 @@ export const Divider: React.FC<DividerProps> = ({
   const colorMap: Record<DividerProps["color"], string> = {
     "grey-3": "var(--color-grey-3)",
     "grey-2": "var(--color-grey-2)",
+    "section-title-bg": "var(--color-section-title-bg)",
   };
 
   const toCssLength = (value: CssLength | undefined) => {
