@@ -110,6 +110,7 @@
   --section-bot-div-top: 148px;
 
   --block-div-top: 104px;
+  --block-div-2xs-h: 254px;
   --block-div-xs-h: 280px;
   --block-div-sm-h: 332px;
   --block-div-md-h: 230px;
@@ -124,6 +125,9 @@
 
   --contacts-div-bot-top: 52px;
   --contacts-div-bot-height: 448px;
+
+  --portfolio-screen-div-top: 428px;
+  --portfolio-screen-div-height: 1132px;
 }
 
 #dot-pattern-svg {

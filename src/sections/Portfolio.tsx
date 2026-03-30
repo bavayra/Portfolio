@@ -15,13 +15,13 @@ export const Portfolio = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx="var(--block-div-sm-h)"
+        heightPx="var(--block-div-2xs-h)"
         leftPx={0}
         color="grey-2"
         topPx="var(--block-div-top)"
       />
       <div className="desktop-sm:grid desktop-sm:grid-cols-2 desktop-md:gap-y-2 desktop-sm:gap-6 desktop-sm:items-start">
-        <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 pb-6">
+        <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
           <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">08</p>
           <h2 className="text-2xl tablet-md:my-2 desktop-xl:text-5xl phone-sm:text-3xl desktop-sm:text-4xl tablet-md:text-5xl phone-lg:text-4xl text-grey-2 font-medium">
             THIS PORTFOLIO <span className="text-accent-red font-bold">:)</span>
@@ -37,10 +37,10 @@ export const Portfolio = () => {
 
         <Divider
           widthPx="var(--hero-div-w)"
-          heightPx="var(--weather-screen-div-height)"
+          heightPx="var(--portfolio-screen-div-height)"
           leftPx={0}
           color="grey-2"
-          topPx="var(--weather-screen-div-top)"
+          topPx="var(--portfolio-screen-div-top)"
           className="desktop-sm:hidden"
         />
         <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 justify-center flex py-2 ml-4 max-w-70 rounded-xl ">
