@@ -22,13 +22,8 @@ export const WeatherApp = () => {
         topPx="var(--block-div-top)"
       />
       <div className="desktop-sm:grid desktop-sm:grid-cols-2 desktop-md:gap-y-2 desktop-sm:gap-6 desktop-sm:items-start">
+        <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">04</p>
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
-          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:hidden">
-            {project.pageNumberMobile}
-          </p>
-          <p className="hidden text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:block">
-            {project.pageNumberDesktop}
-          </p>
           <h2 className="text-2xl desktop-xl:text-5xl desktop-sm:text-4xl tablet-md:my-2 phone-sm:text-3xl tablet-md:text-5xl phone-lg:text-4xl text-grey-2 font-medium">
             WEATHER APP
           </h2>

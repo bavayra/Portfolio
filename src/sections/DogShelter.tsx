@@ -20,12 +20,7 @@ export const DogShelter = () => {
       />
       <div className="desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-6 desktop-sm:items-start">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
-          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:hidden">
-            {project.pageNumberMobile}
-          </p>
-          <p className="hidden text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:block">
-            {project.pageNumberDesktop}
-          </p>
+          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">05</p>
           <h2 className="text-2xl desktop-sm:text-4xl desktop-xl:text-5xl text-grey-2 tablet-md:my-2  phone-sm:text-3xl phone-lg:text-4xl tablet-md:text-5xl font-medium">
             DOG SHELTER WEB
           </h2>
