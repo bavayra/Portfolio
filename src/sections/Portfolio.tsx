@@ -11,7 +11,7 @@ export const Portfolio = () => {
   return (
     <section
       id="projects"
-      className="relative h-auto desktop-lg:ml-10 pt-8 desktop-md:pt-0 pb-16 ml-3 tablet-sm:ml-12"
+      className="relative desktop-lg:ml-10 pt-8 desktop-md:pt-0 pb-16 ml-3 tablet-sm:ml-12"
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -20,9 +20,14 @@ export const Portfolio = () => {
         color="grey-2"
         topPx="var(--block-div-top)"
       />
-      <div className="desktop-sm:grid desktop-sm:grid-cols-2 desktop-md:gap-y-2 desktop-sm:gap-6 desktop-sm:items-start">
+      <div className="desktop-sm:grid desktop-sm:grid-cols-2  desktop-md:gap-y-2 desktop-sm:gap-6 desktop-sm:items-start">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
-          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">08</p>
+          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:hidden">
+            {project.pageNumberMobile}
+          </p>
+          <p className="hidden text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:block">
+            {project.pageNumberDesktop}
+          </p>
           <h2 className="text-2xl tablet-md:my-2 desktop-xl:text-5xl phone-sm:text-3xl desktop-sm:text-4xl tablet-md:text-5xl phone-lg:text-4xl text-grey-2 font-medium">
             THIS PORTFOLIO <span className="text-accent-red font-bold">:)</span>
           </h2>
@@ -43,14 +48,14 @@ export const Portfolio = () => {
           topPx="var(--portfolio-screen-div-top)"
           className="desktop-sm:hidden"
         />
-        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 justify-center flex py-2 ml-4 max-w-70 rounded-xl ">
+        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 phone-md:mx-auto py-2 ml-3 max-w-70 rounded-xl phone-md:max-w-76">
           <ProjectScreen
             title={project.title}
             description={project.description}
             images={project.images}
             technologies={project.technologies}
             links={{ live: project.liveUrl }}
-            pageNumber={project.pageNumber}
+            className="phone-md:gap-x-6"
           />
         </div>
         <ProjectDesc

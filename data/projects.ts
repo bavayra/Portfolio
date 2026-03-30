@@ -10,7 +10,8 @@ export interface Project {
   technologies: string[];
   liveUrl?: string;
   githubUrl?: string;
-  pageNumber?: string | number;
+  pageNumberMobile: string;
+  pageNumberDesktop: string;
   images: {
     thumbnail: string;
     full: string;
@@ -30,7 +31,8 @@ export const projects: Project[] = [
       "Real dog shelter's landing page built with React 19, TypeScript, and Tailwind CSS. Features a custom useDogFilters hook for filtering dogs. Includes an interactive dog detail modal, photo carousel, shelter stats, and a fully validated contact form with DOMPurify sanitization and 30-second rate limiting. Mobile-first, accessible (ARIA, keyboard navigation), performance-optimized (lazy loading, AVIF/WebP images, code splitting). Clean component architecture with ESLint, Prettier, and Husky pre-commit hooks.",
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind", "Vite"],
-    pageNumber: "07",
+    pageNumberMobile: "06",
+    pageNumberDesktop: "05",
     githubUrl: "https://github.com/bavayra/dog-shelter.git",
     liveUrl: "https://github.com/bavayra/dog-shelter.git",
     images: [
@@ -82,9 +84,10 @@ export const projects: Project[] = [
       "A mobile‑first weather app built with vanilla JavaScript and Vite, focused on clarity and speed for small screens. It combines real‑time OpenWeather data, hourly/daily forecasts, city search with saved favorites, and an interactive Leaflet map, plus optional geolocation and °C/°F switching. The UI is designed from a Figma mockup, optimized with lazy loading and lightweight assets, and built with accessibility in mind (semantic HTML and keyboard-friendly navigation).",
     position: { row: 1, col: 2 },
     technologies: ["CSS3", "HTML5", "Vanilla JS", "API", "Vite"],
+    pageNumberMobile: "04",
+    pageNumberDesktop: "04",
     liveUrl: "https://...",
     githubUrl: "https://github.com/bavayra/WeatherApp.git",
-    pageNumber: "05",
     images: [
       {
         thumbnail: "/screens/weather-app-screen/weather-app-main-thumb.webp",
@@ -132,7 +135,8 @@ export const projects: Project[] = [
       "A responsive, performance‑focused personal portfolio. Features lazy‑loaded sections via React.lazy and Suspense, fluid typography with clamp(), a custom useVh hook for mobile viewport fixes, and IntersectionObserver‑driven animations that trigger once on scroll. Includes a validated contact form with input sanitization and 30‑second rate limiting, 10 mobile‑first breakpoints, dark mode via prefers‑color‑scheme, self‑hosted WOFF2 fonts with font‑display: swap, and WebP‑optimized project screenshots with thumbnail previews and a zoom modal. Accessible throughout: ARIA labels, semantic HTML, keyboard navigation, and focus‑visible management.",
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind", "Vite"],
-    pageNumber: "09",
+    pageNumberMobile: "08",
+    pageNumberDesktop: "06",
     githubUrl: "https://github.com/bavayra/portfolio.git",
     liveUrl: "https://github.com/bavayra/portfolio.git",
     images: [
@@ -143,7 +147,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 phone-lg:w-44 w-30 phone-md:-mt-30 border-2 border-grey-2",
+          "tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 phone-lg:w-44 w-34 border-2 border-grey-2",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-1024-thumb.webp",
@@ -152,7 +156,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-10 tablet-sm:w-52 tablet-md:w-62 w-30 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 phone-lg:w-44 border-2 border-grey-2",
+          "-mt-10 tablet-sm:w-52 tablet-md:w-62 w-34 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 phone-lg:w-44 border-2 border-grey-2",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-820-thumb.webp",
@@ -161,7 +165,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "tablet-sm:w-52 tablet-md:w-62 w-30 border-2 border-grey-2 -mt-8 desktop-md:translate-y-full phone-md:w-38 phone-lg:w-44",
+          "tablet-sm:w-52 tablet-md:w-62 w-30 border-2 border-grey-2 -mt-8 desktop-md:translate-y-full phone-md:w-36 phone-lg:w-44",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-1120-thumb.webp",
@@ -170,7 +174,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "phone-md:w-38 phone-lg:w-44 border-2 border- tablet-md:w-62 w-30 tablet-sm:w-52 border-2 border-grey-2",
+          "phone-md:w-38 phone-lg:w-44 tablet-md:w-62 w-30 tablet-sm:w-52 border-2 border-grey-2",
       },
     ],
   },

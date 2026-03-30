@@ -15,43 +15,23 @@ type ProjectScreenProps = {
   links?: {
     live?: string;
   };
-  pageNumber?: string | number;
   className?: string;
 };
 
 const ProjectScreen = (props: ProjectScreenProps) => {
   const [openImage, setOpenImage] = useState<string | null>(null);
-  const [isDesktop, setIsDesktop] = useState<boolean>(
-    typeof window !== "undefined" ? window.innerWidth >= 1024 : false
-  );
 
   useEffect(() => {
     const handleEsc = (e: KeyboardEvent) => {
       if (e.key === "Escape") setOpenImage(null);
     };
 
-    const handleResize = () => {
-      setIsDesktop(window.innerWidth >= 1024);
-    };
-
     window.addEventListener("keydown", handleEsc);
-    window.addEventListener("resize", handleResize);
 
     return () => {
       window.removeEventListener("keydown", handleEsc);
-      window.removeEventListener("resize", handleResize);
     };
   }, []);
-
-  const mapPageNumber = (value?: string | number) => {
-    const str = typeof value === "number" ? String(value) : (value ?? "");
-    if (!isDesktop) return str;
-    if (str === "06") return "05";
-    if (str === "08") return "06";
-    return str;
-  };
-
-  const displayPageNumber = mapPageNumber(props.pageNumber);
 
   return (
     <>
@@ -60,10 +40,9 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
         </div>
-        <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:hidden">
-          {displayPageNumber}
-        </p>
-        <div className="grid grid-cols-2 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-xl:w-4xl desktop-sm:ml-0 desktop-md:w-2xl desktop-lg:w-3xl desktop-sm:w-100 desktop-sm:gap-x-6 gap-y-4 gap-x-0 phone-md:gap-x-0 tablet-md:ml-16 tablet-md:w-140">
+        <div
+          className={`grid grid-cols-2 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-xl:w-4xl desktop-sm:ml-0 desktop-md:w-2xl desktop-lg:w-3xl desktop-sm:w-100 desktop-sm:gap-x-6 gap-4 phone-md:gap-x-0 tablet-md:ml-16 tablet-md:w-140 ${props.className ?? ""}`}
+        >
           {props.images.map((img, index) => (
             <img
               key={`${img.thumbnail}-${index}`}
