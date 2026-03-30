@@ -43,7 +43,7 @@ export const Portfolio = () => {
           topPx="var(--weather-screen-div-top)"
           className="desktop-sm:hidden"
         />
-        <div className="desktop-sm:col-start-2 bg-section-title desktop-sm:row-start-1 desktop-sm:row-span-2 py-2 px-2 max-w-70 mx-auto rounded-xl ">
+        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 justify-center flex py-2 ml-6 max-w-70 rounded-xl ">
           <ProjectScreen
             title={project.title}
             description={project.description}
