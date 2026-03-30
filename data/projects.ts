@@ -48,7 +48,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-10 tablet-sm:w-52 tablet-md:w-62 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 mx-auto phone-lg:w-44",
+          "-mt-4 tablet-sm:w-52 tablet-md:w-62 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 mx-auto phone-lg:w-44",
       },
       {
         thumbnail:
@@ -67,7 +67,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-24 tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 phone-lg:w-44 phone-md:-mt-30 mx-auto",
+          "-mt-18 tablet-sm:w-52 tablet-md:w-62 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 phone-lg:w-44 phone-md:-mt-30 mx-auto",
       },
     ],
   },
@@ -99,7 +99,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-10 desktop-sm:-mt-6 mx-auto phone-md:w-36 tablet-sm:w-52 tablet-md:w-60 phone-lg:w-44 phone-lg:-mt-14",
+          "-mt-6 desktop-sm:-mt-6 mx-auto phone-md:w-36 tablet-sm:w-52 tablet-md:w-60 phone-lg:w-44 phone-lg:-mt-14",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-map-thumb.webp",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
         width: 140,
         height: 667,
         className:
-          "-mt-6 mx-auto desktop-sm:-mt-4 phone-lg:w-44 phone-lg:-mt-10 tablet-sm:w-52 tablet-md:w-60 phone-md:w-36",
+          "mx-auto desktop-sm:-mt-4 phone-lg:w-44 phone-lg:-mt-10 tablet-sm:w-52 tablet-md:w-60 phone-md:w-36",
       },
     ],
   },
@@ -148,7 +148,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-10 tablet-sm:w-52 tablet-md:w-62 w-34 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 phone-lg:w-44 border-2 border-grey-2",
+          "-mt-4 tablet-sm:w-52 tablet-md:w-62 w-34 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 phone-lg:w-44 border-2 border-grey-2",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-820-thumb.webp",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "tablet-sm:w-52 tablet-md:w-62 w-30 border-2 border-grey-2 -mt-8 desktop-md:translate-y-full phone-md:w-36 phone-lg:w-44",
+          "tablet-sm:w-52 tablet-md:w-62 w-30 border-2 border-grey-2 -mt-14 desktop-md:translate-y-full phone-md:w-36 phone-lg:w-44",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-1120-thumb.webp",

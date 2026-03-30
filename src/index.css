@@ -126,8 +126,8 @@
   --contacts-div-bot-top: 52px;
   --contacts-div-bot-height: 448px;
 
-  --portfolio-screen-div-top: 428px;
-  --portfolio-screen-div-height: 1132px;
+  --portfolio-screen-div-top: 392px;
+  --portfolio-screen-div-height: 1124px;
 }
 
 #dot-pattern-svg {
@@ -151,11 +151,11 @@
     --block-div-lg-h: 338px;
     --block-div-xl-h: 332px;
 
-    --weather-screen-div-top: 504px;
-    --weather-screen-div-height: 1100px;
+    --weather-screen-div-top: 466px;
+    --weather-screen-div-height: 1120px;
 
-    --shelter-screen-div-top: 448px;
-    --shelter-screen-div-height: 1080px;
+    --shelter-screen-div-top: 408px;
+    --shelter-screen-div-height: 1128px;
   }
 }
 
