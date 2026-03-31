@@ -225,10 +225,13 @@
     --block-div-lg-h: 380px;
     --block-div-xl-h: clamp(332px, calc(-1775px + 245vh), 430px);
 
-    --shelter-screen-div-height: 1224px;
-    --shelter-screen-div-top: 460px;
-    --weather-screen-div-top: 556px;
-    --weather-screen-div-height: 1240px;
+    --shelter-screen-div-height: 1172px;
+    --shelter-screen-div-top: 422px;
+
+    --weather-screen-div-top: 516px;
+    --weather-screen-div-height: 1158px;
+
+    --portfolio-screen-div-height: 992px;
   }
 }
 
