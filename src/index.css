@@ -249,11 +249,14 @@
     --block-div-lg-h: 440px;
     --block-div-xl-h: 430px;
 
-    --shelter-screen-div-top: 508px;
-    --shelter-screen-div-height: 1312px;
+    --shelter-screen-div-top: 468px;
+    --shelter-screen-div-height: 1288px;
 
-    --weather-screen-div-top: 616px;
-    --weather-screen-div-height: 1320px;
+    --weather-screen-div-top: 576px;
+    --weather-screen-div-height: 1310px;
+
+    --portfolio-screen-div-top: 438px;
+    --portfolio-screen-div-height: 1220px;
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: clamp(124px, calc(-56px + 20vh), 168px);
