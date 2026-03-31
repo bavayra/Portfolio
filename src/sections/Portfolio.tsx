@@ -43,7 +43,7 @@ export const Portfolio = () => {
           topPx="var(--portfolio-screen-div-top)"
           className="desktop-sm:hidden"
         />
-        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 phone-md:mx-auto py-2 ml-3 max-w-70 rounded-xl phone-md:max-w-76">
+        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 phone-md:mx-auto py-2 ml-3 max-w-70 rounded-xl phone-md:max-w-76 tablet-sm:max-w-108">
           <ProjectScreen
             title={project.title}
             description={project.description}
