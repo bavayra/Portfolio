@@ -12,7 +12,7 @@ export const WeatherApp = () => {
   return (
     <section
       id="projects"
-      className="relative pt-8 pb-0 ml-3 desktop-sm:pb-10 desktop-lg:ml-10 desktop-lg:mt-10 tablet-sm:ml-12 py-8 "
+      className="relative pt-8 pb-0 ml-3 desktop-sm:pb-10 h-auto desktop-lg:ml-10 desktop-lg:mt-10 tablet-sm:ml-12 py-8 "
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -21,9 +21,9 @@ export const WeatherApp = () => {
         color="grey-2"
         topPx="var(--block-div-top)"
       />
-      <div className="desktop-sm:grid desktop-sm:grid-cols-2 desktop-md:gap-y-2 desktop-sm:gap-6 desktop-sm:items-start">
-        <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">04</p>
+      <div className="desktop-sm:grid desktop-sm:grid-cols-2 desktop-md:gap-y-2 desktop-sm:gap-6 desktop-sm:items-start ">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
+          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">04</p>
           <h2 className="text-2xl desktop-xl:text-5xl desktop-sm:text-4xl tablet-md:my-2 phone-sm:text-3xl tablet-md:text-5xl phone-lg:text-4xl text-grey-2 font-medium">
             WEATHER APP
           </h2>
