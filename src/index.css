@@ -269,6 +269,7 @@
 @media (min-width: 768px) {
   :root {
     --block-div-top: 132px;
+    --block-div-2xs-h: 252px;
     --block-div-xs-h: 340px;
     --block-div-sm-h: 300px;
     --block-div-md-h: 290px;
@@ -279,11 +280,14 @@
     --name-year-size: 3rem;
     --hero-mt: 164px;
 
-    --shelter-screen-div-top: 488px;
-    --shelter-screen-div-height: 1436px;
+    --shelter-screen-div-top: 448px;
+    --shelter-screen-div-height: 1388px;
 
-    --weather-screen-div-top: 562px;
-    --weather-screen-div-height: 1400px;
+    --weather-screen-div-top: 524px;
+    --weather-screen-div-height: 1392px;
+
+    --portfolio-screen-div-top: 412px;
+    --portfolio-screen-div-height: 1288px;
   }
 }
 
