@@ -19,6 +19,7 @@ export const Portfolio = () => {
         leftPx={0}
         color="grey-2"
         topPx="var(--block-div-top)"
+        className="desktop-md:-mt-8"
       />
       <div className="desktop-sm:grid desktop-sm:grid-cols-2  desktop-md:gap-y-2 desktop-sm:gap-6 desktop-sm:items-start">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
@@ -55,7 +56,7 @@ export const Portfolio = () => {
         </div>
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-172 desktop-md:-translate-x-1/3 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
+          className="desktop-md:max-w-172 desktop-md:mt-6 desktop-md:-translate-x-1/3 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
         />
       </div>
     </section>

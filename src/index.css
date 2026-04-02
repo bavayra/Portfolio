@@ -348,6 +348,7 @@
     --section-bot-div-height: clamp(188px, calc(-28px + 30vh), 272px);
     --section-bot-div-top: clamp(280px, calc(-52.308px + 46.154vh), 400px);
 
+    --block-div-2xs-h: 600px;
     --block-div-md-h: 552px;
     --block-div-lg-h: 588px;
     --name-year-size: 3rem;
