@@ -140,9 +140,10 @@
 
 @media (min-width: 360px) {
   :root {
-    --section-bot-div-height: 114px;
-    --section-top-div-height: clamp(84px, calc(28vh - 84px), 98px);
-    --section-bot-div-top: clamp(176px, calc(24vh + 36px), 188px);
+    --section-top-div-top: 16px;
+    --section-bot-div-height: 124px;
+    --section-top-div-height: 106px;
+    --section-bot-div-top: 186px;
 
     --hero-div-height: clamp(112px, calc(104vh - 512px), 164px);
 
