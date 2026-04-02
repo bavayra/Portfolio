@@ -127,7 +127,7 @@
   --contacts-div-bot-height: 448px;
 
   --portfolio-screen-div-top: 384px;
-  --portfolio-screen-div-height: 1116px;
+  --portfolio-screen-div-height: 1058px;
 }
 
 #dot-pattern-svg {
@@ -153,10 +153,10 @@
     --block-div-xl-h: 332px;
 
     --weather-screen-div-top: 472px;
-    --weather-screen-div-height: 1078px;
+    --weather-screen-div-height: 1086px;
 
     --shelter-screen-div-top: 408px;
-    --shelter-screen-div-height: 1112px;
+    --shelter-screen-div-height: 1128px;
   }
 }
 

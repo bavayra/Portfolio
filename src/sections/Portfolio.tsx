@@ -11,7 +11,7 @@ export const Portfolio = () => {
   return (
     <section
       id="projects"
-      className="relative desktop-lg:ml-10 pt-8 h-auto desktop-md:pt-0 pb-16 ml-3 tablet-sm:ml-12"
+      className="relative desktop-lg:ml-10 pt-8 h-auto desktop-md:pt-0 pb-20 ml-3 tablet-sm:ml-12"
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -44,7 +44,7 @@ export const Portfolio = () => {
           topPx="var(--portfolio-screen-div-top)"
           className="desktop-sm:hidden"
         />
-        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 ml-3 rounded-xl">
+        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 ml-3 phone-sm:mt-6 rounded-xl">
           <ProjectScreen
             title={project.title}
             description={project.description}
