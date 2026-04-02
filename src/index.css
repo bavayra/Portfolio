@@ -123,11 +123,11 @@
   --shelter-screen-div-top: 380px;
   --shelter-screen-div-height: 496px;
 
-  --contacts-div-bot-top: 52px;
-  --contacts-div-bot-height: 448px;
-
   --portfolio-screen-div-top: 384px;
   --portfolio-screen-div-height: 1058px;
+
+  --contacts-div-bot-top: 52px;
+  --contacts-div-bot-height: 550px;
 }
 
 #dot-pattern-svg {
