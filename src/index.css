@@ -323,8 +323,9 @@
     --hero-mt: 0px;
 
     --block-div-top: 124px;
-    --block-div-md-h: 750px;
-    --block-div-lg-h: 812px;
+    --block-div-2xs-h: 714px;
+    --block-div-md-h: 672px;
+    --block-div-lg-h: 736px;
 
     --contacts-div-bot-top: 80px;
     --contacts-div-bot-height: 340px;
