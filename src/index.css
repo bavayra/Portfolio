@@ -160,11 +160,11 @@
   }
 }
 
-@media (min-width: 376px) {
+@media (min-width: 375px) {
   :root {
     --hero-div-height: clamp(112px, calc(60vh - 248px), 280px);
 
-    --section-top-div-height: clamp(84px, calc(22.222vh - 49.32px), 124px);
+    --section-top-div-height: 92px;
     --section-bot-div-top: clamp(176px, calc(2.667px + 28.889vh), 228px);
     --section-bot-div-height: clamp(114px, calc(-25.2px + 23.2vh), 172px);
   }
