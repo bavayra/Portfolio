@@ -348,9 +348,9 @@
     --section-bot-div-height: clamp(188px, calc(-28px + 30vh), 272px);
     --section-bot-div-top: clamp(280px, calc(-52.308px + 46.154vh), 400px);
 
-    --block-div-2xs-h: 600px;
+    --block-div-2xs-h: 570px;
     --block-div-md-h: 552px;
-    --block-div-lg-h: 588px;
+    --block-div-lg-h: 558px;
     --name-year-size: 3rem;
   }
 }
@@ -362,7 +362,9 @@
     --hero-div-2-height: 372px;
     --hero-mt: 16px;
 
-    --block-div-md-h: 720px;
+    --block-div-2xs-h: 616px;
+    --block-div-md-h: 616px;
+    --block-div-lg-h: 570px;
   }
 
   #dot-pattern-svg {

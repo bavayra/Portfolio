@@ -56,7 +56,7 @@ export const Portfolio = () => {
         </div>
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-172 desktop-md:mt-6 desktop-md:-translate-x-1/3 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
+          className="desktop-md:max-w-176 desktop-md:mt-6 desktop-md:-translate-x-1/3 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
         />
       </div>
     </section>
