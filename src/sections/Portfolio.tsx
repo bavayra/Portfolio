@@ -50,12 +50,12 @@ export const Portfolio = () => {
             images={project.images}
             technologies={project.technologies}
             links={{ live: project.liveUrl }}
-            className="phone-md:gap-x-6"
+            className="phone-md:gap-x-6 phone-lg:gap-x-0"
           />
         </div>
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-166 desktop-md:-translate-x-1/3 desktop-lg:mt-3 desktop-xl:text-lg"
+          className="desktop-md:max-w-172 desktop-md:-translate-x-1/3 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
         />
       </div>
     </section>
