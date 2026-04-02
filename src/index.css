@@ -302,9 +302,9 @@
     --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
     --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
 
-    --weather-screen-div-height: 1360px;
-    --shelter-screen-div-height: 1352px;
-    --portfolio-screen-div-height: 1228px;
+    --weather-screen-div-height: 1332px;
+    --shelter-screen-div-height: 1322px;
+    --portfolio-screen-div-height: 1188px;
 
     --h1-size: clamp(96px, calc(-128px + 22.857vw), 128px);
   }
