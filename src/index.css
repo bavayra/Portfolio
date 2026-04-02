@@ -148,15 +148,15 @@
     --hero-div-height: clamp(112px, calc(104vh - 512px), 164px);
 
     --block-div-xs-h: 332px;
-    --block-div-md-h: 282px;
+    --block-div-md-h: 276px;
     --block-div-lg-h: 330px;
     --block-div-xl-h: 332px;
 
-    --weather-screen-div-top: 466px;
+    --weather-screen-div-top: 472px;
     --weather-screen-div-height: 1078px;
 
     --shelter-screen-div-top: 408px;
-    --shelter-screen-div-height: 1128px;
+    --shelter-screen-div-height: 1112px;
   }
 }
 
