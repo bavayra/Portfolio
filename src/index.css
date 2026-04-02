@@ -184,23 +184,23 @@
 
 @media (min-width: 412px) {
   :root {
-    --block-div-2xs-h: 288px;
+    --block-div-2xs-h: 282px;
     --block-div-xs-h: 368px;
-    --block-div-md-h: 320px;
-    --block-div-lg-h: 418px;
+    --block-div-md-h: 312px;
+    --block-div-lg-h: 410px;
 
     --section-bot-div-height: 188px;
 
     --shelter-screen-div-top: 448px;
-    --shelter-screen-div-height: 1076px;
+    --shelter-screen-div-height: 1104px;
 
     --weather-screen-div-top: 544px;
     --weather-screen-div-height: 1084px;
 
-    --portfolio-screen-div-height: 1048px;
+    --portfolio-screen-div-height: 1074px;
     --portfolio-screen-div-top: 424px;
 
-    --contacts-div-bot-height: 464px;
+    --contacts-div-bot-height: 572px;
 
     --name-year-size: 1.875rem;
   }
