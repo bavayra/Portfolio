@@ -221,12 +221,13 @@
 
 @media (min-width: 480px) {
   :root {
-    --hero-div-top: 196px;
+    --hero-div-top: 184px;
     --hero-mt: clamp(40px, calc(-515.692px + 64.615vh), 208px);
     --name-year-size: 2.25rem;
 
+    --section-top-div-height: 124px;
     --section-bot-div-top: clamp(228px, calc(-116px + 40vh), 244px);
-    --section-bot-div-height: clamp(172px, calc(26.462px + 16.923vh), 216px);
+    --section-bot-div-height: 184px;
 
     --block-div-top: 112px;
     --block-div-md-h: 288px;
