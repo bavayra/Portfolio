@@ -286,6 +286,9 @@
     --block-div-md-h: 290px;
     --block-div-lg-h: 364px;
 
+    --section-top-div-height: 146px;
+    --section-bot-div-height: 204px;
+
     --contacts-div-bot-height: 448px;
 
     --name-year-size: 3rem;
