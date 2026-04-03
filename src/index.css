@@ -253,20 +253,21 @@
     --hero-div-w: 3px;
     --hero-mt: 140px;
 
+    --block-div-2xs-h: 230px;
     --block-div-xs-h: 324px;
     --block-div-sm-h: 312px;
-    --block-div-md-h: 328px;
-    --block-div-lg-h: 440px;
+    --block-div-md-h: 264px;
+    --block-div-lg-h: 360px;
     --block-div-xl-h: 430px;
 
-    --shelter-screen-div-top: 468px;
-    --shelter-screen-div-height: 1242px;
+    --shelter-screen-div-top: 404px;
+    --shelter-screen-div-height: 1272px;
 
-    --weather-screen-div-top: 576px;
-    --weather-screen-div-height: 1270px;
+    --weather-screen-div-top: 500px;
+    --weather-screen-div-height: 1300px;
 
-    --portfolio-screen-div-top: 430px;
-    --portfolio-screen-div-height: 1294px;
+    --portfolio-screen-div-top: 374px;
+    --portfolio-screen-div-height: 1254px;
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: 136px;

@@ -27,7 +27,7 @@ export const WeatherApp = () => {
           <h2 className="text-2xl desktop-xl:text-5xl desktop-sm:text-4xl tablet-md:my-2 phone-sm:text-3xl tablet-md:text-5xl phone-lg:text-4xl text-grey-2 font-medium">
             WEATHER APP
           </h2>
-          <p className="mt-2 desktop-xl:max-w-120 desktop-xl:text-xl desktop-sm:max-w-92 desktop-sm:text-base tablet-md:max-w-116 text-xs phone-lg:max-w-80 tablet-sm:text-lg tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+          <p className="mt-2 desktop-xl:max-w-120 desktop-xl:text-xl desktop-sm:max-w-92 desktop-sm:text-base tablet-md:max-w-116 text-xs phone-lg:max-w-80 tablet-sm:text-base tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
             A responsive weather app built with vanilla JavaScript that displays
             current conditions for both dark and light themes, hourly and daily
             forecasts using the OpenWeather API. Features city search, unit
