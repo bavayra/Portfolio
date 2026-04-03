@@ -230,6 +230,7 @@
     --section-bot-div-height: 184px;
 
     --block-div-top: 112px;
+    --block-div-sm-h: 372px;
     --block-div-md-h: 278px;
     --block-div-lg-h: 372px;
     --block-div-xl-h: clamp(332px, calc(-1775px + 245vh), 430px);
@@ -252,7 +253,7 @@
     --hero-div-w: 3px;
     --hero-mt: 140px;
 
-    --block-div-xs-h: 412px;
+    --block-div-xs-h: 324px;
     --block-div-sm-h: 400px;
     --block-div-md-h: 328px;
     --block-div-lg-h: 440px;
