@@ -27,7 +27,7 @@ const Button = ({
     primary:
       "bg-section-title  text-white hover:bg-grey-3 hover:scale-105 focus:ring-accent-red active:bg-grey-3",
     secondary:
-      "bg-accent-red text-white  tablet-md:text-xl hover:bg-text hover:scale-105 focus:ring-accent-red active:bg-text",
+      "bg-accent-red text-white  tablet-md:text-base hover:bg-text hover:scale-105 focus:ring-accent-red active:bg-text",
   };
   const sizeStyles: Record<ButtonSize, string> = {
     small:

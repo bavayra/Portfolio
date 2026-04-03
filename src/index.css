@@ -281,8 +281,8 @@
   :root {
     --block-div-top: 132px;
     --block-div-2xs-h: 252px;
-    --block-div-xs-h: 340px;
-    --block-div-sm-h: 300px;
+    --block-div-xs-h: 252px;
+    --block-div-sm-h: 248px;
     --block-div-md-h: 290px;
     --block-div-lg-h: 364px;
 

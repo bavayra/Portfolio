@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative py-8 ml-3 tablet-sm:ml-12 desktop-lg:ml-10"
+      className="relative py-8 ml-3 tablet-md:pb-0 tablet-sm:ml-12 desktop-lg:ml-10"
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -31,7 +31,7 @@ const About = () => {
       <Button
         variant="secondary"
         size="small"
-        className="mt-2 flex justify-end desktop-sm:ml-6 ml-auto phone-sm:mt-4 phone-sm:mr-8 mr-4 tablet-md:mr-20 tablet-sm:mr-16 tablet-sm:mt-0"
+        className="mt-2 flex justify-end desktop-sm:ml-6 ml-auto phone-sm:mt-4 phone-sm:mr-8 mr-4 tablet-md:mr-30 tablet-sm:mr-16 tablet-sm:mt-0"
       >
         Download CV
       </Button>
