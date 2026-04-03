@@ -103,7 +103,7 @@ const ContactSection = () => {
         color="grey-2"
         topPx={-68}
       />
-      <h2 className=" relative self-start text-5xl desktop-sm:text-7xl tablet-sm:text-6xl text-accent-red font-bold">
+      <h2 className=" relative self-start text-5xl tablet-sm:text-6xl tablet-md:text-7xl text-accent-red font-bold">
         LET'S TALK?
       </h2>
       <Divider
