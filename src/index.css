@@ -272,7 +272,7 @@
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: 136px;
 
-    --contacts-div-bot-height: 436px;
+    --contacts-div-bot-height: 520px;
     --contacts-div-bot-top: 76px;
   }
 }

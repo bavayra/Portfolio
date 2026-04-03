@@ -103,7 +103,7 @@ const ContactSection = () => {
         color="grey-2"
         topPx={-68}
       />
-      <h2 className=" relative self-start text-5xl desktop-sm:text-7xl tablet-md:text-6xl text-accent-red font-bold">
+      <h2 className=" relative self-start text-5xl desktop-sm:text-7xl tablet-sm:text-6xl text-accent-red font-bold">
         LET'S TALK?
       </h2>
       <Divider
@@ -214,7 +214,7 @@ const ContactSection = () => {
         </div>
         <SocialLinks
           size="md"
-          className="grid grid-rows-2 desktop-xl:my-28 desktop-xl:mx-4 grid-cols-3 gap-2 mt-8 tablet-sm:gap-x-0 tablet-sm:gap-y-4 "
+          className="grid grid-rows-2 desktop-xl:my-28 desktop-xl:mx-4 grid-cols-3 gap-2 mt-8 tablet-sm:gap-x-10 tablet-sm:mx-auto tablet-sm:gap-y-4 "
         />
       </div>
     </section>
