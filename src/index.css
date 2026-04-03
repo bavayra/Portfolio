@@ -230,17 +230,17 @@
     --section-bot-div-height: 184px;
 
     --block-div-top: 112px;
-    --block-div-md-h: 288px;
-    --block-div-lg-h: 380px;
+    --block-div-md-h: 278px;
+    --block-div-lg-h: 372px;
     --block-div-xl-h: clamp(332px, calc(-1775px + 245vh), 430px);
 
-    --shelter-screen-div-height: 1140px;
+    --shelter-screen-div-height: 1162px;
     --shelter-screen-div-top: 422px;
 
     --weather-screen-div-top: 516px;
-    --weather-screen-div-height: 1158px;
+    --weather-screen-div-height: 1208px;
 
-    --portfolio-screen-div-height: 1092px;
+    --portfolio-screen-div-height: 1114px;
   }
 }
 
