@@ -29,7 +29,7 @@ export const Description = () => {
         height={200}
         style={{ position: "absolute", right: 0, bottom: 0 }}
         loading="lazy"
-        className="object-cover phone-md:w-36 desktop-xl:w-84 desktop-sm:w-72 desktop-sm:mr-24 phone-lg:w-44 phone-lg:-mr-3 tablet-sm:w-50 tablet-md:w-60"
+        className="object-cover phone-md:w-36 desktop-xl:w-84 desktop-sm:w-78 desktop-sm:mr-24 phone-lg:w-44 phone-lg:-mr-3 tablet-sm:w-50 tablet-md:w-60"
       />
     </section>
   );
