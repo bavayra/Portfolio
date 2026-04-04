@@ -310,15 +310,15 @@
     --hero-div-height: clamp(168px, calc(8vh + 162.24px), 200px);
     --hero-mt: 198px;
 
-    --block-div-md-h: clamp(268px, calc(231.333px + 5.238vh), 290px);
+    --block-div-md-h: 230px;
 
     --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
     --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
     --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
 
-    --weather-screen-div-height: 1332px;
-    --shelter-screen-div-height: 1322px;
-    --portfolio-screen-div-height: 1188px;
+    --weather-screen-div-height: 1392px;
+    --shelter-screen-div-height: 1344px;
+    --portfolio-screen-div-height: 1214px;
 
     --h1-size: clamp(96px, calc(-128px + 22.857vw), 128px);
   }
