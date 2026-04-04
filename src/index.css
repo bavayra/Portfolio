@@ -232,16 +232,16 @@
     --block-div-top: 112px;
     --block-div-sm-h: 372px;
     --block-div-md-h: 246px;
-    --block-div-lg-h: 280px;
+    --block-div-lg-h: 278px;
     --block-div-xl-h: clamp(332px, calc(-1775px + 245vh), 430px);
 
     --shelter-screen-div-height: 1088px;
     --shelter-screen-div-top: 386px;
 
     --weather-screen-div-top: 416px;
-    --weather-screen-div-height: 1104px;
+    --weather-screen-div-height: 1110px;
 
-    --portfolio-screen-div-height: 1114px;
+    --portfolio-screen-div-height: 1130px;
   }
 }
 
