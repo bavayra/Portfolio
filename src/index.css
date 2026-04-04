@@ -253,7 +253,7 @@
     --hero-div-w: 3px;
     --hero-mt: 140px;
 
-    --block-div-2xs-h: 230px;
+    --block-div-2xs-h: 262px;
     --block-div-xs-h: 324px;
     --block-div-sm-h: 312px;
     --block-div-md-h: 230px;
@@ -266,8 +266,8 @@
     --weather-screen-div-top: 400px;
     --weather-screen-div-height: 1256px;
 
-    --portfolio-screen-div-top: 374px;
-    --portfolio-screen-div-height: 1254px;
+    --portfolio-screen-div-top: 400px;
+    --portfolio-screen-div-height: 1230px;
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: 136px;
