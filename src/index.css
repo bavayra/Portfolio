@@ -280,7 +280,7 @@
 @media (min-width: 768px) {
   :root {
     --block-div-top: 120px;
-    --block-div-2xs-h: 198px;
+    --block-div-2xs-h: 230px;
     --block-div-xs-h: 252px;
     --block-div-sm-h: 248px;
     --block-div-md-h: 198px;
@@ -300,7 +300,7 @@
     --weather-screen-div-top: 380px;
     --weather-screen-div-height: 1368px;
 
-    --portfolio-screen-div-top: 348px;
+    --portfolio-screen-div-top: 378px;
     --portfolio-screen-div-height: 1246px;
   }
 }
