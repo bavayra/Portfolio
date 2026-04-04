@@ -48,7 +48,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-4 tablet-sm:w-52 tablet-md:w-60 phone-lg:-mt-12 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 mx-auto tablet-sm:-mt-14 phone-lg:w-44",
+          "-mt-4 tablet-sm:w-52 tablet-md:w-60 phone-md:-mt-6 desktop-md:mt-8 phone-md:w-36 desktop-sm:-mt-6 mx-auto tablet-sm:-mt-14 phone-lg:w-44",
       },
       {
         thumbnail:
@@ -67,7 +67,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-18 tablet-sm:w-52 tablet-sm:-mt-35 tablet-md:w-60 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 tablet-md:-mt-38 phone-lg:w-44 phone-lg:-mt-30 phone-md:-mt-25 mx-auto",
+          "-mt-18 tablet-sm:w-52 tablet-sm:-mt-35 tablet-md:w-60 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 tablet-md:-mt-38 phone-lg:w-44 phone-md:-mt-28 phone-md:-mt-25 mx-auto",
       },
     ],
   },
@@ -90,7 +90,7 @@ export const projects: Project[] = [
         width: 140,
         height: 667,
         className:
-          "phone-md:w-36 mx-auto desktop-sm:mt-4 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60",
+          "phone-md:w-36 mx-auto desktop-sm:mt-4 phone-md:mt-2 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60",
       },
       {
         thumbnail: "/screens/weather-app-screen/weather-app-cities-thumb.webp",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
         width: 140,
         height: 667,
         className:
-          "mx-auto desktop-sm:-mt-4 tablet-sm:-mt-8 phone-lg:w-44 phone-lg:-mt-10 tablet-sm:w-52 tablet-md:w-60 phone-md:w-36",
+          "mx-auto desktop-sm:-mt-4 tablet-sm:-mt-8 phone-lg:w-44 phone-md:-mt-3 tablet-sm:w-52 tablet-md:w-60 phone-md:w-36",
       },
     ],
   },
@@ -148,7 +148,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-4 tablet-md:w-60 w-34 phone-lg:-mt-12 desktop-md:mt-0 phone-md:w-38 desktop-sm:-mt-6 tablet-sm:w-54 tablet-sm:-mt-14 phone-lg:w-44 border-2 border-grey-2 mx-auto ",
+          "-mt-4 tablet-md:w-60 w-34 phone-lg:-mt-12 desktop-md:mt-0 phone-md:w-38 desktop-sm:-mt-6 tablet-sm:w-54 tablet-sm:-mt-14 phone-lg:w-44 phone-md:-mt-8 border-2 border-grey-2 mx-auto ",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-820-thumb.webp",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "tablet-md:w-60 tablet-md:-mt-20 w-30 border-2 border-grey-2 -mt-14 desktop-md:translate-y-full tablet-sm:w-54 tablet-sm:-mt-16 phone-md:w-38 desktop-sm:-mt-18 phone-lg:w-44 phone-lg:-mt-12 mx-auto ",
+          "tablet-md:w-60 tablet-md:-mt-20 w-30 border-2 border-grey-2 -mt-14 desktop-md:translate-y-full tablet-sm:w-54 tablet-sm:-mt-16 phone-md:w-38 phone-md:-mt-10 desktop-sm:-mt-18 phone-lg:w-44 mx-auto ",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-1120-thumb.webp",
