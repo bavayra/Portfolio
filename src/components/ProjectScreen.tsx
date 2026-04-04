@@ -57,7 +57,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
             />
           ))}
         </div>
-        <p className="text-center text-xs tablet-sm:text-base desktop-md:-translate-x-1/3 bg-section-title w-60 p-2 mx-auto tablet-sm:w-74 rounded-lg text-accent-red font-semibold desktop-sm:hidden my-2 tracking-wide">
+        <p className="text-center text-xs tablet-sm:text-base desktop-md:-translate-x-1/3 bg-section-title w-60 p-2 mx-auto tablet-sm:w-74 rounded-lg text-accent-red phone-lg:text-sm phone-lg:w-70 font-semibold desktop-sm:hidden my-2 tracking-wide">
           {props.technologies.join(", ")}
         </p>
       </div>

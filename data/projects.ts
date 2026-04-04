@@ -26,7 +26,7 @@ export const projects: Project[] = [
     title: "Dog Shelter",
     description: "Responsive landing page for dog adoption service",
     descriptionFull:
-      "Real dog shelter's landing page built with React 19, TypeScript, and Tailwind CSS. Features a custom useDogFilters hook for filtering dogs. Includes an interactive dog detail modal, photo carousel, shelter stats, and a fully validated contact form with DOMPurify sanitization and 30-second rate limiting. Mobile-first, accessible (ARIA, keyboard navigation), performance-optimized (lazy loading, AVIF/WebP images, code splitting). Clean component architecture with ESLint, Prettier, and Husky pre-commit hooks.",
+      "Built with React 19, TypeScript, and Tailwind CSS. Uses a custom useDogFilters hook, interactive detail modals, DOMPurify‑sanitized form inputs with 30‑second rate limiting, and AVIF/WebP image optimization. Mobile‑first and accessible (ARIA, keyboard navigation), code‑split for performance, with ESLint, Prettier, and Husky pre‑commit hooks.",
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind", "Vite"],
     githubUrl: "https://github.com/bavayra/dog-shelter.git",
@@ -39,7 +39,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "phone-md:w-38 mx-auto phone-lg:w-44 tablet-md:w-60 tablet-sm:w-52",
+          "phone-md:w-38 mx-auto phone-lg:w-44 phone-md:mt-3 phone-lg:mt-0 tablet-md:w-60 tablet-sm:w-52",
       },
       {
         thumbnail: "/screens/dog-shelter-screen/dog-shelter-1440-thumb.webp",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-18 tablet-sm:w-52 tablet-sm:-mt-35 tablet-md:w-60 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 tablet-md:-mt-40 phone-lg:w-44 phone-lg:-mt-30 phone-md:-mt-22 mx-auto",
+          "-mt-18 tablet-sm:w-52 tablet-sm:-mt-35 tablet-md:w-60 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 tablet-md:-mt-38 phone-lg:w-44 phone-lg:-mt-30 phone-md:-mt-25 mx-auto",
       },
     ],
   },

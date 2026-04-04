@@ -25,11 +25,10 @@ export const DogShelter = () => {
             DOG SHELTER WEB
           </h2>
           <p className="mt-2 phone-lg:max-w-80 desktop-xl:max-w-120 desktop-xl:text-xl desktop-sm:max-w-92 desktop-sm:text-base tablet-md:max-w-116 tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
-            A responsive web app for a dog shelter built with React and
-            TypeScript. It features a searchable pet gallery with different
-            filters, adoption rules, contact/donation section, and accessible
-            modals for each dog. The site is mobile‑first and
-            performance‑minded.
+            A web app for a real dog shelter - browse adoptable dogs, filter by
+            breed, age or gender, swipe through each dog's photo gallery, check
+            shelter statistics, and reach out through a contact form with
+            built‑in validation.
           </p>
           <GitHubLink liveUrl={project.liveUrl} />
         </div>
