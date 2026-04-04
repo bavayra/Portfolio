@@ -110,7 +110,7 @@
   --section-bot-div-top: 148px;
 
   --block-div-top: 104px;
-  --block-div-2xs-h: 254px;
+  --block-div-2xs-h: 248px;
   --block-div-xs-h: 280px;
   --block-div-sm-h: 332px;
   --block-div-md-h: 230px;
@@ -198,7 +198,7 @@
     --weather-screen-div-height: 1026px;
 
     --portfolio-screen-div-height: 1074px;
-    --portfolio-screen-div-top: 424px;
+    --portfolio-screen-div-top: 416px;
 
     --contacts-div-bot-height: 572px;
 
@@ -318,7 +318,7 @@
 
     --weather-screen-div-height: 1338px;
     --shelter-screen-div-height: 1292px;
-    --portfolio-screen-div-height: 1214px;
+    --portfolio-screen-div-height: 1188px;
 
     --h1-size: clamp(96px, calc(-128px + 22.857vw), 128px);
   }

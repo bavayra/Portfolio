@@ -51,7 +51,7 @@ export const Portfolio = () => {
             images={project.images}
             technologies={project.technologies}
             links={{ live: project.liveUrl }}
-            className="phone-md:gap-x-6 phone-lg:gap-x-0"
+            className="phone-md:gap-x-2 phone-lg:gap-x-0"
           />
         </div>
         <ProjectDesc
