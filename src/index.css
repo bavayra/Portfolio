@@ -149,11 +149,11 @@
 
     --block-div-xs-h: 332px;
     --block-div-md-h: 276px;
-    --block-div-lg-h: 330px;
+    --block-div-lg-h: 246px;
     --block-div-xl-h: 332px;
 
-    --weather-screen-div-top: 472px;
-    --weather-screen-div-height: 1086px;
+    --weather-screen-div-top: 374px;
+    --weather-screen-div-height: 1016px;
 
     --shelter-screen-div-top: 408px;
     --shelter-screen-div-height: 1128px;
@@ -187,15 +187,15 @@
     --block-div-2xs-h: 282px;
     --block-div-xs-h: 368px;
     --block-div-md-h: 312px;
-    --block-div-lg-h: 410px;
+    --block-div-lg-h: 282px;
 
     --section-bot-div-height: 188px;
 
     --shelter-screen-div-top: 448px;
     --shelter-screen-div-height: 1104px;
 
-    --weather-screen-div-top: 544px;
-    --weather-screen-div-height: 1084px;
+    --weather-screen-div-top: 416px;
+    --weather-screen-div-height: 1000px;
 
     --portfolio-screen-div-height: 1074px;
     --portfolio-screen-div-top: 424px;
@@ -213,7 +213,7 @@
     --block-div-top: clamp(104px, calc(-240px + 40vh), 112px);
     --block-div-2xs-h: 274px;
     --block-div-md-h: 306px;
-    --block-div-lg-h: 400px;
+    --block-div-lg-h: 272px;
 
     --section-bot-div-top: 230px;
   }
@@ -232,14 +232,14 @@
     --block-div-top: 112px;
     --block-div-sm-h: 372px;
     --block-div-md-h: 278px;
-    --block-div-lg-h: 372px;
+    --block-div-lg-h: 280px;
     --block-div-xl-h: clamp(332px, calc(-1775px + 245vh), 430px);
 
     --shelter-screen-div-height: 1162px;
     --shelter-screen-div-top: 422px;
 
-    --weather-screen-div-top: 516px;
-    --weather-screen-div-height: 1208px;
+    --weather-screen-div-top: 416px;
+    --weather-screen-div-height: 1098px;
 
     --portfolio-screen-div-height: 1114px;
   }
@@ -257,14 +257,14 @@
     --block-div-xs-h: 324px;
     --block-div-sm-h: 312px;
     --block-div-md-h: 264px;
-    --block-div-lg-h: 360px;
+    --block-div-lg-h: 264px;
     --block-div-xl-h: 430px;
 
     --shelter-screen-div-top: 404px;
     --shelter-screen-div-height: 1272px;
 
-    --weather-screen-div-top: 500px;
-    --weather-screen-div-height: 1300px;
+    --weather-screen-div-top: 400px;
+    --weather-screen-div-height: 1228px;
 
     --portfolio-screen-div-top: 374px;
     --portfolio-screen-div-height: 1254px;
@@ -284,7 +284,7 @@
     --block-div-xs-h: 252px;
     --block-div-sm-h: 248px;
     --block-div-md-h: 230px;
-    --block-div-lg-h: 294px;
+    --block-div-lg-h: 230px;
 
     --section-top-div-height: 146px;
     --section-bot-div-height: 204px;
@@ -297,8 +297,8 @@
     --shelter-screen-div-top: 380px;
     --shelter-screen-div-height: 1376px;
 
-    --weather-screen-div-top: 444px;
-    --weather-screen-div-height: 1422px;
+    --weather-screen-div-top: 380px;
+    --weather-screen-div-height: 1338px;
 
     --portfolio-screen-div-top: 348px;
     --portfolio-screen-div-height: 1246px;
@@ -316,7 +316,7 @@
     --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
     --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
 
-    --weather-screen-div-height: 1392px;
+    --weather-screen-div-height: 1338px;
     --shelter-screen-div-height: 1344px;
     --portfolio-screen-div-height: 1214px;
 

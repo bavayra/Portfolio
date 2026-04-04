@@ -77,7 +77,7 @@ export const projects: Project[] = [
     title: "Weather App",
     description: "Real-time weather forecast with OpenWeather API",
     descriptionFull:
-      "A mobile‑first weather app built with vanilla JavaScript and Vite, focused on clarity and speed for small screens. It combines real‑time OpenWeather data, hourly/daily forecasts, city search with saved favorites, and an interactive Leaflet map, plus optional geolocation and °C/°F switching. The UI is designed from a Figma mockup, optimized with lazy loading and lightweight assets, and built with accessibility in mind (semantic HTML and keyboard-friendly navigation).",
+      "Built with vanilla JavaScript and Vite from a Figma mockup. Pulls real‑time data from the OpenWeather API, renders a Leaflet map layer, and caches responses client‑side for speed. Optimized with lazy loading and lightweight assets; accessible through semantic HTML and keyboard‑friendly navigation.",
     position: { row: 1, col: 2 },
     technologies: ["CSS3", "HTML5", "Vanilla JS", "API", "Vite"],
     liveUrl: "https://...",
@@ -117,7 +117,7 @@ export const projects: Project[] = [
         width: 140,
         height: 667,
         className:
-          "mx-auto desktop-sm:-mt-4 tablet-md:-mt-8 phone-lg:w-44 phone-lg:-mt-10 tablet-sm:w-52 tablet-md:w-60 phone-md:w-36",
+          "mx-auto desktop-sm:-mt-4 tablet-sm:-mt-8 phone-lg:w-44 phone-lg:-mt-10 tablet-sm:w-52 tablet-md:w-60 phone-md:w-36",
       },
     ],
   },
