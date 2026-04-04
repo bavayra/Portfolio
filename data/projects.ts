@@ -67,7 +67,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-18 tablet-sm:w-52 tablet-sm:-mt-28 tablet-md:w-60 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 tablet-md:-mt-38 phone-lg:w-44 phone-md:-mt-28 phone-lg:-mt-26 mx-auto",
+          "-mt-18 tablet-sm:w-52 tablet-sm:-mt-28 tablet-md:w-60 phone-md:w-36 desktop-md:mt-8 desktop-md:mt-0 desktop-sm:-mt-24 tablet-md:-mt-32 phone-lg:w-44 phone-md:-mt-28 phone-lg:-mt-26 mx-auto",
       },
     ],
   },
@@ -139,7 +139,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "tablet-md:w-60 phone-md:w-38 phone-lg:w-44 w-34 tablet-sm:w-54 border-2 border-grey-2 mx-auto",
+          "tablet-md:w-60 tablet-md:-mt-5 phone-md:w-38 phone-lg:w-44 w-34 tablet-sm:w-54 border-2 border-grey-2 mx-auto",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-1024-thumb.webp",
@@ -157,7 +157,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "tablet-md:w-60 tablet-md:-mt-20 w-30 border-2 border-grey-2 -mt-14 desktop-md:translate-y-full tablet-sm:w-54 tablet-sm:-mt-13 phone-md:w-38 phone-md:-mt-11 desktop-sm:-mt-18 phone-lg:w-44 mx-auto ",
+          "tablet-md:w-60 tablet-md:-mt-22 w-30 border-2 border-grey-2 -mt-14 desktop-md:translate-y-full tablet-sm:w-54 tablet-sm:-mt-13 phone-md:w-38 phone-md:-mt-11 desktop-sm:-mt-18 phone-lg:w-44 mx-auto ",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-1120-thumb.webp",
