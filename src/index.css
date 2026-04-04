@@ -261,13 +261,13 @@
     --block-div-xl-h: 430px;
 
     --shelter-screen-div-top: 372px;
-    --shelter-screen-div-height: 1216px;
+    --shelter-screen-div-height: 1224px;
 
     --weather-screen-div-top: 400px;
-    --weather-screen-div-height: 1256px;
+    --weather-screen-div-height: 1260px;
 
     --portfolio-screen-div-top: 400px;
-    --portfolio-screen-div-height: 1230px;
+    --portfolio-screen-div-height: 1240px;
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: 136px;
