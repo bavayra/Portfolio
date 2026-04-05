@@ -360,8 +360,8 @@
     --hero-div-height: 184px;
     --hero-div-2-top: 374px;
 
-    --section-top-div-height: clamp(136px, calc(-69.714px + 28.571vh), 216px);
-    --section-bot-div-height: clamp(188px, calc(-28px + 30vh), 272px);
+    --section-top-div-height: 148px;
+    --section-bot-div-height: 204px;
     --section-bot-div-top: clamp(280px, calc(-52.308px + 46.154vh), 400px);
 
     --block-div-2xs-h: 570px;
