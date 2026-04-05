@@ -42,7 +42,7 @@ export const DogShelter = () => {
           className="desktop-sm:hidden"
         />
 
-        <div className="desktop-sm:col-start-2 ml-3 phone-sm:mt-6 desktop-sm:row-start-1 desktop-sm:row-span-2">
+        <div className="desktop-sm:col-start-2 ml-3 phone-sm:mt-6 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-md:-mt-2">
           <ProjectScreen
             title={project.title}
             description={project.description}
@@ -54,7 +54,7 @@ export const DogShelter = () => {
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-172 desktop-md:-translate-x-1/3 desktop-sm:-translate-y-[18%] desktop-md:mt-2 desktop-xl:text-lg"
+          className="desktop-md:max-w-180 desktop-md:-translate-x-1/4 desktop-sm:-translate-y-[18%] desktop-md:mt-7 desktop-xl:text-lg"
         />
       </div>
     </section>

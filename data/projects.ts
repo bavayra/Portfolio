@@ -39,7 +39,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "phone-md:w-38 phone-lg:-mt-5 mx-auto desktop-sm:mt-4 phone-lg:w-44 phone-md:mt-3 tablet-md:w-60 desktop-sm:w-40",
+          "phone-md:w-38 phone-lg:-mt-5 mx-auto desktop-sm:mt-4 phone-lg:w-44 desktop-md:-mt-2 phone-md:mt-3 tablet-md:w-60 desktop-sm:w-40",
       },
       {
         thumbnail: "/screens/dog-shelter-screen/dog-shelter-1440-thumb.webp",
