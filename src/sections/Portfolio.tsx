@@ -29,7 +29,7 @@ export const Portfolio = () => {
           <h2 className="text-2xl tablet-md:my-2 desktop-xl:text-5xl phone-sm:text-3xl desktop-sm:text-4xl phone-lg:text-4xl text-grey-2 font-medium">
             THIS PORTFOLIO <span className="text-accent-red font-bold">:)</span>
           </h2>
-          <p className="mt-2 text-xs desktop-xl:max-w-120 desktop-xl:text-xl desktop-sm:max-w-92 desktop-sm:text-base phone-lg:max-w-80 tablet-md:max-w-116 tablet-sm:max-w-92 tablet-sm:pl-0 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+          <p className="mt-2 text-xs desktop-xl:max-w-120 desktop-xl:text-2xl desktop-sm:max-w-92 desktop-sm:text-base phone-lg:max-w-80 tablet-md:max-w-116 tablet-sm:max-w-92 tablet-sm:pl-0 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
             My personal portfolio — a single‑page showcase of projects, skills
             with animated progress badges, and a contact form. Sections reveal
             on scroll, the design adapts from 320 px phones to ultrawide
