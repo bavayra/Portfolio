@@ -148,7 +148,7 @@ export const projects: Project[] = [
         width: 375,
         height: 667,
         className:
-          "-mt-4 tablet-md:w-60 w-34 phone-lg:-mt-12 desktop-md:-mt-4 phone-md:w-38 desktop-sm:-mt-6 desktop-sm:w-40 tablet-sm:w-54 tablet-sm:-mt-14 phone-lg:w-44 phone-md:-mt-8 border-2 border-grey-2 mx-auto ",
+          "-mt-4 tablet-md:w-60 w-34 phone-lg:-mt-12 desktop-md:-mt-4 phone-md:w-38 desktop-sm:-mt-6 desktop-sm:w-40 tablet-sm:w-54 tablet-sm:-mt-14 phone-lg:w-44 phone-md:-mt-8 border-2 border-grey-2 desktop-lg:-mt-9 mx-auto ",
       },
       {
         thumbnail: "/screens/portfolio-screen/portfolio-820-thumb.webp",
