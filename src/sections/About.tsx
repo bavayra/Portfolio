@@ -5,7 +5,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="relative py-8 ml-3 tablet-md:pb-0 tablet-sm:ml-12 desktop-lg:ml-10"
+      className="relative py-8 ml-3 tablet-md:pb-0 tablet-sm:ml-12 desktop-xl:pb-12 desktop-lg:ml-10"
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -14,12 +14,14 @@ const About = () => {
         color="grey-2"
         topPx="var(--block-div-top)"
       />
-      <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">01</p>
+      <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-md:text-3xl">
+        01
+      </p>
       <h2 className="text-2xl text-grey-2 desktop-xl:text-5xl desktop-sm:text-4xl tablet-md:my-2 phone-sm:text-3xl phone-lg:text-4xl tablet-md:text-5xl font-medium">
         WHO IS SHE
       </h2>
 
-      <p className="mt-2 text-xs desktop-sm:max-w-92 desktop-xl:max-w-120 desktop-xl:text-xl desktop-sm:text-base tablet-md:max-w-116 phone-lg:max-w-80 phone-md:text-base  tablet-sm:max-w-92 phone-lg:pl-2 phone-md:max-w-76 phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+      <p className="mt-2 text-xs desktop-sm:max-w-92 desktop-xl:max-w-130 desktop-xl:text-2xl desktop-sm:text-base tablet-md:max-w-116 phone-lg:max-w-80 phone-md:text-base  tablet-sm:max-w-92 phone-lg:pl-2 phone-md:max-w-76 phone-sm:text-sm phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,
