@@ -26,7 +26,7 @@ export const DogShelter = () => {
           <h2 className="text-2xl desktop-sm:text-4xl desktop-xl:text-5xl text-grey-2 tablet-md:my-2 phone-sm:text-3xl phone-lg:text-4xl font-medium">
             DOG SHELTER WEB
           </h2>
-          <p className="mt-2 phone-lg:max-w-80 desktop-xl:max-w-120 desktop-xl:text-xl desktop-sm:max-w-92 desktop-sm:text-base tablet-md:max-w-116 tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+          <p className="mt-2 phone-lg:max-w-80 desktop-xl:max-w-120 desktop-xl:text-2xl desktop-sm:max-w-92 desktop-sm:text-base tablet-md:max-w-116 tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
             A web app for a real dog shelter - browse adoptable dogs, filter by
             breed, age or gender, swipe through each dog's photo gallery, check
             shelter statistics, and reach out through a contact form with
@@ -56,7 +56,7 @@ export const DogShelter = () => {
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-180 desktop-md:-translate-x-1/4 desktop-sm:-translate-y-[18%] desktop-md:mt-6 desktop-xl:text-lg"
+          className="desktop-md:max-w-180 desktop-md:-translate-x-1/4 desktop-sm:-translate-y-[18%] desktop-md:mt-6 desktop-xl:mt-12"
         />
       </div>
     </section>
