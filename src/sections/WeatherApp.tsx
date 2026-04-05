@@ -44,7 +44,7 @@ export const WeatherApp = () => {
           topPx="var(--weather-screen-div-top)"
           className="desktop-sm:hidden"
         />
-        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-md:mt-10 phone-sm:mt-6 ml-3">
+        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-md:mt-10 phone-sm:mt-6 desktop-lg:mt-4 ml-3">
           <ProjectScreen
             title={project.title}
             description={project.description}
@@ -55,7 +55,7 @@ export const WeatherApp = () => {
         </div>
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-180 desktop-md:mt-14 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:-translate-y-[30%]"
+          className="desktop-md:max-w-180 desktop-md:mt-14 desktop-md:-translate-x-1/4 desktop-xl:text-lg desktop-sm:-translate-y-[30%]"
         />
       </div>
     </section>
