@@ -23,7 +23,7 @@ const Skills = () => {
         topPx="var(--block-div-top)"
         className="desktop-sm:hidden"
       />
-      <p className="text-text desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 phone-sm:text-xl tablet-sm:text-2xl desktop-md:text-3xl ">
+      <p className="text-text desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 phone-sm:text-xl tablet-sm:text-2xl desktop-md:text-3xl desktop-xl:text-4xl">
         02
       </p>
       <h2 className="text-2xl desktop-xl:text-5xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 tablet-md:my-2 desktop-sm:text-4xl phone-lg:text-4xl text-grey-2 tablet-md:text-5xl phone-sm:text-3xl font-medium">

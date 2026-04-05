@@ -14,7 +14,7 @@ const About = () => {
         color="grey-2"
         topPx="var(--block-div-top)"
       />
-      <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-md:text-3xl">
+      <p className="text-text phone-sm:text-xl desktop-xl:text-4xl tablet-sm:text-2xl desktop-md:text-3xl">
         01
       </p>
       <h2 className="text-2xl text-grey-2 desktop-xl:text-5xl desktop-sm:text-4xl tablet-md:my-2 phone-sm:text-3xl phone-lg:text-4xl tablet-md:text-5xl font-medium">
