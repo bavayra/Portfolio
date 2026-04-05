@@ -20,7 +20,9 @@ export const DogShelter = () => {
       />
       <div className="desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-6 desktop-sm:items-start">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
-          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl">05</p>
+          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-xl:text-4xl">
+            05
+          </p>
           <h2 className="text-2xl desktop-sm:text-4xl desktop-xl:text-5xl text-grey-2 tablet-md:my-2 phone-sm:text-3xl phone-lg:text-4xl font-medium">
             DOG SHELTER WEB
           </h2>
@@ -54,7 +56,7 @@ export const DogShelter = () => {
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-180 desktop-md:-translate-x-1/4 desktop-sm:-translate-y-[18%] desktop-md:mt-7 desktop-xl:text-lg"
+          className="desktop-md:max-w-180 desktop-md:-translate-x-1/4 desktop-sm:-translate-y-[18%] desktop-md:mt-6 desktop-xl:text-lg"
         />
       </div>
     </section>
