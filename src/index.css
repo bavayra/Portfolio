@@ -368,6 +368,9 @@
     --block-div-md-h: 516px;
     --block-div-lg-h: 482px;
     --name-year-size: 3rem;
+
+    --contacts-div-bot-top: 96px;
+    --contacts-div-bot-height: 384px;
   }
 }
 
