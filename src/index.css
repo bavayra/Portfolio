@@ -406,7 +406,7 @@
     --block-div-xs-h: 498px;
     --block-div-sm-h: 418px;
     --block-div-md-h: 762px;
-    --block-div-lg-h: 724px;
+    --block-div-lg-h: 632px;
 
     --section-bot-div-height: 272px;
     --section-top-div-height: clamp(188px, calc(-1184px + 140vh), 216px);

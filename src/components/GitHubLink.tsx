@@ -9,7 +9,7 @@ const GitHubLink = ({ liveUrl }: GitHubLinkProps) => {
     <>
       <div>
         <div className="flex flex-row mt-2 items-center gap-1 ml-3 tracking-wide">
-          <p className="text-grey-3 phone-md:text-base text-sm tablet-sm:text-lg">
+          <p className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-2xl tablet-sm:text-lg">
             Check the code on
           </p>
           <a
@@ -26,12 +26,12 @@ const GitHubLink = ({ liveUrl }: GitHubLinkProps) => {
           </a>
         </div>
         {liveUrl && (
-          <div className="flex items-center ml-3 tablet-sm:text-xl phone-lg:ml-3 text-accent-red text-base font-semibold">
+          <div className="flex items-center ml-3 tablet-sm:text-xl phone-lg:ml-3 text-accent-red text-base font-semibold desktop-xl:text-2xl">
             <a href={liveUrl} className="inline-flex items-center gap-2">
               <span>Live Demo</span>
               <img
                 src="/external-link-icon.svg"
-                className="w-7 h-7 -mt-1 inline-block"
+                className="w-7 h-7 -mt-1 inline-block desktop-xl:w-9 desktop-xl:h-9"
                 alt="Open live demo (opens in new tab)"
               />
             </a>
