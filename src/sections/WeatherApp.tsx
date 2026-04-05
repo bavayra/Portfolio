@@ -55,7 +55,7 @@ export const WeatherApp = () => {
         </div>
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-172 desktop-md:mt-0 desktop-md:-translate-x-1/3 desktop-lg:mt-3 desktop-xl:text-lg"
+          className="desktop-md:max-w-172 desktop-md:mt-0 desktop-md:-translate-x-1/3 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:-translate-y-[30%]"
         />
       </div>
     </section>

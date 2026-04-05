@@ -35,13 +35,13 @@ const ProjectScreen = (props: ProjectScreenProps) => {
 
   return (
     <>
-      <div className="grid gap-4 tablet-md:grid-cols-1 desktop-sm:items-start">
+      <div className="grid gap-4 tablet-md:grid-cols-1 desktop-sm:gap-0 desktop-sm:items-start">
         <div className="space-y-4">
           <h3 className="sr-only">{props.title}</h3>
           <p className="sr-only">{props.description}</p>
         </div>
         <div
-          className={`grid grid-cols-2 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-xl:w-4xl desktop-sm:ml-0 desktop-md:w-2xl desktop-lg:w-3xl desktop-sm:w-100 desktop-sm:gap-x-6 gap-4 phone-md:gap-x-0 tablet-md:ml-16 tablet-md:w-140 phone-lg:mt-6 ${props.className ?? ""}`}
+          className={`grid grid-cols-2 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-xl:w-4xl desktop-sm:ml-0 desktop-md:w-2xl desktop-lg:w-3xl desktop-sm:w-100 desktop-sm:gap-x-0 desktop-sm:gap-y-2 gap-4 phone-md:gap-x-0 tablet-md:ml-16 tablet-md:w-140 phone-lg:mt-6 ${props.className ?? ""}`}
         >
           {props.images.map((img, index) => (
             <img
