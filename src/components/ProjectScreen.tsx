@@ -41,7 +41,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <p className="sr-only">{props.description}</p>
         </div>
         <div
-          className={`grid grid-cols-2 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-xl:w-4xl desktop-sm:ml-0 desktop-md:w-2xl desktop-lg:w-3xl desktop-sm:w-100 desktop-sm:gap-x-0 desktop-md:gap-x-6 desktop-sm:gap-y-2 gap-4 phone-md:gap-x-0 tablet-md:ml-16 tablet-md:w-140 phone-lg:mt-6 ${props.className ?? ""}`}
+          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-140 desktop-sm:ml-0 desktop-sm:gap-y-2  desktop-sm:w-100 desktop-md:gap-x-6 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-md:w-2xl desktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
         >
           {props.images.map((img, index) => (
             <img
@@ -57,7 +57,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
             />
           ))}
         </div>
-        <p className="text-center text-xs tablet-sm:text-base desktop-md:-translate-x-1/3 bg-section-title w-60 p-2 mx-auto tablet-sm:w-74 rounded-lg text-accent-red phone-lg:text-sm phone-lg:w-70 font-semibold desktop-sm:hidden my-2 tracking-wide">
+        <p className="text-center text-xs bg-section-title w-60 p-2 mx-auto rounded-lg text-accent-red font-semibold my-2 tracking-wide phone-lg:text-sm phone-lg:w-70 tablet-sm:text-base tablet-sm:w-74 desktop-sm:hidden">
           {props.technologies.join(", ")}
         </p>
       </div>
@@ -72,7 +72,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <img
             src={openImage}
             alt="Project full screen"
-            className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg "
+            className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg"
             onClick={(e) => e.stopPropagation()}
           />
         </div>

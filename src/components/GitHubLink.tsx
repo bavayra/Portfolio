@@ -21,12 +21,12 @@ const GitHubLink = ({ liveUrl }: GitHubLinkProps) => {
           >
             <GitHubIcon
               role="img"
-              className="w-6 h-6 inline-block ml-1 phone-md:w-8 tablet-sm:h-10 tablet-sm:w-10 phone-md:h-8 hover:scale-110 text-accent-red active:scale-95 duration-300 "
+              className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 hover:scale-110 text-accent-red active:scale-95 duration-300 "
             />
           </a>
         </div>
         {liveUrl && (
-          <div className="flex items-center ml-3 tablet-sm:text-xl phone-lg:ml-3 text-accent-red text-base font-semibold desktop-xl:text-2xl">
+          <div className="flex items-center ml-3 phone-lg:ml-3 tablet-sm:text-xl desktop-xl:text-2xl text-accent-red text-base font-semibold ">
             <a href={liveUrl} className="inline-flex items-center gap-2">
               <span>Live Demo</span>
               <img
