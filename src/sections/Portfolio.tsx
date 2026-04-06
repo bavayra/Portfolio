@@ -11,7 +11,7 @@ export const Portfolio = () => {
   return (
     <section
       id="projects"
-      className="relative desktop-lg:ml-10 pt-8 h-auto desktop-md:pt-0 pb-20 ml-3 tablet-sm:ml-12"
+      className="relative pt-8 pb-20 ml-3 h-auto tablet-sm:ml-12 desktop-md:pt-0 desktop-lg:ml-10"
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -21,15 +21,15 @@ export const Portfolio = () => {
         topPx="var(--block-div-top)"
         className="desktop-md:-mt-8"
       />
-      <div className="desktop-sm:grid desktop-sm:grid-cols-2  desktop-md:gap-y-2 desktop-sm:gap-6 desktop-sm:items-start">
+      <div className="desktop-sm:gap-6 desktop-sm:items-start desktop-sm:grid desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
           <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-xl:text-4xl ">
             06
           </p>
-          <h2 className="text-2xl tablet-md:my-2 desktop-xl:text-5xl phone-sm:text-3xl desktop-sm:text-4xl phone-lg:text-4xl text-grey-2 font-medium">
+          <h2 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl  phone-lg:text-4xl tablet-md:my-2 desktop-xl:text-5xl">
             THIS PORTFOLIO <span className="text-accent-red font-bold">:)</span>
           </h2>
-          <p className="mt-2 text-xs desktop-xl:max-w-120 desktop-xl:text-2xl desktop-sm:max-w-92 desktop-sm:text-base phone-lg:max-w-80 tablet-md:max-w-116 tablet-sm:max-w-92 tablet-sm:pl-0 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+          <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-68 phone-md:text-base phone-md:max-w-76 phone-lg:max-w-80 tablet-sm:max-w-92 tablet-sm:pl-0 tablet-md:max-w-116 desktop-sm:max-w-92 desktop-xl:max-w-120 desktop-xl:text-2xl">
             My personal portfolio — a single‑page showcase of projects, skills
             with animated progress badges, and a contact form. Sections reveal
             on scroll, the design adapts from 320 px phones to ultrawide
@@ -46,7 +46,7 @@ export const Portfolio = () => {
           topPx="var(--portfolio-screen-div-top)"
           className="desktop-sm:hidden"
         />
-        <div className="desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 ml-3 phone-sm:mt-6 rounded-xl">
+        <div className=" ml-3 rounded-xl phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2">
           <ProjectScreen
             title={project.title}
             description={project.description}

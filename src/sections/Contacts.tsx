@@ -94,7 +94,7 @@ const ContactSection = () => {
   return (
     <section
       id="contacts"
-      className="relative z-10 mt-20 desktop-xl:h-[60vh] ml-3 h-auto desktop-lg:ml-10 tablet-sm:ml-12 flex pb-8 flex-col items-center "
+      className="relative z-10 mt-20 ml-3 h-auto flex pb-8 flex-col items-center tablet-sm:ml-12 desktop-lg:ml-10 desktop-xl:h-[60vh]"
     >
       <Divider
         widthPx="var(--hero-div-w)"
@@ -103,7 +103,7 @@ const ContactSection = () => {
         color="grey-2"
         topPx={-68}
       />
-      <h2 className=" relative self-start text-5xl tablet-sm:text-6xl desktop-md:text-8xl tablet-md:text-7xl text-accent-red font-bold">
+      <h2 className="relative self-start text-5xl text-accent-red font-bold tablet-sm:text-6xl tablet-md:text-7xl desktop-md:text-8xl">
         LET'S TALK?
       </h2>
       <Divider
@@ -159,7 +159,7 @@ const ContactSection = () => {
               <div>
                 <label
                   htmlFor="input-message"
-                  className="text-sm desktop-xl:text-xl text-grey-3 mb-4 phone-md:text-lg  block "
+                  className="text-sm block text-grey-3 mb-4 phone-md:text-lg desktop-xl:text-xl"
                 >
                   Message
                 </label>
@@ -170,7 +170,7 @@ const ContactSection = () => {
                   placeholder="Write your message..."
                   required
                   disabled={isSubmitting}
-                  className=" focus:border-text mb-2 desktop-xl:min-h-36 desktop-xl:text-lg min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50"
+                  className=" focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg"
                 />
                 {errors.message && (
                   <p className="-mt-6 text-sm text-red-600" role="alert">
@@ -214,7 +214,7 @@ const ContactSection = () => {
         </div>
         <SocialLinks
           size="md"
-          className="grid grid-rows-2 desktop-xl:my-28 desktop-xl:mx-4 grid-cols-3 gap-2 mt-8 tablet-sm:gap-x-10 tablet-sm:mx-auto tablet-sm:gap-y-4 "
+          className="grid grid-rows-2 grid-cols-3 gap-2 mt-8 tablet-sm:gap-x-10 tablet-sm:mx-auto tablet-sm:gap-y-4 desktop-xl:my-28 desktop-xl:mx-4"
         />
       </div>
     </section>

@@ -23,24 +23,24 @@ const Skills = () => {
         topPx="var(--block-div-top)"
         className="desktop-sm:hidden"
       />
-      <p className="text-text desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 phone-sm:text-xl tablet-sm:text-2xl desktop-md:text-3xl desktop-xl:text-4xl">
+      <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10  desktop-md:text-3xl desktop-xl:text-4xl">
         02
       </p>
-      <h2 className="text-2xl desktop-xl:text-5xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 tablet-md:my-2 desktop-sm:text-4xl phone-lg:text-4xl text-grey-2 tablet-md:text-5xl phone-sm:text-3xl font-medium">
+      <h2 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl phone-lg:text-4xl tablet-md:my-2 tablet-md:text-5xl desktop-sm:text-4xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 desktop-xl:text-5xl ">
         HER SKILLS
       </h2>
-      <div className="grid grid-cols-3 desktop-sm:gap-x-0 desktop-sm:gap-y-6 gap-3 mt-4 desktop-xl:gap-y-10 desktop-xl:gap-x-16 tablet-sm:mt-10 phone-sm:mt-8 justify-items-center phone-md:gap-x-12 tablet-sm:gap-y-12 gap-x-0 w-3xs phone-sm:gap-y-6 tablet-sm:w-sm mx-auto">
+      <div className="grid grid-cols-3 gap-3 mt-4 mx-auto justify-items-center  gap-x-0 w-3xs phone-sm:gap-y-6 phone-sm:mt-8 phone-md:gap-x-12 tablet-sm:mt-10 tablet-sm:gap-y-12 tablet-sm:w-sm desktop-sm:gap-x-0 desktop-sm:gap-y-6 desktop-xl:gap-y-10 desktop-xl:gap-x-16 ">
         {skills.map(({ percent, label }) => (
           <div
             key={label}
-            className="flex flex-col items-center gap-1 tablet-sm:gap-5 phone-sm:gap-3"
+            className="flex flex-col items-center gap-1 phone-sm:gap-3 tablet-sm:gap-5 "
           >
             <CircleStatic
               percent={percent}
               ariaLabel={label}
               className="phone-sm:scale-120 desktop-sm:scale-130 desktop-xl:scale-160 tablet-sm:scale-150 phone-sm:[--skill-percent-size:.8rem]"
             />
-            <span className="text-[0.65rem] desktop-sm:text-sm desktop-xl:text-lg  text-text phone-sm:text-xs tablet-sm:text-base phone-lg:text-sm">
+            <span className="text-[0.65rem] text-text phone-sm:text-xs phone-lg:text-sm tablet-sm:text-base desktop-sm:text-sm desktop-xl:text-lg">
               {label}
             </span>
           </div>

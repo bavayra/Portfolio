@@ -10,7 +10,7 @@ export const DogShelter = () => {
 
   if (!project) return null;
   return (
-    <section className="relative desktop-sm:pb-0 desktop-lg:ml-10 h-auto pt-8  desktop-md:pb-10 ml-3 pb-8 tablet-sm:ml-12 ">
+    <section className="relative h-auto pt-8 ml-3 pb-8 tablet-sm:ml-12 desktop-sm:pb-0 desktop-md:pb-10 desktop-lg:ml-10">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-md-h)"
@@ -23,10 +23,10 @@ export const DogShelter = () => {
           <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-xl:text-4xl">
             05
           </p>
-          <h2 className="text-2xl desktop-sm:text-4xl desktop-xl:text-5xl text-grey-2 tablet-md:my-2 phone-sm:text-3xl phone-lg:text-4xl font-medium">
+          <h2 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl phone-lg:text-4xl tablet-md:my-2 desktop-xl:text-5xl">
             DOG SHELTER WEB
           </h2>
-          <p className="mt-2 phone-lg:max-w-80 desktop-xl:max-w-120 desktop-xl:text-2xl desktop-sm:max-w-92 desktop-sm:text-base tablet-md:max-w-116 tablet-sm:max-w-92 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-sm:max-w-68 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal">
+          <p className="mt-2 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:max-w-68 phone-sm:text-sm phone-md:text-base phone-md:max-w-76 phone-lg:max-w-80 tablet-sm:max-w-92 tablet-md:max-w-116 desktop-sm:max-w-92 desktop-xl:max-w-120 desktop-xl:text-2xl">
             A web app for a real dog shelter - browse adoptable dogs, filter by
             breed, age or gender, swipe through each dog's photo gallery, check
             shelter statistics, and reach out through a contact form with
@@ -44,7 +44,7 @@ export const DogShelter = () => {
           className="desktop-sm:hidden"
         />
 
-        <div className="desktop-sm:col-start-2 ml-3 phone-sm:mt-6 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-md:-mt-2">
+        <div className="ml-3 phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-md:-mt-2">
           <ProjectScreen
             title={project.title}
             description={project.description}
@@ -56,7 +56,7 @@ export const DogShelter = () => {
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-180 desktop-md:-translate-x-1/4 desktop-sm:-translate-y-[18%] desktop-md:mt-6 desktop-xl:mt-12"
+          className="desktop-sm:-translate-y-[18%] desktop-md:max-w-180 desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12"
         />
       </div>
     </section>
