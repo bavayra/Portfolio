@@ -23,7 +23,7 @@ const TextInput = ({
     mb-2
     bg-transparent
     border-0
-    border-b-1
+    border-b-[2px]
     border-accent-grey
     text-base
     focus:outline-none
@@ -36,7 +36,7 @@ const TextInput = ({
     <div className="desktop-xl:mb-6">
       <label
         htmlFor={id}
-        className="text-sm desktop-xl:text-xl phone-md:text-lg  text-grey-3 "
+        className="text-sm desktop-xl:text-xl phone-md:text-lg text-grey-3 "
       >
         {label}
       </label>
