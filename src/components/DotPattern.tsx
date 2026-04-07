@@ -15,13 +15,7 @@ const DotPattern = () => {
             width={20}
             height={20}
           >
-            <circle
-              cx="3"
-              cy="3"
-              fill="var(--color-accent-red)"
-              id="dot"
-              r={3}
-            />
+            <circle cx="3" cy="3" fill="var(--color-accent-red)" r={3} />
           </pattern>
           <pattern
             id="dot-pattern-lg"
@@ -54,13 +48,7 @@ const DotPattern = () => {
             width={16}
             height={16}
           >
-            <circle
-              cx="3"
-              cy="3"
-              fill="var(--color-accent-red)"
-              id="dot-xl"
-              r={3}
-            />
+            <circle cx="3" cy="3" fill="var(--color-accent-red)" r={3} />
           </pattern>
         </defs>
         <rect
