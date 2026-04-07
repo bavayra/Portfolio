@@ -3,14 +3,10 @@ import { Circle } from "../components/Circle";
 import { Divider } from "../components/Divider";
 import { useInViewOnce } from "../hooks/useInViewOnce";
 
-type Theme = "light" | "dark";
-
 interface SectionTitleProps {
   title: string;
   partLabel?: string;
   dotsCount?: 1 | 2 | 3;
-  theme?: Theme;
-  className?: string;
 }
 
 export const SectionTitle: React.FC<SectionTitleProps> = ({
