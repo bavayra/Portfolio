@@ -10,10 +10,7 @@ export const WeatherApp = () => {
   if (!project) return null;
 
   return (
-    <section
-      id="projects"
-      className="relative p-8 ml-3 h-auto tablet-sm:ml-12 desktop-sm:pb-0 desktop-lg:ml-10 desktop-lg:mt-10"
-    >
+    <section className="relative p-8 ml-3 h-auto tablet-sm:ml-12 desktop-sm:pb-0 desktop-lg:ml-10 desktop-lg:mt-10">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-lg-h)"

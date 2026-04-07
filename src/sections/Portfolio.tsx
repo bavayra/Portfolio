@@ -9,10 +9,7 @@ export const Portfolio = () => {
   const project = projects.find((p) => p.id === "portfolio-project");
   if (!project) return null;
   return (
-    <section
-      id="projects"
-      className="relative pt-8 pb-20 ml-3 h-auto tablet-sm:ml-12 desktop-md:pt-0 desktop-lg:ml-10"
-    >
+    <section className="relative pt-8 pb-20 ml-3 h-auto tablet-sm:ml-12 desktop-md:pt-0 desktop-lg:ml-10">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--block-div-2xs-h)"

@@ -40,7 +40,7 @@ function App() {
               <SectionTitle title="HER PROJECTS" dotsCount={2} />
             </div>
           </section>
-          <div className="container mx-auto px-4">
+          <div id="projects" className="container mx-auto px-4">
             <WeatherApp />
             <DogShelter />
             <Portfolio />
