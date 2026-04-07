@@ -50,7 +50,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
               onClick={() => setOpenImage(img.full)}
               loading="lazy"
               decoding="async"
-              className={`... ${img.className ?? ""} transition-transform rounded-lg duration-300 ease-out hover:scale-105 cursor-zoom-in`}
+              className={`${img.className ?? ""} transition-transform rounded-lg duration-300 ease-out hover:scale-105 cursor-zoom-in`}
             />
           ))}
         </div>
