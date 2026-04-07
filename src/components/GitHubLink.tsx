@@ -27,7 +27,12 @@ const GitHubLink = ({ liveUrl }: GitHubLinkProps) => {
         </div>
         {liveUrl && (
           <div className="flex items-center ml-3 phone-lg:ml-3 tablet-sm:text-xl desktop-xl:text-2xl text-accent-red text-base font-semibold ">
-            <a href={liveUrl} className="inline-flex items-center gap-2">
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2"
+            >
               <span>Live Demo</span>
               <img
                 src="/external-link-icon.svg"
