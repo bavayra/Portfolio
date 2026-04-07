@@ -50,7 +50,6 @@ export const DogShelter = () => {
             description={project.description}
             images={project.images}
             technologies={project.technologies}
-            links={{ live: project.liveUrl }}
           />
         </div>
 

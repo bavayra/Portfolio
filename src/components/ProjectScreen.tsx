@@ -12,9 +12,6 @@ type ProjectScreenProps = {
     height: number;
     className?: string;
   }[];
-  links?: {
-    live?: string;
-  };
   className?: string;
 };
 

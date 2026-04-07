@@ -52,7 +52,6 @@ export const WeatherApp = () => {
             description={project.description}
             images={project.images}
             technologies={project.technologies}
-            links={{ live: project.liveUrl }}
           />
         </div>
         <ProjectDesc
