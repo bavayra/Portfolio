@@ -26,10 +26,7 @@ export const WeatherApp = () => {
           <h2 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl  phone-lg:text-4xl tablet-md:my-2 desktop-xl:text-5xl">
             WEATHER APP
           </h2>
-          <p
-            className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-68 phone-md:text-base phone-md:max-w-76 phone-lg:max-w-80 tablet-sm:max-w-92 tablet-md:max-w-116 
-           desktop-sm:max-w-92 desktop-xl:max-w-120 desktop-xl:text-2xl"
-          >
+          <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
             A weather app with dark and light themes that shows current
             conditions, hourly and daily forecasts, and an interactive map. Save
             your favorite cities, switch between °C and °F, or let the browser
@@ -56,7 +53,7 @@ export const WeatherApp = () => {
         </div>
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-sm:-translate-y-[30%] desktop-md:max-w-180 desktop-md:mt-14 desktop-md:-translate-x-1/4"
+          className="desktop-sm:-translate-y-[30%] desktop-md:max-w-[45rem] desktop-md:mt-14 desktop-md:-translate-x-1/4"
         />
       </div>
     </section>

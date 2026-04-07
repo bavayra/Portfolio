@@ -26,7 +26,7 @@ export const Portfolio = () => {
           <h2 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl  phone-lg:text-4xl tablet-md:my-2 desktop-xl:text-5xl">
             THIS PORTFOLIO <span className="text-accent-red font-bold">:)</span>
           </h2>
-          <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-68 phone-md:text-base phone-md:max-w-76 phone-lg:max-w-80 tablet-sm:max-w-92 tablet-sm:pl-0 tablet-md:max-w-116 desktop-sm:max-w-92 desktop-xl:max-w-120 desktop-xl:text-2xl">
+          <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-sm:pl-0 tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
             My personal portfolio — a single‑page showcase of projects, skills
             with animated progress badges, and a contact form. Sections reveal
             on scroll, the design adapts from 320 px phones to ultrawide
@@ -54,7 +54,7 @@ export const Portfolio = () => {
         </div>
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className="desktop-md:max-w-180 desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
+          className="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
         />
       </div>
     </section>

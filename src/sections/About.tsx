@@ -21,7 +21,7 @@ const About = () => {
         WHO IS SHE
       </h2>
 
-      <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-68 phone-md:text-base phone-md:max-w-76 phone-lg:max-w-80 phone-lg:pl-2 tablet-sm:max-w-92 tablet-md:max-w-116 desktop-sm:max-w-92 desktop-xl:max-w-130 desktop-xl:text-2xl">
+      <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-80 phone-lg:pl-2 tablet-sm:max-w-[23rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32.5rem] desktop-xl:text-2xl">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,
@@ -33,7 +33,7 @@ const About = () => {
       <Button
         variant="secondary"
         size="small"
-        className="mt-2 flex justify-end mr-4 ml-auto phone-sm:mt-4 phone-sm:mr-8 tablet-sm:mr-16 tablet-sm:mt-0 tablet-md:mr-30 desktop-sm:ml-6 desktop-sm:mt-4"
+        className="mt-2 flex justify-end mr-4 ml-auto phone-sm:mt-4 phone-sm:mr-8 tablet-sm:mr-16 tablet-sm:mt-0 tablet-md:mr-[7.5rem] desktop-sm:ml-6 desktop-sm:mt-4"
       >
         Download CV
       </Button>
