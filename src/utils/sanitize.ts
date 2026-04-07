@@ -9,5 +9,3 @@ export function sanitizeFormData(data: {
     message: data.message.trim(),
   };
 }
-
-/*Deletes dangerous characters from the input string to prevent XSS attacks*/
