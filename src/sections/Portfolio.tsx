@@ -32,7 +32,7 @@ export const Portfolio = () => {
             on scroll, the design adapts from 320 px phones to ultrawide
             displays, and everything switches seamlessly to dark mode.
           </p>
-          <GitHubLink liveUrl={project.liveUrl} />
+          <GitHubLink liveUrl={project.liveUrl} githubUrl={project.githubUrl} />
         </div>
 
         <Divider

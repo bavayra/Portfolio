@@ -32,7 +32,7 @@ export const DogShelter = () => {
             shelter statistics, and reach out through a contact form with
             built‑in validation.
           </p>
-          <GitHubLink liveUrl={project.liveUrl} />
+          <GitHubLink liveUrl={project.liveUrl} githubUrl={project.githubUrl} />
         </div>
 
         <Divider

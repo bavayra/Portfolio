@@ -32,7 +32,7 @@ export const WeatherApp = () => {
             your favorite cities, switch between °C and °F, or let the browser
             detect your location - all in a fast, smooth mobile interface.
           </p>
-          <GitHubLink liveUrl={project.liveUrl} />
+          <GitHubLink liveUrl={project.liveUrl} githubUrl={project.githubUrl} />
         </div>
 
         <Divider

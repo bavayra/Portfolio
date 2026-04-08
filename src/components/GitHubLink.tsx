@@ -2,9 +2,13 @@ import GitHubIcon from "../assets/Icons/GitHubIcon.svg?react";
 
 type GitHubLinkProps = {
   liveUrl?: string;
+  githubUrl?: string;
 };
 
-const GitHubLink = ({ liveUrl }: GitHubLinkProps) => {
+const GitHubLink = ({ liveUrl, githubUrl }: GitHubLinkProps) => {
+  const repoHref = githubUrl ?? "https://github.com/bavayra";
+  const repoAria = githubUrl ? "Open GitHub repository" : "Open GitHub profile";
+
   return (
     <>
       <div>
@@ -13,11 +17,11 @@ const GitHubLink = ({ liveUrl }: GitHubLinkProps) => {
             Check the code on
           </p>
           <a
-            href="https://github.com/bavayra"
+            href={repoHref}
             target="_blank"
             rel="noopener noreferrer"
             className="text-text"
-            aria-label="Open GitHub profile"
+            aria-label={repoAria}
           >
             <GitHubIcon
               role="img"
