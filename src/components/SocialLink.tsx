@@ -19,10 +19,10 @@ const SocialLinks = ({
   iconColor = "text-accent-red",
 }: SocialLinksProps) => {
   const Links = {
-    discord: "https://www.discord.com/bavayra",
+    discord: "https://www.discord.com",
     github: "https://www.github.com/bavayra",
-    telegram: "https://web.telegram.org/bavayra",
-    gmail: "https://mail.google.com/mail/u/0/#inbox",
+    telegram: "https://t.me/bavayra",
+    gmail: "mailto:x.bavayra@gmail.com",
     instagram: "https://www.instagram.com/bavayra",
     linkedin: "https://www.linkedin.com/in/bavayra",
   };
