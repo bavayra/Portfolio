@@ -27,7 +27,7 @@ function App() {
             <SectionTitle title="ABOUT HER" />
           </div>
         </section>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={null}>
           <div className="container mx-auto px-4">
             <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
               <About />
