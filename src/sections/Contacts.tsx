@@ -67,15 +67,33 @@ const ContactSection = () => {
 
     setIsSubmitting(true);
     try {
-      const resp = await fetch("https://httpbin.org/post", {
+      const FORMSPREE_ID = "mkopepeb";
+      const endpoint = `https://formspree.io/f/${FORMSPREE_ID}`;
+      const resp = await fetch(endpoint, {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
         body: JSON.stringify(sanitizedData),
       });
       if (!resp.ok) {
-        const body = await resp.text();
-        throw new Error(`Server error: ${resp.status} ${body}`);
+        let errBody = await resp.text();
+        if (!errBody) {
+          errBody = resp.statusText || `HTTP ${resp.status}`;
+        } else {
+          try {
+            const json = JSON.parse(errBody);
+            errBody = json.error || JSON.stringify(json);
+          } catch (parseErr) {
+            if (import.meta.env.DEV)
+              console.warn("Failed to parse error body:", parseErr);
+          }
+        }
+
+        throw new Error(`Server error: ${resp.status} ${errBody}`);
       }
+
       setLastSubmitTime(now);
       setSuccessMessage("Thank you! Your message has been sent.");
       setName("");
