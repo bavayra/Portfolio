@@ -67,7 +67,7 @@ const Contacts = () => {
 
     setIsSubmitting(true);
     try {
-      const FORMSPREE_ID = "mkopepeb";
+      const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID as string;
       const endpoint = `https://formspree.io/f/${FORMSPREE_ID}`;
       const resp = await fetch(endpoint, {
         method: "POST",

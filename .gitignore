@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Local assistant instructions (do not push)
+assistant-instructions.md
+
+# Environment variables
+.env
+.env.local
