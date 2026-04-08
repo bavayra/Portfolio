@@ -1,5 +1,5 @@
 import DotPattern from "../components/DotPattern";
-import { Divider } from "../components/Divider";
+import Divider from "../components/Divider";
 
 const Hero = () => {
   return (

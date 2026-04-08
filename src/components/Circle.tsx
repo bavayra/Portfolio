@@ -8,7 +8,7 @@ interface CircleProps {
   style?: React.CSSProperties;
 }
 
-export const Circle: React.FC<CircleProps> = ({
+const Circle: React.FC<CircleProps> = ({
   className = "",
   topRem,
   leftRem,

@@ -1,11 +1,11 @@
-import { Divider } from "../components/Divider";
+import Divider from "../components/Divider";
 import GitHubLink from "../components/GitHubLink";
 
 import ProjectScreen from "../components/ProjectScreen";
 import { projects } from "../../data/projects";
 import ProjectDesc from "../components/ProjectDesc";
 
-export const Portfolio = () => {
+const Portfolio = () => {
   const project = projects.find((p) => p.id === "portfolio-project");
   if (!project) return null;
   return (

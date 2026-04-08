@@ -1,9 +1,9 @@
 import { useState, type FormEvent } from "react";
-import { sanitizeFormData } from "../utils/sanitize.ts";
+import { sanitizeFormData } from "../utils/normalizeFormData.ts";
 import ContactInput from "../components/ContactInput";
 import SocialLinks from "../components/SocialLink.tsx";
 import Button from "../components/Button";
-import { Divider } from "../components/Divider";
+import Divider from "../components/Divider";
 
 const ContactSection = () => {
   const [name, setName] = useState("");

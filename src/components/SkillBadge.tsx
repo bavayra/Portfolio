@@ -9,7 +9,7 @@ type Props = {
   ariaLabel?: string;
 };
 
-export const CircleStatic: React.FC<Props> = ({
+const CircleStatic: React.FC<Props> = ({
   percent,
   size = 60,
   stroke = 8,

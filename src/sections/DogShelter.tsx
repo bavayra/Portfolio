@@ -1,11 +1,11 @@
-import { Divider } from "../components/Divider";
+import Divider from "../components/Divider";
 import GitHubLink from "../components/GitHubLink";
 
 import ProjectScreen from "../components/ProjectScreen";
 import { projects } from "../../data/projects";
 import ProjectDesc from "../components/ProjectDesc";
 
-export const DogShelter = () => {
+const DogShelter = () => {
   const project = projects.find((p) => p.id === "dog-shelter");
 
   if (!project) return null;

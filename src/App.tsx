@@ -1,6 +1,6 @@
 import Header from "./sections/Header.tsx";
 import Hero from "./sections/Hero.tsx";
-import { SectionTitle } from "./sections/SectionTitle.tsx";
+import SectionTitle from "./sections/SectionTitle.tsx";
 import { lazy, Suspense } from "react";
 import useVh from "./hooks/useVh";
 

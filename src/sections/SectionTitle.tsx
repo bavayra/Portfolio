@@ -1,6 +1,6 @@
 import React from "react";
-import { Circle } from "../components/Circle";
-import { Divider } from "../components/Divider";
+import Circle from "../components/Circle";
+import Divider from "../components/Divider";
 import { useInViewOnce } from "../hooks/useInViewOnce";
 
 interface SectionTitleProps {
@@ -9,7 +9,7 @@ interface SectionTitleProps {
   dotsCount?: 1 | 2 | 3;
 }
 
-export const SectionTitle: React.FC<SectionTitleProps> = ({
+const SectionTitle: React.FC<SectionTitleProps> = ({
   title,
   partLabel = "Part",
   dotsCount = 1,
@@ -65,3 +65,4 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
     </div>
   );
 };
+export default SectionTitle;

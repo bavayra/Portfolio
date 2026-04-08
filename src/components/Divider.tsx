@@ -12,7 +12,7 @@ interface DividerProps {
   className?: string;
 }
 
-export const Divider: React.FC<DividerProps> = ({
+const Divider: React.FC<DividerProps> = ({
   widthPx,
   heightPx,
   color,
@@ -48,3 +48,4 @@ export const Divider: React.FC<DividerProps> = ({
     />
   );
 };
+export default Divider;

@@ -1,6 +1,6 @@
-import { Divider } from "../components/Divider";
+import Divider from "../components/Divider";
 
-export const Description = () => {
+const Description = () => {
   return (
     <section className="relative h-screen phone-sm:h-[84vh] min-[375px]:h-[92vh] tablet-sm:ml-12 tablet-lg:h-[40vh] desktop-sm:h-[68vh] desktop-lg:h-[60vh] desktop-lg:ml-10 desktop-xl:h-[64vh] tablet-md:h-[44vh] min-[390px]:h-[70vh] phone-md:max-h-[74vh] min-[428px]:h-[68vh] phone-lg:h-[63vh] tablet-sm:h-[55vh] py-8 ml-3">
       <Divider
