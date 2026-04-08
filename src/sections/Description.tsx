@@ -30,7 +30,8 @@ const Description = () => {
         width={128}
         height={200}
         style={{ position: "absolute", right: 0, bottom: 0 }}
-        loading="lazy"
+        loading="eager"
+        fetchPriority="high"
         className="object-cover phone-md:w-36 phone-lg:w-44 phone-lg:-mr-3  tablet-sm:w-[12.5rem] tablet-md:w-60 desktop-sm:w-[19.5rem] desktop-sm:mr-24 desktop-xl:w-[27rem] "
       />
     </section>
