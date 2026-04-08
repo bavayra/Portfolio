@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import Modal from "./Modal";
 
 type ProjectScreenProps = {
   title: string;
@@ -17,18 +18,7 @@ type ProjectScreenProps = {
 
 const ProjectScreen = (props: ProjectScreenProps) => {
   const [openImage, setOpenImage] = useState<string | null>(null);
-
-  useEffect(() => {
-    const handleEsc = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpenImage(null);
-    };
-
-    window.addEventListener("keydown", handleEsc);
-
-    return () => {
-      window.removeEventListener("keydown", handleEsc);
-    };
-  }, []);
+  const closeBtnRef = useRef<HTMLButtonElement | null>(null);
 
   return (
     <>
@@ -60,19 +50,32 @@ const ProjectScreen = (props: ProjectScreenProps) => {
       </div>
 
       {openImage && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/70"
-          onClick={() => setOpenImage(null)}
-          role="dialog"
-          aria-modal="true"
+        <Modal
+          isOpen={!!openImage}
+          onClose={() => setOpenImage(null)}
+          ariaLabel="Project screenshot"
+          initialFocusRef={closeBtnRef as React.RefObject<HTMLElement>}
         >
-          <img
-            src={openImage}
-            alt="Project full screen"
-            className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-lg"
-            onClick={(e) => e.stopPropagation()}
-          />
-        </div>
+          <div className="flex flex-col items-center gap-4">
+            <div className="w-full flex justify-end">
+              <button
+                ref={closeBtnRef}
+                onClick={() => setOpenImage(null)}
+                className="px-3 py-1 rounded bg-gray-100 text-black hover:bg-gray-200"
+                aria-label="Close screenshot"
+              >
+                Close
+              </button>
+            </div>
+
+            <img
+              src={openImage}
+              alt="Project full screen"
+              className="max-h-[80vh] max-w-[90vw] rounded-lg shadow-lg"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+        </Modal>
       )}
     </>
   );
