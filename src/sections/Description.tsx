@@ -25,7 +25,7 @@ export const Description = () => {
         self-motivated to deliver reliable results.
       </p>
       <img
-        src="/fonts/images/AuthorImgAI.webp"
+        src="/AuthorImgAI.webp"
         alt="AI-generated portrait of the author"
         width={128}
         height={200}
