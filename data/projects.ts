@@ -80,7 +80,7 @@ export const projects: Project[] = [
       "Built with vanilla JavaScript and Vite from a Figma mockup. Pulls real‑time data from the OpenWeather API, renders a Leaflet map layer, and caches responses client‑side for speed. Optimized with lazy loading and lightweight assets; accessible through semantic HTML and keyboard‑friendly navigation.",
     position: { row: 1, col: 2 },
     technologies: ["CSS3", "HTML5", "Vanilla JS", "API", "Vite"],
-    liveUrl: "https://...",
+    liveUrl: "https://bavayra.github.io/WeatherApp/",
     githubUrl: "https://github.com/bavayra/WeatherApp.git",
     images: [
       {
@@ -130,7 +130,7 @@ export const projects: Project[] = [
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind", "Vite"],
     githubUrl: "https://github.com/bavayra/portfolio.git",
-    liveUrl: "https://github.com/bavayra/portfolio.git",
+    liveUrl: "https://alix-bell-portfolio.netlify.app",
     images: [
       {
         thumbnail: "/screens/portfolio-screen/portfolio-390-thumb.webp",
