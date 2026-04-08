@@ -30,13 +30,15 @@ const About = () => {
         projects.
       </p>
 
-      <Button
-        variant="secondary"
-        size="small"
-        className="mt-2 flex justify-end mr-4 ml-auto phone-sm:mt-4 phone-sm:mr-8 tablet-sm:mr-16 tablet-sm:mt-0 tablet-md:mr-[7.5rem] desktop-sm:ml-6 desktop-sm:mt-4"
-      >
-        Download CV
-      </Button>
+      <a href="/Alexandra_Beloborodova_Frontend_Developer.pdf" download>
+        <Button
+          variant="secondary"
+          size="small"
+          className="mt-2 flex justify-end mr-4 ml-auto phone-sm:mt-4 phone-sm:mr-8 tablet-sm:mr-16 tablet-sm:mt-0 tablet-md:mr-[7.5rem] desktop-sm:ml-6 desktop-sm:mt-4"
+        >
+          Download CV
+        </Button>
+      </a>
     </section>
   );
 };

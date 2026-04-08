@@ -30,7 +30,7 @@ export const projects: Project[] = [
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind", "Vite"],
     githubUrl: "https://github.com/bavayra/dog-shelter.git",
-    liveUrl: "https://github.com/bavayra/dog-shelter.git",
+    liveUrl: "https://dogshelter-project.netlify.app/",
     images: [
       {
         thumbnail: "/screens/dog-shelter-screen/dog-shelter-1280-thumb.webp",
