@@ -55,23 +55,22 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           onClose={() => setOpenImage(null)}
           ariaLabel="Project screenshot"
           initialFocusRef={closeBtnRef as React.RefObject<HTMLElement>}
+          panelClassName="relative z-10 p-0 bg-transparent flex items-center justify-center"
         >
-          <div className="flex flex-col items-center gap-4">
-            <div className="w-full flex justify-end">
-              <button
-                ref={closeBtnRef}
-                onClick={() => setOpenImage(null)}
-                className="px-3 py-1 rounded bg-gray-100 text-black hover:bg-gray-200"
-                aria-label="Close screenshot"
-              >
-                Close
-              </button>
-            </div>
+          <div className="relative">
+            <button
+              ref={closeBtnRef}
+              onClick={() => setOpenImage(null)}
+              className="absolute top-4 right-4 z-20 rounded-full border border-grey-3 bg-bg/90 px-3 py-1 text-sm text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-1 focus-visible:ring-offset-black/40"
+              aria-label="Close screenshot"
+            >
+              X
+            </button>
 
             <img
               src={openImage}
               alt="Project full screen"
-              className="max-h-[80vh] max-w-[90vw] rounded-lg shadow-lg"
+              className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-xl"
               onClick={(e) => e.stopPropagation()}
             />
           </div>

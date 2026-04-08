@@ -5,6 +5,7 @@ type ModalProps = {
   isOpen: boolean;
   onClose: () => void;
   ariaLabel?: string;
+  panelClassName?: string;
   initialFocusRef?: React.RefObject<HTMLElement>;
   children: React.ReactNode;
 };
@@ -27,6 +28,7 @@ export default function Modal({
   onClose,
   ariaLabel,
   initialFocusRef,
+  panelClassName,
   children,
 }: ModalProps) {
   const containerRef = useRef<HTMLDivElement | null>(null);
@@ -90,14 +92,17 @@ export default function Modal({
       className="fixed inset-0 z-50 flex items-center justify-center"
     >
       <div
-        className="absolute inset-0 bg-black/50"
+        className="absolute inset-0 bg-black/70"
         onMouseDown={(e) => {
           if (e.target === e.currentTarget) onClose();
         }}
       />
       <div
         ref={containerRef}
-        className="relative z-10 w-[min(95%,900px)] max-h-[90vh] overflow-auto rounded bg-white text-black p-4"
+        className={
+          panelClassName ??
+          "relative z-10 w-[min(95%,900px)] max-h-[90vh] overflow-auto rounded bg-white text-black p-4"
+        }
         tabIndex={-1}
       >
         {children}
