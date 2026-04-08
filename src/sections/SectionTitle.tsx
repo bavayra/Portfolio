@@ -39,13 +39,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
               {Array.from({ length: dotsCount }).map((_, index) => (
                 <Circle
                   key={`dot-${index}`}
-                  className="circle-drop"
-                  sizes={{
-                    mobile: 1,
-                    mobileLg: 1.6,
-                    tablet: 1.8,
-                    desktop: 2,
-                  }}
+                  className="circle-drop w-[1.25rem] h-[1.25rem] tablet-sm:w-[1.5rem] tablet-sm:h-[1.5rem] desktop-lg:w-[1.75rem] desktop-lg:h-[1.75rem]"
                   style={{ animationDelay: `${index * 0.6}s` }}
                 />
               ))}
