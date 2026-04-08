@@ -14,7 +14,6 @@ const SectionTitle: React.FC<SectionTitleProps> = ({
   partLabel = "Part",
   dotsCount = 1,
 }) => {
-  const partColor = "text-section-title";
   const { ref, inViewOnce } = useInViewOnce<HTMLHeadingElement>({
     threshold: 0.1,
   });
