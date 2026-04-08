@@ -14,7 +14,6 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
   partLabel = "Part",
   dotsCount = 1,
 }) => {
-  const titleColor = "text-section-title";
   const partColor = "text-section-title";
   const { ref, inViewOnce } = useInViewOnce<HTMLHeadingElement>({
     threshold: 0.1,
@@ -31,9 +30,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
       />
       <div className="mb-4">
         <div className="flex items-center gap-2">
-          <span
-            className={`text-base tracking-wide font-medium phone-sm:text-xl min-[390px]:text-2xl tablet-md:text-3xl desktop-lg:text-4xl ${partColor}`}
-          >
+          <span className="text-base tracking-wide font-medium phone-sm:text-xl min-[390px]:text-2xl tablet-md:text-3xl desktop-lg:text-4xl text-section-title">
             {partLabel}
           </span>
 
@@ -58,7 +55,7 @@ export const SectionTitle: React.FC<SectionTitleProps> = ({
 
         <h2
           ref={ref}
-          className={`font-extrabold tracking-[0.2em] text-[length:var(--section-title-size)] tablet-sm:text-5xl tablet-md:text-6xl desktop-sm:text-7xl desktop-lg:text-8xl ${titleColor} `}
+          className="font-extrabold tracking-[0.2em] text-[length:var(--section-title-size)] tablet-sm:text-5xl tablet-md:text-6xl desktop-sm:text-7xl desktop-lg:text-8xl text-section-title"
         >
           {title}
         </h2>
