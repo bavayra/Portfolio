@@ -49,9 +49,7 @@ const SocialLinks = ({
     size === "md"
       ? "desktop-sm:w-[68px] desktop-sm:h-[68px]"
       : "desktop-sm:w-[48px] desktop-sm:h-[48px]";
-
   const iconClasses = [
-    iconColor,
     iconBaseSize,
     iconTabletSize,
     iconDesktopSize,
@@ -63,22 +61,21 @@ const SocialLinks = ({
     <div
       className={`flex items-center desktop-sm:mx-4 desktop-sm:my-16 justify-center ${className || ""}`}
     >
-      {socialNetworks.map((social) => (
-        <a
-          key={social.name}
-          href={social.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={`${sizeClasses[size]} shrink-0 flex items-center justify-center rounded-full transition-transform hover:scale-110`}
-          aria-label={social.name}
-        >
-          <Icon
-            as={social.icon}
-            className={`${iconColor} ${iconClasses}`}
-            aria-hidden="true"
-          />
-        </a>
-      ))}
+      {socialNetworks.map((social) => {
+        const wrapperClass = `${sizeClasses[size]} shrink-0 flex items-center justify-center rounded-full transition-transform hover:scale-110 ${iconColor}`;
+        return (
+          <a
+            key={social.name}
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={wrapperClass}
+            aria-label={social.name}
+          >
+            <Icon as={social.icon} className={iconClasses} aria-hidden="true" />
+          </a>
+        );
+      })}
     </div>
   );
 };
