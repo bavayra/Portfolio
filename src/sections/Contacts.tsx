@@ -5,7 +5,7 @@ import SocialLinks from "../components/SocialLink.tsx";
 import Button from "../components/Button";
 import Divider from "../components/Divider";
 
-const ContactSection = () => {
+const Contacts = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -239,4 +239,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default Contacts;
