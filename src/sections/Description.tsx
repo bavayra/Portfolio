@@ -10,12 +10,15 @@ const Description = () => {
         color="grey-2"
         topPx="var(--block-div-top)"
       />
-      <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-md:text-3xl desktop-xl:text-4xl">
+      <p
+        className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-md:text-3xl desktop-xl:text-4xl"
+        aria-hidden="true"
+      >
         03
       </p>
-      <h2 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl  phone-lg:text-4xl tablet-md:text-5xl tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
+      <h3 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl  phone-lg:text-4xl tablet-md:text-5xl tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
         WHAT IS SHE LIKE
-      </h2>
+      </h3>
       <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:max-w-80 phone-md:text-base phone-lg:pl-2 phone-lg:max-w-[19rem] tablet-sm:max-w-[20.5rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
         I'm a curious and disciplined developer who enjoys solving UI problems
         with clean, maintainable code. I prioritize performance and
