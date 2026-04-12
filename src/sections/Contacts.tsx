@@ -1,71 +1,122 @@
-import { useState, type FormEvent } from "react";
-import { sanitizeFormData } from "../utils/normalizeFormData.ts";
+import { useReducer, type FormEvent } from "react";
+import { normalizeFormData, isValidEmail } from "../utils/normalizeFormData.ts";
 import ContactInput from "../components/ContactInput";
 import SocialLinks from "../components/SocialLink.tsx";
 import Button from "../components/Button";
 import Divider from "../components/Divider";
 
+type FormFields = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+type FormErrors = Partial<FormFields>;
+
+type FormState = {
+  fields: FormFields;
+  errors: FormErrors;
+  isSubmitting: boolean;
+  successMessage: string;
+  errorMessage: string;
+};
+
+type FormAction =
+  | { type: "SET_FIELD"; field: keyof FormFields; value: string }
+  | { type: "SET_ERRORS"; errors: FormErrors }
+  | { type: "SUBMIT_START" }
+  | { type: "SUBMIT_SUCCESS" }
+  | { type: "SUBMIT_FAILURE"; message: string }
+  | { type: "CLEAR_MESSAGES" };
+
+const initialState: FormState = {
+  fields: { name: "", email: "", message: "" },
+  errors: {},
+  isSubmitting: false,
+  successMessage: "",
+  errorMessage: "",
+};
+
+// --- Редьюсер ---
+function formReducer(state: FormState, action: FormAction): FormState {
+  switch (action.type) {
+    case "SET_FIELD":
+      return {
+        ...state,
+        fields: { ...state.fields, [action.field]: action.value },
+      };
+    case "SET_ERRORS":
+      return { ...state, errors: action.errors };
+    case "SUBMIT_START":
+      return {
+        ...state,
+        isSubmitting: true,
+        successMessage: "",
+        errorMessage: "",
+        errors: {},
+      };
+    case "SUBMIT_SUCCESS":
+      return {
+        ...state,
+        isSubmitting: false,
+        successMessage: "Thank you! Your message has been sent.",
+        fields: { name: "", email: "", message: "" },
+      };
+    case "SUBMIT_FAILURE":
+      return { ...state, isSubmitting: false, errorMessage: action.message };
+    case "CLEAR_MESSAGES":
+      return { ...state, successMessage: "", errorMessage: "" };
+    default:
+      return state;
+  }
+}
+
+const MIN_SUBMIT_INTERVAL = 30000;
+
+function getLastSubmitTime(): number {
+  return parseInt(sessionStorage.getItem("lastFormSubmit") ?? "0", 10);
+}
+
+function saveLastSubmitTime(): void {
+  sessionStorage.setItem("lastFormSubmit", Date.now().toString());
+}
+
+function validateFields(data: FormFields): FormErrors {
+  const errors: FormErrors = {};
+  if (!data.name) errors.name = "Name is required";
+  if (!data.email) errors.email = "Email is required";
+  else if (!isValidEmail(data.email)) errors.email = "Invalid email format";
+  if (!data.message || data.message.length < 5)
+    errors.message = "Message is too short";
+  return errors;
+}
+
 const Contacts = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [errors, setErrors] = useState<{
-    name?: string;
-    email?: string;
-    message?: string;
-  }>({});
-  const [successMessage, setSuccessMessage] = useState("");
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const isValidEmail = (s: string) => {
-    const emailRegex =
-      /^[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$/;
-    return emailRegex.test(s);
-  };
-  const validateAll = (data: {
-    name: string;
-    email: string;
-    message: string;
-  }) => {
-    const e: typeof errors = {};
-    if (!data.name) e.name = "Name is required";
-    if (!data.email) e.email = "Email is required";
-    else if (!isValidEmail(data.email)) e.email = "Invalid email format";
-    if (!data.message || data.message.length < 5)
-      e.message = "Message is too short";
-    setErrors(e);
-    return Object.keys(e).length === 0;
-  };
-
-  const [lastSubmitTime, setLastSubmitTime] = useState(0);
-  const MIN_SUBMIT_INTERVAL = 30000;
+  const [state, dispatch] = useReducer(formReducer, initialState);
+  const { fields, errors, isSubmitting, successMessage, errorMessage } = state;
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const now = Date.now();
-    if (now - lastSubmitTime < MIN_SUBMIT_INTERVAL) {
-      setErrorMessage("Please wait 30 seconds before submitting again.");
+    if (now - getLastSubmitTime() < MIN_SUBMIT_INTERVAL) {
+      dispatch({
+        type: "SUBMIT_FAILURE",
+        message: "Please wait 30 seconds before submitting again.",
+      });
       return;
     }
 
-    setSuccessMessage("");
-    setErrorMessage("");
-    setErrors({});
+    const normalizedData = normalizeFormData(fields);
+    const validationErrors = validateFields(normalizedData);
 
-    const rawData = {
-      name: name.trim(),
-      email: email.trim(),
-      message: message.trim(),
-    };
+    if (Object.keys(validationErrors).length > 0) {
+      dispatch({ type: "SET_ERRORS", errors: validationErrors });
+      return;
+    }
 
-    if (!validateAll(rawData)) return;
+    dispatch({ type: "SUBMIT_START" });
 
-    const sanitizedData = sanitizeFormData(rawData);
-
-    setIsSubmitting(true);
     try {
       const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID as string;
       const endpoint = `https://formspree.io/f/${FORMSPREE_ID}`;
@@ -75,8 +126,9 @@ const Contacts = () => {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(sanitizedData),
+        body: JSON.stringify(normalizedData),
       });
+
       if (!resp.ok) {
         let errBody = await resp.text();
         if (!errBody) {
@@ -90,25 +142,23 @@ const Contacts = () => {
               console.warn("Failed to parse error body:", parseErr);
           }
         }
-
         throw new Error(`Server error: ${resp.status} ${errBody}`);
       }
 
-      setLastSubmitTime(now);
-      setSuccessMessage("Thank you! Your message has been sent.");
-      setName("");
-      setEmail("");
-      setMessage("");
+      saveLastSubmitTime();
+      dispatch({ type: "SUBMIT_SUCCESS" });
     } catch (err) {
-      const message = err instanceof Error ? err.message : "Unknown error";
+      const msg = err instanceof Error ? err.message : "Unknown error";
       if (import.meta.env.DEV) {
-        console.error("Form submission error:", message);
+        console.error("Form submission error:", msg);
       }
-      setErrorMessage("Something went wrong. Please try again later.");
-    } finally {
-      setIsSubmitting(false);
+      dispatch({
+        type: "SUBMIT_FAILURE",
+        message: "Something went wrong. Please try again later.",
+      });
     }
   };
+
   return (
     <section
       id="contacts"
@@ -132,7 +182,7 @@ const Contacts = () => {
         topPx="var(--contacts-div-bot-top)"
       />
       <div className="flex flex-col desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-x-20 desktop-md:gap-x-48">
-        <div className="relative flex justify-center ">
+        <div className="relative flex justify-center">
           <div>
             <form
               id="contact-form"
@@ -144,8 +194,14 @@ const Contacts = () => {
                   id="input-name"
                   label="Name"
                   type="text"
-                  value={name}
-                  onChange={(e) => setName(e.target.value)}
+                  value={fields.name}
+                  onChange={(e) =>
+                    dispatch({
+                      type: "SET_FIELD",
+                      field: "name",
+                      value: e.target.value,
+                    })
+                  }
                   disabled={isSubmitting}
                   required
                 />
@@ -161,8 +217,14 @@ const Contacts = () => {
                   id="input-email"
                   label="Email"
                   type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  value={fields.email}
+                  onChange={(e) =>
+                    dispatch({
+                      type: "SET_FIELD",
+                      field: "email",
+                      value: e.target.value,
+                    })
+                  }
                   inputMode="email"
                   disabled={isSubmitting}
                   required
@@ -183,12 +245,18 @@ const Contacts = () => {
                 </label>
                 <textarea
                   id="input-message"
-                  value={message}
-                  onChange={(e) => setMessage(e.target.value)}
+                  value={fields.message}
+                  onChange={(e) =>
+                    dispatch({
+                      type: "SET_FIELD",
+                      field: "message",
+                      value: e.target.value,
+                    })
+                  }
                   placeholder="Write your message..."
                   required
                   disabled={isSubmitting}
-                  className=" focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg"
+                  className="focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg"
                 />
                 {errors.message && (
                   <p className="-mt-6 text-sm text-red-600" role="alert">
@@ -203,8 +271,8 @@ const Contacts = () => {
                   variant="primary"
                   size="small"
                   disabled={isSubmitting}
-                  ariaLabel="Submit this form"
-                  className=" w-auto text-center "
+                  aria-label="Submit this form"
+                  className="w-auto text-center"
                 >
                   {isSubmitting ? "Sending..." : "SEND MESSAGE"}
                 </Button>
