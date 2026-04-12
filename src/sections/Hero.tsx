@@ -7,6 +7,7 @@ const Hero = () => {
       id="hero"
       className="py-8 app-fullscreen relative overflow-y-hidden overflow-x-visible "
     >
+      <h1 className="sr-only">Alix Bell — Junior Frontend Developer</h1>
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--hero-div-height)"
@@ -19,9 +20,9 @@ const Hero = () => {
         <p className="text-[length:var(--name-year-size)] text-grey-2 col-start-1 row-start-1 pl-3 ">
           2026
         </p>
-        <h1 className="text-[length:var(--h1-size)] font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-3 ">
+        <p className="text-[length:var(--h1-size)] font-semibold text-grey-2 col-start-1 col-span-3 row-start-2 pl-3 ">
           Portfolio
-        </h1>
+        </p>
         <p className="text-[length:var(--name-year-size)] font-bold text-accent-red tracking-wider col-start-3 row-start-3 pr-8 min-[375px]:pr-10 tablet-md:pr-[7.5rem] tablet-lg:pr-20 desktop-sm:mr-40 desktop-sm:col-start-2 desktop-md:mr-16 desktop-md:mt-4 desktop-lg:mr-[18.5rem] desktop-lg:text-[3.5rem] desktop-xl:mr-[25rem] desktop-xl:text-7xl ">
           ALIX BELL
         </p>
