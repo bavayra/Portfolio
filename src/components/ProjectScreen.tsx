@@ -17,7 +17,10 @@ type ProjectScreenProps = {
 };
 
 const ProjectScreen = (props: ProjectScreenProps) => {
-  const [openImage, setOpenImage] = useState<string | null>(null);
+  const [openImage, setOpenImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
   const closeBtnRef = useRef<HTMLButtonElement | null>(null);
 
   return (
@@ -28,20 +31,26 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <p className="sr-only">{props.description}</p>
         </div>
         <div
-          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-[35rem] desktop-sm:ml-0 desktop-sm:gap-y-2  desktop-sm:w-[25rem] desktop-md:gap-x-6 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-md:w-2xl desktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
+          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-[35rem] desktop-sm:ml-0 desktop-sm:gap-y-2 desktop-sm:w-[25rem] desktop-md:gap-x-6 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-md:w-2xl desktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
         >
-          {props.images.map((img, index) => (
-            <img
-              key={`${img.thumbnail}-${index}`}
-              src={img.thumbnail}
-              alt={img.alt}
-              width={img.width}
-              height={img.height}
-              onClick={() => setOpenImage(img.full)}
-              loading="lazy"
-              decoding="async"
-              className={`${img.className ?? ""} transition-transform rounded-lg duration-300 ease-out hover:scale-105 cursor-zoom-in`}
-            />
+          {props.images.map((img) => (
+            <button
+              key={img.thumbnail}
+              type="button"
+              onClick={() => setOpenImage({ src: img.full, alt: img.alt })}
+              className="cursor-zoom-in rounded-lg focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-2"
+              aria-label={`View full screenshot: ${img.alt}`}
+            >
+              <img
+                src={img.thumbnail}
+                alt={img.alt}
+                width={img.width}
+                height={img.height}
+                loading="lazy"
+                decoding="async"
+                className={`${img.className ?? ""} transition-transform rounded-lg duration-300 ease-out hover:scale-105`}
+              />
+            </button>
           ))}
         </div>
         <p className="text-center text-xs bg-section-title w-60 p-2 mx-auto rounded-lg text-accent-red font-semibold my-2 tracking-wide phone-lg:text-sm phone-lg:w-[17.5rem] tablet-sm:text-base tablet-sm:w-[18.5rem] desktop-sm:hidden">
@@ -68,8 +77,8 @@ const ProjectScreen = (props: ProjectScreenProps) => {
             </button>
 
             <img
-              src={openImage}
-              alt="Project full screen"
+              src={openImage.src}
+              alt={openImage.alt}
               className="max-h-[90vh] max-w-[90vw] rounded-lg shadow-xl"
               onClick={(e) => e.stopPropagation()}
             />
