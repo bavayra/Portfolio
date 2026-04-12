@@ -2,7 +2,7 @@ import Divider from "../components/Divider";
 import GitHubLink from "../components/GitHubLink";
 
 import ProjectScreen from "../components/ProjectScreen";
-import { projects } from "../../data/projects";
+import { projects } from "../data/projects";
 import ProjectDesc from "../components/ProjectDesc";
 
 const WeatherApp = () => {
@@ -20,12 +20,15 @@ const WeatherApp = () => {
       />
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
-          <p className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-xl:text-4xl ">
+          <p
+            className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-xl:text-4xl"
+            aria-hidden="true"
+          >
             04
           </p>
-          <h2 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl  phone-lg:text-4xl tablet-md:my-2 desktop-xl:text-5xl">
+          <h3 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl  phone-lg:text-4xl tablet-md:my-2 desktop-xl:text-5xl">
             WEATHER APP
-          </h2>
+          </h3>
           <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
             A weather app with dark and light themes that shows current
             conditions, hourly and daily forecasts, and an interactive map. Save
