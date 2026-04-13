@@ -2,6 +2,7 @@ export interface Project {
   id: string;
   title: string;
   description: string;
+  descriptionShort?: string;
   descriptionFull?: string;
   position: {
     row: number;
@@ -24,6 +25,8 @@ const projects: Project[] = [
     id: "dog-shelter",
     title: "Dog Shelter",
     description: "Responsive landing page for dog adoption service",
+    descriptionShort:
+      "A web app for a real dog shelter - browse adoptable dogs, filter by breed, age or gender, swipe through each dog's photo gallery, check shelter statistics, and reach out through a contact form with built‑in validation.",
     descriptionFull:
       "Built with React 19, TypeScript, and Tailwind CSS. Uses a custom useDogFilters hook, interactive detail modals, DOMPurify‑sanitized form inputs with 30‑second rate limiting, and AVIF/WebP image optimization. Mobile‑first and accessible (ARIA, keyboard navigation), code‑split for performance, with ESLint, Prettier, and Husky pre‑commit hooks.",
     position: { row: 1, col: 1 },
@@ -67,6 +70,8 @@ const projects: Project[] = [
     id: "weather-app",
     title: "Weather App",
     description: "Real-time weather forecast with OpenWeather API",
+    descriptionShort:
+      "A weather app with dark and light themes that shows current conditions, hourly and daily forecasts, and an interactive map. Save your favorite cities, switch between °C and °F, or let the browser detect your location - all in a fast, smooth mobile interface.",
     descriptionFull:
       "Built with vanilla JavaScript and Vite from a Figma mockup. Pulls real‑time data from the OpenWeather API, renders a Leaflet map layer, and caches responses client‑side for speed. Optimized with lazy loading and lightweight assets; accessible through semantic HTML and keyboard‑friendly navigation.",
     position: { row: 1, col: 2 },
@@ -108,6 +113,8 @@ const projects: Project[] = [
     id: "portfolio-project",
     title: "This Portfolio",
     description: "Responsive personal portfolio",
+    descriptionShort:
+      "My personal portfolio — a single‑page showcase of projects, skills with animated progress badges, and a contact form. Sections reveal on scroll, the design adapts from 320 px phones to ultrawide displays, and everything switches seamlessly to dark mode.",
     descriptionFull:
       "Built with React 19, TypeScript, Tailwind CSS 4, and Vite. Sections are lazy‑loaded via React.lazy and Suspense; typography scales fluidly with clamp(). Uses a custom useVh hook for mobile viewport fixes and IntersectionObserver for one‑time scroll triggers. Form inputs are sanitized with a 30‑second rate limit; dark mode follows prefers‑color‑scheme. Self‑hosted WOFF2 fonts with font‑display: swap, WebP screenshots with thumbnail previews and a zoom modal. Accessible throughout - ARIA labels, semantic HTML, keyboard navigation, and focus‑visible management.",
     position: { row: 1, col: 1 },

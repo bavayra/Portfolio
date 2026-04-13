@@ -1,6 +1,11 @@
 import React from "react";
 
-type CssLength = number | string;
+export type CssLength =
+  | number
+  | `${number}px`
+  | `${number}rem`
+  | `${number}vh`
+  | `var(--${string})`;
 
 interface DividerProps {
   widthPx: 2 | 3 | number | string;
@@ -32,7 +37,7 @@ const Divider: React.FC<DividerProps> = ({
   };
 
   const style: React.CSSProperties = {
-    width: toCssLength(widthPx),
+    width: toCssLength(widthPx as CssLength),
     height: toCssLength(heightPx),
     backgroundColor: colorMap[color],
     top: toCssLength(topPx),

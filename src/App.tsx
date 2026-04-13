@@ -8,10 +8,7 @@ import Contacts from "./sections/Contacts.tsx";
 const About = lazy(() => import("./sections/About.tsx"));
 const Skills = lazy(() => import("./sections/Skills.tsx"));
 const Description = lazy(() => import("./sections/Description.tsx"));
-const WeatherApp = lazy(() => import("./sections/WeatherApp.tsx"));
-const DogShelter = lazy(() => import("./sections/DogShelter.tsx"));
-const Portfolio = lazy(() => import("./sections/Portfolio.tsx"));
-
+const ProjectSection = lazy(() => import("./sections/ProjectSection.tsx"));
 const Footer = lazy(() => import("./sections/Footer.tsx"));
 
 function App() {
@@ -49,9 +46,37 @@ function App() {
             </div>
           </section>
           <div id="projects" className="container mx-auto px-4">
-            <WeatherApp />
-            <DogShelter />
-            <Portfolio />
+            <ProjectSection
+              projectId="weather-app"
+              sectionNumber="04"
+              blockDivHeightVar="var(--block-div-lg-h)"
+              screenDivHeightVar="var(--weather-screen-div-height)"
+              screenDivTopVar="var(--weather-screen-div-top)"
+              sectionClassName="p-8 desktop-lg:mt-10"
+              screenContainerClassName="desktop-md:mt-10 desktop-lg:mt-4"
+              projectDescClassName="desktop-sm:-translate-y-[30%] desktop-md:max-w-[45rem] desktop-md:mt-14 desktop-md:-translate-x-1/4"
+            />
+            <ProjectSection
+              projectId="dog-shelter"
+              sectionNumber="05"
+              blockDivHeightVar="var(--block-div-md-h)"
+              screenDivHeightVar="var(--shelter-screen-div-height)"
+              screenDivTopVar="var(--shelter-screen-div-top)"
+              sectionClassName="pt-8 pb-8 desktop-sm:pb-0 desktop-md:pb-10"
+              screenContainerClassName="desktop-md:-mt-2"
+              projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12"
+            />
+            <ProjectSection
+              projectId="portfolio-project"
+              sectionNumber="06"
+              blockDivHeightVar="var(--block-div-2xs-h)"
+              screenDivHeightVar="var(--portfolio-screen-div-height)"
+              screenDivTopVar="var(--portfolio-screen-div-top)"
+              sectionClassName="pt-8 pb-20 desktop-md:pt-0"
+              screenContainerClassName="rounded-xl"
+              projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
+              projectScreenClassName="phone-md:gap-x-2 phone-lg:gap-x-0"
+            />
           </div>
           <section className="bg-(--color-section-title-bg)">
             <div className="container mx-auto px-4">
