@@ -48,6 +48,7 @@ const Portfolio = () => {
         />
         <div className=" ml-3 rounded-xl phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2">
           <ProjectScreen
+            projectId={project.id}
             title={project.title}
             description={project.description}
             images={project.images}

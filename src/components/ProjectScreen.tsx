@@ -1,7 +1,29 @@
 import { useState, useRef } from "react";
 import Modal from "./Modal";
 
+const PROJECT_IMAGE_CLASSES: Record<string, Record<number, string>> = {
+  "dog-shelter": {
+    0: "mx-auto phone-md:mt-3 phone-md:w-38 phone-lg:-mt-5 phone-lg:w-44 tablet-md:w-60 desktop-sm:mt-4 desktop-sm:w-40 desktop-md:-mt-2 desktop-xl:w-52",
+    1: "-mt-4 mx-auto phone-md:-mt-6 phone-md:w-36 phone-lg:-mt-14 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-52 tablet-md:w-60 desktop-sm:-mt-6 desktop-sm:w-40 desktop-md:mt-8 desktop-xl:w-52",
+    2: "translate-y-8 mx-auto phone-md:w-38 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-md:translate-y-full desktop-xl:w-52",
+    3: "-mt-18 mx-auto phone-md:-mt-28 phone-md:w-36 phone-lg:-mt-26 phone-lg:w-44 tablet-sm:-mt-28 tablet-sm:w-52 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:-mt-24 desktop-sm:w-40 desktop-xl:w-52",
+  },
+  "weather-app": {
+    0: "mx-auto phone-md:mt-2 phone-md:w-36 phone-lg:-mt-5 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:mt-4 desktop-sm:w-40 desktop-xl:w-52",
+    1: "-mt-6 mx-auto phone-md:w-36 phone-lg:-mt-14 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:-mt-6 desktop-sm:w-40 desktop-xl:w-52",
+    2: "mx-auto phone-md:w-34 phone-lg:w-44 tablet-sm:mt-2 tablet-sm:w-52 tablet-md:w-60 desktop-sm:mt-2 desktop-sm:w-40 desktop-xl:w-52",
+    3: "mx-auto phone-md:-mt-3 phone-md:w-36 phone-lg:-mt-4 phone-lg:w-44 tablet-sm:-mt-2 tablet-sm:w-52 tablet-md:w-60 desktop-sm:-mt-4 desktop-sm:w-40 desktop-xl:w-52",
+  },
+  "portfolio-project": {
+    0: "mx-auto w-34 phone-md:w-38 phone-lg:w-44 tablet-sm:w-54 tablet-md:-mt-5 tablet-md:w-60 border-2 border-grey-2 desktop-sm:mt-4 desktop-sm:w-40 desktop-xl:w-52",
+    1: "-mt-4 mx-auto w-34 phone-md:-mt-8 phone-md:w-38 phone-lg:-mt-12 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-54 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-6 desktop-sm:w-40 desktop-lg:-mt-9 desktop-md:-mt-4 desktop-xl:w-52",
+    2: "-mt-14 mx-auto w-30 phone-md:-mt-11 phone-md:w-38 phone-lg:w-44 tablet-sm:-mt-13 tablet-sm:w-54 tablet-md:-mt-22 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-9 desktop-sm:w-40 desktop-md:translate-y-2/3 desktop-xl:w-52",
+    3: "mx-auto w-30 phone-md:w-38 phone-lg:w-44 tablet-sm:mt-3 tablet-sm:w-60 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-40 desktop-md:translate-y-[120%] desktop-xl:w-52",
+  },
+};
+
 type ProjectScreenProps = {
+  projectId: string;
   title: string;
   description: string;
   technologies: string[];
@@ -11,7 +33,6 @@ type ProjectScreenProps = {
     alt: string;
     width: number;
     height: number;
-    className?: string;
   }[];
   className?: string;
 };
@@ -23,6 +44,8 @@ const ProjectScreen = (props: ProjectScreenProps) => {
   } | null>(null);
   const closeBtnRef = useRef<HTMLButtonElement | null>(null);
 
+  const positionClasses = PROJECT_IMAGE_CLASSES[props.projectId] ?? {};
+
   return (
     <>
       <div className="grid gap-4 tablet-md:grid-cols-1 desktop-sm:gap-0 desktop-sm:items-start">
@@ -33,7 +56,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
         <div
           className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-[35rem] desktop-sm:ml-0 desktop-sm:gap-y-2 desktop-sm:w-[25rem] desktop-md:gap-x-6 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-md:w-2xl desktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
         >
-          {props.images.map((img) => (
+          {props.images.map((img, index) => (
             <button
               key={img.thumbnail}
               type="button"
@@ -48,7 +71,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
                 height={img.height}
                 loading="lazy"
                 decoding="async"
-                className={`${img.className ?? ""} transition-transform rounded-lg duration-300 ease-out hover:scale-105`}
+                className={`${positionClasses[index] ?? ""} transition-transform rounded-lg duration-300 ease-out hover:scale-105`}
               />
             </button>
           ))}

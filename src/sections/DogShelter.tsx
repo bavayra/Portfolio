@@ -49,6 +49,7 @@ const DogShelter = () => {
 
         <div className="ml-3 phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-md:-mt-2">
           <ProjectScreen
+            projectId={project.id}
             title={project.title}
             description={project.description}
             images={project.images}
