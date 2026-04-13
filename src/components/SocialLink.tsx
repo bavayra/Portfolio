@@ -13,69 +13,61 @@ interface SocialLinksProps {
   iconColor?: string;
 }
 
+const SOCIAL_NETWORKS = [
+  {
+    name: "Discord",
+    icon: DiscordIcon,
+    url: "https://www.discord.com/users/285883834749157388",
+  },
+  { name: "GitHub", icon: GitHubIcon, url: "https://www.github.com/bavayra" },
+  { name: "Telegram", icon: TelegramIcon, url: "https://t.me/bavayra" },
+  { name: "Gmail", icon: GmailIcon, url: "mailto:x.bavayra@gmail.com" },
+  {
+    name: "Instagram",
+    icon: InstagramIcon,
+    url: "https://www.instagram.com/bavayra",
+  },
+  {
+    name: "LinkedIn",
+    icon: LinkedInIcon,
+    url: "https://www.linkedin.com/in/bavayra",
+  },
+] as const;
+
+const SIZE_CLASSES = {
+  sm: "w-10 h-10 desktop-sm:w-[120px] desktop-sm:h-[120px]",
+  md: "w-20 h-20 tablet-sm:w-[58px] tablet-sm:h-[58px] desktop-sm:w-[68px] desktop-sm:h-[68px]",
+} as const;
+
+const ICON_SIZE_CLASSES = {
+  sm: "w-7 h-7 tablet-sm:w-[28px] tablet-sm:h-[28px] desktop-sm:w-[48px] desktop-sm:h-[48px]",
+  md: "w-12 h-12 tablet-sm:w-[56px] tablet-sm:h-[56px] desktop-sm:w-[68px] desktop-sm:h-[68px]",
+} as const;
+
 const SocialLinks = ({
   size = "md",
   className,
   iconColor = "text-accent-red",
 }: SocialLinksProps) => {
-  const Links = {
-    discord: "https://www.discord.com/users/285883834749157388",
-    github: "https://www.github.com/bavayra",
-    telegram: "https://t.me/bavayra",
-    gmail: "mailto:x.bavayra@gmail.com",
-    instagram: "https://www.instagram.com/bavayra",
-    linkedin: "https://www.linkedin.com/in/bavayra",
-  };
-  const socialNetworks = [
-    { name: "Discord", icon: DiscordIcon, url: Links.discord },
-    { name: "GitHub", icon: GitHubIcon, url: Links.github },
-    { name: "Telegram", icon: TelegramIcon, url: Links.telegram },
-    { name: "Gmail", icon: GmailIcon, url: Links.gmail },
-    { name: "Instagram", icon: InstagramIcon, url: Links.instagram },
-    { name: "LinkedIn", icon: LinkedInIcon, url: Links.linkedin },
-  ];
-
-  const sizeClasses = {
-    sm: "w-10 h-10 desktop-sm:w-[120px] desktop-sm:h-[120px]",
-    md: "w-20 h-20 tablet-sm:w-[58px] tablet-sm:h-[58px] desktop-sm:w-[68px] desktop-sm:h-[68px]",
-  };
-
-  const iconBaseSize = size === "md" ? "w-12 h-12" : "w-7 h-7";
-  const iconTabletSize =
-    size === "md"
-      ? "tablet-sm:w-[56px] tablet-sm:h-[56px]"
-      : "tablet-sm:w-[28px] tablet-sm:h-[28px]";
-  const iconDesktopSize =
-    size === "md"
-      ? "desktop-sm:w-[68px] desktop-sm:h-[68px]"
-      : "desktop-sm:w-[48px] desktop-sm:h-[48px]";
-  const iconClasses = [
-    iconBaseSize,
-    iconTabletSize,
-    iconDesktopSize,
-    "border-none",
-    "rounded-full",
-  ].join(" ");
+  const wrapperClass = `${SIZE_CLASSES[size]} shrink-0 flex items-center justify-center rounded-full transition-transform hover:scale-110 ${iconColor}`;
+  const iconClasses = `${ICON_SIZE_CLASSES[size]} border-none rounded-full`;
 
   return (
     <div
-      className={`flex items-center desktop-sm:mx-4 desktop-sm:my-16 justify-center ${className || ""}`}
+      className={`flex items-center desktop-sm:mx-4 desktop-sm:my-16 justify-center ${className ?? ""}`}
     >
-      {socialNetworks.map((social) => {
-        const wrapperClass = `${sizeClasses[size]} shrink-0 flex items-center justify-center rounded-full transition-transform hover:scale-110 ${iconColor}`;
-        return (
-          <a
-            key={social.name}
-            href={social.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={wrapperClass}
-            aria-label={social.name}
-          >
-            <Icon as={social.icon} className={iconClasses} aria-hidden="true" />
-          </a>
-        );
-      })}
+      {SOCIAL_NETWORKS.map((social) => (
+        <a
+          key={social.name}
+          href={social.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={wrapperClass}
+          aria-label={social.name}
+        >
+          <Icon as={social.icon} className={iconClasses} aria-hidden="true" />
+        </a>
+      ))}
     </div>
   );
 };
