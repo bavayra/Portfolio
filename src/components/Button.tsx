@@ -8,7 +8,6 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
   size?: ButtonSize;
   className?: string;
-  ariaLabel?: string;
 }
 
 const Button = ({
@@ -17,7 +16,6 @@ const Button = ({
   size = "medium",
   className = "",
   disabled,
-  ariaLabel,
   ...props
 }: ButtonProps) => {
   const baseStyles =
@@ -38,7 +36,6 @@ const Button = ({
     <button
       className={`${baseStyles} ${variantStyles[variant]} ${sizeStyles[size]} ${className}`}
       disabled={disabled}
-      aria-label={ariaLabel}
       {...props}
     >
       {children}

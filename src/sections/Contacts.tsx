@@ -37,7 +37,6 @@ const initialState: FormState = {
   errorMessage: "",
 };
 
-// --- Редьюсер ---
 function formReducer(state: FormState, action: FormAction): FormState {
   switch (action.type) {
     case "SET_FIELD":
