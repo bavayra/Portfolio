@@ -38,7 +38,8 @@ export default function Modal({
     if (!isOpen) return;
 
     previouslyFocused.current = document.activeElement;
-    const el = containerRef.current!;
+    const el = containerRef.current;
+    if (!el) return;
     const focusable = getFocusable(el);
     const toFocus = initialFocusRef?.current ?? focusable[0] ?? el;
     const prevOverflow = document.body.style.overflow;
