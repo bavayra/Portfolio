@@ -203,9 +203,15 @@ const Contacts = () => {
                   }
                   disabled={isSubmitting}
                   required
+                  aria-invalid={!!errors.name}
+                  aria-describedby={errors.name ? "name-error" : undefined}
                 />
                 {errors.name && (
-                  <p className="-mt-6 text-sm text-red-600" role="alert">
+                  <p
+                    id="name-error"
+                    className="-mt-6 text-sm text-red-600"
+                    role="alert"
+                  >
                     {errors.name}
                   </p>
                 )}
@@ -227,9 +233,15 @@ const Contacts = () => {
                   inputMode="email"
                   disabled={isSubmitting}
                   required
+                  aria-invalid={!!errors.email}
+                  aria-describedby={errors.email ? "email-error" : undefined}
                 />
                 {errors.email && (
-                  <p className="-mt-6 text-sm text-red-600" role="alert">
+                  <p
+                    id="email-error"
+                    className="-mt-6 text-sm text-red-600"
+                    role="alert"
+                  >
                     {errors.email}
                   </p>
                 )}
@@ -256,9 +268,17 @@ const Contacts = () => {
                   required
                   disabled={isSubmitting}
                   className="focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg"
+                  aria-invalid={!!errors.message}
+                  aria-describedby={
+                    errors.message ? "message-error" : undefined
+                  }
                 />
                 {errors.message && (
-                  <p className="-mt-6 text-sm text-red-600" role="alert">
+                  <p
+                    id="message-error"
+                    className="-mt-6 text-sm text-red-600"
+                    role="alert"
+                  >
                     {errors.message}
                   </p>
                 )}
