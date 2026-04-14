@@ -12,7 +12,7 @@ const Description = () => {
           <h3 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl phone-lg:text-4xl tablet-md:text-5xl tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
             WHAT IS SHE LIKE
           </h3>
-          <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:max-w-80 phone-md:text-base phone-lg:pl-2 phone-lg:max-w-[19rem] tablet-sm:max-w-[20.5rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl  border-l-2 border-grey-2">
+          <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:max-w-80 phone-md:text-base phone-lg:pl-2 phone-lg:max-w-[19rem] tablet-sm:max-w-[20.5rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl  border-l-2 border-grey-2">
             I'm a curious and disciplined developer who enjoys solving UI
             problems with clean, maintainable code. I prioritize performance and
             accessibility, and I'm committed to continuous learning. I work well
