@@ -1,4 +1,4 @@
-import { useReducer, type FormEvent } from "react";
+import { useEffect, useReducer, useRef, type FormEvent } from "react";
 import { normalizeFormData, isValidEmail } from "../utils/normalizeFormData.ts";
 import ContactInput from "../components/ContactInput";
 import SocialLinks from "../components/SocialLink.tsx";
@@ -93,6 +93,14 @@ function validateFields(data: FormFields): FormErrors {
 const Contacts = () => {
   const [state, dispatch] = useReducer(formReducer, initialState);
   const { fields, errors, isSubmitting, successMessage, errorMessage } = state;
+
+  const successRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (successMessage && successRef.current) {
+      successRef.current.focus();
+    }
+  }, [successMessage]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -299,8 +307,9 @@ const Contacts = () => {
 
               {successMessage && (
                 <div
+                  ref={successRef}
                   role="status"
-                  aria-live="polite"
+                  tabIndex={-1}
                   className="mt-4 rounded-md bg-green-100 p-3 text-center text-sm text-green-700"
                 >
                   {successMessage}
