@@ -43,7 +43,7 @@ function App() {
               <SectionTitle title="HER PROJECTS" dotsCount={2} />
             </div>
           </section>
-          <div id="projects" className="container mx-auto px-4">
+          <section id="projects" className="container mx-auto px-4">
             <ProjectSection
               projectId="weather-app"
               sectionNumber="04"
@@ -66,7 +66,7 @@ function App() {
               projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
               projectScreenClassName="phone-md:gap-x-2 phone-lg:gap-x-0"
             />
-          </div>
+          </section>
           <section className="bg-(--color-section-title-bg)">
             <div className="container mx-auto px-4">
               <SectionTitle title="HER CONTACTS" dotsCount={3} />
