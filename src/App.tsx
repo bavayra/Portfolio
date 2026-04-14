@@ -49,9 +49,6 @@ function App() {
             <ProjectSection
               projectId="weather-app"
               sectionNumber="04"
-              blockDivHeightVar="var(--block-div-lg-h)"
-              screenDivHeightVar="var(--weather-screen-div-height)"
-              screenDivTopVar="var(--weather-screen-div-top)"
               sectionClassName="p-8 desktop-lg:mt-10"
               screenContainerClassName="desktop-md:mt-10 desktop-lg:mt-4"
               projectDescClassName="desktop-sm:-translate-y-[30%] desktop-md:max-w-[45rem] desktop-md:mt-14 desktop-md:-translate-x-1/4"
@@ -59,9 +56,6 @@ function App() {
             <ProjectSection
               projectId="dog-shelter"
               sectionNumber="05"
-              blockDivHeightVar="var(--block-div-md-h)"
-              screenDivHeightVar="var(--shelter-screen-div-height)"
-              screenDivTopVar="var(--shelter-screen-div-top)"
               sectionClassName="pt-8 pb-8 desktop-sm:pb-0 desktop-md:pb-10"
               screenContainerClassName="desktop-md:-mt-2"
               projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12"
@@ -69,9 +63,6 @@ function App() {
             <ProjectSection
               projectId="portfolio-project"
               sectionNumber="06"
-              blockDivHeightVar="var(--block-div-2xs-h)"
-              screenDivHeightVar="var(--portfolio-screen-div-height)"
-              screenDivTopVar="var(--portfolio-screen-div-top)"
               sectionClassName="pt-8 pb-20 desktop-md:pt-0"
               screenContainerClassName="rounded-xl"
               projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"

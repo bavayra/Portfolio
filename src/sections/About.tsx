@@ -1,19 +1,9 @@
-import Divider from "../components/Divider";
-import Button from "../components/Button";
-
 const About = () => {
   return (
     <section
       id="about"
       className="relative py-8 ml-3 tablet-sm:ml-12 tablet-md:pb-0 desktop-lg:ml-10 desktop-xl:pb-12"
     >
-      <Divider
-        widthPx="var(--hero-div-w)"
-        heightPx="var(--block-div-xs-h)"
-        leftPx={0}
-        color="grey-2"
-        topPx="var(--block-div-top)"
-      />
       <p
         className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-md:text-3xl desktop-xl:text-4xl"
         aria-hidden="true"
@@ -24,7 +14,7 @@ const About = () => {
         WHO IS SHE
       </h3>
 
-      <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-80 phone-lg:pl-2 tablet-sm:max-w-[23rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32.5rem] desktop-xl:text-2xl">
+      <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-80 phone-lg:pl-2 tablet-sm:max-w-[23rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32.5rem] desktop-xl:text-2xl border-l-2 border-grey-2">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,

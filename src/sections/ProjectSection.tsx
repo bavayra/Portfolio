@@ -1,4 +1,3 @@
-import Divider, { type CssLength } from "../components/Divider";
 import GitHubLink from "../components/GitHubLink";
 import ProjectScreen from "../components/ProjectScreen";
 import ProjectDesc from "../components/ProjectDesc";
@@ -7,9 +6,6 @@ import { projects } from "../data/projects";
 interface ProjectSectionProps {
   projectId: string;
   sectionNumber: string;
-  blockDivHeightVar: CssLength;
-  screenDivHeightVar: CssLength;
-  screenDivTopVar: CssLength;
   sectionClassName?: string;
   screenContainerClassName?: string;
   projectDescClassName?: string;
@@ -19,9 +15,6 @@ interface ProjectSectionProps {
 const ProjectSection = ({
   projectId,
   sectionNumber,
-  blockDivHeightVar,
-  screenDivHeightVar,
-  screenDivTopVar,
   sectionClassName = "",
   screenContainerClassName = "",
   projectDescClassName = "",
@@ -34,13 +27,6 @@ const ProjectSection = ({
     <section
       className={`relative ml-3 h-auto tablet-sm:ml-12 desktop-lg:ml-10 ${sectionClassName}`}
     >
-      <Divider
-        widthPx="var(--hero-div-w)"
-        heightPx={blockDivHeightVar}
-        leftPx={0}
-        color="grey-2"
-        topPx="var(--block-div-top)"
-      />
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
           <p
@@ -52,20 +38,12 @@ const ProjectSection = ({
           <h3 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl phone-lg:text-4xl tablet-md:my-2 desktop-xl:text-5xl">
             {project.title.toUpperCase()}
           </h3>
-          <p className="mt-2 text-xs text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
+
+          <p className="mt-2 text-xs border-l-2 border-grey-2 pl-3 text-text leading-loose tracking-wide ml-3 w-full max-w-60 wrap-break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
             {project.descriptionShort}
           </p>
           <GitHubLink liveUrl={project.liveUrl} githubUrl={project.githubUrl} />
         </div>
-
-        <Divider
-          widthPx="var(--hero-div-w)"
-          heightPx={screenDivHeightVar}
-          leftPx={0}
-          color="grey-2"
-          topPx={screenDivTopVar}
-          className="desktop-sm:hidden"
-        />
 
         <div
           className={`ml-3 phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 ${screenContainerClassName}`}

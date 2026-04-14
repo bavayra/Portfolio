@@ -1,5 +1,3 @@
-import Divider from "../components/Divider";
-
 const skillGroups = [
   {
     label: "Languages",
@@ -17,14 +15,6 @@ const skillGroups = [
 const Skills = () => {
   return (
     <section className="relative py-8 ml-3 tablet-sm:ml-12 desktop-sm:ml-0">
-      <Divider
-        widthPx="var(--hero-div-w)"
-        heightPx="var(--block-div-xl-h)"
-        leftPx={0}
-        color="grey-2"
-        topPx="var(--block-div-top)"
-        className="desktop-sm:hidden"
-      />
       <p
         className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10  desktop-md:text-3xl desktop-xl:text-4xl"
         aria-hidden="true"
@@ -34,7 +24,7 @@ const Skills = () => {
       <h3 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl phone-lg:text-4xl tablet-md:my-2 tablet-md:text-5xl desktop-sm:text-4xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 desktop-xl:text-5xl ">
         HER SKILLS
       </h3>
-      <div className="mt-6 flex flex-col gap-6 phone-sm:mt-8 tablet-sm:mt-10">
+      <div className="mt-6 flex flex-col gap-6 phone-sm:mt-8 tablet-sm:mt-10 border-l-2 border-grey-2 pl-3">
         {skillGroups.map((group) => (
           <div key={group.label}>
             <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent-red phone-sm:text-sm desktop-sm:text-right desktop-sm:mr-10">
