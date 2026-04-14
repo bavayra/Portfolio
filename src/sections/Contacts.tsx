@@ -170,9 +170,9 @@ const Contacts = () => {
         color="grey-2"
         topPx={-68}
       />
-      <h2 className="relative self-start text-5xl text-accent-red font-bold tablet-sm:text-6xl tablet-md:text-7xl desktop-md:text-8xl">
+      <h3 className="relative self-start text-5xl text-accent-red font-bold tablet-sm:text-6xl tablet-md:text-7xl desktop-md:text-8xl">
         LET'S TALK?
-      </h2>
+      </h3>
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--contacts-div-bot-height)"
