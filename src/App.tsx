@@ -2,7 +2,6 @@ import Header from "./sections/Header.tsx";
 import Hero from "./sections/Hero.tsx";
 import SectionTitle from "./sections/SectionTitle.tsx";
 import { lazy, Suspense } from "react";
-import useVh from "./hooks/useVh";
 import Contacts from "./sections/Contacts.tsx";
 
 const About = lazy(() => import("./sections/About.tsx"));
@@ -12,7 +11,6 @@ const ProjectSection = lazy(() => import("./sections/ProjectSection.tsx"));
 const Footer = lazy(() => import("./sections/Footer.tsx"));
 
 function App() {
-  useVh();
   return (
     <div>
       <a

@@ -93,7 +93,6 @@
 }
 
 :root {
-  --vh: 1vh;
   /*div = divider*/
   --hero-div-top: 120px;
   --hero-div-height: 72px;
@@ -241,7 +240,6 @@
     --name-year-size: 3rem;
 
     .section-vh {
-      min-height: calc(var(--vh, 1vh) * 70);
       min-height: 70dvh;
     }
   }
@@ -294,13 +292,11 @@
 }
 
 .app-fullscreen {
-  min-height: calc(var(--vh) * 100); /* JS fallback */
   min-height: 100dvh;
   padding-bottom: env(safe-area-inset-bottom);
 }
 
 .section-vh {
-  min-height: calc(var(--vh, 1vh) * 50);
   min-height: 50dvh;
 }
 

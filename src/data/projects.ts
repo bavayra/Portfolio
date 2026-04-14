@@ -116,7 +116,7 @@ const projects: Project[] = [
     descriptionShort:
       "My personal portfolio — a single‑page showcase of projects, skills with animated progress badges, and a contact form. Sections reveal on scroll, the design adapts from 320 px phones to ultrawide displays, and everything switches seamlessly to dark mode.",
     descriptionFull:
-      "Built with React 19, TypeScript, Tailwind CSS 4, and Vite. Sections are lazy‑loaded via React.lazy and Suspense; typography scales fluidly with clamp(). Uses a custom useVh hook for mobile viewport fixes and IntersectionObserver for one‑time scroll triggers. Form inputs are sanitized with a 30‑second rate limit; dark mode follows prefers‑color‑scheme. Self‑hosted WOFF2 fonts with font‑display: swap, WebP screenshots with thumbnail previews and a zoom modal. Accessible throughout - ARIA labels, semantic HTML, keyboard navigation, and focus‑visible management.",
+      "Built with React 19, TypeScript, Tailwind CSS 4, and Vite. Sections are lazy‑loaded via React.lazy and Suspense; typography scales fluidly with clamp(). Uses dvh units for mobile viewport fixes and IntersectionObserver for one‑time scroll triggers. Form inputs are sanitized with a 30‑second rate limit; dark mode follows prefers‑color‑scheme. Self‑hosted WOFF2 fonts with font‑display: swap, WebP screenshots with thumbnail previews and a zoom modal. Accessible throughout - ARIA labels, semantic HTML, keyboard navigation, and focus‑visible management.",
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind", "Vite"],
     githubUrl: "https://github.com/bavayra/portfolio.git",
