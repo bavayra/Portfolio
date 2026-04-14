@@ -3,12 +3,12 @@ import Hero from "./sections/Hero.tsx";
 import SectionTitle from "./sections/SectionTitle.tsx";
 import { lazy, Suspense } from "react";
 import Contacts from "./sections/Contacts.tsx";
+import Footer from "./sections/Footer.tsx";
 
 const About = lazy(() => import("./sections/About.tsx"));
 const Skills = lazy(() => import("./sections/Skills.tsx"));
 const Description = lazy(() => import("./sections/Description.tsx"));
 const ProjectSection = lazy(() => import("./sections/ProjectSection.tsx"));
-const Footer = lazy(() => import("./sections/Footer.tsx"));
 
 function App() {
   return (
