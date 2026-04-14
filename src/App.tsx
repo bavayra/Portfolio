@@ -21,7 +21,7 @@ function App() {
       </a>
       <Header />
 
-      <main id="main-content" className="bg-bg">
+      <main id="main-content" tabIndex={-1} className="bg-bg outline-none">
         <div className="container mx-auto ">
           <Hero />
         </div>
