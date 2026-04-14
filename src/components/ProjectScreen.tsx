@@ -50,7 +50,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
     <>
       <div className="grid gap-4 tablet-md:grid-cols-1 desktop-sm:gap-0 desktop-sm:items-start">
         <div className="space-y-4">
-          <h3 className="sr-only">{props.title}</h3>
+          <p className="sr-only">{props.title}</p>
           <p className="sr-only">{props.description}</p>
         </div>
         <div
