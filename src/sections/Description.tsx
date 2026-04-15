@@ -28,7 +28,6 @@ const Description = () => {
           width={128}
           height={200}
           loading="eager"
-          fetchPriority="high"
           className="object-cover self-end w-24 phone-md:w-36 phone-lg:w-44 phone-lg:-mr-3 tablet-sm:w-[12.5rem] tablet-md:w-60 desktop-sm:w-[19.5rem] desktop-sm:mr-24 desktop-xl:w-[27rem]"
         />
       </div>
