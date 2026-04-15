@@ -54,6 +54,7 @@ const ProjectSection = ({
             description={project.description}
             images={project.images}
             technologies={project.technologies}
+            imageClasses={project.imageClasses}
             className={projectScreenClassName}
           />
         </div>
