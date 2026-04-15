@@ -1,4 +1,4 @@
-import GitHubLink from "../components/GitHubLink";
+import ExternalProjectLink from "../components/ExternalProjectLink";
 import ProjectScreen from "../components/ProjectScreen";
 import ProjectDesc from "../components/ProjectDesc";
 import { projects } from "../data/projects";
@@ -42,7 +42,10 @@ const ProjectSection = ({
           <p className="mt-2 text-xs border-l-2 border-grey-2 pl-3 text-text leading-loose tracking-wide ml-3 w-full max-w-60 break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
             {project.descriptionShort}
           </p>
-          <GitHubLink liveUrl={project.liveUrl} githubUrl={project.githubUrl} />
+          <ExternalProjectLink
+            liveUrl={project.liveUrl}
+            githubUrl={project.githubUrl}
+          />
         </div>
 
         <div
