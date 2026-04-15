@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef, type RefObject, type ReactNode } from "react";
 import ReactDOM from "react-dom";
 
 type ModalProps = {
@@ -6,8 +6,8 @@ type ModalProps = {
   onClose: () => void;
   ariaLabel?: string;
   panelClassName?: string;
-  initialFocusRef?: React.RefObject<HTMLElement>;
-  children: React.ReactNode;
+  initialFocusRef?: RefObject<HTMLElement>;
+  children: ReactNode;
 };
 
 const FOCUSABLE_SELECTORS =
