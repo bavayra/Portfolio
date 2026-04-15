@@ -2,7 +2,6 @@ import Header from "./sections/Header.tsx";
 import Hero from "./sections/Hero.tsx";
 import SectionTitle from "./sections/SectionTitle.tsx";
 import { lazy, Suspense } from "react";
-import Contacts from "./sections/Contacts.tsx";
 import Footer from "./sections/Footer.tsx";
 import ErrorBoundary from "./components/ErrorBoundary.tsx";
 
@@ -10,6 +9,7 @@ const About = lazy(() => import("./sections/About.tsx"));
 const Skills = lazy(() => import("./sections/Skills.tsx"));
 const Description = lazy(() => import("./sections/Description.tsx"));
 const ProjectSection = lazy(() => import("./sections/ProjectSection.tsx"));
+const Contacts = lazy(() => import("./sections/Contacts.tsx"));
 
 const errorFallback = (
   <div className="flex flex-col items-center justify-center py-20 text-center px-4">
