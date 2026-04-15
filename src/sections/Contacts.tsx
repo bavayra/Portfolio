@@ -1,6 +1,6 @@
 import { useEffect, useReducer, useRef, type FormEvent } from "react";
 import { normalizeFormData, isValidEmail } from "../utils/normalizeFormData.ts";
-import ContactInput from "../components/ContactInput";
+import TextInput from "../components/TextInput.tsx";
 import SocialLinks from "../components/SocialLink.tsx";
 import Button from "../components/Button";
 import Divider from "../components/Divider";
@@ -200,7 +200,7 @@ const Contacts = () => {
               className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-[22rem]"
             >
               <div>
-                <ContactInput
+                <TextInput
                   id="input-name"
                   label="Name"
                   type="text"
@@ -229,7 +229,7 @@ const Contacts = () => {
               </div>
 
               <div>
-                <ContactInput
+                <TextInput
                   id="input-email"
                   label="Email"
                   type="email"
