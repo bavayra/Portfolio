@@ -1,21 +1,21 @@
-import React from "react";
+import { type CSSProperties } from "react";
 
 interface CircleProps {
   className?: string;
   topRem?: number;
   leftRem?: number;
   rightRem?: number;
-  style?: React.CSSProperties;
+  style?: CSSProperties;
 }
 
-const Circle: React.FC<CircleProps> = ({
+const Circle = ({
   className = "",
   topRem,
   leftRem,
   rightRem,
   style: styleProp,
-}) => {
-  const positionStyle: React.CSSProperties = {
+}: CircleProps) => {
+  const positionStyle: CSSProperties = {
     position:
       topRem !== undefined || leftRem !== undefined || rightRem !== undefined
         ? "absolute"

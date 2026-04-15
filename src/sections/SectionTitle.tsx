@@ -1,4 +1,3 @@
-import React from "react";
 import Circle from "../components/Circle";
 import Divider from "../components/Divider";
 import { useInViewOnce } from "../hooks/useInViewOnce";
@@ -9,11 +8,11 @@ interface SectionTitleProps {
   dotsCount?: 1 | 2 | 3;
 }
 
-const SectionTitle: React.FC<SectionTitleProps> = ({
+const SectionTitle = ({
   title,
   partLabel = "Part",
   dotsCount = 1,
-}) => {
+}: SectionTitleProps) => {
   const { ref, inViewOnce } = useInViewOnce<HTMLHeadingElement>({
     threshold: 0.1,
   });
