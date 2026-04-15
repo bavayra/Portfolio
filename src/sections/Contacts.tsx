@@ -125,7 +125,10 @@ const Contacts = () => {
     dispatch({ type: "SUBMIT_START" });
 
     try {
-      const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID as string;
+      const FORMSPREE_ID = import.meta.env.VITE_FORMSPREE_ID;
+      if (!FORMSPREE_ID) {
+        throw new Error("VITE_FORMSPREE_ID is not set");
+      }
       const endpoint = `https://formspree.io/f/${FORMSPREE_ID}`;
       const resp = await fetch(endpoint, {
         method: "POST",
