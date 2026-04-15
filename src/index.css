@@ -94,22 +94,30 @@
 
 :root {
   /*div = divider*/
-  --hero-div-top: 120px;
-  --hero-div-height: 72px;
-  --hero-div-w: 2px;
-  --hero-mt: 0px;
+  --hero-div-top: 120px; /*the top position of the hero section div*/
+  --hero-div-height: 72px; /*the height of the hero section div*/
+  --hero-div-w: 2px; /*the width of the hero section div*/
+  --hero-mt: 0px; /*the margin-top of the hero section div*/
 
-  --h1-size: clamp(48px, calc(20vw - 24px), 96px);
-  --name-year-size: 1.5rem;
+  --h1-size: clamp(
+    48px,
+    calc(20vw - 24px),
+    96px
+  ); /*the font size of the h1 in the hero section*/
+  --name-year-size: 1.5rem; /*the font size of the name and year in the hero section*/
 
-  --section-title-size: clamp(24px, calc(10vw - 12px), 36px);
-  --section-top-div-top: 18px;
-  --section-top-div-height: 64px;
-  --section-bot-div-height: 88px;
-  --section-bot-div-top: 148px;
+  --section-title-size: clamp(
+    24px,
+    calc(10vw - 12px),
+    36px
+  ); /*the font size of the section titles*/
+  --section-top-div-top: 18px; /*the top position of the top divider in the section*/
+  --section-top-div-height: 64px; /*the height of the top divider in the section*/
+  --section-bot-div-height: 88px; /*the height of the bottom divider in the section*/
+  --section-bot-div-top: 148px; /*the top position of the bottom divider in the section*/
 
-  --contacts-div-bot-top: 52px;
-  --contacts-div-bot-height: 550px;
+  --contacts-div-bot-top: 52px; /*the top position of the bottom divider in the contacts section*/
+  --contacts-div-bot-height: 550px; /*the height of the bottom divider in the contacts section*/
 }
 
 #dot-pattern-svg {
