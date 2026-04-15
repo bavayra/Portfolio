@@ -4,11 +4,26 @@ import SectionTitle from "./sections/SectionTitle.tsx";
 import { lazy, Suspense } from "react";
 import Contacts from "./sections/Contacts.tsx";
 import Footer from "./sections/Footer.tsx";
+import ErrorBoundary from "./components/ErrorBoundary.tsx";
 
 const About = lazy(() => import("./sections/About.tsx"));
 const Skills = lazy(() => import("./sections/Skills.tsx"));
 const Description = lazy(() => import("./sections/Description.tsx"));
 const ProjectSection = lazy(() => import("./sections/ProjectSection.tsx"));
+
+const errorFallback = (
+  <div className="flex flex-col items-center justify-center py-20 text-center px-4">
+    <p className="text-text text-lg mb-4">
+      Something went wrong while loading the page.
+    </p>
+    <button
+      onClick={() => window.location.reload()}
+      className="text-accent-red underline text-sm"
+    >
+      Try reloading
+    </button>
+  </div>
+);
 
 function App() {
   return (
@@ -30,52 +45,54 @@ function App() {
             <SectionTitle title="ABOUT HER" />
           </div>
         </section>
-        <Suspense fallback={null}>
-          <div className="container mx-auto px-4">
-            <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
-              <About />
-              <Skills />
-            </div>
-            <Description />
-          </div>
-          <section className="bg-(--color-section-title-bg)">
+        <ErrorBoundary fallback={errorFallback}>
+          <Suspense fallback={null}>
             <div className="container mx-auto px-4">
-              <SectionTitle title="HER PROJECTS" dotsCount={2} />
+              <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
+                <About />
+                <Skills />
+              </div>
+              <Description />
             </div>
-          </section>
-          <section id="projects" className="container mx-auto px-4">
-            <ProjectSection
-              projectId="weather-app"
-              sectionNumber="04"
-              sectionClassName="p-8 desktop-lg:mt-10"
-              screenContainerClassName="desktop-md:mt-10 desktop-lg:mt-4"
-              projectDescClassName="desktop-sm:-translate-y-[30%] desktop-md:max-w-[45rem] desktop-md:mt-14 desktop-md:-translate-x-1/4"
-            />
-            <ProjectSection
-              projectId="dog-shelter"
-              sectionNumber="05"
-              sectionClassName="pt-8 pb-8 desktop-sm:pb-0 desktop-md:pb-10"
-              screenContainerClassName="desktop-md:-mt-2"
-              projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12"
-            />
-            <ProjectSection
-              projectId="portfolio-project"
-              sectionNumber="06"
-              sectionClassName="pt-8 pb-20 desktop-md:pt-0"
-              screenContainerClassName="rounded-xl"
-              projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
-              projectScreenClassName="phone-md:gap-x-2 phone-lg:gap-x-0"
-            />
-          </section>
-          <section className="bg-(--color-section-title-bg)">
+            <section className="bg-(--color-section-title-bg)">
+              <div className="container mx-auto px-4">
+                <SectionTitle title="HER PROJECTS" dotsCount={2} />
+              </div>
+            </section>
+            <section id="projects" className="container mx-auto px-4">
+              <ProjectSection
+                projectId="weather-app"
+                sectionNumber="04"
+                sectionClassName="p-8 desktop-lg:mt-10"
+                screenContainerClassName="desktop-md:mt-10 desktop-lg:mt-4"
+                projectDescClassName="desktop-sm:-translate-y-[30%] desktop-md:max-w-[45rem] desktop-md:mt-14 desktop-md:-translate-x-1/4"
+              />
+              <ProjectSection
+                projectId="dog-shelter"
+                sectionNumber="05"
+                sectionClassName="pt-8 pb-8 desktop-sm:pb-0 desktop-md:pb-10"
+                screenContainerClassName="desktop-md:-mt-2"
+                projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12"
+              />
+              <ProjectSection
+                projectId="portfolio-project"
+                sectionNumber="06"
+                sectionClassName="pt-8 pb-20 desktop-md:pt-0"
+                screenContainerClassName="rounded-xl"
+                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
+                projectScreenClassName="phone-md:gap-x-2 phone-lg:gap-x-0"
+              />
+            </section>
+            <section className="bg-(--color-section-title-bg)">
+              <div className="container mx-auto px-4">
+                <SectionTitle title="HER CONTACTS" dotsCount={3} />
+              </div>
+            </section>
             <div className="container mx-auto px-4">
-              <SectionTitle title="HER CONTACTS" dotsCount={3} />
+              <Contacts />
             </div>
-          </section>
-          <div className="container mx-auto px-4">
-            <Contacts />
-          </div>
-        </Suspense>
+          </Suspense>
+        </ErrorBoundary>
       </main>
       <Footer />
     </div>
