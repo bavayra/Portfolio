@@ -148,6 +148,12 @@
     calc(9.182rem + 21.591vw),
     32.5rem
   ); /*  ~>768px */
+
+  --author-img-size: clamp(
+    6rem,
+    calc(1.227rem + 23.864vw),
+    27rem
+  ); /* the size of the author's image in the description section */
 }
 
 #dot-pattern-svg {

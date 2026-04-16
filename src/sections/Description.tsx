@@ -9,10 +9,10 @@ const Description = () => {
           >
             03
           </p>
-          <h3 className="text-section-label text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
+          <h3 className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
             WHAT IS SHE LIKE
           </h3>
-          <p className="mt-2 text-body-sm text-text leading-loose tracking-wide ml-3 w-full max-w-60 break-words whitespace-normal phone-sm:max-w-[17rem] phone-md:max-w-80 phone-md:text-base phone-lg:pl-2 phone-lg:max-w-[19rem] tablet-sm:max-w-[20.5rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl  border-l-2 border-grey-2">
+          <p className="mt-2 text-[length:var(--font-body-sm)] text-text leading-loose tracking-wide ml-3 w-full break-words whitespace-normal phone-lg:pl-2 [max-width:var(--max-w-text-sm)] desktop-sm:[max-width:var(--max-w-text-lg)] desktop-xl:text-2xl border-l-2 border-grey-2">
             I'm a curious and disciplined developer who enjoys solving UI
             problems with clean, maintainable code. I prioritize performance and
             accessibility, and I'm committed to continuous learning. I work well
@@ -28,7 +28,7 @@ const Description = () => {
           width={128}
           height={200}
           loading="eager"
-          className="object-cover self-end w-24 phone-md:w-36 phone-lg:w-44 phone-lg:-mr-3 tablet-sm:w-[12.5rem] tablet-md:w-60 desktop-sm:w-[19.5rem] desktop-sm:mr-24 desktop-xl:w-[27rem]"
+          className="object-cover self-end phone-lg:-mr-3 desktop-sm:mr-24 [width:var(--author-img-size)]"
         />
       </div>
     </section>
