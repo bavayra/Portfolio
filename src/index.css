@@ -99,6 +99,14 @@
   --hero-div-w: 2px; /*the width of the hero section div*/
   --hero-mt: 0px; /*the margin-top of the hero section div*/
 
+  --section-top-div-top: 18px; /*the top position of the top divider in the section*/
+  --section-top-div-height: 64px; /*the height of the top divider in the section*/
+  --section-bot-div-height: 88px; /*the height of the bottom divider in the section*/
+  --section-bot-div-top: 148px; /*the top position of the bottom divider in the section*/
+
+  --contacts-div-bot-top: 52px; /*the top position of the bottom divider in the contacts section*/
+  --contacts-div-bot-height: 550px; /*the height of the bottom divider in the contacts section*/
+
   --h1-size: clamp(
     48px,
     calc(20vw - 24px),
@@ -111,13 +119,18 @@
     calc(10vw - 12px),
     36px
   ); /*the font size of the section titles*/
-  --section-top-div-top: 18px; /*the top position of the top divider in the section*/
-  --section-top-div-height: 64px; /*the height of the top divider in the section*/
-  --section-bot-div-height: 88px; /*the height of the bottom divider in the section*/
-  --section-bot-div-top: 148px; /*the top position of the bottom divider in the section*/
 
-  --contacts-div-bot-top: 52px; /*the top position of the bottom divider in the contacts section*/
-  --contacts-div-bot-height: 550px; /*the height of the bottom divider in the contacts section*/
+  --font-body-sm: clamp(
+    0.75rem,
+    -0.1196rem + 4.3478vw,
+    1rem
+  ); /* xs → base font size for projects' short descriptions */
+  --font-body: clamp(0.875rem, 2vw, 1.125rem); /* sm → lg font size */
+  --font-label: clamp(0.75rem, 1.5vw, 0.875rem); /* xs → sm font size */
+
+  --max-w-text-sm: clamp(15rem, 40vw, 20rem); /*  ~<320px */
+  --max-w-text-md: clamp(20rem, 50vw, 29rem); /*  ~<464px */
+  --max-w-text-lg: clamp(20rem, 55vw, 32.5rem); /*  ~<520px */
 }
 
 #dot-pattern-svg {
