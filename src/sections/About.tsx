@@ -10,11 +10,11 @@ const About = () => {
       >
         01
       </p>
-      <h3 className="text-section-label text-grey-2 font-medium phone-sm:text-3xl phone-lg:text-4xl tablet-md:text-5xl tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
+      <h3 className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
         WHO IS SHE
       </h3>
 
-      <p className="mt-2 text-body-sm text-text leading-loose tracking-wide ml-3 w-full max-w-60 break-words whitespace-normal phone-sm:max-w-[17rem] phone-md:max-w-[19rem] phone-lg:max-w-80 phone-lg:pl-2 tablet-sm:max-w-[23rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32.5rem] desktop-xl:text-2xl border-l-2 border-grey-2">
+      <p className="mt-2 text-[length:var(--font-body-sm)] text-text leading-loose tracking-wide ml-3 w-full break-words whitespace-normal phone-lg:pl-2 [max-width:var(--max-w-text-sm)] desktop-sm:[max-width:var(--max-w-text-lg)] desktop-xl:text-2xl border-l-2 border-grey-2">
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,

@@ -131,14 +131,23 @@
   ); /* xs → base font size for projects' short descriptions */
 
   --font-section-label: clamp(
-    1.5rem,
-    0.4286rem + 5.3571vw,
+    1.875rem,
+    0.8824rem + 4.4118vw,
     3rem
-  ); /* 2xl → 5xl font size for sections' labels (titles) */
+  ); /* 3xl → 5xl font size for sections' labels (titles) */
 
-  --max-w-text-sm: clamp(15rem, 40vw, 20rem); /*  ~<320px */
-  --max-w-text-md: clamp(20rem, 50vw, 29rem); /*  ~<464px */
-  --max-w-text-lg: clamp(20rem, 55vw, 32.5rem); /*  ~<520px */
+  --font-page-number: clamp(
+    1.25rem,
+    0.9868rem + 1.1696vw,
+    2.25rem
+  ); /* xl → 4xl font size for page numbers */
+
+  --max-w-text-sm: clamp(15rem, calc(2.647rem + 54.902vw), 29rem); /* ~<768px */
+  --max-w-text-lg: clamp(
+    23rem,
+    calc(9.182rem + 21.591vw),
+    32.5rem
+  ); /*  ~>768px */
 }
 
 #dot-pattern-svg {
