@@ -16,7 +16,7 @@ const Skills = () => {
   return (
     <section className="relative py-8 ml-3 tablet-sm:ml-12 desktop-sm:ml-0">
       <p
-        className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10  desktop-md:text-3xl desktop-xl:text-4xl"
+        className="text-text text-[length:var(--font-page-number)] desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10"
         aria-hidden="true"
       >
         02

@@ -30,7 +30,7 @@ const ProjectSection = ({
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
           <p
-            className="text-text phone-sm:text-xl tablet-sm:text-2xl desktop-xl:text-4xl"
+            className="text-text text-[length:var(--font-page-number)]"
             aria-hidden="true"
           >
             {sectionNumber}
@@ -39,7 +39,7 @@ const ProjectSection = ({
             {project.title.toUpperCase()}
           </h3>
 
-          <p className="mt-2 text-xs border-l-2 border-grey-2 pl-3 text-text leading-loose tracking-wide ml-3 w-full max-w-60 break-words whitespace-normal phone-sm:text-sm phone-sm:max-w-[17rem] phone-md:text-base phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
+          <p className="mt-2 text-body-sm border-l-2 border-grey-2 pl-3 text-text leading-loose tracking-wide ml-3 w-full max-w-60 break-words whitespace-normal phone-sm:max-w-[17rem] phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
             {project.descriptionShort}
           </p>
           <ExternalProjectLink
