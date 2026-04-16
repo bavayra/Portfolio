@@ -160,6 +160,12 @@
     2.1429rem + 4.2857vw,
     6rem
   ); /* the font size of the title in the contacts section */
+
+  --header-font-size: clamp(
+    0.875rem,
+    0.1196rem + 4.3478vw,
+    1.25rem
+  ); /* xs -> 3xl font size for the header */
 }
 
 #dot-pattern-svg {
