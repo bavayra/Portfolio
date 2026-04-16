@@ -154,6 +154,12 @@
     calc(1.227rem + 23.864vw),
     27rem
   ); /* the size of the author's image in the description section */
+
+  --contact-title-size: clamp(
+    3rem,
+    2.1429rem + 4.2857vw,
+    6rem
+  ); /* the font size of the title in the contacts section */
 }
 
 #dot-pattern-svg {
