@@ -35,11 +35,11 @@ const ProjectSection = ({
           >
             {sectionNumber}
           </p>
-          <h3 className="text-2xl text-grey-2 font-medium phone-sm:text-3xl phone-lg:text-4xl tablet-md:my-2 desktop-xl:text-5xl">
+          <h3 className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 ">
             {project.title.toUpperCase()}
           </h3>
 
-          <p className="mt-2 text-body-sm border-l-2 border-grey-2 pl-3 text-text leading-loose tracking-wide ml-3 w-full max-w-60 break-words whitespace-normal phone-sm:max-w-[17rem] phone-md:max-w-[19rem] phone-lg:max-w-[20rem] tablet-sm:max-w-[22rem] tablet-md:max-w-[29rem] desktop-sm:max-w-[23rem] desktop-xl:max-w-[32rem] desktop-xl:text-2xl">
+          <p className="mt-2 text-[length:var(--font-body-sm)] border-l-2 border-grey-2 pl-3 text-text leading-loose tracking-wide ml-3 w-full break-words whitespace-normal [max-width:var(--max-w-text-sm)] desktop-sm:[max-width:var(--max-w-text-lg)] desktop-xl:text-2xl">
             {project.descriptionShort}
           </p>
           <ExternalProjectLink
