@@ -1,7 +1,6 @@
 export interface Project {
   id: string;
   title: string;
-  description: string;
   descriptionShort?: string;
   descriptionFull?: string;
   position: {
@@ -25,7 +24,6 @@ const projects: Project[] = [
   {
     id: "dog-shelter",
     title: "Dog Shelter",
-    description: "Responsive landing page for dog adoption service",
     descriptionShort:
       "A web app for a real dog shelter - browse adoptable dogs, filter by breed, age or gender, swipe through each dog's photo gallery, check shelter statistics, and reach out through a contact form with built‑in validation.",
     descriptionFull:
@@ -76,7 +74,6 @@ const projects: Project[] = [
   {
     id: "weather-app",
     title: "Weather App",
-    description: "Real-time weather forecast with OpenWeather API",
     descriptionShort:
       "A weather app with dark and light themes that shows current conditions, hourly and daily forecasts, and an interactive map. Save your favorite cities, switch between °C and °F, or let the browser detect your location - all in a fast, smooth mobile interface.",
     descriptionFull:
@@ -125,7 +122,6 @@ const projects: Project[] = [
   {
     id: "portfolio-project",
     title: "This Portfolio",
-    description: "Responsive personal portfolio",
     descriptionShort:
       "My personal portfolio — a single‑page showcase of projects, skills with animated progress badges, and a contact form. Sections reveal on scroll, the design adapts from 320 px phones to ultrawide displays, and everything switches seamlessly to dark mode.",
     descriptionFull:
