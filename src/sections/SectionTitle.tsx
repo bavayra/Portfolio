@@ -28,7 +28,7 @@ const SectionTitle = ({
       />
       <div className="mb-4">
         <div className="flex items-center gap-2">
-          <span className="text-base tracking-wide font-medium phone-sm:text-xl min-[390px]:text-2xl tablet-md:text-3xl desktop-lg:text-4xl text-section-title">
+          <span className="text-[length:var(--part-label)] tracking-wide font-medium text-section-title">
             {partLabel}
           </span>
 
@@ -47,7 +47,7 @@ const SectionTitle = ({
 
         <h2
           ref={ref}
-          className="font-extrabold tracking-[0.2em] text-[length:var(--section-title-size)] tablet-sm:text-5xl tablet-md:text-6xl desktop-sm:text-7xl desktop-lg:text-8xl text-section-title"
+          className="font-extrabold tracking-[0.2em] text-[length:var(--section-title-size)] text-section-title"
         >
           {title}
         </h2>

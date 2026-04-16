@@ -112,6 +112,7 @@
     calc(20vw - 24px),
     96px
   ); /*the font size of the h1 in the hero section*/
+
   --name-year-size: 1.5rem; /*the font size of the name and year in the hero section*/
 
   --section-title-size: clamp(
@@ -120,13 +121,20 @@
     36px
   ); /*the font size of the section titles*/
 
+  --part-label: clamp(1rem, 0.5833rem + 1.8519vw, 2.25rem);
+  /*base → 4xl font size for sections' parts' labels (titles) */
+
   --font-body-sm: clamp(
     0.75rem,
     -0.1196rem + 4.3478vw,
     1rem
   ); /* xs → base font size for projects' short descriptions */
-  --font-body: clamp(0.875rem, 2vw, 1.125rem); /* sm → lg font size */
-  --font-label: clamp(0.75rem, 1.5vw, 0.875rem); /* xs → sm font size */
+
+  --font-section-label: clamp(
+    1.5rem,
+    0.4286rem + 5.3571vw,
+    3rem
+  ); /* 2xl → 5xl font size for sections' labels (titles) */
 
   --max-w-text-sm: clamp(15rem, 40vw, 20rem); /*  ~<320px */
   --max-w-text-md: clamp(20rem, 50vw, 29rem); /*  ~<464px */
@@ -209,6 +217,8 @@
     --hero-div-top: 36px;
     --hero-div-w: 3px;
     --hero-mt: 140px;
+
+    --section-title-size: clamp(3rem, 0.8571rem + 5.7143vw, 6rem);
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: 136px;
