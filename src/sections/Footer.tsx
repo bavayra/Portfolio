@@ -12,7 +12,7 @@ const Footer = () => {
         All Rights Reserved © {new Date().getFullYear()}
       </p>
       <p className="tracking-wider opacity-65 desktop-xl:text-lg">
-        Created by bavayra with ❤️
+        Created by Alix Bell with ❤️
       </p>
     </footer>
   );
