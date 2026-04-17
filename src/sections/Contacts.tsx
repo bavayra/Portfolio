@@ -177,9 +177,10 @@ const Contacts = () => {
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx={58}
+        //58px = height of the top divider; doesn't depend on screen size
         leftPx={0}
         color="grey-2"
-        topPx={-68}
+        topPx={-68} //-68px = top position of the top divider; doesn't depend on screen size
       />
       <h3 className="relative self-start text-[length:var(--contact-title-size)] text-accent-red font-bold ">
         LET'S TALK?
