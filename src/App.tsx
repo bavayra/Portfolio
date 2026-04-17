@@ -1,13 +1,13 @@
 import Header from "./sections/Header.tsx";
 import Hero from "./sections/Hero.tsx";
 import SectionTitle from "./sections/SectionTitle.tsx";
+import About from "./sections/About.tsx";
+import Skills from "./sections/Skills.tsx";
+import Description from "./sections/Description.tsx";
 import { lazy, Suspense } from "react";
 import Footer from "./sections/Footer.tsx";
 import ErrorBoundary from "./components/ErrorBoundary.tsx";
 
-const About = lazy(() => import("./sections/About.tsx"));
-const Skills = lazy(() => import("./sections/Skills.tsx"));
-const Description = lazy(() => import("./sections/Description.tsx"));
 const ProjectSection = lazy(() => import("./sections/ProjectSection.tsx"));
 const Contacts = lazy(() => import("./sections/Contacts.tsx"));
 
