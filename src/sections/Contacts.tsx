@@ -303,7 +303,6 @@ const Contacts = () => {
                   variant="primary"
                   size="small"
                   disabled={isSubmitting}
-                  aria-label="Submit this form"
                   className="w-auto text-center"
                 >
                   {isSubmitting ? "Sending..." : "SEND MESSAGE"}
