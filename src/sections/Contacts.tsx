@@ -26,8 +26,7 @@ type FormAction =
   | { type: "SET_ERRORS"; errors: FormErrors }
   | { type: "SUBMIT_START" }
   | { type: "SUBMIT_SUCCESS" }
-  | { type: "SUBMIT_FAILURE"; message: string }
-  | { type: "CLEAR_MESSAGES" };
+  | { type: "SUBMIT_FAILURE"; message: string };
 
 const initialState: FormState = {
   fields: { name: "", email: "", message: "" },
@@ -63,8 +62,6 @@ function formReducer(state: FormState, action: FormAction): FormState {
       };
     case "SUBMIT_FAILURE":
       return { ...state, isSubmitting: false, errorMessage: action.message };
-    case "CLEAR_MESSAGES":
-      return { ...state, successMessage: "", errorMessage: "" };
     default:
       return state;
   }
