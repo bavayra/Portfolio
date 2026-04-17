@@ -25,7 +25,7 @@ const Hero = () => {
         <div className="absolute left-0 top-0 bottom-8 w-[var(--hero-div-w)] bg-grey-2" />
         <p
           aria-hidden="true"
-          className="pl-3 absolute text-[length:var(--name-year-size)] font-bold text-accent-red tracking-wider top-4 right-8 min-[375px]right-10 tablet-md:right-[7.5rem] tablet-lg:right-20 desktop-sm:right-40 desktop-md:right-16 desktop-lg:right-[18.5rem] desktop-lg:text-[3.5rem] desktop-xl:right-[25rem] desktop-xl:text-7xl"
+          className="pl-3 absolute text-[length:var(--name-year-size)] font-bold text-accent-red tracking-wider top-4 right-8 min-[375px]:right-10 tablet-md:right-[7.5rem] tablet-lg:right-20 desktop-sm:right-40 desktop-md:right-16 desktop-lg:right-[18.5rem] desktop-lg:text-[3.5rem] desktop-xl:right-[25rem] desktop-xl:text-7xl"
         >
           ALIX BELL
         </p>
