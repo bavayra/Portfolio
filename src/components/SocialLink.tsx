@@ -56,18 +56,21 @@ const SocialLinks = ({
     <div
       className={`flex items-center desktop-sm:mx-4 desktop-sm:my-16 justify-center ${className ?? ""}`}
     >
-      {SOCIAL_NETWORKS.map((social) => (
-        <a
-          key={social.name}
-          href={social.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className={wrapperClass}
-          aria-label={social.name}
-        >
-          <Icon as={social.icon} className={iconClasses} aria-hidden="true" />
-        </a>
-      ))}
+      {SOCIAL_NETWORKS.map((social) => {
+        const isExternalUrl = social.url.startsWith("http");
+        return (
+          <a
+            key={social.name}
+            href={social.url}
+            target={isExternalUrl ? "_blank" : undefined}
+            rel={isExternalUrl ? "noopener noreferrer" : undefined}
+            className={wrapperClass}
+            aria-label={social.name}
+          >
+            <Icon as={social.icon} className={iconClasses} aria-hidden="true" />
+          </a>
+        );
+      })}
     </div>
   );
 };
