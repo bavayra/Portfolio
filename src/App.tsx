@@ -40,13 +40,21 @@ function App() {
         <div className="container mx-auto ">
           <Hero />
         </div>
-        <section className="bg-(--color-section-title-bg)">
-          <div className="container mx-auto px-4">
-            <SectionTitle title="ABOUT HER" />
-          </div>
-        </section>
         <ErrorBoundary fallback={errorFallback}>
-          <Suspense fallback={null}>
+          <Suspense
+            fallback={
+              <div
+                className="min-h-screen bg-bg"
+                aria-busy="true"
+                aria-label="Loading page content"
+              />
+            }
+          >
+            <section className="bg-(--color-section-title-bg)">
+              <div className="container mx-auto px-4">
+                <SectionTitle title="ABOUT HER" />
+              </div>
+            </section>
             <div className="container mx-auto px-4">
               <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
                 <About />
