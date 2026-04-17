@@ -43,6 +43,7 @@ const ExternalProjectLink = ({
               <span>Live Demo</span>
               <img
                 src="/external-link-icon.svg"
+                alt=""
                 className="w-7 h-7 -mt-1 inline-block desktop-xl:w-9 desktop-xl:h-9"
               />
             </a>
