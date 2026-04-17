@@ -13,7 +13,7 @@ const TextInput = ({
   onChange,
   type = "text",
   placeholder = "",
-  required = true,
+  required,
   inputMode,
   className = "",
   ...restProps
