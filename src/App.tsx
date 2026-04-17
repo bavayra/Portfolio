@@ -55,7 +55,7 @@ function App() {
               className="bg-(--color-section-title-bg)"
             >
               <div className="container mx-auto px-4">
-                <SectionTitle title="ABOUT HER" />
+                <SectionTitle title="ABOUT ME" />
               </div>
 
               <div className="container mx-auto px-4">
@@ -68,7 +68,7 @@ function App() {
             </section>
             <section className="bg-(--color-section-title-bg)">
               <div className="container mx-auto px-4">
-                <SectionTitle title="HER PROJECTS" dotsCount={2} />
+                <SectionTitle title="PROJECTS" dotsCount={2} />
               </div>
             </section>
             <section id="projects" className="container mx-auto px-4">
@@ -97,7 +97,7 @@ function App() {
             </section>
             <section className="bg-(--color-section-title-bg)">
               <div className="container mx-auto px-4">
-                <SectionTitle title="HER CONTACTS" dotsCount={3} />
+                <SectionTitle title="CONTACTS" dotsCount={3} />
               </div>
             </section>
             <div className="container mx-auto px-4">
