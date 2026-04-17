@@ -11,7 +11,7 @@ const About = () => {
         01
       </p>
       <h3 className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
-        WHO IS SHE
+        WHO AM I
       </h3>
 
       <p className="mt-2 text-[length:var(--font-body-sm)] text-text leading-loose tracking-wide ml-3 w-full break-words whitespace-normal phone-lg:pl-2 [max-width:var(--max-w-text-sm)] desktop-sm:[max-width:var(--max-w-text-lg)] desktop-xl:text-2xl border-l-2 border-grey-2">

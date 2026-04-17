@@ -22,7 +22,7 @@ const Skills = () => {
         02
       </p>
       <h3 className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 desktop-xl:text-5xl ">
-        HER SKILLS
+        MY SKILLS
       </h3>
       <div className="mt-6 flex flex-col gap-6 phone-sm:mt-8 tablet-sm:mt-10 border-l-2 border-grey-2 pl-3">
         {skillGroups.map((group) => (
