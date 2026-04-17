@@ -172,6 +172,7 @@ const Contacts = () => {
   return (
     <section
       id="contacts"
+      aria-labelledby="contacts-heading"
       className="relative z-10 mt-20 ml-3 h-auto flex pb-8 flex-col items-center tablet-sm:ml-12 desktop-lg:ml-10 desktop-xl:h-[60vh]"
     >
       <Divider
@@ -182,7 +183,10 @@ const Contacts = () => {
         color="grey-2"
         topPx={-68} //-68px = top position of the top divider; doesn't depend on screen size
       />
-      <h2 className="relative self-start text-[length:var(--contact-title-size)] text-accent-red font-bold ">
+      <h2
+        className="relative self-start text-[length:var(--contact-title-size)] text-accent-red font-bold"
+        id="contacts-heading"
+      >
         LET'S TALK?
       </h2>
       <Divider

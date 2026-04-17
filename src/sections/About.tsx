@@ -2,6 +2,7 @@ const About = () => {
   return (
     <section
       id="about"
+      aria-labelledby="about-heading"
       className="relative py-8 ml-3 tablet-sm:ml-12 tablet-md:pb-0 desktop-lg:ml-10 desktop-xl:pb-12"
     >
       <p
@@ -10,7 +11,10 @@ const About = () => {
       >
         01
       </p>
-      <h3 className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
+      <h3
+        className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
+        id="about-heading"
+      >
         WHO AM I
       </h3>
 

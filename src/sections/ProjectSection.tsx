@@ -25,6 +25,8 @@ const ProjectSection = ({
 
   return (
     <section
+      id={`${projectId}-section`}
+      aria-labelledby={`${projectId}-heading`}
       className={`relative ml-3 h-auto tablet-sm:ml-12 desktop-lg:ml-10 ${sectionClassName}`}
     >
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
@@ -35,7 +37,10 @@ const ProjectSection = ({
           >
             {sectionNumber}
           </p>
-          <h3 className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 ">
+          <h3
+            id={`${projectId}-heading`}
+            className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 "
+          >
             {project.title.toUpperCase()}
           </h3>
 

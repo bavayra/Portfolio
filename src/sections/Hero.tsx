@@ -4,9 +4,12 @@ const Hero = () => {
   return (
     <section
       id="hero"
+      aria-labelledby="hero-heading"
       className="py-8 app-fullscreen relative overflow-y-hidden overflow-x-visible flex flex-col"
     >
-      <h1 className="sr-only">Alix Bell — Junior Frontend Developer</h1>
+      <h1 id="hero-heading" className="sr-only">
+        Alix Bell — Junior Frontend Developer
+      </h1>
       <div className="hidden desktop-sm:block desktop-sm:h-[var(--hero-mt)] ml-4 tablet-sm:ml-8 desktop-md:ml-10 relative">
         <div className="absolute left-0 top-4 bottom-0 w-[var(--hero-div-w)] bg-grey-2" />
       </div>
