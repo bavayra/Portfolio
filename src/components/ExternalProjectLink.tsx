@@ -16,9 +16,6 @@ const ExternalProjectLink = ({
     <>
       <div>
         <div className="flex flex-row mt-2 items-center gap-1 ml-3 tracking-wide">
-          <p className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-2xl tablet-sm:text-lg">
-            Check the code on
-          </p>
           <a
             href={repoHref}
             target="_blank"
@@ -26,9 +23,12 @@ const ExternalProjectLink = ({
             className="text-text"
             aria-label={repoAria}
           >
+            <span className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-2xl tablet-sm:text-lg">
+              Check the code on
+            </span>
             <GitHubIcon
               role="img"
-              className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 hover:scale-110 text-accent-red active:scale-95 duration-300 "
+              className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 hover:scale-110 text-accent-red active:scale-95 duration-300"
             />
           </a>
         </div>
