@@ -94,8 +94,6 @@
 
 :root {
   /*div = divider*/
-  --hero-div-top: 120px; /*the top position of the hero section div*/
-  --hero-div-height: 72px; /*the height of the hero section div*/
   --hero-div-w: 2px; /*the width of the hero section div*/
   --hero-mt: 0px; /*the margin-top of the hero section div*/
 
@@ -119,10 +117,10 @@
     24px,
     calc(10vw - 12px),
     36px
-  ); /*the font size of the section titles*/
+  ); /*the font size of the section titles (title pages) */
 
   --part-label: clamp(1rem, 0.5833rem + 1.8519vw, 2.25rem);
-  /*base → 4xl font size for sections' parts' labels (titles) */
+  /*base → 4xl font size for sections' parts' labels (Part 1, Part 2, etc.) */
 
   --font-body-sm: clamp(
     0.75rem,
@@ -134,7 +132,7 @@
     1.875rem,
     0.8824rem + 4.4118vw,
     3rem
-  ); /* 3xl → 5xl font size for sections' labels (titles) */
+  ); /* 3xl → 5xl font size for sections' labels (titles), e.g., About, Projects, Contacts */
 
   --font-page-number: clamp(
     1.25rem,
@@ -142,12 +140,16 @@
     2.25rem
   ); /* xl → 4xl font size for page numbers */
 
-  --max-w-text-sm: clamp(15rem, calc(2.647rem + 54.902vw), 29rem); /* ~<768px */
+  --max-w-text-sm: clamp(
+    15rem,
+    calc(2.647rem + 54.902vw),
+    29rem
+  ); /* max width of the text container for ~<768px */
   --max-w-text-lg: clamp(
     23rem,
     calc(9.182rem + 21.591vw),
     32.5rem
-  ); /*  ~>768px */
+  ); /* max width of the text container for ~>768px */
 
   --author-img-size: clamp(
     6rem,
@@ -182,15 +184,11 @@
     --section-bot-div-height: 124px;
     --section-top-div-height: 106px;
     --section-bot-div-top: 186px;
-
-    --hero-div-height: clamp(112px, calc(104vh - 512px), 164px);
   }
 }
 
 @media (min-width: 375px) {
   :root {
-    --hero-div-height: clamp(112px, calc(60vh - 248px), 280px);
-
     --section-top-div-height: 92px;
     --section-bot-div-top: clamp(176px, calc(2.667px + 28.889vh), 228px);
     --section-bot-div-height: clamp(114px, calc(-25.2px + 23.2vh), 172px);
@@ -199,7 +197,6 @@
 
 @media (min-width: 390px) {
   :root {
-    --hero-div-top: 164px;
     --hero-mt: 40px;
 
     --section-top-div-height: 132px;
@@ -219,15 +216,12 @@
 
 @media (min-width: 428px) {
   :root {
-    --hero-div-height: clamp(180px, calc(500vh - 4120px), 280px);
-
     --section-bot-div-top: 230px;
   }
 }
 
 @media (min-width: 480px) {
   :root {
-    --hero-div-top: 184px;
     --hero-mt: clamp(40px, calc(-515.692px + 64.615vh), 208px);
     --name-year-size: 2.25rem;
 
@@ -240,8 +234,6 @@
 /*600-820PX: TABLETS*/
 @media (min-width: 600px) {
   :root {
-    --hero-div-height: clamp(148px, calc(23.18vh - 60.62px), 200px);
-    --hero-div-top: 36px;
     --hero-div-w: 3px;
     --hero-mt: 140px;
 
@@ -269,7 +261,6 @@
 
 @media (min-width: 820px) {
   :root {
-    --hero-div-height: clamp(168px, calc(8vh + 162.24px), 200px);
     --hero-mt: 198px;
 
     --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
@@ -287,9 +278,6 @@
   }
 
   :root {
-    --hero-div-height: 168px;
-    --hero-div-2-top: 360px;
-    --hero-div-2-height: 312px;
     --hero-mt: 0px;
 
     --contacts-div-bot-top: 80px;
@@ -305,9 +293,6 @@
 
 @media (min-width: 1280px) {
   :root {
-    --hero-div-height: 184px;
-    --hero-div-2-top: 374px;
-
     --section-top-div-height: 148px;
     --section-bot-div-height: 204px;
     --section-bot-div-top: clamp(280px, calc(-52.308px + 46.154vh), 400px);
@@ -319,9 +304,6 @@
 
 @media (min-width: 1440px) {
   :root {
-    --hero-div-height: 212px;
-    --hero-div-2-top: 420px;
-    --hero-div-2-height: 372px;
     --hero-mt: 16px;
 
     --section-top-div-height: 164px;
@@ -338,8 +320,6 @@
 
 @media (min-width: 1728px) {
   :root {
-    --hero-div-2-height: 552px;
-
     --section-bot-div-height: 272px;
     --section-top-div-height: clamp(188px, calc(-1184px + 140vh), 216px);
 
