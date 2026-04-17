@@ -18,6 +18,8 @@
       href="/android-chrome-512x512.png"
     />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- Preload all used fonts to avoid FOUT-->
     <link
       rel="preload"
       href="/fonts/Raleway-Regular.woff2"
@@ -126,6 +128,11 @@
     <title>Alix Bell — Junior Frontend Developer</title>
   </head>
   <body>
+    <noscript>
+      <p style="padding: 2rem; font-family: sans-serif; text-align: center">
+        This portfolio requires JavaScript. Please enable it in your browser.
+      </p>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
