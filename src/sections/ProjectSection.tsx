@@ -18,7 +18,7 @@ const ProjectSection = ({
   sectionClassName = "",
   screenContainerClassName = "",
   projectDescClassName = "",
-  projectScreenClassName,
+  projectScreenClassName = "",
 }: ProjectSectionProps) => {
   const project = projects.find((p) => p.id === projectId);
   if (!project) return null;
@@ -53,8 +53,6 @@ const ProjectSection = ({
         >
           <ProjectScreen
             projectId={project.id}
-            title={project.title}
-            description={project.description}
             images={project.images}
             technologies={project.technologies}
             imageClasses={project.imageClasses}

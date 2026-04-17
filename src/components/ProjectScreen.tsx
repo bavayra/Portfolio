@@ -3,8 +3,6 @@ import Modal from "./Modal";
 
 type ProjectScreenProps = {
   projectId: string;
-  title: string;
-  description: string;
   technologies: string[];
   imageClasses?: Record<number, string>;
   images: {
@@ -27,12 +25,8 @@ const ProjectScreen = (props: ProjectScreenProps) => {
   return (
     <>
       <div className="grid gap-4 tablet-md:grid-cols-1 desktop-sm:gap-0 desktop-sm:items-start">
-        <div className="space-y-4">
-          <p className="sr-only">{props.title}</p>
-          <p className="sr-only">{props.description}</p>
-        </div>
         <div
-          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-[35rem] desktop-sm:ml-0 desktop-sm:gap-y-2 desktop-sm:w-[25rem] desktop-md:gap-x-6 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-md:w-2xl cdesktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
+          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-[35rem] desktop-sm:ml-0 desktop-sm:gap-y-2 desktop-sm:w-[25rem] desktop-md:gap-x-6 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-md:w-2xl desktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
         >
           {props.images.map((img, index) => (
             <button
