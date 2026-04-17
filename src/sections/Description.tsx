@@ -1,6 +1,10 @@
 const Description = () => {
   return (
-    <section className="relative py-8 ml-3 tablet-sm:ml-12 desktop-lg:ml-10">
+    <section
+      id="description"
+      aria-labelledby="description-heading"
+      className="relative py-8 ml-3 tablet-sm:ml-12 desktop-lg:ml-10"
+    >
       <div className="grid grid-cols-[1fr_auto] items-end gap-x-2 phone-md:gap-x-4">
         <div>
           <p
@@ -9,7 +13,10 @@ const Description = () => {
           >
             03
           </p>
-          <h3 className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl">
+          <h3
+            id="description-heading"
+            className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
+          >
             WHAT AM I LIKE
           </h3>
           <p className="mt-2 text-[length:var(--font-body-sm)] text-text leading-loose tracking-wide ml-3 w-full break-words whitespace-normal phone-lg:pl-2 [max-width:var(--max-w-text-sm)] desktop-sm:[max-width:var(--max-w-text-lg)] desktop-xl:text-2xl border-l-2 border-grey-2">
@@ -23,8 +30,8 @@ const Description = () => {
         </div>
 
         <img
-          src="/AuthorImgAI.webp"
-          alt="AI-generated portrait of the author"
+          src="/AuthorImg.webp"
+          alt="Portrait of the author"
           width={768}
           height={1152}
           loading="lazy"
