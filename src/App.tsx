@@ -50,18 +50,22 @@ function App() {
               />
             }
           >
-            <section className="bg-(--color-section-title-bg)">
+            <section
+              id="about-section"
+              className="bg-(--color-section-title-bg)"
+            >
               <div className="container mx-auto px-4">
                 <SectionTitle title="ABOUT HER" />
               </div>
-            </section>
-            <div className="container mx-auto px-4">
-              <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
-                <About />
-                <Skills />
+
+              <div className="container mx-auto px-4">
+                <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
+                  <About />
+                  <Skills />
+                </div>
+                <Description />
               </div>
-              <Description />
-            </div>
+            </section>
             <section className="bg-(--color-section-title-bg)">
               <div className="container mx-auto px-4">
                 <SectionTitle title="HER PROJECTS" dotsCount={2} />
