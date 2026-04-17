@@ -1,7 +1,6 @@
 import DiscordIcon from "../assets/Icons/DiscordIcon.svg?react";
 import GitHubIcon from "../assets/Icons/GitHubIcon.svg?react";
 import GmailIcon from "../assets/Icons/GmailIcon.svg?react";
-import InstagramIcon from "../assets/Icons/InstagramIcon.svg?react";
 import LinkedInIcon from "../assets/Icons/LinkedInIcon.svg?react";
 import TelegramIcon from "../assets/Icons/TelegramIcon.svg?react";
 
@@ -22,11 +21,6 @@ const SOCIAL_NETWORKS = [
   { name: "GitHub", icon: GitHubIcon, url: "https://www.github.com/bavayra" },
   { name: "Telegram", icon: TelegramIcon, url: "https://t.me/bavayra" },
   { name: "Gmail", icon: GmailIcon, url: "mailto:x.bavayra@gmail.com" },
-  {
-    name: "Instagram",
-    icon: InstagramIcon,
-    url: "https://www.instagram.com/bavayra",
-  },
   {
     name: "LinkedIn",
     icon: LinkedInIcon,
