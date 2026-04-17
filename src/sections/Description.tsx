@@ -25,9 +25,9 @@ const Description = () => {
         <img
           src="/AuthorImgAI.webp"
           alt="AI-generated portrait of the author"
-          width={128}
-          height={200}
-          loading="eager"
+          width={768}
+          height={1152}
+          loading="lazy"
           className="object-cover self-end phone-lg:-mr-3 desktop-sm:mr-24 [width:var(--author-img-size)]"
         />
       </div>
