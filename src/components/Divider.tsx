@@ -8,7 +8,7 @@ export type CssLength =
   | `var(--${string})`;
 
 interface DividerProps {
-  widthPx: 2 | 3 | number | string;
+  widthPx: CssLength;
   heightPx: CssLength;
   color: "grey-3" | "grey-2";
   topPx?: CssLength;
