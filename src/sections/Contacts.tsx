@@ -102,20 +102,19 @@ const Contacts = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    const normalizedData = normalizeFormData(fields);
+    const validationErrors = validateFields(normalizedData);
+    if (Object.keys(validationErrors).length > 0) {
+      dispatch({ type: "SET_ERRORS", errors: validationErrors });
+      return;
+    }
+
     const now = Date.now();
     if (now - getLastSubmitTime() < MIN_SUBMIT_INTERVAL) {
       dispatch({
         type: "SUBMIT_FAILURE",
         message: "Please wait 30 seconds before submitting again.",
       });
-      return;
-    }
-
-    const normalizedData = normalizeFormData(fields);
-    const validationErrors = validateFields(normalizedData);
-
-    if (Object.keys(validationErrors).length > 0) {
-      dispatch({ type: "SET_ERRORS", errors: validationErrors });
       return;
     }
 
