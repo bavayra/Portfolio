@@ -1,8 +1,8 @@
 export interface Project {
   id: string;
   title: string;
-  descriptionShort?: string;
-  descriptionFull?: string;
+  descriptionShort: string;
+  descriptionFull: string;
   position: {
     row: number;
     col: number;
