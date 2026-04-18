@@ -50,6 +50,7 @@ const ProjectSection = ({
           <ExternalProjectLink
             liveUrl={project.liveUrl}
             githubUrl={project.githubUrl}
+            projectTitle={project.title}
           />
         </div>
 

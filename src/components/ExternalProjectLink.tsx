@@ -3,14 +3,18 @@ import GitHubIcon from "../assets/Icons/GitHubIcon.svg?react";
 type ExternalProjectLinkProps = {
   liveUrl?: string;
   githubUrl?: string;
+  projectTitle?: string;
 };
 
 const ExternalProjectLink = ({
   liveUrl,
   githubUrl,
+  projectTitle,
 }: ExternalProjectLinkProps) => {
   const repoHref = githubUrl ?? "https://github.com/bavayra";
-  const repoAria = githubUrl ? "Open GitHub repository" : "Open GitHub profile";
+  const repoAria = githubUrl
+    ? `Open ${projectTitle} GitHub repository`
+    : "Open GitHub profile";
 
   return (
     <div>
@@ -37,9 +41,10 @@ const ExternalProjectLink = ({
             href={liveUrl}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={`Live Demo: ${projectTitle}`}
             className="inline-flex items-center gap-2"
           >
-            <span>Live Demo</span>
+            <span aria-hidden="true">Live Demo</span>
             <img
               src="/external-link-icon.svg"
               alt=""
