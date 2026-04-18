@@ -13,13 +13,15 @@ export function useInViewOnce<T extends Element>(
 
   const ref = useRef<T | null>(null);
   const [inViewOnce, setInViewOnce] = useState(false);
+  const hasTriggered = useRef(false);
 
   useEffect(() => {
-    if (!ref.current || inViewOnce) return;
+    if (!ref.current || hasTriggered.current) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
+          hasTriggered.current = true;
           setInViewOnce(true);
           observer.disconnect();
         }
@@ -30,7 +32,7 @@ export function useInViewOnce<T extends Element>(
     observer.observe(ref.current);
 
     return () => observer.disconnect();
-  }, [threshold, root, rootMargin, inViewOnce]);
+  }, [threshold, root, rootMargin]);
 
   return { ref, inViewOnce };
 }
