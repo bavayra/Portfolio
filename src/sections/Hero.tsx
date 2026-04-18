@@ -10,6 +10,10 @@ const Hero = () => {
       <h1 id="hero-heading" className="sr-only">
         Alix Bell — Junior Frontend Developer
       </h1>
+      // I know that making h1 sr-only while the text with the name is hidden
+      from sr isn't ideal and I understand how it's supposed to be, regardless
+      for the design and SEO purposes (indexing both the name and the role) I've
+      decided to go with this approach.
       <div className="hidden desktop-sm:block desktop-sm:h-(--hero-mt) ml-4 tablet-sm:ml-8 desktop-md:ml-10 relative">
         <div className="absolute left-0 top-4 bottom-0 w-(--hero-div-w) bg-grey-2" />
       </div>
