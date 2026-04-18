@@ -6,12 +6,14 @@ interface SectionTitleProps {
   title: string;
   partLabel?: string;
   dotsCount?: 1 | 2 | 3;
+  headingId?: string;
 }
 
 const SectionTitle = ({
   title,
   partLabel = "Part",
   dotsCount = 1,
+  headingId,
 }: SectionTitleProps) => {
   const { ref, inViewOnce } = useInViewOnce<HTMLHeadingElement>({
     threshold: 0.1,
@@ -46,6 +48,7 @@ const SectionTitle = ({
         </div>
 
         <h2
+          id={headingId}
           ref={ref}
           className="font-extrabold tracking-[0.2em] text-(length:--section-title-size) text-section-title"
         >

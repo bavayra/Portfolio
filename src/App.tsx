@@ -30,7 +30,7 @@ function App() {
     <div>
       <a
         href="#main-content"
-        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100] focus:bg-bg focus:px-4 focus:py-2 focus:text-text focus:rounded focus-visible:ring-2"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-100 focus:bg-bg focus:px-4 focus:py-2 focus:text-text focus:rounded focus-visible:ring-2"
       >
         Skip to main content
       </a>
@@ -52,10 +52,11 @@ function App() {
           >
             <section
               id="about-section"
+              aria-labelledby="about-title"
               className="bg-(--color-section-title-bg)"
             >
               <div className="container mx-auto px-4">
-                <SectionTitle title="ABOUT ME" />
+                <SectionTitle title="ABOUT ME" headingId="about-title" />
               </div>
 
               <div className="container mx-auto px-4">
@@ -66,12 +67,12 @@ function App() {
                 <Description />
               </div>
             </section>
-            <section className="bg-(--color-section-title-bg)">
+            <div className="bg-(--color-section-title-bg)">
               <div className="container mx-auto px-4">
                 <SectionTitle title="PROJECTS" dotsCount={2} />
               </div>
-            </section>
-            <section id="projects" className="container mx-auto px-4">
+            </div>
+            <div id="projects" className="container mx-auto px-4">
               <ProjectSection
                 projectId="weather-app"
                 sectionNumber="04"
@@ -94,12 +95,12 @@ function App() {
                 projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
                 projectScreenClassName="phone-md:gap-x-2 phone-lg:gap-x-0"
               />
-            </section>
-            <section className="bg-(--color-section-title-bg)">
+            </div>
+            <div className="bg-(--color-section-title-bg)">
               <div className="container mx-auto px-4">
                 <SectionTitle title="CONTACTS" dotsCount={3} />
               </div>
-            </section>
+            </div>
             <div className="container mx-auto px-4">
               <Contacts />
             </div>
