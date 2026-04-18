@@ -12,9 +12,6 @@ const ExternalProjectLink = ({
   projectTitle,
 }: ExternalProjectLinkProps) => {
   const repoHref = githubUrl ?? "https://github.com/bavayra";
-  const repoAria = githubUrl
-    ? `Open ${projectTitle} GitHub repository`
-    : "Open GitHub profile";
 
   return (
     <div>
@@ -24,13 +21,13 @@ const ExternalProjectLink = ({
           target="_blank"
           rel="noopener noreferrer"
           className="text-text"
-          aria-label={repoAria}
+          aria-label={`Check the code on GitHub - ${projectTitle ? projectTitle : "GitHub profile"}`}
         >
           <span className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-2xl tablet-sm:text-lg">
             Check the code on
           </span>
           <GitHubIcon
-            role="img"
+            aria-hidden="true"
             className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 hover:scale-110 text-accent-red active:scale-95 duration-300"
           />
         </a>
@@ -48,6 +45,7 @@ const ExternalProjectLink = ({
             <img
               src="/external-link-icon.svg"
               alt=""
+              aria-hidden="true"
               className="w-7 h-7 -mt-1 inline-block desktop-xl:w-9 desktop-xl:h-9"
             />
           </a>
