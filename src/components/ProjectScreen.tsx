@@ -68,7 +68,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
               className="absolute top-4 right-4 z-20 rounded-full border border-grey-3 bg-bg/90 px-3 py-1 text-sm text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-1 focus-visible:ring-offset-black/40"
               aria-label="Close screenshot"
             >
-              X
+              <span aria-hidden="true">✕</span>
             </button>
 
             <img
