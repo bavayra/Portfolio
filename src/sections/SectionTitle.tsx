@@ -28,7 +28,7 @@ const SectionTitle = ({
       />
       <div className="mb-4">
         <div className="flex items-center gap-2">
-          <span className="text-[length:var(--part-label)] tracking-wide font-medium text-section-title">
+          <span className="text-(length:--part-label) tracking-wide font-medium text-section-title">
             {partLabel}
           </span>
 
@@ -37,7 +37,7 @@ const SectionTitle = ({
               {Array.from({ length: dotsCount }).map((_, index) => (
                 <Circle
                   key={`dot-${index}`}
-                  className="circle-drop w-[1.25rem] h-[1.25rem] tablet-sm:w-[1.5rem] tablet-sm:h-[1.5rem] desktop-lg:w-[1.75rem] desktop-lg:h-[1.75rem]"
+                  className="circle-drop w-5 h-5 tablet-sm:w-6 tablet-sm:h-6 desktop-lg:w-7 desktop-lg:h-7"
                   style={{ animationDelay: `${index * 0.6}s` }}
                 />
               ))}
@@ -47,7 +47,7 @@ const SectionTitle = ({
 
         <h2
           ref={ref}
-          className="font-extrabold tracking-[0.2em] text-[length:var(--section-title-size)] text-section-title"
+          className="font-extrabold tracking-[0.2em] text-(length:--section-title-size) text-section-title"
         >
           {title}
         </h2>

@@ -26,7 +26,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
     <>
       <div className="grid gap-4 tablet-md:grid-cols-1 desktop-sm:gap-0 desktop-sm:items-start">
         <div
-          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-[35rem] desktop-sm:ml-0 desktop-sm:gap-y-2 desktop-sm:w-[25rem] desktop-md:gap-x-6 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-md:w-2xl desktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
+          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-140 desktop-sm:ml-0 desktop-sm:gap-y-2 desktop-sm:w-100 desktop-md:gap-x-6 desktop-md:grid-cols-4 desktop-md:-translate-x-1/5 desktop-md:w-2xl desktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
         >
           {props.images.map((img, index) => (
             <button
@@ -48,7 +48,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
             </button>
           ))}
         </div>
-        <p className="text-center text-xs bg-section-title w-60 p-2 mx-auto rounded-lg text-accent-red font-semibold my-2 tracking-wide phone-lg:text-sm phone-lg:w-[17.5rem] tablet-sm:text-base tablet-sm:w-[18.5rem] desktop-sm:hidden">
+        <p className="text-center text-xs bg-section-title w-60 p-2 mx-auto rounded-lg text-accent-red font-semibold my-2 tracking-wide phone-lg:text-sm phone-lg:w-70 tablet-sm:text-base tablet-sm:w-74 desktop-sm:hidden">
           {props.technologies.join(", ")}
         </p>
       </div>

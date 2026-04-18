@@ -8,18 +8,18 @@ const Description = () => {
       <div className="grid grid-cols-[1fr_auto] items-end gap-x-2 phone-md:gap-x-4">
         <div>
           <p
-            className="text-text text-[length:var(--font-page-number)]"
+            className="text-text text-(length:--font-page-number)"
             aria-hidden="true"
           >
             03
           </p>
           <h3
             id="description-heading"
-            className="text-[length:var(--font-section-label)] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
+            className="text-(length:--font-section-label) text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
           >
             WHAT AM I LIKE
           </h3>
-          <p className="mt-2 text-[length:var(--font-body-sm)] text-text leading-loose tracking-wide ml-3 w-full break-words whitespace-normal phone-lg:pl-2 [max-width:var(--max-w-text-sm)] desktop-sm:[max-width:var(--max-w-text-lg)] desktop-xl:text-2xl border-l-2 border-grey-2">
+          <p className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word whitespace-normal phone-lg:pl-2 max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 border-grey-2">
             I'm a curious and disciplined developer who enjoys solving UI
             problems with clean, maintainable code. I prioritize performance and
             accessibility, and I'm committed to continuous learning. I work well
@@ -35,7 +35,7 @@ const Description = () => {
           width={768}
           height={1152}
           loading="lazy"
-          className="object-cover self-end phone-lg:-mr-3 desktop-sm:mr-24 [width:var(--author-img-size)]"
+          className="object-cover self-end phone-lg:-mr-3 desktop-sm:mr-24 w-(--author-img-size)"
         />
       </div>
     </section>

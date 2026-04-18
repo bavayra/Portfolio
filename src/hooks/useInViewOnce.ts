@@ -7,7 +7,7 @@ type UseInViewOnceOptions = {
 };
 
 export function useInViewOnce<T extends Element>(
-  options: UseInViewOnceOptions = {},
+  options: UseInViewOnceOptions = {}
 ) {
   const { threshold = 0.1, root = null, rootMargin = "0px" } = options;
 
@@ -24,7 +24,7 @@ export function useInViewOnce<T extends Element>(
           observer.disconnect();
         }
       },
-      { threshold, root, rootMargin },
+      { threshold, root, rootMargin }
     );
 
     observer.observe(ref.current);
@@ -34,5 +34,3 @@ export function useInViewOnce<T extends Element>(
 
   return { ref, inViewOnce };
 }
-
-export default useInViewOnce;

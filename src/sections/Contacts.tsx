@@ -181,7 +181,7 @@ const Contacts = () => {
         topPx={-68} //-68px = top position of the top divider; doesn't depend on screen size
       />
       <h2
-        className="relative self-start text-[length:var(--contact-title-size)] text-accent-red font-bold"
+        className="relative self-start text-(length:--contact-title-size) text-accent-red font-bold"
         id="contacts-heading"
       >
         LET'S TALK?
@@ -199,7 +199,7 @@ const Contacts = () => {
             <form
               id="contact-form"
               onSubmit={handleSubmit}
-              className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-[22rem]"
+              className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88"
             >
               <div>
                 <TextInput

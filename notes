@@ -1,0 +1,95 @@
+about text
+
+text-xs
+phone-sm:text-sm
+phone-md:text-base
+desktop-xl:text-2xl
+
+
+h3 about
+text-2xl
+phone-sm:text-3xl
+phone-lg:text-4xl 
+tablet-md:text-5xl
+
+
+part label
+text-base
+phone-sm:text-xl 
+min-[390px]:text-2xl 
+tablet-md:text-3xl 
+desktop-lg:text-4xl 
+
+pag enum
+phone-sm:text-xl
+tablet-sm:text-2xl 
+desktop-md:text-3xl 
+desktop-xl:text-4xl
+
+max w text ab
+ max-w-15 
+phone-sm:max-w-[17rem] 
+phone-md:max-w-[19rem] 
+phone-lg:max-w-20
+tablet-sm:max-w-[23rem] 
+tablet-md:max-w-[29rem] 
+desktop-sm:max-w-[23rem] 
+desktop-xl:max-w-[32.5rem]
+
+
+sect title label
+phone-sm:text-3xl 
+phone-lg:text-4xl
+tablet-md:text-5xl
+
+skill text
+text-xs
+phone-sm:text-sm 
+desktop-xl:text-base
+
+desk img
+w-24        96
+phone-md:w-36       144
+phone-lg:w-44       176
+tablet-sm:w-[12.5rem]   200
+tablet-md:w-60  240
+desktop-sm:w-[19.5rem] 312
+desktop-xl:w-[27rem]    432
+
+
+proj title
+text-2xl
+phone-sm:text-3xl 
+phone-lg:text-4xl
+desktop-xl:text-5xl
+
+cont title
+text-5xl
+tablet-sm:text-6xl 
+tablet-md:text-7xl 
+desktop-md:text-8xl
+
+head font
+text-xs 
+phone-sm:text-base 
+tablet-sm:text-xl 
+desktop-xl:text-3xl
+
+
+
+
+
+
+
+
+1
+3
+4
+11
+12
+15
+
+
+
+
+
