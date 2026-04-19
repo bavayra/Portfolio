@@ -31,7 +31,7 @@ const About = () => {
         href="/Alix_Bell_Frontend_Dev.pdf"
         download
         aria-label="Download CV (PDF)"
-        className="mt-2 inline-block mr-4 ml-auto phone-sm:mt-4 phone-sm:mr-8 tablet-sm:mr-16 tablet-sm:mt-0 rounded-sm bg-accent-red text-white px-3 py-2 text-sm tablet-md:mr-30 desktop-sm:ml-6 desktop-sm:mt-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-2 focus-visible:rounded-sm"
+        className="mt-2 inline-block mr-4 phone-sm:mt-4 phone-sm:mr-8 tablet-sm:mr-16 tablet-sm:mt-0 rounded-sm bg-accent-red text-white px-3 py-2 text-sm tablet-md:mr-30 desktop-sm:ml-6 desktop-sm:mt-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-2 focus-visible:rounded-sm"
       >
         Download CV <span className="text-xs opacity-70">(PDF)</span>
       </a>
