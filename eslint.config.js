@@ -13,7 +13,7 @@ export default [
   {
     files: ["**/*.{ts,tsx}"],
     languageOptions: {
-      ecmaVersion: 2021,
+      ecmaVersion: "latest",
       globals: globals.browser,
       parserOptions: {
         ecmaFeatures: {
