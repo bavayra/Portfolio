@@ -40,10 +40,6 @@
   }
 }
 
-#dot-pattern-rect {
-  fill: url(#dot-pattern);
-}
-
 @font-face {
   font-display: swap;
   font-family: "Raleway";
@@ -273,10 +269,6 @@
 
 /*DESKTOPS*/
 @media (min-width: 1024px) {
-  #dot-pattern-rect {
-    fill: url(#dot-pattern-lg);
-  }
-
   :root {
     --hero-mt: 0px;
 
