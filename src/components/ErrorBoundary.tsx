@@ -1,4 +1,4 @@
-import { Component, type ReactNode } from "react";
+import { Component, type ReactNode, type ErrorInfo } from "react";
 
 type Props = {
   fallback: ReactNode;
@@ -15,7 +15,7 @@ class ErrorBoundary extends Component<Props, State> {
   static getDerivedStateFromError(): State {
     return { hasError: true };
   }
-  componentDidCatch(error: Error, info: React.ErrorInfo): void {
+  componentDidCatch(error: Error, info: ErrorInfo): void {
     if (import.meta.env.DEV) {
       console.error("[ErrorBoundary]", error, info.componentStack);
     }
