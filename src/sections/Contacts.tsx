@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useRef, type FormEvent } from "react";
-import { normalizeFormData, isValidEmail } from "../utils/normalizeFormData.ts";
-import TextInput from "../components/TextInput.tsx";
-import SocialLinks from "../components/SocialLink.tsx";
+import { normalizeFormData, isValidEmail } from "../utils/normalizeFormData";
+import TextInput from "../components/TextInput";
+import SocialLinks from "../components/SocialLink";
 import Button from "../components/Button";
 import Divider from "../components/Divider";
 

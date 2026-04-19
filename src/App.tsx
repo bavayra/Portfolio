@@ -1,15 +1,15 @@
-import Header from "./sections/Header.tsx";
-import Hero from "./sections/Hero.tsx";
-import SectionTitle from "./sections/SectionTitle.tsx";
-import About from "./sections/About.tsx";
-import Skills from "./sections/Skills.tsx";
-import Description from "./sections/Description.tsx";
+import Header from "./sections/Header";
+import Hero from "./sections/Hero";
+import SectionTitle from "./sections/SectionTitle";
+import About from "./sections/About";
+import Skills from "./sections/Skills";
+import Description from "./sections/Description";
 import { lazy, Suspense } from "react";
-import Footer from "./sections/Footer.tsx";
-import ErrorBoundary from "./components/ErrorBoundary.tsx";
+import Footer from "./sections/Footer";
+import ErrorBoundary from "./components/ErrorBoundary";
 
-const ProjectSection = lazy(() => import("./sections/ProjectSection.tsx"));
-const Contacts = lazy(() => import("./sections/Contacts.tsx"));
+const ProjectSection = lazy(() => import("./sections/ProjectSection"));
+const Contacts = lazy(() => import("./sections/Contacts"));
 
 function ErrorFallback() {
   return (
