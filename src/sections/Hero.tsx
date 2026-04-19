@@ -10,10 +10,10 @@ const Hero = () => {
       <h1 id="hero-heading" className="sr-only">
         Alix Bell — Junior Frontend Developer
       </h1>
-      // I know that making h1 sr-only while the text with the name is hidden
-      from sr isn't ideal and I understand how it's supposed to be, regardless
-      for the design and SEO purposes (indexing both the name and the role) I've
-      decided to go with this approach.
+      {/* h1 is visually hidden and the visible name is aria-hidden. This is a
+      deliberate trade-off: the h1 gives screen readers and search engines both
+      the name and the role together, while the visual design keeps them split
+      across the layout. */}
       <div className="hidden desktop-sm:block desktop-sm:h-(--hero-mt) ml-4 tablet-sm:ml-8 desktop-md:ml-10 relative">
         <div className="absolute left-0 top-4 bottom-0 w-(--hero-div-w) bg-grey-2" />
       </div>
@@ -45,3 +45,7 @@ const Hero = () => {
 };
 
 export default Hero;
+
+{
+  /*I am aware of layout issues and know how to fix them but it will require massive changes to the design and layout. I will fix it later and for now (sadly) I have to leave it as a tech debt */
+}
