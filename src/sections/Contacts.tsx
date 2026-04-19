@@ -266,7 +266,15 @@ const Contacts = () => {
                 >
                   Message
                 </label>
-                {/* TextInput exists as a component because it's reused across the form. The textarea is used once, so I kept it inline — creating a TextArea wrapper for a single use would be premature abstraction. I'm aware of the inconsistency and consider it an acceptable trade-off. */}
+                {/* TextInput exists as a component because it's reused across the form. The textarea is used once, so I kept it inline, creating a TextArea wrapper for a single use would be premature abstraction. I'm aware of the inconsistency and consider it an acceptable trade-off. */}
+                <div>
+                  <label
+                    htmlFor="input-message"
+                    className="text-sm desktop-xl:text-xl phone-md:text-lg text-grey-3"
+                  >
+                    Message
+                  </label>
+                </div>
                 <textarea
                   id="input-message"
                   value={fields.message}
