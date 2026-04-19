@@ -18,20 +18,18 @@ const TextInput = ({
   className = "",
   ...restProps
 }: TextInputProps) => {
-  const baseInputStyles = `
-    w-full
-    mb-2
-    bg-transparent
-    border-0
-    border-b-[2px]
-    border-accent-grey
-    text-base
-    focus:outline-none
-    focus:ring-0
-    ${className}
-  `
-    .trim()
-    .replace(/\s+/g, " ");
+  const baseInputStyles = [
+    "w-full",
+    "mb-2",
+    "bg-transparent",
+    "border-0",
+    "border-b-[2px]",
+    "border-accent-grey",
+    "text-base",
+    "focus:outline-none",
+    "focus:ring-0",
+    className,
+  ].join(" ");
   return (
     <div className="desktop-xl:mb-6">
       <label
