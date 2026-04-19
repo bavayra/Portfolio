@@ -11,19 +11,21 @@ import ErrorBoundary from "./components/ErrorBoundary.tsx";
 const ProjectSection = lazy(() => import("./sections/ProjectSection.tsx"));
 const Contacts = lazy(() => import("./sections/Contacts.tsx"));
 
-const errorFallback = (
-  <div className="flex flex-col items-center justify-center py-20 text-center px-4">
-    <p className="text-text text-lg mb-4">
-      Something went wrong while loading the page.
-    </p>
-    <button
-      onClick={() => window.location.reload()}
-      className="text-accent-red underline text-sm"
-    >
-      Try reloading
-    </button>
-  </div>
-);
+function ErrorFallback() {
+  return (
+    <div className="flex flex-col items-center justify-center py-20 text-center px-4">
+      <p className="text-text text-lg mb-4">
+        Something went wrong while loading the page.
+      </p>
+      <button
+        onClick={() => window.location.reload()}
+        className="text-accent-red underline text-sm"
+      >
+        Try reloading
+      </button>
+    </div>
+  );
+}
 
 function App() {
   return (
@@ -40,7 +42,7 @@ function App() {
         <div className="container mx-auto ">
           <Hero />
         </div>
-        <ErrorBoundary fallback={errorFallback}>
+        <ErrorBoundary fallback={<ErrorFallback />}>
           <Suspense
             fallback={
               <div
