@@ -69,7 +69,10 @@ function App() {
                 <Description />
               </div>
             </section>
-            <div className="bg-(--color-section-title-bg)">
+            <div
+              id="projects-section"
+              className="bg-(--color-section-title-bg)"
+            >
               <div className="container mx-auto px-4">
                 <SectionTitle
                   title="PROJECTS"
@@ -102,7 +105,10 @@ function App() {
                 projectScreenClassName="phone-md:gap-x-2 phone-lg:gap-x-0"
               />
             </div>
-            <div className="bg-(--color-section-title-bg)">
+            <div
+              id="contacts-section"
+              className="bg-(--color-section-title-bg)"
+            >
               <div className="container mx-auto px-4">
                 <SectionTitle
                   title="CONTACTS"

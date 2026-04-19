@@ -37,7 +37,7 @@ const Header = () => {
           <ul className="flex gap-0 desktop-sm:gap-x-4 ">
             <li className="hover:text-accent-red hover:scale-110 active:scale-95 duration-300 hover:font-semibold">
               <a
-                href="#about"
+                href="#about-section"
                 className="inline-flex px-3 py-2 focus:outline-none focus-visible:ring-2 active:text-grey-3  focus-visible:ring-accent-red focus-visible:ring-offset-4 focus-visible:rounded-md focus-visible:ring-offset-bg"
               >
                 ABOUT
@@ -45,7 +45,7 @@ const Header = () => {
             </li>
             <li className="hover:text-accent-red hover:scale-110 active:scale-95 duration-300 hover:font-semibold">
               <a
-                href="#projects"
+                href="#projects-section"
                 className="inline-flex px-3 py-2 focus:outline-none focus-visible:ring-2 active:text-grey-3  focus-visible:ring-accent-red focus-visible:ring-offset-4 focus-visible:rounded-md focus-visible:ring-offset-bg"
               >
                 PROJECTS
@@ -53,7 +53,7 @@ const Header = () => {
             </li>
             <li className="hover:text-accent-red hover:scale-110  active:scale-95 duration-300 hover:font-semibold">
               <a
-                href="#contacts"
+                href="#contacts-section"
                 className="inline-flex px-3 py-2 focus:outline-none focus-visible:ring-2 active:text-grey-3 focus-visible:ring-accent-red focus-visible:ring-offset-4 focus-visible:rounded-md focus-visible:ring-offset-bg"
               >
                 CONTACTS

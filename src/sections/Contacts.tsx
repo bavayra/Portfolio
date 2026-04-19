@@ -167,7 +167,6 @@ const Contacts = () => {
 
   return (
     <section
-      id="contacts"
       aria-labelledby="contacts-title"
       className="relative z-10 mt-20 ml-3 h-auto flex pb-8 flex-col items-center tablet-sm:ml-12 desktop-lg:ml-10 desktop-xl:h-[60vh]"
     >
