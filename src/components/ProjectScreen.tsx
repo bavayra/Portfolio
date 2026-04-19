@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useCallback } from "react";
 import Modal from "./Modal";
 
 type ProjectScreenProps = {
@@ -21,6 +21,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
     alt: string;
   } | null>(null);
   const closeBtnRef = useRef<HTMLButtonElement | null>(null);
+  const handleClose = useCallback(() => setOpenImage(null), []);
 
   return (
     <>
@@ -56,7 +57,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
       {openImage && (
         <Modal
           isOpen={!!openImage}
-          onClose={() => setOpenImage(null)}
+          onClose={handleClose}
           ariaLabel="Project screenshot"
           initialFocusRef={closeBtnRef as React.RefObject<HTMLElement>}
           panelClassName="relative z-10 p-0 bg-transparent flex items-center justify-center"
@@ -64,7 +65,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
           <div className="relative">
             <button
               ref={closeBtnRef}
-              onClick={() => setOpenImage(null)}
+              onClick={handleClose}
               className="absolute top-4 right-4 z-20 rounded-full border border-grey-3 bg-bg/90 px-3 py-1 text-sm text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-1 focus-visible:ring-offset-black/40"
               aria-label="Close screenshot"
             >
