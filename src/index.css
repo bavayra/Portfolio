@@ -27,6 +27,9 @@
 }
 
 /*DARK MODE - doesn't have all the default colors altered, only the ones that need to be changed for better contrast and visibility*/
+
+/*TODO #2: color scheme does not satisfy WCAG*/
+
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #646464;
@@ -292,13 +295,6 @@
 
     --section-top-div-height: 164px;
     --section-bot-div-height: 228px;
-  }
-
-  #dot-pattern-svg {
-    display: none;
-  }
-  #dot-pattern-svg-xl {
-    display: block;
   }
 }
 
