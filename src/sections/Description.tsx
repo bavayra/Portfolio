@@ -31,7 +31,7 @@ const Description = () => {
 
         <img
           src="/AuthorImg.webp"
-          alt="The author Alix Bell"
+          alt="Alix Bell"
           width={768}
           height={1152}
           loading="lazy"
