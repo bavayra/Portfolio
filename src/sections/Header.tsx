@@ -25,7 +25,7 @@ const Header = () => {
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
       inert={!visible || undefined}
-      aria-hidden={!visible}
+      aria-hidden={!visible || undefined}
     >
       <div
         className={` flex items-center justify-end w-full ${visible ? "bg-bg/90 shadow-sm backdrop-blur" : "bg-transparent"} `}
