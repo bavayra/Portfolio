@@ -22,9 +22,9 @@ const Button = ({
     "rounded-sm transform transition-all duration-300 drop-shadow-md tablet-md:py-3 px-6 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed";
   const variantStyles: Record<ButtonVariant, string> = {
     primary:
-      "bg-section-title text-white hover:bg-grey-3 hover:scale-105 focus:ring-accent-red active:bg-grey-3",
+      "bg-section-title text-white hover:bg-grey-3 hover:scale-105 focus-visible:ring-accent-red active:bg-grey-3",
     secondary:
-      "bg-accent-red text-white  tablet-md:text-base hover:bg-text hover:scale-105 focus:ring-accent-red active:bg-text",
+      "bg-accent-red text-white  tablet-md:text-base hover:bg-text hover:scale-105 focus-visible:ring-accent-red active:bg-text",
   };
   const sizeStyles: Record<ButtonSize, string> = {
     small:
