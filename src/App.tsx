@@ -69,7 +69,11 @@ function App() {
             </section>
             <div className="bg-(--color-section-title-bg)">
               <div className="container mx-auto px-4">
-                <SectionTitle title="PROJECTS" dotsCount={2} />
+                <SectionTitle
+                  title="PROJECTS"
+                  dotsCount={2}
+                  headingId="projects-title"
+                />
               </div>
             </div>
             <div id="projects" className="container mx-auto px-4">
@@ -98,7 +102,11 @@ function App() {
             </div>
             <div className="bg-(--color-section-title-bg)">
               <div className="container mx-auto px-4">
-                <SectionTitle title="CONTACTS" dotsCount={3} />
+                <SectionTitle
+                  title="CONTACTS"
+                  dotsCount={3}
+                  headingId="contacts-title"
+                />
               </div>
             </div>
             <div className="container mx-auto px-4">
