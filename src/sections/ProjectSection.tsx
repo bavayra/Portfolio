@@ -1,10 +1,10 @@
 import ExternalProjectLink from "../components/ExternalProjectLink";
 import ProjectScreen from "../components/ProjectScreen";
 import ProjectDesc from "../components/ProjectDesc";
-import { projects } from "../data/projects";
+import { projects, type ProjectId } from "../data/projects";
 
 interface ProjectSectionProps {
-  projectId: string;
+  projectId: ProjectId;
   sectionNumber: string;
   sectionClassName?: string;
   screenContainerClassName?: string;
