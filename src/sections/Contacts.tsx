@@ -214,6 +214,7 @@ const Contacts = () => {
                   }
                   disabled={isSubmitting}
                   required
+                  hasError={!!errors.name}
                   aria-invalid={!!errors.name}
                   aria-describedby={errors.name ? "name-error" : undefined}
                 />
@@ -244,6 +245,7 @@ const Contacts = () => {
                   inputMode="email"
                   disabled={isSubmitting}
                   required
+                  hasError={!!errors.email}
                   aria-invalid={!!errors.email}
                   aria-describedby={errors.email ? "email-error" : undefined}
                 />
@@ -279,7 +281,7 @@ const Contacts = () => {
                   placeholder="Write your message..."
                   required
                   disabled={isSubmitting}
-                  className="focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border border-grey-2 bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg"
+                  className={`focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg ${errors.message ? "border-red-500" : "border-grey-2"}`}
                   aria-invalid={!!errors.message}
                   aria-describedby={
                     errors.message ? "message-error" : undefined

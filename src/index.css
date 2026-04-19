@@ -166,14 +166,6 @@
   ); /* xs -> 3xl font size for the header */
 }
 
-#dot-pattern-svg {
-  display: block;
-}
-
-#dot-pattern-svg-xl {
-  display: none;
-}
-
 @media (min-width: 360px) {
   :root {
     --section-top-div-top: 16px;

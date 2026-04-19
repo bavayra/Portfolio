@@ -5,6 +5,7 @@ interface TextInputProps extends InputHTMLAttributes<HTMLInputElement> {
   id: string;
   value: string;
   onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  hasError?: boolean;
 }
 const TextInput = ({
   label,
@@ -16,6 +17,7 @@ const TextInput = ({
   required,
   inputMode,
   className = "",
+  hasError = false,
   ...restProps
 }: TextInputProps) => {
   const baseInputStyles = [
@@ -24,7 +26,7 @@ const TextInput = ({
     "bg-transparent",
     "border-0",
     "border-b-[2px]",
-    "border-accent-grey",
+    hasError ? "border-red-500" : "border-accent-grey",
     "text-base",
     "focus:outline-none",
     "focus:ring-0",
