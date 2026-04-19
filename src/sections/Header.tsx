@@ -24,6 +24,8 @@ const Header = () => {
       className={`fixed top-0 text-(length:--header-font-size) desktop-xl:py-4 text-text font-medium left-0 w-full z-50 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
+      inert={!visible || undefined}
+      aria-hidden={!visible}
     >
       <div
         className={` flex items-center justify-end w-full ${visible ? "bg-bg/90 shadow-sm backdrop-blur" : "bg-transparent"} `}
