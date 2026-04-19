@@ -46,6 +46,4 @@ const Hero = () => {
 
 export default Hero;
 
-{
-  /*I am aware of layout issues and know how to fix them but it will require massive changes to the design and layout. I will fix it later and for now (sadly) I have to leave it as a tech debt */
-}
+// TODO(#1): replace absolute positioning with CSS Grid - see GitHub issue #1
