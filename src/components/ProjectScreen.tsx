@@ -56,7 +56,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
 
       {openImage && (
         <Modal
-          isOpen={!!openImage}
+          isOpen
           onClose={handleClose}
           ariaLabel="Project screenshot"
           initialFocusRef={closeBtnRef as React.RefObject<HTMLElement>}
