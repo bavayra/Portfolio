@@ -28,8 +28,6 @@
 
 /*DARK MODE - doesn't have all the default colors altered, only the ones that need to be changed for better contrast and visibility*/
 
-/*TODO #2: color scheme does not satisfy WCAG*/
-
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #646464;

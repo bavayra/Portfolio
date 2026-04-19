@@ -45,5 +45,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-// TODO(#1): replace absolute positioning with CSS Grid - see GitHub issue #1
