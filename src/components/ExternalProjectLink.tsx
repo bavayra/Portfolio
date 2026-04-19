@@ -11,27 +11,27 @@ const ExternalProjectLink = ({
   githubUrl,
   projectTitle,
 }: ExternalProjectLinkProps) => {
-  const repoHref = githubUrl ?? "https://github.com/bavayra";
-
   return (
     <div>
-      <div className="flex flex-row mt-2 items-center gap-1 ml-3 tracking-wide">
-        <a
-          href={repoHref}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-text"
-          aria-label={`Check the code on GitHub - ${projectTitle ? projectTitle : "GitHub profile"}`}
-        >
-          <span className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-2xl tablet-sm:text-lg">
-            Check the code on
-          </span>
-          <GitHubIcon
-            aria-hidden="true"
-            className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 hover:scale-110 text-accent-red active:scale-95 duration-300"
-          />
-        </a>
-      </div>
+      {githubUrl && (
+        <div className="flex flex-row mt-2 items-center gap-1 ml-3 tracking-wide">
+          <a
+            href={githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-text"
+            aria-label={`Check the code on GitHub — ${projectTitle ?? "this project"}`}
+          >
+            <span className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-2xl tablet-sm:text-lg">
+              Check the code on
+            </span>
+            <GitHubIcon
+              aria-hidden="true"
+              className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 hover:scale-110 text-accent-red active:scale-95 duration-300"
+            />
+          </a>
+        </div>
+      )}
       {liveUrl && (
         <div className="flex items-center ml-3 phone-lg:ml-3 tablet-sm:text-xl desktop-xl:text-2xl text-accent-red text-base font-semibold ">
           <a
