@@ -20,7 +20,7 @@ export interface Project {
   }[];
 }
 
-const projects = [
+export const projects = [
   {
     id: "dog-shelter",
     title: "Dog Shelter",
@@ -170,4 +170,3 @@ const projects = [
 ] satisfies Project[];
 
 export type ProjectId = (typeof projects)[number]["id"];
-export { projects };
