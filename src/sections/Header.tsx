@@ -34,6 +34,14 @@ const Header = () => {
           aria-label="Main navigation"
         >
           <ul className="flex gap-0 desktop-sm:gap-x-4 ">
+            <li className="hover:scale-110 active:scale-95 duration-300 hover:font-semibold">
+              <a
+                href="#main-content"
+                className="inline-flex px-3 py-2 focus:outline-none text-accent-red font-bold focus-visible:ring-2 active:text-grey-3 focus-visible:ring-accent-red focus-visible:ring-offset-4 focus-visible:rounded-md focus-visible:ring-offset-bg hover:text-grey-3 "
+              >
+                HOME
+              </a>
+            </li>
             <li className="hover:text-accent-red hover:scale-110 active:scale-95 duration-300 hover:font-semibold">
               <a
                 href="#about-section"
