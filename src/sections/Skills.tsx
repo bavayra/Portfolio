@@ -17,26 +17,29 @@ const Skills = () => {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="relative py-8 ml-3 tablet-sm:ml-12 desktop-sm:ml-0"
+      className="relative ml-3 tablet-sm:ml-12 desktop-sm:ml-0"
     >
-      <p
-        className="text-text text-(length:--font-page-number) desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10"
-        aria-hidden="true"
-      >
-        02
-      </p>
-      <h3
-        id="skills-heading"
-        className="text-(length:--font-section-label) text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-sm:flex desktop-sm:justify-end desktop-sm:mr-10 desktop-xl:text-5xl "
-      >
-        MY SKILLS
-      </h3>
-      <div className="mt-6 flex flex-col gap-6 phone-sm:mt-8 tablet-sm:mt-10 border-l-2 border-grey-2 pl-3">
+      <div className="leading-6.5">
+        <p
+          className="text-text text-(length:--font-page-number) desktop-sm:text-right
+           desktop-sm:mr-10"
+          aria-hidden="true"
+        >
+          02
+        </p>
+        <h3
+          id="skills-heading"
+          className="text-(length:--font-section-label) text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-sm:text-right desktop-sm:mr-10 desktop-xl:text-5xl "
+        >
+          MY SKILLS
+        </h3>
+      </div>
+      <div className="flex flex-col gap-4 mt-4 tablet-sm:mt-10 border-l-2 border-grey-2 pl-3">
         {skillGroups.map((group) => (
           <div key={group.label}>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-accent-red phone-sm:text-sm desktop-sm:text-right desktop-sm:mr-10">
+            <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-right desktop-sm:mr-10">
               {group.label}
-            </p>
+            </h4>
             <ul
               className="flex flex-wrap gap-2 desktop-sm:justify-end desktop-sm:mr-10"
               aria-label={group.label}
