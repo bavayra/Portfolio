@@ -3,23 +3,25 @@ const Description = () => {
     <section
       id="description"
       aria-labelledby="description-heading"
-      className="relative py-8 ml-3 tablet-sm:ml-12 desktop-lg:ml-10"
+      className="relative py-8 tablet-sm:ml-12 desktop-lg:ml-10"
     >
       <div className="grid grid-cols-[1fr_auto] items-end gap-x-2 phone-md:gap-x-4">
         <div>
-          <p
-            className="text-text text-(length:--font-page-number)"
-            aria-hidden="true"
-          >
-            03
-          </p>
-          <h3
-            id="description-heading"
-            className="text-(length:--font-section-label) text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
-          >
-            WHAT AM I LIKE
-          </h3>
-          <p className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word whitespace-normal phone-lg:pl-2 max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 border-grey-2">
+          <div className="leading-6.5 ml-3">
+            <p
+              className="text-text text-(length:--font-page-number)"
+              aria-hidden="true"
+            >
+              03
+            </p>
+            <h3
+              id="description-heading"
+              className="text-(length:--font-section-label) text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
+            >
+              WHAT AM I LIKE
+            </h3>
+          </div>
+          <p className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 pl-2 border-grey-2">
             I'm a curious and disciplined developer who enjoys solving UI
             problems with clean, maintainable code. I prioritize performance and
             accessibility, and I'm committed to continuous learning. I work well
