@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 text-(length:--header-font-size) desktop-xl:py-4 text-text font-medium left-0 w-full z-50 transition-transform duration-300 ${
+      className={`fixed top-0 text-sm desktop-xl:py-4 text-text font-medium left-0 w-full z-50 transition-transform duration-300 ${
         visible ? "translate-y-0" : "-translate-y-full"
       }`}
       inert={!visible || undefined}
