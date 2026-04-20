@@ -1,5 +1,5 @@
 import { useEffect, useRef, type RefObject, type ReactNode } from "react";
-import ReactDOM from "react-dom";
+import { createPortal } from "react-dom";
 
 type ModalProps = {
   isOpen: boolean;
@@ -85,7 +85,7 @@ export default function Modal({
 
   if (!isOpen) return null;
 
-  return ReactDOM.createPortal(
+  return createPortal(
     <div
       role="dialog"
       aria-modal="true"
