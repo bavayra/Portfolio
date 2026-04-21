@@ -52,15 +52,17 @@ function App() {
               />
             }
           >
-            <section id="about-section" aria-labelledby="about-title">
-              <div className="bg-(--color-section-title-bg)">
-                <div className="container mx-auto px-4">
-                  <SectionTitle title="ABOUT ME" headingId="about-title" />
-                </div>
+            <section
+              id="about-section"
+              aria-labelledby="about-title"
+              className="bg-(--color-section-title-bg)"
+            >
+              <div className="container mx-auto px-4">
+                <SectionTitle title="ABOUT ME" headingId="about-title" />
               </div>
 
-              <div className="container mx-auto px-4">
-                <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2  gap-8">
+              <div className="container mx-auto px-4 bg-bg">
+                <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
                   <About />
                   <Skills />
                 </div>
