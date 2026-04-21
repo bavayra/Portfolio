@@ -99,7 +99,7 @@
   --section-bot-div-height: 88px; /*the height of the bottom divider in the section*/
   --section-bot-div-top: 148px; /*the top position of the bottom divider in the section*/
 
-  --contacts-div-bot-top: 52px; /*the top position of the bottom divider in the contacts section*/
+  --contacts-div-bot-top: 68px; /*the top position of the bottom divider in the contacts section*/
   --contacts-div-bot-height: 550px; /*the height of the bottom divider in the contacts section*/
 
   --h1-size: clamp(

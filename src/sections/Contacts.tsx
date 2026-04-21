@@ -172,8 +172,8 @@ const Contacts = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={58}
-        //58px = height of the top divider; doesn't depend on screen size
+        heightPx={72}
+        //72px = height of the top divider; doesn't depend on screen size
         leftPx={0}
         color="grey-2"
         topPx={-68} //-68px = top position of the top divider; doesn't depend on screen size
@@ -281,7 +281,7 @@ const Contacts = () => {
                   placeholder="Write your message..."
                   required
                   disabled={isSubmitting}
-                  className={`focus:border-text mb-2 min-h-24 w-full resize-none rounded-md border bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg ${errors.message ? "border-red-500" : "border-grey-2"}`}
+                  className={`focus:border-text mb-2 min-h-24 w-full resize-none rounded-lg border bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg ${errors.message ? "border-red-500" : "border-grey-2"}`}
                   aria-invalid={!!errors.message}
                   aria-describedby={
                     errors.message ? "message-error" : undefined
@@ -315,7 +315,7 @@ const Contacts = () => {
                   ref={successRef}
                   role="status"
                   tabIndex={-1}
-                  className="mt-4 rounded-md bg-green-100 p-3 text-center text-sm text-green-700"
+                  className="mt-4 rounded-lg bg-green-100 p-3 text-center text-sm text-green-700"
                 >
                   {successMessage}
                 </div>
@@ -323,7 +323,7 @@ const Contacts = () => {
               {errorMessage && (
                 <div
                   role="alert"
-                  className="mt-4 rounded-md bg-red-100 p-3 text-center text-sm text-red-700"
+                  className="mt-4 rounded-lg bg-red-100 p-3 text-center text-sm text-red-700"
                 >
                   {errorMessage}
                 </div>
