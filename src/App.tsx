@@ -81,7 +81,7 @@ function App() {
                 />
               </div>
             </div>
-            <div id="projects" className="container mx-auto px-4">
+            <div id="projects" className="container mx-auto">
               <ProjectSection
                 projectId="weather-app"
                 sectionNumber="04"
@@ -92,7 +92,7 @@ function App() {
               <ProjectSection
                 projectId="dog-shelter"
                 sectionNumber="05"
-                sectionClassName="pt-8 pb-8 desktop-sm:pb-0 desktop-md:pb-10"
+                sectionClassName="py-8 desktop-sm:pb-0 desktop-md:pb-10"
                 screenContainerClassName="desktop-md:-mt-2"
                 projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12"
               />

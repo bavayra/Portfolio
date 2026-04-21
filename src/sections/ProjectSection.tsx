@@ -27,7 +27,7 @@ const ProjectSection = ({
     <section
       id={`${projectId}-section`}
       aria-labelledby={`${projectId}-heading`}
-      className={`relative ml-3 h-auto tablet-sm:ml-12 desktop-lg:ml-10 ${sectionClassName}`}
+      className={`relative h-auto tablet-sm:ml-12 desktop-lg:ml-10 ${sectionClassName}`}
     >
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1">
@@ -44,7 +44,7 @@ const ProjectSection = ({
             {project.title}
           </h3>
 
-          <p className="mt-2 text-(length:--font-body-sm) border-l-2 border-grey-2 pl-3 text-text leading-loose tracking-wide ml-3 w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl">
+          <p className="mt-2 text-(length:--font-body-sm) border-l-2 border-grey-2 pl-3 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl">
             {project.descriptionShort}
           </p>
           <ExternalProjectLink
@@ -55,7 +55,7 @@ const ProjectSection = ({
         </div>
 
         <div
-          className={`ml-3 phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 ${screenContainerClassName}`}
+          className={`phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 ${screenContainerClassName}`}
         >
           <ProjectScreen
             projectId={project.id}
