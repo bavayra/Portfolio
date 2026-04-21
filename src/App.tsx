@@ -92,14 +92,14 @@ function App() {
               <ProjectSection
                 projectId="dog-shelter"
                 sectionNumber="05"
-                sectionClassName="py-8 desktop-sm:pb-0 desktop-md:pb-10"
-                screenContainerClassName="desktop-md:-mt-2"
-                projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12"
+                sectionClassName="desktop-sm:pb-0 desktop-md:pb-10 ml-8"
+                screenContainerClassName="desktop-md:-mt-2 w-[18rem]"
+                projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12 ml-3"
               />
               <ProjectSection
                 projectId="portfolio-project"
                 sectionNumber="06"
-                sectionClassName="pt-8 pb-20 desktop-md:pt-0"
+                sectionClassName="pt-8 pb-20 desktop-md:pt-0 ml-8"
                 screenContainerClassName="rounded-xl"
                 projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
                 projectScreenClassName="phone-md:gap-x-2 phone-lg:gap-x-0"
