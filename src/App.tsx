@@ -99,9 +99,9 @@ function App() {
               <ProjectSection
                 projectId="portfolio-project"
                 sectionNumber="06"
-                sectionClassName="pt-8 pb-20 desktop-md:pt-0 ml-8"
-                screenContainerClassName="rounded-xl"
-                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0"
+                sectionClassName="pt-8 pb-14 desktop-md:pt-0 ml-8"
+                screenContainerClassName="rounded-xl w-[18rem]"
+                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0 ml-3"
                 projectScreenClassName="phone-md:gap-x-2 phone-lg:gap-x-0"
               />
             </div>

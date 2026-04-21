@@ -133,7 +133,7 @@ export const projects = [
     imageClasses: {
       0: "mx-auto w-34 phone-md:w-38 phone-lg:w-44 tablet-sm:w-54 tablet-md:-mt-5 tablet-md:w-60 border-2 border-grey-2 desktop-sm:mt-4 desktop-sm:w-40 desktop-xl:w-52",
       1: "-mt-4 mx-auto w-34 phone-md:-mt-8 phone-md:w-38 phone-lg:-mt-12 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-54 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-6 desktop-sm:w-40 desktop-lg:-mt-9 desktop-md:-mt-4 desktop-xl:w-52",
-      2: "-mt-14 mx-auto w-30 phone-md:-mt-11 phone-md:w-38 phone-lg:w-44 tablet-sm:-mt-13 tablet-sm:w-54 tablet-md:-mt-22 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-9 desktop-sm:w-40 desktop-md:translate-y-2/3 desktop-xl:w-52",
+      2: "-mt-6 mx-auto w-30 phone-md:-mt-11 phone-md:w-38 phone-lg:w-44 tablet-sm:-mt-13 tablet-sm:w-54 tablet-md:-mt-22 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-9 desktop-sm:w-40 desktop-md:translate-y-2/3 desktop-xl:w-52",
       3: "mx-auto w-30 phone-md:w-38 phone-lg:w-44 tablet-sm:mt-3 tablet-sm:w-60 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-40 desktop-md:translate-y-[120%] desktop-xl:w-52",
     },
     images: [
