@@ -17,14 +17,31 @@ const SOCIAL_NETWORKS = [
     name: "Discord",
     icon: DiscordIcon,
     url: "https://www.discord.com/users/285883834749157388",
+    gridClass: "col-start-1 row-start-1",
   },
-  { name: "GitHub", icon: GitHubIcon, url: "https://www.github.com/bavayra" },
-  { name: "Telegram", icon: TelegramIcon, url: "https://t.me/bavayra" },
-  { name: "Gmail", icon: GmailIcon, url: "mailto:x.bavayra@gmail.com" },
+  {
+    name: "GitHub",
+    icon: GitHubIcon,
+    url: "https://www.github.com/bavayra",
+    gridClass: "col-start-3 row-start-1",
+  },
+  {
+    name: "Telegram",
+    icon: TelegramIcon,
+    url: "https://t.me/bavayra",
+    gridClass: "col-start-5 row-start-1",
+  },
+  {
+    name: "Gmail",
+    icon: GmailIcon,
+    url: "mailto:x.bavayra@gmail.com",
+    gridClass: "col-start-2 row-start-2",
+  },
   {
     name: "LinkedIn",
     icon: LinkedInIcon,
     url: "https://www.linkedin.com/in/bavayra",
+    gridClass: "col-start-4 row-start-2",
   },
 ] as const;
 
@@ -47,9 +64,7 @@ const SocialLinks = ({
   const iconClasses = `${ICON_SIZE_CLASSES[size]} border-none rounded-full`;
 
   return (
-    <div
-      className={`flex items-center desktop-sm:mx-4 desktop-sm:my-16 justify-center ${className ?? ""}`}
-    >
+    <div className={`desktop-sm:mx-4 desktop-sm:my-16 ${className ?? ""}`}>
       {SOCIAL_NETWORKS.map((social) => {
         const isExternalUrl = social.url.startsWith("http");
         return (
@@ -58,7 +73,7 @@ const SocialLinks = ({
             href={social.url}
             target={isExternalUrl ? "_blank" : undefined}
             rel={isExternalUrl ? "noopener noreferrer" : undefined}
-            className={wrapperClass}
+            className={`${wrapperClass} ${social.gridClass}`}
             aria-label={social.name}
           >
             <Icon as={social.icon} className={iconClasses} aria-hidden="true" />

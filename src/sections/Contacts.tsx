@@ -333,7 +333,7 @@ const Contacts = () => {
         </div>
         <SocialLinks
           size="md"
-          className="grid grid-rows-2 grid-cols-3 gap-2 mt-8 tablet-sm:gap-x-10 tablet-sm:mx-auto tablet-sm:gap-y-4 desktop-xl:my-28 desktop-xl:mx-4"
+          className="flex flex-wrap justify-center mt-6 tablet-sm:inline-grid tablet-sm:grid-rows-2 tablet-sm:place-items-center tablet-sm:gap-x-10 tablet-sm:mx-auto tablet-sm:gap-y-4 desktop-xl:my-28 desktop-xl:mx-4"
         />
       </div>
     </section>

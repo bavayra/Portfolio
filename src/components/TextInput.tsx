@@ -26,7 +26,7 @@ const TextInput = ({
     "bg-transparent",
     "border-0",
     "border-b-[2px]",
-    hasError ? "border-red-500" : "border-accent-grey",
+    hasError ? "border-red-500" : "border-grey-2",
     "text-base",
     "focus:outline-none",
     "focus:ring-0",
