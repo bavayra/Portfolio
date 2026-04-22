@@ -94,8 +94,8 @@ function App() {
                 projectId="dog-shelter"
                 sectionNumber="05"
                 sectionClassName="desktop-sm:pb-0 desktop-md:pb-10 ml-8"
-                screenContainerClassName="desktop-md:-mt-2 w-[18rem]"
-                projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12 ml-3"
+                screenContainerClassName="desktop-md:-mt-2 mr-8"
+                projectDescClassName="desktop-sm:-translate-y-[18%] desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12 ml-4"
               />
               <ProjectSection
                 projectId="portfolio-project"

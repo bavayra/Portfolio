@@ -28,7 +28,7 @@ const Hero = () => {
           Portfolio
         </p>
       </div>
-      <div className="h-[clamp(4rem,32vh,14rem)] mt-2 ml-4 tablet-sm:ml-8 desktop-md:ml-10 relative">
+      <div className="h-[22rem] mt-2 ml-4 tablet-sm:ml-8 desktop-md:ml-10 relative">
         <div className="absolute left-4 top-0 bottom-8 w-(--hero-div-w) bg-grey-2" />
         <p
           aria-hidden="true"
