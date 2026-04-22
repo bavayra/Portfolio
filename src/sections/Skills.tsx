@@ -17,7 +17,7 @@ const Skills = () => {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="relative ml-3 tablet-sm:ml-12 desktop-sm:ml-0"
+      className="relative ml-3 tablet-sm:ml-12 desktop-sm:ml-0 mb-4"
     >
       <div className="leading-6.5">
         <p

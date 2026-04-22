@@ -3,7 +3,7 @@ const About = () => {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="relative py-8 ml-3 tablet-sm:ml-12 tablet-md:pb-0 desktop-lg:ml-10 desktop-xl:pb-12"
+      className="relative py-8 mb-4 ml-3 tablet-sm:ml-12 tablet-md:pb-0 desktop-lg:ml-10 desktop-xl:pb-12"
     >
       <div className="leading-6.5">
         <p
