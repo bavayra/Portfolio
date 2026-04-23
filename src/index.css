@@ -109,12 +109,6 @@
 
   --name-year-size: 1.5rem; /*the font size of the name and year in the hero section*/
 
-  --section-title-size: clamp(
-    24px,
-    calc(10vw - 12px),
-    36px
-  ); /*the font size of the section titles (title pages) */
-
   --part-label: clamp(1.2rem, calc(0.618rem + 2.909vw), 2.8rem);
   /*1.2rem → 2.8rem font size for sections' parts' labels (Part 1, Part 2, etc.) */
 
