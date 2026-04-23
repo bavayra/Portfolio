@@ -19,7 +19,7 @@ const Hero = () => {
       </div>
 
       <div
-        className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto_auto] ml-4 phone-md:ml-4 tablet-sm:ml-8 desktop-md:ml-10 relative"
+        className="grid grid-cols-[auto_1fr] grid-rows-[auto_auto_auto] ml-3 phone-md:ml-4 tablet-sm:ml-8 desktop-md:ml-10 relative"
         aria-hidden="true"
       >
         <p className="col-start-1 row-start-1 pl-3 text-(length:--name-year-size) text-grey-2 leading-8 phone-md:leading-10 phone-lg:leading-12 desktop-md:leading-16">
@@ -30,11 +30,11 @@ const Hero = () => {
           Portfolio
         </p>
 
-        <p className="col-start-1 col-span-2 row-start-3 pl-[50%] phone-md:pl-[55%] tablet-sm:pl-[45%] desktop-sm:pl-[40%] desktop-md:pl-[35%] desktop-lg:pl-[30%] text-(length:--name-year-size) font-bold text-accent-red tracking-wider desktop-lg:text-[3.5rem] desktop-xl:text-7xl leading-10 phone-md:leading-12 tablet-sm:leading-14 desktop-md:leading-18 desktop-lg:leading-20">
+        <p className="col-start-1 col-span-2 row-start-3 pl-[40%] phone-md:pl-[55%] tablet-sm:pl-[45%] desktop-sm:pl-[40%] desktop-md:pl-[35%] desktop-lg:pl-[30%] text-(length:--name-year-size) font-bold text-accent-red tracking-wider desktop-lg:text-[3.5rem] desktop-xl:text-7xl leading-10 phone-md:leading-12 tablet-sm:leading-14 desktop-md:leading-18 desktop-lg:leading-20">
           ALIX BELL
         </p>
       </div>
-      <div className="absolute left-4 top-[clamp(5rem,calc(21.6667vw+2px),8.25rem)] bottom-0  min-h-[30vh] w-(--hero-div-w) bg-grey-2" />
+      <div className="absolute left-7 top-28 min-h-[28vh] w-(--hero-div-w) bg-grey-2" />
       <div className="mt-auto">
         <DotPattern />
       </div>

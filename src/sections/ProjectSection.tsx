@@ -32,14 +32,14 @@ const ProjectSection = ({
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9">
           <p
-            className="text-text text-(length:--font-page-number)"
+            className="text-text text-(length:--font-page-number) leading-5"
             aria-hidden="true"
           >
             {sectionNumber}
           </p>
           <h3
             id={`${projectId}-heading`}
-            className="text-(length:--font-section-label) text-grey-2 font-medium tablet-md:my-2 uppercase"
+            className="text-[2rem] text-grey-2 font-medium tablet-md:my-2 uppercase"
           >
             {project.title}
           </h3>
