@@ -22,56 +22,6 @@ export interface Project {
 
 export const projects = [
   {
-    id: "dog-shelter",
-    title: "Dog Shelter",
-    descriptionShort:
-      "A web app for a real dog shelter - browse adoptable dogs, filter by breed, age or gender, swipe through each dog's photo gallery, check shelter statistics, and reach out through a contact form with built‑in validation.",
-    descriptionFull:
-      "Built with React 19, TypeScript, and Tailwind CSS. Uses a custom useDogFilters hook, interactive detail modals, DOMPurify‑sanitized form inputs with 30‑second rate limiting, and AVIF/WebP image optimization. Mobile‑first and accessible (ARIA, keyboard navigation), code‑split for performance, with ESLint, Prettier, and Husky pre‑commit hooks.",
-    position: { row: 1, col: 1 },
-    technologies: ["React", "TypeScript", "Tailwind", "Vite"],
-    githubUrl: "https://github.com/bavayra/dog-shelter.git",
-    liveUrl: "https://dogshelter-project.netlify.app/",
-    imageClasses: {
-      0: "mx-auto phone-md:mt-3 phone-md:w-36 phone-lg:-mt-5 phone-lg:w-44 tablet-md:w-60 desktop-sm:mt-4 desktop-sm:w-40 desktop-md:-mt-2 desktop-xl:w-52",
-      1: "-mt-4 mx-auto phone-md:-mt-25 phone-md:w-36 phone-lg:-mt-14 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-52 tablet-md:w-60 desktop-sm:-mt-6 desktop-sm:w-40 desktop-md:mt-8 desktop-xl:w-52",
-      2: "mx-auto phone-md:w-38 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-md:translate-y-full desktop-xl:w-52",
-      3: "-mt-8 mx-auto phone-md:-mt-22 phone-md:w-36 phone-lg:-mt-26 phone-lg:w-44 tablet-sm:-mt-28 tablet-sm:w-52 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:-mt-24 desktop-sm:w-40 desktop-xl:w-52",
-    },
-    images: [
-      {
-        thumbnail: "/screens/dog-shelter-screen/dog-shelter-1280-thumb.webp",
-        full: "/screens/dog-shelter-screen/dog-shelter-1280.webp",
-        alt: "Dog Shelter desktop view 1280px",
-        width: 800,
-        height: 2116,
-      },
-      {
-        thumbnail: "/screens/dog-shelter-screen/dog-shelter-1440-thumb.webp",
-        full: "/screens/dog-shelter-screen/dog-shelter-1440.webp",
-        alt: "Dog Shelter desktop view 1440px",
-        width: 800,
-        height: 1783,
-      },
-      {
-        thumbnail:
-          "/screens/dog-shelter-screen/dog-shelter-1280-cards-thumb.webp",
-        full: "/screens/dog-shelter-screen/dog-shelter-1280-cards.webp",
-        alt: "Dog Shelter desktop view 1280px with cards expanded",
-        width: 800,
-        height: 488,
-      },
-      {
-        thumbnail: "/screens/dog-shelter-screen/dog-shelter-390-thumb.webp",
-        full: "/screens/dog-shelter-screen/dog-shelter-375.webp",
-        alt: "Dog Shelter mobile view 375px",
-        width: 800,
-        height: 1565,
-      },
-    ],
-  },
-
-  {
     id: "weather-app",
     title: "Weather App",
     descriptionShort:
@@ -120,6 +70,55 @@ export const projects = [
     ],
   },
   {
+    id: "dog-shelter",
+    title: "Dog Shelter",
+    descriptionShort:
+      "A web app for a real dog shelter - browse adoptable dogs, filter by breed, age or gender, swipe through each dog's photo gallery, check shelter statistics, and reach out through a contact form with built‑in validation.",
+    descriptionFull:
+      "Built with React 19, TypeScript, and Tailwind CSS. Uses a custom useDogFilters hook, interactive detail modals, DOMPurify‑sanitized form inputs with 30‑second rate limiting, and AVIF/WebP image optimization. Mobile‑first and accessible (ARIA, keyboard navigation), code‑split for performance, with ESLint, Prettier, and Husky pre‑commit hooks.",
+    position: { row: 1, col: 1 },
+    technologies: ["React", "TypeScript", "Tailwind", "Vite"],
+    githubUrl: "https://github.com/bavayra/dog-shelter.git",
+    liveUrl: "https://dogshelter-project.netlify.app/",
+    imageClasses: {
+      0: "mx-auto phone-md:mt-3 phone-md:w-36 phone-lg:-mt-5 phone-lg:w-44 tablet-md:w-60 desktop-sm:mt-4 desktop-sm:w-40 desktop-md:-mt-2 desktop-xl:w-52",
+      1: "-mt-24 mx-auto phone-md:-mt-25 phone-md:w-36 phone-lg:-mt-14 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-52 tablet-md:w-60 desktop-sm:-mt-6 desktop-sm:w-40 desktop-md:mt-8 desktop-xl:w-52",
+      2: "mx-auto phone-md:w-38 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-md:translate-y-full desktop-xl:w-52",
+      3: "-mt-17 mx-auto phone-md:-mt-22 phone-md:w-36 phone-lg:-mt-26 phone-lg:w-44 tablet-sm:-mt-28 tablet-sm:w-52 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:-mt-24 desktop-sm:w-40 desktop-xl:w-52",
+    },
+    images: [
+      {
+        thumbnail: "/screens/dog-shelter-screen/dog-shelter-1280-thumb.webp",
+        full: "/screens/dog-shelter-screen/dog-shelter-1280.webp",
+        alt: "Dog Shelter desktop view 1280px",
+        width: 800,
+        height: 2116,
+      },
+      {
+        thumbnail: "/screens/dog-shelter-screen/dog-shelter-1440-thumb.webp",
+        full: "/screens/dog-shelter-screen/dog-shelter-1440.webp",
+        alt: "Dog Shelter desktop view 1440px",
+        width: 800,
+        height: 1783,
+      },
+      {
+        thumbnail:
+          "/screens/dog-shelter-screen/dog-shelter-1280-cards-thumb.webp",
+        full: "/screens/dog-shelter-screen/dog-shelter-1280-cards.webp",
+        alt: "Dog Shelter desktop view 1280px with cards expanded",
+        width: 800,
+        height: 488,
+      },
+      {
+        thumbnail: "/screens/dog-shelter-screen/dog-shelter-390-thumb.webp",
+        full: "/screens/dog-shelter-screen/dog-shelter-375.webp",
+        alt: "Dog Shelter mobile view 375px",
+        width: 800,
+        height: 1565,
+      },
+    ],
+  },
+  {
     id: "portfolio-project",
     title: "This Portfolio",
     descriptionShort:
@@ -131,9 +130,9 @@ export const projects = [
     githubUrl: "https://github.com/bavayra/portfolio.git",
     liveUrl: "https://alix-bell-portfolio.netlify.app",
     imageClasses: {
-      0: "mx-auto w-34 phone-md:w-36 phone-md:-mt-10 phone-lg:w-44 tablet-sm:w-54 tablet-md:-mt-5 tablet-md:w-60 border-2 border-grey-2 desktop-sm:mt-4 desktop-sm:w-40 desktop-xl:w-52",
+      0: "mx-auto -mt-13 w-34 phone-md:w-36 phone-md:-mt-10 phone-lg:w-44 tablet-sm:w-54 tablet-md:-mt-5 tablet-md:w-60 border-2 border-grey-2 desktop-sm:mt-4 desktop-sm:w-40 desktop-xl:w-52",
       1: "-mt-4 mx-auto w-34 phone-md:-mt-3 phone-md:w-36 phone-lg:-mt-12 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-54 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-6 desktop-sm:w-40 desktop-lg:-mt-9 desktop-md:-mt-4 desktop-xl:w-52",
-      2: "-mt-6 mx-auto w-30 phone-md:-mt-13 phone-md:w-36 phone-lg:w-44 tablet-sm:-mt-13 tablet-sm:w-54 tablet-md:-mt-22 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-9 desktop-sm:w-40 desktop-md:translate-y-2/3 desktop-xl:w-52",
+      2: "-mt-12 mx-auto w-30 phone-md:-mt-13 phone-md:w-36 phone-lg:w-44 tablet-sm:-mt-13 tablet-sm:w-54 tablet-md:-mt-22 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-9 desktop-sm:w-40 desktop-md:translate-y-2/3 desktop-xl:w-52",
       3: "mx-auto w-30 phone-md:w-36 phone-lg:w-44 tablet-sm:mt-3 tablet-sm:w-60 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-40 desktop-md:translate-y-[120%] desktop-xl:w-52",
     },
     images: [
