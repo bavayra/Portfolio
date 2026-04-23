@@ -44,7 +44,7 @@ const ProjectSection = ({
             {project.title}
           </h3>
           <div className=" border-l-2 border-grey-2">
-            <p className="mt-2 text-(length:--font-body-sm) pl-3 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl">
+            <p className="mt-2 text-(length:--font-body-sm) pl-2 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl">
               {project.descriptionShort}
             </p>
             <ExternalProjectLink
