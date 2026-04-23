@@ -7,7 +7,7 @@ const Description = () => {
     >
       <div className="grid grid-cols-[1fr_auto] items-end gap-x-2 phone-md:gap-x-4">
         <div>
-          <div className="leading-6.5 ml-3">
+          <div className="leading-6.5 ml-3 phone-lg:leading-7.5">
             <p
               className="text-text text-(length:--font-page-number)"
               aria-hidden="true"
@@ -16,12 +16,12 @@ const Description = () => {
             </p>
             <h3
               id="description-heading"
-              className="text-[1.8rem] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
+              className="text-[2.2rem] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
             >
               WHAT AM I LIKE
             </h3>
           </div>
-          <p className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 pl-2 border-grey-2">
+          <p className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word  phone-lg:mt-4 whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 pl-2 border-grey-2">
             I'm a curious and disciplined developer who enjoys solving UI
             problems with clean, maintainable code. I prioritize performance and
             accessibility, and I'm committed to continuous learning. I work well

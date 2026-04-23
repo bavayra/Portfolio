@@ -49,7 +49,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
             </button>
           ))}
         </div>
-        <p className="text-center text-sm bg-section-title w-64 p-2 mx-auto rounded-lg text-accent-red font-semibold my-2 tracking-wide phone-lg:text-base phone-lg:w-70 tablet-sm:text-base tablet-sm:w-74 desktop-sm:hidden">
+        <p className="text-center text-sm bg-section-title w-64 p-2 mx-auto rounded-lg text-accent-red font-semibold my-2 tracking-wide phone-lg:text-base phone-lg:w-74 desktop-sm:hidden">
           {props.technologies.join(", ")}
         </p>
       </div>
