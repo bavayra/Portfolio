@@ -29,7 +29,7 @@ const Skills = () => {
         </p>
         <h3
           id="skills-heading"
-          className="text-(length:--font-section-label) text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-sm:text-right desktop-sm:mr-10 desktop-xl:text-5xl "
+          className="text-[1.8rem] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-sm:text-right desktop-sm:mr-10 desktop-xl:text-5xl "
         >
           MY SKILLS
         </h3>
