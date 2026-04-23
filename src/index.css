@@ -203,7 +203,7 @@
     --hero-mt: clamp(40px, calc(-515.692px + 64.615vh), 208px);
     --name-year-size: 2.25rem;
 
-    --section-top-div-height: 124px;
+    --section-top-div-height: 116px;
     --section-bot-div-top: clamp(228px, calc(-116px + 40vh), 244px);
     --section-bot-div-height: 184px;
   }
