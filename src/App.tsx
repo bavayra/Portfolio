@@ -39,7 +39,7 @@ function App() {
       <Header />
 
       <main id="main-content" tabIndex={-1} className="bg-bg outline-none">
-        <div className="container mx-auto ">
+        <div className="w-full mx-auto ">
           <Hero />
         </div>
         <ErrorBoundary fallback={<ErrorFallback />}>
@@ -54,13 +54,13 @@ function App() {
           >
             <section id="about-section" aria-labelledby="about-title">
               <div className="bg-(--color-section-title-bg)">
-                <div className="container mx-auto px-4">
+                <div className="w-full mx-auto px-4">
                   <SectionTitle title="ABOUT ME" headingId="about-title" />
                 </div>
               </div>
 
               <div className="bg-bg">
-                <div className="container mx-auto px-4">
+                <div className="w-full mx-auto px-4">
                   <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
                     <About />
                     <Skills />
@@ -74,7 +74,7 @@ function App() {
               id="projects-section"
               className="bg-(--color-section-title-bg)"
             >
-              <div className="container mx-auto px-4">
+              <div className="w-full mx-auto px-4">
                 <SectionTitle
                   title="PROJECTS"
                   dotsCount={2}
@@ -82,7 +82,7 @@ function App() {
                 />
               </div>
             </div>
-            <div id="projects" className="container mx-auto">
+            <div id="projects" className="w-full mx-auto">
               <ProjectSection
                 projectId="weather-app"
                 sectionNumber="04"
@@ -109,7 +109,7 @@ function App() {
               id="contacts-section"
               className="bg-(--color-section-title-bg)"
             >
-              <div className="container mx-auto px-4">
+              <div className="w-full mx-auto px-4">
                 <SectionTitle
                   title="CONTACTS"
                   dotsCount={3}
@@ -117,7 +117,7 @@ function App() {
                 />
               </div>
             </div>
-            <div className="container mx-auto px-4">
+            <div className="w-full mx-auto px-4">
               <Contacts />
             </div>
           </Suspense>
