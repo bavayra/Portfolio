@@ -34,7 +34,7 @@ const Hero = () => {
           ALIX BELL
         </p>
       </div>
-      <div className="absolute left-4 top-[clamp(5rem,calc(21.6667vw+2px),8.25rem)] bottom-0  min-h-[30vh] w-(--hero-div-w) bg-grey-2 " />
+      <div className="absolute left-4 top-[clamp(5rem,calc(21.6667vw+2px),8.25rem)] bottom-0  min-h-[30vh] w-(--hero-div-w) bg-grey-2" />
       <div className="mt-auto">
         <DotPattern />
       </div>
