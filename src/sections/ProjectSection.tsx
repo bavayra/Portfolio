@@ -27,10 +27,10 @@ const ProjectSection = ({
     <section
       id={`${projectId}-section`}
       aria-labelledby={`${projectId}-heading`}
-      className={`relative h-auto tablet-sm:ml-12 desktop-lg:ml-10 ${sectionClassName}`}
+      className={`relative h-auto tablet-sm:ml-9 desktop-lg:ml-10 ${sectionClassName}`}
     >
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
-        <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9">
+        <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12">
           <p
             className="text-text text-(length:--font-page-number) leading-5"
             aria-hidden="true"
@@ -39,11 +39,11 @@ const ProjectSection = ({
           </p>
           <h3
             id={`${projectId}-heading`}
-            className="text-[2rem] text-grey-2 font-medium tablet-md:my-2 uppercase"
+            className="text-[2.75rem] text-grey-2 font-medium tablet-md:my-2 uppercase"
           >
             {project.title}
           </h3>
-          <div className=" border-l-2 border-grey-2">
+          <div className="border-l-2 border-grey-2">
             <p className="mt-2 text-(length:--font-body-sm) pl-2 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl">
               {project.descriptionShort}
             </p>

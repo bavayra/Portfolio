@@ -33,7 +33,7 @@ const ExternalProjectLink = ({
         </div>
       )}
       {liveUrl && (
-        <div className="flex items-center ml-2 tablet-sm:text-xl desktop-xl:text-2xl text-accent-red text-base font-semibold ">
+        <div className="flex items-center ml-2 tablet-sm:text-xl desktop-xl:text-2xl text-accent-red text-base font-semibold tablet-sm:-mt-2">
           <a
             href={liveUrl}
             target="_blank"
