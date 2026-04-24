@@ -81,10 +81,10 @@ export const projects = [
     githubUrl: "https://github.com/bavayra/dog-shelter.git",
     liveUrl: "https://dogshelter-project.netlify.app/",
     imageClasses: {
-      0: "mx-auto phone-md:mt-3 phone-md:w-36 phone-lg:-mt-3 phone-lg:w-44 tablet-md:w-60 desktop-sm:mt-4 desktop-sm:w-40 desktop-md:-mt-2 desktop-xl:w-52",
-      1: "-mt-24 mx-auto phone-md:-mt-25 phone-md:w-36 phone-lg:-mt-36 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-52 tablet-md:w-60 desktop-sm:-mt-6 desktop-sm:w-40 desktop-md:mt-8 desktop-xl:w-52",
+      0: "mx-auto phone-md:mt-3 phone-md:w-36 phone-lg:-mt-3 phone-lg:w-44 tablet-sm:w-48 tablet-md:w-60 desktop-sm:mt-4 desktop-sm:w-40 desktop-md:-mt-2 desktop-xl:w-52",
+      1: "-mt-24 mx-auto phone-md:-mt-25 phone-md:w-36 phone-lg:-mt-36 phone-lg:w-44 tablet-sm:-mt-30 tablet-sm:w-52 tablet-md:w-60 desktop-sm:-mt-6 desktop-sm:w-40 desktop-md:mt-8 desktop-xl:w-52",
       2: "mx-auto phone-md:w-38 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-md:translate-y-full desktop-xl:w-52",
-      3: "-mt-17 mx-auto phone-md:-mt-22 phone-md:w-36 phone-lg:-mt-24 phone-lg:w-44 tablet-sm:-mt-28 tablet-sm:w-52 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:-mt-24 desktop-sm:w-40 desktop-xl:w-52",
+      3: "-mt-17 mx-auto phone-md:-mt-22 phone-md:w-36 phone-lg:-mt-24 phone-lg:w-44 tablet-sm:-mt-18 tablet-sm:w-48 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:-mt-24 desktop-sm:w-40 desktop-xl:w-52",
     },
     images: [
       {
