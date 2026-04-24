@@ -5,7 +5,7 @@ const About = () => {
       aria-labelledby="about-heading"
       className="relative py-8 mb-4 ml-3 tablet-sm:ml-12 tablet-md:pb-0 desktop-lg:ml-10 desktop-xl:pb-12"
     >
-      <div className="leading-6.5 phone-lg:leading-7.5">
+      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5">
         <p
           className="text-text text-(length:--font-page-number)"
           aria-hidden="true"
@@ -13,7 +13,7 @@ const About = () => {
           01
         </p>
         <h3
-          className="text-[2.2rem] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
+          className="text-[2.75rem] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
           id="about-heading"
         >
           WHO AM I
@@ -33,7 +33,7 @@ const About = () => {
         href="/Alix_Bell_Frontend_Dev.pdf"
         download
         aria-label="Download CV (PDF)"
-        className="mt-2 inline-block mr-4 phone-sm:mt-4 phone-sm:mr-8 tablet-sm:mr-16 tablet-sm:mt-0 rounded-lg bg-accent-red text-white px-4 py-2.5 text-sm tablet-md:mr-30 desktop-sm:ml-6 desktop-sm:mt-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-2 focus-visible:rounded-lg focus-visible:ring-offset-bg"
+        className="mt-2 inline-block mr-4 phone-sm:mt-4 phone-sm:mr-8 tablet-sm:mr-16 tablet-sm:mt-3 rounded-lg bg-accent-red text-white px-4 py-2.5 text-sm tablet-md:mr-30 desktop-sm:ml-6 desktop-sm:mt-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-accent-red focus-visible:ring-offset-2 focus-visible:rounded-lg focus-visible:ring-offset-bg"
       >
         Download CV <span className="opacity-70">(PDF)</span>
       </a>
