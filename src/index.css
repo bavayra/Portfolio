@@ -218,7 +218,7 @@
     --section-title-size: clamp(3rem, 0.8571rem + 5.7143vw, 6rem);
 
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
-    --section-top-div-height: 136px;
+    --section-top-div-height: 128px;
 
     --contacts-div-bot-height: 520px;
     --contacts-div-bot-top: 76px;
