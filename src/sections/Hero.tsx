@@ -30,11 +30,11 @@ const Hero = () => {
           Portfolio
         </p>
 
-        <p className="col-start-1 col-span-2 row-start-3 pl-[40%] phone-md:pl-[41%] tablet-sm:pl-[45%] desktop-sm:pl-[40%] desktop-md:pl-[35%] desktop-lg:pl-[30%] text-(length:--name-year-size) font-bold text-accent-red tracking-wider desktop-lg:text-[3.5rem] desktop-xl:text-7xl leading-10 phone-md:leading-12 tablet-sm:leading-14 desktop-md:leading-18 desktop-lg:leading-20">
+        <p className="col-start-1 col-span-2 row-start-3 pl-[40%] tablet-sm:pl-[49%] desktop-sm:pl-[40%] desktop-md:pl-[35%] desktop-lg:pl-[30%] text-(length:--name-year-size) font-bold text-accent-red tracking-wider desktop-lg:text-[3.5rem] desktop-xl:text-7xl leading-10 phone-md:leading-12 tablet-sm:leading-14 desktop-md:leading-18 desktop-lg:leading-20">
           ALIX BELL
         </p>
       </div>
-      <div className="absolute left-7 top-35 min-h-[28vh] w-(--hero-div-w) bg-grey-2" />
+      <div className="absolute left-13 top-40 min-h-[25vh] w-(--hero-div-w) bg-grey-2" />
       <div className="mt-auto">
         <DotPattern />
       </div>
