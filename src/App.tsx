@@ -100,8 +100,7 @@ function App() {
               <ProjectSection
                 projectId="portfolio-project"
                 sectionNumber="06"
-                sectionClassName="pb-14 desktop-md:pt-0 p-8 pb-16"
-                screenContainerClassName="mr-8"
+                sectionClassName="desktop-md:pt-0 p-8 pb-16"
                 projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mt-0 ml-4"
               />
             </div>
