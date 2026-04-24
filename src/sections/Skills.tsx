@@ -34,7 +34,7 @@ const Skills = () => {
           MY SKILLS
         </h3>
       </div>
-      <div className="flex flex-col gap-4 phone-lg:gap-y-6 mt-4 tablet-sm:mt-10 border-l-2 border-grey-2 pl-3">
+      <div className="flex flex-col gap-4 phone-lg:gap-y-6 mt-4 tablet-sm:mt-5 border-l-2 border-grey-2 pl-3">
         {skillGroups.map((group) => (
           <div key={group.label}>
             <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-right desktop-sm:mr-10">
