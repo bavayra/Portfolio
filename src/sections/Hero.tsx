@@ -26,15 +26,15 @@ const Hero = () => {
           2026
         </p>
 
-        <p className="col-start-1 row-start-2 pl-3 text-(length:--h1-size) leading-10 phone-md:leading-12 tablet-sm:leading-18 desktop-sm:leading-22 font-semibold text-grey-2">
+        <p className="col-start-1 row-start-2 pl-3 text-(length:--h1-size) tablet-lg:text-[8rem] leading-10 phone-md:leading-12 tablet-sm:leading-18 tablet-lg:leading-24 font-semibold text-grey-2">
           Portfolio
         </p>
 
-        <p className="col-start-1 col-span-2 row-start-3 pl-[40%] tablet-sm:pl-[49%] tablet-md:pl-[36%] desktop-sm:pl-[40%] desktop-md:pl-[35%] desktop-lg:pl-[30%] text-(length:--name-year-size) font-bold text-accent-red tracking-wider desktop-lg:text-[3.5rem] desktop-xl:text-7xl leading-10 phone-md:leading-12 tablet-sm:leading-14 desktop-md:leading-18 desktop-lg:leading-20">
+        <p className="col-start-1 col-span-2 row-start-3 pl-[40%] tablet-sm:pl-[49%] tablet-md:pl-[36%] tablet-lg:pl-[45%] desktop-sm:pl-[40%] desktop-md:pl-[35%] desktop-lg:pl-[30%] text-(length:--name-year-size) font-bold text-accent-red tracking-wider tablet-lg:text-[3.5rem] desktop-xl:text-7xl leading-10 phone-md:leading-12 tablet-sm:leading-14 desktop-md:leading-18 desktop-lg:leading-20">
           ALIX BELL
         </p>
       </div>
-      <div className="absolute left-13 top-40 min-h-[25vh] w-(--hero-div-w) bg-grey-2" />
+      <div className="absolute left-13 tablet-lg:left-14 tablet-lg:top-46 top-40 min-h-[25vh] tablet-lg:min-h-[28vh] w-(--hero-div-w) bg-grey-2" />
       <div className="mt-auto">
         <DotPattern />
       </div>
