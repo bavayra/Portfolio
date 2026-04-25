@@ -39,7 +39,7 @@ const ProjectSection = ({
           </p>
           <h3
             id={`${projectId}-heading`}
-            className="text-[2.75rem] text-grey-2 font-medium tablet-md:my-2 uppercase"
+            className="text-[2.75rem] text-grey-2 font-medium uppercase"
           >
             {project.title}
           </h3>

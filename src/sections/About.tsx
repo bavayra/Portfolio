@@ -5,7 +5,7 @@ const About = () => {
       aria-labelledby="about-heading"
       className="relative py-8 mb-4 ml-3 tablet-sm:ml-9 tablet-md:mb-6 desktop-lg:ml-10 desktop-xl:pb-12"
     >
-      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 tablet-md:leading-6.5">
+      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5">
         <p
           className="text-text text-(length:--font-page-number)"
           aria-hidden="true"
@@ -13,7 +13,7 @@ const About = () => {
           01
         </p>
         <h3
-          className="text-[2.75rem] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-xl:text-5xl"
+          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-4xl desktop-xl:text-5xl"
           id="about-heading"
         >
           WHO AM I

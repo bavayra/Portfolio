@@ -19,7 +19,7 @@ const Skills = () => {
       aria-labelledby="skills-heading"
       className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-md:mb-6"
     >
-      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 tablet-md:leading-6.5">
+      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5">
         <p
           className="text-text text-(length:--font-page-number) desktop-sm:text-right
            desktop-sm:mr-10"
@@ -29,7 +29,7 @@ const Skills = () => {
         </p>
         <h3
           id="skills-heading"
-          className="text-[2.75rem] text-grey-2 font-medium tablet-md:my-2 desktop-sm:text-4xl desktop-sm:text-right desktop-sm:mr-10 desktop-xl:text-5xl "
+          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-4xl desktop-sm:text-right desktop-sm:mr-10 desktop-xl:text-5xl "
         >
           MY SKILLS
         </h3>
