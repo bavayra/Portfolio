@@ -37,7 +37,7 @@ const Skills = () => {
       <div className="flex flex-col gap-4 phone-lg:gap-y-6 mt-4 tablet-sm:mt-5 border-l-2 border-grey-2 pl-3">
         {skillGroups.map((group) => (
           <div key={group.label}>
-            <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-right desktop-sm:mr-10">
+            <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-right desktop-sm:mr-10 tablet-md:text-xl">
               {group.label}
             </h4>
             <ul
@@ -47,7 +47,7 @@ const Skills = () => {
               {group.skills.map((skill) => (
                 <li
                   key={skill}
-                  className="rounded-full border border-grey-2 px-3 py-1 text-xs text-text phone-sm:text-sm desktop-xl:text-base"
+                  className="rounded-full border border-grey-2 px-3 py-1 text-xs text-text phone-sm:text-sm tablet-md:text-lg"
                 >
                   {skill}
                 </li>
