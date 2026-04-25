@@ -90,7 +90,7 @@
 
 :root {
   /*div = divider*/
-  --hero-div-w: 2px; /*the width of the hero section div*/
+  --hero-div-w: 2px; /*the width of the dividers/
   --hero-mt: 0px; /*the margin-top of the hero section div*/
 
   --section-top-div-top: 18px; /*the top position of the top divider in the section*/
