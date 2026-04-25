@@ -27,7 +27,7 @@ const ProjectSection = ({
     <section
       id={`${projectId}-section`}
       aria-labelledby={`${projectId}-heading`}
-      className={`relative h-auto tablet-sm:ml-9 desktop-lg:ml-10 ${sectionClassName}`}
+      className={`relative h-auto tablet-sm:ml-5 desktop-lg:ml-10 ${sectionClassName}`}
     >
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12">

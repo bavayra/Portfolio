@@ -3,7 +3,7 @@ const Description = () => {
     <section
       id="description"
       aria-labelledby="description-heading"
-      className="relative py-8 tablet-sm:ml-9 desktop-lg:ml-10 mb-4 tablet-md:mb-10"
+      className="relative py-8 tablet-sm:ml-6 desktop-lg:ml-10 mb-4 tablet-md:mb-10"
     >
       <div className="grid grid-cols-[1fr_auto] items-end gap-x-2 phone-md:gap-x-4">
         <div>
@@ -21,7 +21,10 @@ const Description = () => {
               WHAT AM I LIKE
             </h3>
           </div>
-          <p className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word  phone-lg:mt-4 whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 pl-2 border-grey-2">
+          <p
+            className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word  phone-lg:mt-4 whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 pl-2 border-grey-2"
+            style={{ borderLeftWidth: "var(--hero-div-w)" }}
+          >
             I'm a curious and disciplined developer who enjoys solving UI
             problems with clean, maintainable code. I prioritize performance and
             accessibility, and I'm committed to continuous learning. I work well

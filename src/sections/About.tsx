@@ -3,7 +3,7 @@ const About = () => {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="relative py-8 mb-4 ml-3 tablet-sm:ml-12 tablet-md:mb-6 desktop-lg:ml-10 desktop-xl:pb-12"
+      className="relative py-8 mb-4 ml-3 tablet-sm:ml-9 tablet-md:mb-6 desktop-lg:ml-10 desktop-xl:pb-12"
     >
       <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 tablet-md:leading-6.5">
         <p
@@ -20,7 +20,10 @@ const About = () => {
         </h3>
       </div>
 
-      <p className="mt-2 text-(length:--font-body-sm) phone-lg:mt-4 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal pl-2 max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 border-grey-2">
+      <p
+        className="mt-2 text-(length:--font-body-sm) phone-lg:mt-4 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal pl-2 max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 border-grey-2"
+        style={{ borderLeftWidth: "var(--hero-div-w)" }}
+      >
         I’m a junior front‑end developer focused on building polished,
         accessible interfaces with React and TypeScript. I care about
         performance and maintainability—using Vite and Tailwind to deliver fast,

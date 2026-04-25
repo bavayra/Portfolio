@@ -20,7 +20,7 @@ const SectionTitle = ({
   });
 
   return (
-    <div className="section-vh flex flex-col relative ml-3 justify-center phone-md:pb-10 tablet-sm:ml-12 desktop-lg:ml-10">
+    <div className="section-vh flex flex-col relative ml-3 justify-center phone-md:pb-10 tablet-sm:ml-9 desktop-lg:ml-10">
       <Divider
         widthPx="var(--hero-div-w)"
         heightPx="var(--section-top-div-height)"
