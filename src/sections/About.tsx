@@ -3,9 +3,9 @@ const About = () => {
     <section
       id="about"
       aria-labelledby="about-heading"
-      className="relative py-8 mb-4 ml-3 tablet-sm:ml-12 tablet-md:pb-0 desktop-lg:ml-10 desktop-xl:pb-12"
+      className="relative py-8 mb-4 ml-3 tablet-sm:ml-12 tablet-md:mb-6 desktop-lg:ml-10 desktop-xl:pb-12"
     >
-      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5">
+      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 tablet-md:leading-6.5">
         <p
           className="text-text text-(length:--font-page-number)"
           aria-hidden="true"

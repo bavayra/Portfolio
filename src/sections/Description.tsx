@@ -3,11 +3,11 @@ const Description = () => {
     <section
       id="description"
       aria-labelledby="description-heading"
-      className="relative py-8 tablet-sm:ml-9 desktop-lg:ml-10 mb-4"
+      className="relative py-8 tablet-sm:ml-9 desktop-lg:ml-10 mb-4 tablet-md:mb-10"
     >
       <div className="grid grid-cols-[1fr_auto] items-end gap-x-2 phone-md:gap-x-4">
         <div>
-          <div className="leading-6.5 ml-3 phone-lg:leading-7.5 tablet-sm:leading-8.5">
+          <div className="leading-6.5 ml-3 phone-lg:leading-7.5 tablet-sm:leading-8.5 tablet-md:leading-6.5">
             <p
               className="text-text text-(length:--font-page-number)"
               aria-hidden="true"
