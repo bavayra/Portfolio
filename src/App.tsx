@@ -95,13 +95,13 @@ function App() {
                 sectionNumber="05"
                 sectionClassName=""
                 screenContainerClassName="desktop-md:-mt-2"
-                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12 ml-4 desktop-sm:mt-2 desktop-sm:mb-10"
+                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12 desktop-sm:mb-8"
               />
               <ProjectSection
                 projectId="portfolio-project"
                 sectionNumber="06"
                 sectionClassName=""
-                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg ml-4 desktop-sm:mt-4 desktop-sm:mb-16"
+                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mb-16"
               />
             </div>
             <div
