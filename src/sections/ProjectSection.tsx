@@ -27,10 +27,10 @@ const ProjectSection = ({
     <section
       id={`${projectId}-section`}
       aria-labelledby={`${projectId}-heading`}
-      className={`relative h-auto tablet-sm:ml-5 desktop-lg:ml-10 ${sectionClassName}`}
+      className={`relative h-auto tablet-sm:ml-5 p-8 desktop-lg:ml-10 ${sectionClassName}`}
     >
-      <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-6 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
-        <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12">
+      <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-0 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
+        <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12 ">
           <p
             className="text-text text-(length:--font-page-number) leading-5"
             aria-hidden="true"
@@ -39,7 +39,7 @@ const ProjectSection = ({
           </p>
           <h3
             id={`${projectId}-heading`}
-            className="text-[2.75rem] text-grey-2 font-medium uppercase"
+            className="text-[2.75rem] desktop-sm:text-5xl text-grey-2 font-medium uppercase desktop-sm:leading-15"
           >
             {project.title}
           </h3>

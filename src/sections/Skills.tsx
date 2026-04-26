@@ -28,7 +28,7 @@ const Skills = () => {
         </p>
         <h3
           id="skills-heading"
-          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-sm:text-center desktop-sm:mr-10 desktop-xl:text-5xl "
+          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-sm:text-center desktop-xl:text-5xl "
         >
           MY SKILLS
         </h3>
