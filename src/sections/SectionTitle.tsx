@@ -50,7 +50,7 @@ const SectionTitle = ({
         <h2
           id={headingId}
           ref={ref}
-          className="font-extrabold tracking-[0.2em] text-[3rem] tablet-sm:text-[3.5rem] desktop-sm:text-[5rem] desktop-lg:text-[5.5rem] tablet-sm:leading-16 text-section-title"
+          className="font-extrabold tracking-[0.2em] text-[3rem] tablet-sm:text-[3.5rem] desktop-sm:text-[5rem] desktop-lg:text-[5.5rem] tablet-sm:leading-16 desktop-sm:leading-21 text-section-title"
         >
           {title}
         </h2>

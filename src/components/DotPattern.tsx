@@ -3,7 +3,7 @@ import { useId } from "react";
 const DotPattern = () => {
   const uid = useId();
   return (
-    <div className="absolute bottom-0 desktop-sm:translate-x-0.5 inset-x-0 w-screen left-1/2 -translate-x-1/2 tablet-sm:translate-y-[12%] tablet-md:translate-y-[24%] desktop-sm:translate-x-[18%]">
+    <div className="absolute bottom-0 inset-x-0 w-screen left-1/2 -translate-x-1/2 tablet-sm:translate-y-[12%] tablet-md:translate-y-[24%] desktop-sm:translate-x-[18%]">
       <svg
         id={`${uid}-svg-sm`}
         width="100%"
