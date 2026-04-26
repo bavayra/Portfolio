@@ -191,7 +191,7 @@ const Contacts = () => {
         color="grey-2"
         topPx="var(--contacts-div-bot-top)"
       />
-      <div className="flex flex-col desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-x-20 desktop-md:gap-x-48">
+      <div className="flex flex-col desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-x-10 desktop-md:gap-x-48">
         <div className="relative flex justify-center">
           <div>
             <form
@@ -333,7 +333,7 @@ const Contacts = () => {
         </div>
         <SocialLinks
           size="md"
-          className="flex flex-wrap max-w-40 tablet-sm:max-w-65 tablet-sm:gap-x-10 tablet-sm:gap-y-4 mx-auto justify-center mt-6 desktop-xl:my-28 desktop-xl:mx-4"
+          className="flex flex-wrap max-w-40 tablet-sm:max-w-88 tablet-sm:gap-x-10 tablet-sm:gap-y-4 mx-auto justify-center mt-6 desktop-xl:my-28 desktop-xl:mx-4"
         />
       </div>
     </section>
