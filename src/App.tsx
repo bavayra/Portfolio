@@ -61,7 +61,7 @@ function App() {
 
               <div className="bg-bg">
                 <div className="w-full mx-auto px-4">
-                  <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-8">
+                  <div className="flex-col desktop-sm:grid desktop-sm:grid-cols-2 gap-x-8 desktop-sm:gap-x-0">
                     <About />
                     <Skills />
                   </div>
