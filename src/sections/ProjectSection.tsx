@@ -29,7 +29,7 @@ const ProjectSection = ({
       aria-labelledby={`${projectId}-heading`}
       className={`relative h-auto tablet-sm:ml-5 p-8 desktop-lg:ml-10 ${sectionClassName}`}
     >
-      <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-0 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
+      <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-4 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12 ">
           <p
             className="text-text text-(length:--font-page-number) leading-5"
@@ -59,7 +59,7 @@ const ProjectSection = ({
         </div>
 
         <div
-          className={`phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 ${screenContainerClassName}`}
+          className={`phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-sm:self-center ${screenContainerClassName}`}
         >
           <ProjectScreen
             projectId={project.id}
@@ -72,7 +72,7 @@ const ProjectSection = ({
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className={projectDescClassName}
+          className={`desktop-sm:row-start-2 ${projectDescClassName}`}
         />
       </div>
     </section>
