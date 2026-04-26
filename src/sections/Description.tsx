@@ -33,15 +33,6 @@ const Description = () => {
             self-motivated to deliver reliable results.
           </p>
         </div>
-
-        <img
-          src="/AuthorImg.webp"
-          alt="Alix Bell"
-          width={768}
-          height={1152}
-          loading="lazy"
-          className="object-cover self-end phone-lg:-mr-3 desktop-sm:mr-24 w-(--author-img-size)"
-        />
       </div>
     </section>
   );
