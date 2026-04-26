@@ -17,7 +17,7 @@ const Skills = () => {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-md:mb-6"
+      className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-sm:mt-8 tablet-md:mb-6"
     >
       <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5">
         <p
@@ -29,7 +29,7 @@ const Skills = () => {
         </p>
         <h3
           id="skills-heading"
-          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-4xl desktop-sm:text-right desktop-sm:mr-10 desktop-xl:text-5xl "
+          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-sm:text-right desktop-sm:mr-10 desktop-xl:text-5xl "
         >
           MY SKILLS
         </h3>

@@ -16,7 +16,7 @@ const Description = () => {
             </p>
             <h3
               id="description-heading"
-              className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-4xl desktop-xl:text-5xl"
+              className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-xl:text-5xl"
             >
               WHAT AM I LIKE
             </h3>

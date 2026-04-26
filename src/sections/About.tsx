@@ -13,7 +13,7 @@ const About = () => {
           01
         </p>
         <h3
-          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-4xl desktop-xl:text-5xl"
+          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-xl:text-5xl"
           id="about-heading"
         >
           WHO AM I
