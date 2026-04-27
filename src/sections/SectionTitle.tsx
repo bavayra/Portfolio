@@ -30,7 +30,7 @@ const SectionTitle = ({
       />
       <div className="mb-4">
         <div className="flex items-center gap-2">
-          <span className="text-(length:--part-label) leading-1 tracking-wide font-medium text-section-title">
+          <span className="text-(length:--part-label) desktop-md:text-4xl leading-1 tracking-wide font-medium text-section-title">
             {partLabel}
           </span>
 
