@@ -15,7 +15,7 @@ const Hero = () => {
       the name and the role together, while the visual design keeps them split
       across the layout. */}
       <div className="hidden desktop-sm:block tablet-sm:ml-8 desktop-md:ml-8 relative">
-        <div className="absolute left-5 top-0 min-h-42 w-(--hero-div-w) bg-grey-2" />
+        <div className="absolute left-5 top-0 min-h-42 w-(--hero-div-w) desktop-lg:left-6 bg-grey-2" />
       </div>
 
       <div
@@ -34,7 +34,7 @@ const Hero = () => {
           ALIX BELL
         </p>
       </div>
-      <div className="absolute left-13 tablet-lg:left-14 tablet-lg:top-46 top-40 min-h-[25vh] tablet-lg:min-h-[28vh] desktop-sm:top-84 desktop-md:top-90  desktop-sm:min-h-86 desktop-sm:left-13 w-(--hero-div-w) bg-grey-2" />
+      <div className="absolute left-13 tablet-lg:left-14 tablet-lg:top-46 top-40 min-h-[25vh] tablet-lg:min-h-[28vh] desktop-sm:top-84 desktop-md:top-90 desktop-sm:min-h-86 desktop-sm:left-13 w-(--hero-div-w) desktop-lg:top-96 desktop-lg:min-h-[50vh] desktop-lg:left-14 bg-grey-2" />
       <div className="mt-auto">
         <DotPattern />
       </div>
