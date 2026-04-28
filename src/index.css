@@ -271,7 +271,7 @@
     --section-bot-div-height: 204px;
     --section-bot-div-top: clamp(280px, calc(-52.308px + 46.154vh), 400px);
 
-    --contacts-div-bot-top: 96px;
+    --contacts-div-bot-top: 112px;
     --contacts-div-bot-height: 384px;
   }
 }
