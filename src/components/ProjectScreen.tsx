@@ -27,7 +27,7 @@ const ProjectScreen = (props: ProjectScreenProps) => {
     <>
       <div className="grid gap-4 tablet-md:grid-cols-1 desktop-sm:gap-0 desktop-sm:items-start">
         <div
-          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-140 desktop-sm:ml-0 desktop-sm:gap-y-2 desktop-sm:w-100 desktop-md:gap-x-12 desktop-md:w-base desktop-md:gap-y-4 desktop-lg:w-3xl desktop-xl:w-4xl ${props.className ?? ""}`}
+          className={`grid grid-cols-2 gap-4 phone-md:gap-x-0 phone-lg:mt-6 tablet-md:ml-16 tablet-md:w-140 desktop-sm:ml-0 desktop-sm:gap-y-2 desktop-sm:w-100 desktop-md:gap-x-12 desktop-md:w-base desktop-md:gap-y-4 desktop-lg:w-3xl desktop-md:items-start desktop-xl:w-4xl ${props.className ?? ""}`}
         >
           {props.images.map((img, index) => (
             <button
