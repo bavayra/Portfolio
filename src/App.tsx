@@ -86,16 +86,16 @@ function App() {
               <ProjectSection
                 projectId="weather-app"
                 sectionNumber="04"
-                sectionClassName="desktop-sm:mt-10"
+                sectionClassName="desktop-sm:mt-10 desktop-md:mb-5"
                 screenContainerClassName="desktop-lg:mt-4"
-                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:-mt-8 desktop-md:mt-0 desktop-md:-translate-y-[28%] "
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:-mt-8 desktop-md:mt-0 desktop-md:-translate-y-[34%] "
               />
               <ProjectSection
                 projectId="dog-shelter"
                 sectionNumber="05"
                 sectionClassName=""
                 screenContainerClassName=""
-                projectDescClassName="desktop-md:max-w-[26rem] desktop-md:-translate-y-[26%] desktop-xl:mt-12 desktop-sm:mb-8"
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-md:-translate-y-[30%] desktop-xl:mt-12 desktop-sm:mb-8"
               />
               <ProjectSection
                 projectId="portfolio-project"
