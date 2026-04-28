@@ -59,7 +59,7 @@ const ProjectSection = ({
         </div>
 
         <div
-          className={`phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-sm:self-center ${screenContainerClassName}`}
+          className={`phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-sm:self-center desktop-md:self-self ${screenContainerClassName}`}
         >
           <ProjectScreen
             projectId={project.id}

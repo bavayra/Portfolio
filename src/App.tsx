@@ -87,21 +87,21 @@ function App() {
                 projectId="weather-app"
                 sectionNumber="04"
                 sectionClassName="desktop-sm:mt-10"
-                screenContainerClassName="desktop-md:mt-10 desktop-lg:mt-4"
-                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-14 desktop-md:-translate-x-1/4 desktop-sm:-mt-8"
+                screenContainerClassName=" desktop-lg:mt-4"
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:-mt-8 desktop-md:mt-0 desktop-md:-translate-y-[28%] "
               />
               <ProjectSection
                 projectId="dog-shelter"
                 sectionNumber="05"
                 sectionClassName=""
-                screenContainerClassName="desktop-md:-mt-2"
-                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:-translate-x-1/4 desktop-md:mt-6 desktop-xl:mt-12 desktop-sm:mb-8"
+                screenContainerClassName=""
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-md:-translate-y-[26%] desktop-xl:mt-12 desktop-sm:mb-8"
               />
               <ProjectSection
                 projectId="portfolio-project"
                 sectionNumber="06"
                 sectionClassName=""
-                projectDescClassName="desktop-md:max-w-[45rem] desktop-md:mt-4 desktop-md:-translate-x-1/4 desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mb-16"
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-md:translate-y-[4%] desktop-lg:mt-3 desktop-xl:text-lg desktop-sm:mb-16"
               />
             </div>
             <div
