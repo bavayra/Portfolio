@@ -17,33 +17,33 @@ const Skills = () => {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-sm:mt-8 tablet-md:mb-6 desktop-sm:translate-y-[30%]"
+      className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-sm:mt-8 tablet-md:mb-6 desktop-sm:translate-y-[30%] desktop-sm:max-w-110"
     >
-      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-sm:flex desktop-sm:flex-col desktop-sm:items-start desktop-sm:max-w-90 desktop-sm:translate-x-[28%]">
+      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-sm:w-max desktop-sm:mx-auto desktop-sm:flex desktop-sm:flex-col desktop-sm:items-start">
         <p
-          className="text-text text-(length:--font-page-number) self-start desktop-md:translate-x-[160%]"
+          className="text-text text-(length:--font-page-number) self-start"
           aria-hidden="true"
         >
           02
         </p>
         <h3
           id="skills-heading"
-          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-sm:text-center desktop-md:self-center"
+          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-sm:text-left"
         >
           MY SKILLS
         </h3>
       </div>
       <div
-        className="flex flex-col gap-4 phone-lg:gap-y-6 desktop-sm:gap-y-10 mt-4 tablet-sm:mt-5 border-l-2 desktop-sm:border-none border-grey-2 pl-3"
+        className="flex flex-col gap-4 phone-lg:gap-y-6 desktop-sm:gap-y-10 mt-4 tablet-sm:mt-5 border-l-2 desktop-sm:border-none desktop-sm:p-0 desktop-sm:mx-auto border-grey-2 pl-3"
         style={{ borderLeftWidth: "var(--hero-div-w)" }}
       >
         {skillGroups.map((group) => (
           <div key={group.label}>
-            <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-center desktop-sm:mr-10 tablet-md:text-xl">
+            <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-center tablet-md:text-xl">
               {group.label}
             </h4>
             <ul
-              className="flex flex-wrap gap-2 desktop-sm:justify-center desktop-sm:mr-10"
+              className="flex flex-wrap gap-2 desktop-sm:justify-center"
               aria-label={group.label}
             >
               {group.skills.map((skill) => (

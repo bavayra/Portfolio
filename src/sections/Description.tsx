@@ -3,7 +3,7 @@ const Description = () => {
     <section
       id="description"
       aria-labelledby="description-heading"
-      className="relative py-8 tablet-sm:ml-6 desktop-lg:ml-10 mb-4 desktop-sm:-translate-y-[26%] tablet-md:mb-10 desktop-sm:pb-0 desktop-sm:mb-0 "
+      className="relative py-8 tablet-sm:ml-6 desktop-lg:ml-7 mb-4 desktop-sm:-translate-y-[26%] tablet-md:mb-10 desktop-sm:pb-0 desktop-sm:mb-0 "
     >
       <div className="grid grid-cols-[1fr_auto] items-end gap-x-2 phone-md:gap-x-4">
         <div>
