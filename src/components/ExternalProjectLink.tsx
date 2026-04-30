@@ -19,21 +19,21 @@ const ExternalProjectLink = ({
             href={githubUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-text"
+            className="text-text "
             aria-label={`Check the code on GitHub — ${projectTitle ?? "this project"}`}
           >
-            <span className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-2xl tablet-sm:text-lg">
+            <span className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-lg tablet-sm:text-lg">
               Check the code on
             </span>
             <GitHubIcon
               aria-hidden="true"
-              className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 hover:scale-110 text-accent-red active:scale-95 duration-300"
+              className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 desktop-xl:w-8 hover:scale-110 text-accent-red active:scale-95 duration-300"
             />
           </a>
         </div>
       )}
       {liveUrl && (
-        <div className="flex items-center ml-2 tablet-sm:text-xl desktop-xl:text-2xl text-accent-red text-base font-semibold tablet-sm:-mt-2">
+        <div className="flex items-center ml-2 tablet-sm:text-xl desktop-xl:text-xl text-accent-red text-base font-semibold tablet-sm:-mt-2">
           <a
             href={liveUrl}
             target="_blank"
