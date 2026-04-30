@@ -22,7 +22,7 @@ const Description = () => {
             </h3>
           </div>
           <p
-            className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word  phone-lg:mt-4 whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-2xl border-l-2 pl-2 border-grey-2"
+            className="mt-2 text-(length:--font-body-sm) text-text leading-loose tracking-wide ml-3 w-full wrap-break-word  phone-lg:mt-4 whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-lg border-l-2 pl-2 border-grey-2"
             style={{ borderLeftWidth: "var(--hero-div-w)" }}
           >
             I'm a curious and disciplined developer who enjoys solving UI
