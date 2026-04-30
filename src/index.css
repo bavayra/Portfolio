@@ -288,7 +288,7 @@
 @media (min-width: 1728px) {
   :root {
     --section-bot-div-height: 272px;
-    --section-top-div-height: clamp(188px, calc(-1184px + 140vh), 216px);
+    --section-top-div-height: 232px;
 
     --contacts-div-bot-height: 480px;
 
