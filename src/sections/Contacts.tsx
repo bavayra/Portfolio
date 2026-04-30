@@ -168,7 +168,7 @@ const Contacts = () => {
   return (
     <section
       aria-labelledby="contacts-title"
-      className="relative z-10 mt-20 ml-3 h-auto flex pb-8 flex-col items-center tablet-sm:ml-9 desktop-lg:ml-10 desktop-xl:h-[60vh]"
+      className="relative z-10 mt-20 ml-3 h-auto flex pb-8 flex-col items-center tablet-sm:ml-9 desktop-lg:ml-10 desktop-xl:h-[68vh]"
     >
       <Divider
         widthPx="var(--hero-div-w)"
