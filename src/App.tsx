@@ -88,14 +88,14 @@ function App() {
                 sectionNumber="04"
                 sectionClassName="desktop-sm:mt-10 desktop-md:mb-5 desktop-lg:mb-0"
                 screenContainerClassName="desktop-lg:mt-4"
-                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:-mt-8 desktop-md:mt-0 desktop-md:-translate-y-[34%] "
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:-mt-8 desktop-md:mt-0 desktop-md:-translate-y-[20%] "
               />
               <ProjectSection
                 projectId="dog-shelter"
                 sectionNumber="05"
                 sectionClassName=""
                 screenContainerClassName=""
-                projectDescClassName="desktop-md:max-w-[26rem] desktop-md:-translate-y-[30%] desktop-xl:mt-12 desktop-sm:mb-8"
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-md:-translate-y-[16%] desktop-xl:mt-12 desktop-sm:mb-8"
               />
               <ProjectSection
                 projectId="portfolio-project"
