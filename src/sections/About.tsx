@@ -7,7 +7,7 @@ const About = () => {
     >
       <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5">
         <p
-          className="text-text text-(length:--font-page-number) desktop-lg:text-[1.75rem]"
+          className="text-text text-(length:--font-page-number) desktop-md:text-[1.75rem]"
           aria-hidden="true"
         >
           01

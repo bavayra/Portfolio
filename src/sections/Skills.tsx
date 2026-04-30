@@ -21,7 +21,7 @@ const Skills = () => {
     >
       <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-sm:w-max desktop-sm:mx-auto desktop-sm:flex desktop-sm:flex-col desktop-sm:items-start">
         <p
-          className="text-text text-(length:--font-page-number) self-start desktop-lg:text-[1.75rem]"
+          className="text-text text-(length:--font-page-number) self-start desktop-md:text-[1.75rem]"
           aria-hidden="true"
         >
           02
