@@ -27,7 +27,7 @@ const ExternalProjectLink = ({
             </span>
             <GitHubIcon
               aria-hidden="true"
-              className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 desktop-xl:w-8 hover:scale-110 text-accent-red active:scale-95 duration-300"
+              className="w-6 h-6 inline-block ml-1 phone-md:w-8 phone-md:h-8  tablet-sm:h-10 tablet-sm:w-10 desktop-sm:w-7 hover:scale-110 text-accent-red active:scale-95 duration-300"
             />
           </a>
         </div>
