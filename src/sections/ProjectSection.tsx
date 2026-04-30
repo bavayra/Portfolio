@@ -32,7 +32,7 @@ const ProjectSection = ({
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-4 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12 ">
           <p
-            className="text-text text-(length:--font-page-number) leading-5"
+            className="text-text text-(length:--font-page-number) leading-5 desktop-lg:text-[1.75rem]"
             aria-hidden="true"
           >
             {sectionNumber}
