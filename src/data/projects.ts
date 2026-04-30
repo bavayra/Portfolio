@@ -33,10 +33,10 @@ export const projects = [
     liveUrl: "https://bavayra.github.io/WeatherApp/",
     githubUrl: "https://github.com/bavayra/WeatherApp.git",
     imageClasses: {
-      0: "mx-auto phone-md:mt-2 phone-md:w-36 phone-lg:-mt-5 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-xl:w-52 desktop-md:mt-0",
-      1: "-mt-6 mx-auto phone-md:w-36 phone-lg:-mt-14 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-xl:w-52 desktop-md:mt-0",
-      2: "mx-auto phone-md:w-34 phone-lg:w-44 tablet-sm:mt-2 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-xl:w-52 desktop-md:mt-0",
-      3: "mx-auto phone-md:-mt-3 phone-md:w-36 phone-lg:-mt-2 phone-lg:w-44 tablet-sm:-mt-2 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-xl:w-52 desktop-md:mt-0",
+      0: "mx-auto phone-md:mt-2 phone-md:w-36 phone-lg:-mt-5 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-xl:w-52 desktop-sm:mt-0",
+      1: "-mt-6 mx-auto phone-md:w-36 phone-lg:-mt-14 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-xl:w-52 desktop-sm:mt-0",
+      2: "mx-auto phone-md:w-34 phone-lg:w-44 tablet-sm:mt-2 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-xl:w-52 desktop-sm:mt-0",
+      3: "mx-auto phone-md:-mt-3 phone-md:w-36 phone-lg:-mt-2 phone-lg:w-44 tablet-sm:-mt-2 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-xl:w-52 desktop-sm:mt-0",
     },
     images: [
       {
@@ -81,10 +81,10 @@ export const projects = [
     githubUrl: "https://github.com/bavayra/dog-shelter.git",
     liveUrl: "https://dogshelter-project.netlify.app/",
     imageClasses: {
-      0: "mx-auto phone-md:mt-3 phone-md:w-36 phone-lg:-mt-3 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-md:mt-0 desktop-xl:w-52",
-      1: "-mt-24 mx-auto phone-md:-mt-25 phone-md:w-36 phone-lg:-mt-36 phone-lg:w-44 tablet-sm:-mt-42 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-md:mt-0 desktop-xl:w-52",
-      2: "mx-auto phone-md:w-38 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-md:mt-0 desktop-xl:w-52 desktop-md:translate-y-1/2",
-      3: "-mt-17 mx-auto phone-md:-mt-22 phone-md:w-36 phone-lg:-mt-24 phone-lg:w-44 tablet-sm:-mt-30 tablet-sm:w-48 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:-mt-18 desktop-sm:w-40 desktop-md:mt-0 desktop-md:-translate-y-[20%] desktop-xl:w-52",
+      0: "mx-auto phone-md:mt-3 phone-md:w-36 phone-lg:-mt-3 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-sm:mt-0 desktop-xl:w-52",
+      1: "-mt-24 mx-auto phone-md:-mt-25 phone-md:w-36 phone-lg:-mt-36 phone-lg:w-44 tablet-sm:-mt-42 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-sm:mt-0 desktop-xl:w-52",
+      2: "mx-auto phone-md:w-38 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-sm:mt-5 desktop-xl:w-52 desktop-md:translate-y-1/2",
+      3: "-mt-17 mx-auto phone-md:-mt-22 phone-md:w-36 phone-lg:-mt-24 phone-lg:w-44 tablet-sm:-mt-30 tablet-sm:w-48 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:w-40 desktop-sm:-mt-12 desktop-md:-translate-y-[20%] desktop-xl:w-52",
     },
     images: [
       {
@@ -124,16 +124,16 @@ export const projects = [
     descriptionShort:
       "My personal portfolio — a single‑page showcase of projects, skills with animated progress badges, and a contact form. Sections reveal on scroll, the design adapts from 320 px phones to ultrawide displays, and everything switches seamlessly to dark mode.",
     descriptionFull:
-      "Built with React 19, TypeScript, Tailwind CSS 4, and Vite. Sections are lazy‑loaded via React.lazy and Suspense; typography scales fluidly with clamp(). Uses dvh units for mobile viewport fixes and IntersectionObserver for one‑time scroll triggers. Form inputs are sanitized with a 30‑second rate limit; dark mode follows prefers‑color‑scheme. Self‑hosted WOFF2 fonts with font‑display: swap, WebP screenshots with thumbnail previews and a zoom modal. Accessible throughout - ARIA labels, semantic HTML, keyboard navigation, and focus‑visible management.",
+      "Single‑page portfolio (React, TypeScript, Tailwind, Vite). Lazy‑loaded sections, responsive typography (clamp, dvh), IntersectionObserver scroll triggers, sanitized contact form with 30s rate‑limit, prefers‑color‑scheme dark mode, self‑hosted WOFF2 fonts, WebP screenshots with thumbnails and zoom modal, fully accessible (ARIA, keyboard, focus‑visible).",
     position: { row: 1, col: 1 },
     technologies: ["React", "TypeScript", "Tailwind", "Vite"],
     githubUrl: "https://github.com/bavayra/portfolio.git",
     liveUrl: "https://alix-bell-portfolio.netlify.app",
     imageClasses: {
-      0: "mx-auto -mt-13 w-34 phone-md:w-36 phone-md:-mt-10 phone-lg:w-44 phone-lg:-mt-22 tablet-sm:w-52 tablet-md:-mt-34 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-md:mt-0 desktop-xl:w-52",
-      1: "-mt-4 mx-auto w-34 phone-md:-mt-3 phone-md:w-36 phone-lg:-mt-12 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-52 desktop-md:mt-0 ",
-      2: "-mt-12 mx-auto w-30 phone-md:-mt-13 phone-md:w-36 phone-lg:w-44 phone-lg:-mt-16 tablet-sm:-mt-15 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:-mt-13 desktop-sm:w-44 desktop-xl:w-52 desktop-md:mt-0  desktop-md:-translate-y-[45%]",
-      3: "mx-auto w-30 phone-md:w-36 phone-lg:w-44 tablet-sm:mt-3 tablet-sm:w-54 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-52 desktop-md:mt-0 ",
+      0: "mx-auto -mt-13 w-34 phone-md:w-36 phone-md:-mt-10 phone-lg:w-44 phone-lg:-mt-22 tablet-sm:w-52 tablet-md:-mt-34 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-sm:mt-0 desktop-xl:w-52",
+      1: "-mt-4 mx-auto w-34 phone-md:-mt-3 phone-md:w-36 phone-lg:-mt-12 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-52 desktop-sm:mt-0 ",
+      2: "-mt-12 mx-auto w-30 phone-md:-mt-13 phone-md:w-36 phone-lg:w-44 phone-lg:-mt-16 tablet-sm:-mt-15 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-52 desktop-sm:-mt-20  desktop-md:-translate-y-[45%]",
+      3: "mx-auto w-30 phone-md:w-36 phone-lg:w-44 tablet-sm:mt-3 tablet-sm:w-54 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-52 desktop-sm:mt-4 ",
     },
     images: [
       {
