@@ -17,7 +17,7 @@ const Skills = () => {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-sm:mt-8 tablet-md:mb-6 desktop-sm:mt-42 desktop-sm:max-w-110"
+      className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-sm:mt-8 tablet-md:mb-6 desktop-sm:mt-42 desktop-sm:max-w-110 desktop-xl:max-w-120"
     >
       <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-sm:w-max desktop-sm:mx-auto desktop-sm:flex desktop-sm:flex-col desktop-sm:items-start">
         <p
@@ -39,7 +39,7 @@ const Skills = () => {
       >
         {skillGroups.map((group) => (
           <div key={group.label}>
-            <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-center tablet-md:text-xl">
+            <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-center tablet-md:text-xl desktop-lg:text-2xl">
               {group.label}
             </h4>
             <ul
@@ -49,7 +49,7 @@ const Skills = () => {
               {group.skills.map((skill) => (
                 <li
                   key={skill}
-                  className="rounded-full border border-grey-2 px-3 py-1 text-xs text-text phone-sm:text-sm tablet-md:text-lg"
+                  className="rounded-full border border-grey-2 px-3 py-1 text-xs text-text phone-sm:text-sm tablet-md:text-lg desktop-lg:text-xl desktop-sm:px-6"
                 >
                   {skill}
                 </li>
