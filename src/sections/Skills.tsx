@@ -49,7 +49,7 @@ const Skills = () => {
               {group.skills.map((skill) => (
                 <li
                   key={skill}
-                  className="rounded-full border border-grey-2 px-3 py-1 text-xs text-text phone-sm:text-sm tablet-md:text-lg desktop-lg:text-xl desktop-sm:px-6"
+                  className="rounded-full border border-grey-2 px-3 py-1 text-xs text-text phone-sm:text-sm tablet-md:text-lg desktop-lg:text-xl desktop-sm:px-6 [@media(min-width:1920px)_and_(min-height:1440px)]:text-2xl"
                 >
                   {skill}
                 </li>
