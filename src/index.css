@@ -313,6 +313,17 @@
   }
 }
 
+@media (min-width: 1920px) and (min-height: 1400px) {
+  :root {
+    --section-bot-div-top: 400px;
+    --section-bot-div-height: 300px;
+    --section-top-div-height: 244px;
+    .section-vh {
+      min-height: 50dvh;
+    }
+  }
+}
+
 .section-vh {
   min-height: 50dvh;
 }
