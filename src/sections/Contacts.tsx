@@ -172,15 +172,16 @@ const Contacts = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={92}
+        heightPx={112}
         //72px = height of the top divider for screens <= 1024,
         //92px = height of the top divider for screens > 1024, will be overwritten with clamps.
+        //112px = height of the top divider for screens > 1728, will be overwritten with clamps.
         leftPx={0}
         color="grey-2"
         topPx={-68} //-68px = top position of the top divider; doesn't depend on screen size
       />
       <p
-        className="relative self-start text-(length:--contact-title-size) text-accent-red font-bold"
+        className="relative self-start text-(length:--contact-title-size) text-accent-red font-bold desktop-xl:text-9xl desktop-xl:mt-10"
         aria-hidden="true"
       >
         LET'S TALK?
@@ -198,7 +199,7 @@ const Contacts = () => {
             <form
               id="contact-form"
               onSubmit={handleSubmit}
-              className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88"
+              className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88 desktop-xl:w-100"
             >
               <div>
                 <TextInput
@@ -334,7 +335,7 @@ const Contacts = () => {
         </div>
         <SocialLinks
           size="md"
-          className="flex flex-wrap max-w-40 tablet-sm:max-w-88 tablet-sm:gap-x-10 tablet-sm:gap-y-4 mx-auto justify-center mt-6 desktop-xl:my-28 desktop-xl:mx-4"
+          className="flex flex-wrap max-w-40 tablet-sm:max-w-88 tablet-sm:gap-x-10 tablet-sm:gap-y-4 mx-auto justify-center mt-6 desktop-xl:my-28 desktop-xl:mx-10 desktop-xl:max-w-100 desktop-xl:gap-x-16"
         />
       </div>
     </section>

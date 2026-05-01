@@ -290,7 +290,8 @@
     --section-bot-div-height: 272px;
     --section-top-div-height: 232px;
 
-    --contacts-div-bot-height: 536px;
+    --contacts-div-bot-height: 490px;
+    --contacts-div-bot-top: 172px;
 
     --name-year-size: 3.75rem;
   }
