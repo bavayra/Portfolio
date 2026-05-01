@@ -95,7 +95,7 @@ function App() {
                 sectionNumber="05"
                 sectionClassName=""
                 screenContainerClassName=""
-                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:mt-2 desktop-md:-translate-y-[10%] desktop-lg:-translate-y-[5%] desktop-xl:-translate-y-[16%] desktop-sm:mb-8 desktop-xl:mb-10"
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:mt-2 desktop-md:-translate-y-[10%] desktop-lg:-translate-y-[5%] desktop-xl:-translate-y-[16%] [@media(min-width:1920px)_and_(min-height:1440px)]:-translate-y-[8%] desktop-sm:mb-8 desktop-xl:mb-10"
               />
               <ProjectSection
                 projectId="portfolio-project"
