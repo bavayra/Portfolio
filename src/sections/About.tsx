@@ -21,7 +21,7 @@ const About = () => {
       </div>
 
       <p
-        className="mt-2 text-(length:--font-body-sm) phone-lg:mt-4 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal pl-2 max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-lg border-l-2 border-grey-2"
+        className="mt-2 text-(length:--font-body-sm) phone-lg:mt-4 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal pl-2 max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-lg border-l-2 [@media(min-width:1920px)_and_(min-height:1440px)]:text-xl border-grey-2"
         style={{ borderLeftWidth: "var(--hero-div-w)" }}
       >
         I’m a junior front‑end developer focused on building polished,

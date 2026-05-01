@@ -47,7 +47,7 @@ const ProjectSection = ({
             className="border-l border-grey-2"
             style={{ borderLeftWidth: "var(--hero-div-w)" }}
           >
-            <p className="mt-2 text-(length:--font-body-sm) tablet-md:text-lg pl-2 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-lg">
+            <p className="mt-2 text-(length:--font-body-sm) tablet-md:text-lg pl-2 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) desktop-xl:text-lg [@media(min-width:1920px)_and_(min-height:1440px)]:text-xl">
               {project.descriptionShort}
             </p>
             <ExternalProjectLink
