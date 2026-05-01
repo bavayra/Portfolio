@@ -313,11 +313,6 @@
   }
 }
 
-.app-fullscreen {
-  min-height: 100dvh;
-  padding-bottom: env(safe-area-inset-bottom);
-}
-
 .section-vh {
   min-height: 50dvh;
 }
