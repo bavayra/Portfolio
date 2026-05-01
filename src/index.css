@@ -296,6 +296,14 @@
   }
 }
 
+@media (min-width: 1920px) {
+  :root {
+    --section-bot-div-top: 416px;
+    --section-bot-div-height: 316px;
+    --section-top-div-height: 260px;
+  }
+}
+
 .app-fullscreen {
   min-height: 100dvh;
   padding-bottom: env(safe-area-inset-bottom);
