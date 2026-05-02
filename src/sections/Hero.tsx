@@ -39,7 +39,7 @@ const Hero = () => {
         style={{
           minHeight:
             window.innerWidth >= 2560 && window.innerHeight >= 1440
-              ? "60vh"
+              ? "40vh"
               : window.innerWidth >= 1920 && window.innerHeight >= 1440
                 ? "68vh"
                 : window.innerWidth >= 1920 && window.innerHeight >= 1200
