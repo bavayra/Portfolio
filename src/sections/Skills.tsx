@@ -17,7 +17,7 @@ const Skills = () => {
     <section
       id="skills"
       aria-labelledby="skills-heading"
-      className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-sm:mt-8 tablet-md:mb-6 desktop-sm:mt-42 desktop-sm:max-w-110 desktop-xl:max-w-120"
+      className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-sm:mt-8 tablet-md:mb-6 desktop-sm:mt-42 desktop-sm:max-w-110 desktop-xl:max-w-120 desktop-2xl:max-w-150"
     >
       <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-sm:w-max desktop-sm:mx-auto desktop-sm:flex desktop-sm:flex-col desktop-sm:items-start desktop-2xl:leading-10">
         <p
@@ -43,13 +43,13 @@ const Skills = () => {
               {group.label}
             </h4>
             <ul
-              className="flex flex-wrap gap-2 desktop-sm:justify-center"
+              className="flex flex-wrap gap-2 desktop-sm:justify-center desktop-2xl:gap-x-4"
               aria-label={group.label}
             >
               {group.skills.map((skill) => (
                 <li
                   key={skill}
-                  className="rounded-full border border-grey-2 px-3 py-1 text-xs text-text phone-sm:text-sm tablet-md:text-lg desktop-lg:text-xl desktop-sm:px-6 [@media(min-width:1920px)_and_(min-height:1440px)]:text-2xl"
+                  className="rounded-full border border-grey-2 px-3 py-1 text-xs text-text phone-sm:text-sm tablet-md:text-lg desktop-lg:text-xl desktop-sm:px-6 [@media(min-width:1920px)_and_(min-height:1440px)]:text-2xl desktop-2xl:text-3xl desktop-2xl:px-8"
                 >
                   {skill}
                 </li>
