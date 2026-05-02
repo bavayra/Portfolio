@@ -30,7 +30,7 @@ const SectionTitle = ({
       />
       <div className="mb-4">
         <div className="flex items-center gap-2">
-          <span className="text-(length:--part-label) leading-1 tracking-wide font-medium text-section-title desktop-sm:text-3xl desktop-md:text-4xl">
+          <span className="text-(length:--part-label) leading-1 tracking-wide font-medium text-section-title desktop-sm:text-3xl desktop-md:text-4xl desktop-2xl:text-5xl">
             {partLabel}
           </span>
 
@@ -50,7 +50,7 @@ const SectionTitle = ({
         <h2
           id={headingId}
           ref={ref}
-          className="font-extrabold tracking-[0.2em] text-[3rem] tablet-sm:leading-16 tablet-sm:text-[3.5rem] desktop-sm:text-[5rem] desktop-lg:text-[5.5rem] desktop-sm:leading-21 text-section-title"
+          className="font-extrabold tracking-[0.2em] text-[3rem] tablet-sm:leading-16 tablet-sm:text-[3.5rem] desktop-sm:text-[5rem] desktop-lg:text-[5.5rem] desktop-sm:leading-21 desktop-2xl:text-[7.5rem] desktop-2xl:leading-30 text-section-title"
         >
           {title}
         </h2>
