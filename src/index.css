@@ -23,6 +23,7 @@
   --breakpoint-desktop-md: 1280px;
   --breakpoint-desktop-lg: 1440px;
   --breakpoint-desktop-xl: 1728px;
+  --breakpoint-desktop-2xl: 2560px;
 }
 
 /*DARK MODE - doesn't have all the default colors altered, only the ones that need to be changed for better contrast and visibility*/
