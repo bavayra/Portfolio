@@ -22,7 +22,7 @@ const ExternalProjectLink = ({
             className="text-text "
             aria-label={`Check the code on GitHub — ${projectTitle ?? "this project"}`}
           >
-            <span className="text-grey-3 phone-md:text-base text-sm desktop-xl:text-lg tablet-sm:text-lg">
+            <span className="text-grey-3 phone-md:text-base text-sm tablet-sm:text-lg">
               Check the code on
             </span>
             <GitHubIcon
@@ -33,7 +33,7 @@ const ExternalProjectLink = ({
         </div>
       )}
       {liveUrl && (
-        <div className="flex items-center ml-2 tablet-sm:text-xl desktop-xl:text-xl text-accent-red text-base font-semibold tablet-sm:-mt-2">
+        <div className="flex items-center ml-2 tablet-sm:text-xl text-accent-red text-base font-semibold tablet-sm:-mt-2">
           <a
             href={liveUrl}
             target="_blank"
