@@ -9,14 +9,14 @@ const Description = () => {
         <div>
           <div className="leading-6.5 ml-3 phone-lg:leading-7.5 tablet-sm:leading-8.5">
             <p
-              className="text-text text-(length:--font-page-number) desktop-md:text-[1.75rem]"
+              className="text-text text-(length:--font-page-number) desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
               aria-hidden="true"
             >
               03
             </p>
             <h3
               id="description-heading"
-              className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-xl:text-5xl"
+              className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-xl:text-5xl desktop-2xl:text-7xl"
             >
               WHAT AM I LIKE
             </h3>

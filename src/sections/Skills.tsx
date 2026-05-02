@@ -21,14 +21,14 @@ const Skills = () => {
     >
       <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-sm:w-max desktop-sm:mx-auto desktop-sm:flex desktop-sm:flex-col desktop-sm:items-start">
         <p
-          className="text-text text-(length:--font-page-number) self-start desktop-md:text-[1.75rem]"
+          className="text-text text-(length:--font-page-number) self-start desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
           aria-hidden="true"
         >
           02
         </p>
         <h3
           id="skills-heading"
-          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-sm:text-left"
+          className="text-[2.75rem] text-grey-2 font-medium desktop-sm:text-5xl desktop-sm:text-left desktop-2xl:text-7xl "
         >
           MY SKILLS
         </h3>
