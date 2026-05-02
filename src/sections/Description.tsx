@@ -7,7 +7,7 @@ const Description = () => {
     >
       <div className="grid grid-cols-[1fr_auto] items-end gap-x-2 phone-md:gap-x-4">
         <div>
-          <div className="leading-6.5 ml-3 phone-lg:leading-7.5 tablet-sm:leading-8.5">
+          <div className="leading-6.5 ml-3 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-2xl:leading-10">
             <p
               className="text-text text-(length:--font-page-number) desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
               aria-hidden="true"

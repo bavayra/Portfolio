@@ -19,7 +19,7 @@ const Skills = () => {
       aria-labelledby="skills-heading"
       className="relative ml-3 tablet-sm:ml-9 desktop-sm:ml-0 mb-4 tablet-sm:mt-8 tablet-md:mb-6 desktop-sm:mt-42 desktop-sm:max-w-110 desktop-xl:max-w-120"
     >
-      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-sm:w-max desktop-sm:mx-auto desktop-sm:flex desktop-sm:flex-col desktop-sm:items-start">
+      <div className="leading-6.5 phone-lg:leading-7.5 tablet-sm:leading-8.5 desktop-sm:w-max desktop-sm:mx-auto desktop-sm:flex desktop-sm:flex-col desktop-sm:items-start desktop-2xl:leading-10">
         <p
           className="text-text text-(length:--font-page-number) self-start desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
           aria-hidden="true"

@@ -30,7 +30,7 @@ const ProjectSection = ({
       className={`relative h-auto tablet-sm:ml-5 p-8 desktop-lg:ml-6 ${sectionClassName}`}
     >
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-4 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2">
-        <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12 ">
+        <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12">
           <p
             className="text-text text-(length:--font-page-number) leading-5 desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
             aria-hidden="true"
@@ -39,7 +39,7 @@ const ProjectSection = ({
           </p>
           <h3
             id={`${projectId}-heading`}
-            className="text-[2.75rem] desktop-sm:text-5xl text-grey-2 font-medium uppercase desktop-sm:leading-15 desktop-2xl:text-7xl"
+            className="text-[2.75rem] desktop-sm:text-5xl text-grey-2 font-medium uppercase desktop-sm:leading-15 desktop-2xl:text-7xl desktop-2xl:leading-23"
           >
             {project.title}
           </h3>
