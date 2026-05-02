@@ -29,7 +29,7 @@ const ProjectSection = ({
       aria-labelledby={`${projectId}-heading`}
       className={`relative h-auto tablet-sm:ml-5 p-8 desktop-lg:ml-6 ${sectionClassName}`}
     >
-      <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-4 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2 [@media(min-width:1920px)]:grid-cols-[auto_1fr] [@media(min-width:1920px)]:items-center">
+      <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-4 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2 [@media(min-width:1920px)]:grid-cols-[auto_1fr] ">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12">
           <p
             className="text-text text-(length:--font-page-number) leading-5 desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
@@ -59,7 +59,7 @@ const ProjectSection = ({
         </div>
 
         <div
-          className={`phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-sm:self-start desktop-md:mt-0 [@media(min-width:1920px)]:self-center [@media(min-width:1920px)]:col-start-2 [@media(min-width:1920px)]:row-start-1 [@media(min-width:1920px)]:row-span-1 ${screenContainerClassName}`}
+          className={`phone-sm:mt-6 desktop-sm:col-start-2 desktop-sm:row-start-1 desktop-sm:row-span-2 desktop-sm:self-start desktop-md:mt-0 [@media(min-width:1920px)]:self-center [@media(min-width:1920px)]:col-start-2 [@media(min-width:1920px)]:row-start-1 [@media(min-width:1920px)]:row-span-2 [@media(min-width:1920px)]:translate-x-1/5 ${screenContainerClassName}`}
         >
           <ProjectScreen
             projectId={project.id}
@@ -72,7 +72,7 @@ const ProjectSection = ({
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className={`desktop-sm:row-start-2 [@media(min-width:1920px)]:col-start-1 [@media(min-width:1920px)]:row-start-3 ${projectDescClassName}`}
+          className={`desktop-sm:row-start-2 [@media(min-width:1920px)]:col-start-1 ${projectDescClassName}`}
         />
       </div>
     </section>

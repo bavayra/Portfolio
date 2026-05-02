@@ -83,8 +83,8 @@ export const projects = [
     imageClasses: {
       0: "mx-auto phone-md:mt-3 phone-md:w-36 phone-lg:-mt-3 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-sm:mt-0 desktop-xl:w-44",
       1: "-mt-24 mx-auto phone-md:-mt-25 phone-md:w-36 phone-lg:-mt-36 phone-lg:w-44 tablet-sm:-mt-42 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-sm:mt-0 desktop-xl:w-44",
-      2: "mx-auto phone-md:w-38 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-sm:mt-5 desktop-xl:w-44 desktop-md:translate-y-1/2",
-      3: "-mt-17 mx-auto phone-md:-mt-22 phone-md:w-36 phone-lg:-mt-24 phone-lg:w-44 tablet-sm:-mt-30 tablet-sm:w-48 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:w-40 desktop-sm:-mt-12 desktop-md:-translate-y-[5%] desktop-xl:w-44",
+      2: "mx-auto phone-md:w-38 phone-lg:w-44 tablet-sm:w-52 tablet-md:w-60 desktop-sm:w-40 desktop-sm:mt-5 desktop-xl:w-44 desktop-md:translate-y-1/2 [@media(min-width:1920px)]:translate-0",
+      3: "-mt-17 mx-auto phone-md:-mt-22 phone-md:w-36 phone-lg:-mt-24 phone-lg:w-44 tablet-sm:-mt-30 tablet-sm:w-48 tablet-md:-mt-32 tablet-md:w-60 desktop-sm:w-40 desktop-sm:-mt-12 desktop-md:-translate-y-[5%] desktop-xl:w-44 [@media(min-width:1920px)]:translate-0",
     },
     images: [
       {
@@ -132,8 +132,8 @@ export const projects = [
     imageClasses: {
       0: "mx-auto -mt-13 w-34 phone-md:w-36 phone-md:-mt-10 phone-lg:w-44 phone-lg:-mt-22 tablet-sm:w-52 tablet-md:-mt-34 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-sm:mt-0 desktop-xl:w-44",
       1: "-mt-4 mx-auto w-34 phone-md:-mt-3 phone-md:w-36 phone-lg:-mt-12 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-44 desktop-sm:mt-0 ",
-      2: "-mt-12 mx-auto w-30 phone-md:-mt-13 phone-md:w-36 phone-lg:w-44 phone-lg:-mt-16 tablet-sm:-mt-15 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-44 desktop-sm:-mt-20  desktop-md:-translate-y-[5%]",
-      3: "mx-auto w-30 phone-md:w-36 phone-lg:w-44 tablet-sm:mt-3 tablet-sm:w-54 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-44 desktop-sm:mt-4 ",
+      2: "-mt-12 mx-auto w-30 phone-md:-mt-13 phone-md:w-36 phone-lg:w-44 phone-lg:-mt-16 tablet-sm:-mt-15 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-44 desktop-sm:-mt-20 desktop-md:-translate-y-[5%] [@media(min-width:1920px)]:translate-0 [@media(min-width:1920px)]:mt-0",
+      3: "mx-auto w-30 phone-md:w-36 phone-lg:w-44 tablet-sm:mt-3 tablet-sm:w-54 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-44 desktop-sm:mt-4 [@media(min-width:1920px)]:mt-0",
     },
     images: [
       {
