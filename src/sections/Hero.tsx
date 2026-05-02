@@ -35,7 +35,7 @@ const Hero = () => {
         </p>
       </div>
       <div
-        className="absolute bg-grey-2 w-(--hero-div-w) left-13 top-40 min-h-[25vh] tablet-lg:left-14 tablet-lg:top-46 tablet-lg:min-h-[28vh] desktop-sm:top-84 desktop-sm:min-h-86 desktop-sm:left-13 desktop-md:top-90 desktop-lg:top-96 desktop-lg:min-h-[50vh] desktop-lg:left-14 desktop-xl:top-106 desktop-xl:min-h-[54vh] [@media(min-width:1920px)]:min-h-[58vh] desktop-2xl:top-136 desktop-2xl:min-h-[10vh]"
+        className="absolute bg-grey-2 w-(--hero-div-w) left-13 top-40 min-h-[25vh] tablet-lg:left-14 tablet-lg:top-46 tablet-lg:min-h-[28vh] desktop-sm:top-84 desktop-sm:min-h-86 desktop-sm:left-13 desktop-md:top-90 desktop-lg:top-96 desktop-lg:min-h-[50vh] desktop-lg:left-14 desktop-xl:top-106 desktop-xl:min-h-[54vh] [@media(min-width:1920px)]:min-h-[58vh] desktop-2xl:top-136"
         style={{
           minHeight:
             window.innerWidth >= 2560 && window.innerHeight >= 1440

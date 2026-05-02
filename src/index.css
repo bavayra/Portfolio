@@ -328,7 +328,7 @@
 @media (min-width: 2560px) {
   :root {
     --section-bot-div-top: 488px;
-    --section-bot-div-height: 380px;
+    --section-bot-div-height: 376px;
     --section-top-div-height: 308px;
   }
 }
