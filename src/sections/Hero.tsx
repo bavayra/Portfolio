@@ -22,7 +22,7 @@ const Hero = () => {
         className="relative grid grid-cols-[auto_1fr] grid-rows-[auto_auto_auto] ml-3 tablet-sm:ml-8 desktop-sm:translate-y-[70%]"
         aria-hidden="true"
       >
-        <p className="col-start-1 row-start-1 pl-3 text-(length:--name-year-size) text-grey-2 leading-8 phone-md:leading-10 phone-lg:leading-12 desktop-md:leading-16">
+        <p className="col-start-1 row-start-1 pl-3 text-(length:--year-font-size) text-grey-2 leading-8 phone-md:leading-10 phone-lg:leading-12 desktop-md:leading-16">
           2026
         </p>
 
@@ -30,7 +30,7 @@ const Hero = () => {
           Portfolio
         </p>
 
-        <p className="col-start-1 col-span-2 row-start-3 text-(length:--name-year-size) leading-10 font-bold text-accent-red tracking-wider pl-[40%] phone-md:leading-12 tablet-sm:pl-[49%] tablet-sm:leading-14 tablet-md:pl-[36%] tablet-lg:pl-[45%] tablet-lg:text-[3.5rem] desktop-sm:pl-[34%] desktop-sm:leading-18  desktop-md:pl-[29%] desktop-lg:leading-20 desktop-xl:pl-[26%] desktop-xl:text-[5rem] desktop-2xl:text-[7rem] desktop-2xl:leading-30">
+        <p className="col-start-1 col-span-2 row-start-3 text-[7rem] leading-10 font-bold text-accent-red tracking-wider pl-[40%] phone-md:leading-12 tablet-sm:pl-[49%] tablet-sm:leading-14 tablet-md:pl-[36%] tablet-lg:pl-[45%] desktop-sm:pl-[34%] desktop-sm:leading-18  desktop-md:pl-[29%] desktop-lg:leading-20 desktop-xl:pl-[26%] desktop-2xl:leading-30">
           ALIX BELL
         </p>
       </div>

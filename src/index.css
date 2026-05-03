@@ -92,8 +92,7 @@
 :root {
   /*div = divider*/
   --hero-div-w: 2px; /*the width of the dividers/
-  --hero-mt: 0px; /*the margin-top of the hero section div*/
-
+ 
   --section-top-div-top: 18px; /*the top position of the top divider in the section*/
   --section-top-div-height: 64px; /*the height of the top divider in the section*/
   --section-bot-div-height: 88px; /*the height of the bottom divider in the section*/
@@ -108,8 +107,7 @@
     96px
   ); /*the font size of the h1 in the hero section*/
 
-  --name-year-size: 1.5rem; /*the font size of the name and year in the hero section*/
-
+  --year-font-size: 1.5rem;
   --part-label: clamp(1.2rem, calc(0.618rem + 2.909vw), 2.8rem);
   /*1.2rem → 2.8rem font size for sections' parts' labels (Part 1, Part 2, etc.) */
 
@@ -176,8 +174,6 @@
 
 @media (min-width: 390px) {
   :root {
-    --hero-mt: 40px;
-
     --section-top-div-height: 124px;
     --section-bot-div-top: 222px;
   }
@@ -189,7 +185,7 @@
 
     --contacts-div-bot-height: 572px;
 
-    --name-year-size: 1.875rem;
+    --year-font-size: clamp(1.75rem, 1.308rem + 1.472vw, 2.25rem);
   }
 }
 
@@ -201,9 +197,6 @@
 
 @media (min-width: 480px) {
   :root {
-    --hero-mt: clamp(40px, calc(-515.692px + 64.615vh), 208px);
-    --name-year-size: 2.25rem;
-
     --section-top-div-height: 116px;
     --section-bot-div-top: clamp(228px, calc(-116px + 40vh), 244px);
     --section-bot-div-height: 184px;
@@ -214,7 +207,6 @@
 @media (min-width: 600px) {
   :root {
     --hero-div-w: 3px;
-    --hero-mt: 140px;
 
     --section-title-size: clamp(3rem, 0.8571rem + 5.7143vw, 6rem);
 
@@ -223,6 +215,8 @@
 
     --contacts-div-bot-height: 520px;
     --contacts-div-bot-top: 82px;
+
+    --year-font-size: clamp(2.25rem, 1.534rem + 0.893vw, 2.75rem);
   }
 }
 
@@ -232,29 +226,24 @@
     --section-bot-div-height: 204px;
 
     --contacts-div-bot-height: 540px;
-
-    --name-year-size: 3rem;
-    --hero-mt: 164px;
   }
 }
 
 @media (min-width: 820px) {
   :root {
-    --hero-mt: 198px;
-
     --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
     --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
     --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
 
     --h1-size: clamp(96px, calc(-128px + 22.857vw), 128px);
+
+    --year-font-size: clamp(2.75rem, 2.266rem + 0.403vw, 3rem);
   }
 }
 
 /*DESKTOPS*/
 @media (min-width: 1024px) {
   :root {
-    --hero-mt: 0px;
-
     --contacts-div-bot-top: 100px;
     --contacts-div-bot-height: 380px;
 
@@ -277,10 +266,10 @@
 
 @media (min-width: 1440px) {
   :root {
-    --hero-mt: 16px;
-
     --section-top-div-height: 172px;
     --section-bot-div-height: 228px;
+
+    --year-font-size: clamp(3rem, 1.875rem + 0.391vw, 3.75rem);
   }
 }
 
@@ -291,8 +280,6 @@
 
     --contacts-div-bot-height: 490px;
     --contacts-div-bot-top: 172px;
-
-    --name-year-size: 3.75rem;
   }
 }
 
@@ -328,6 +315,8 @@
     --section-bot-div-top: 488px;
     --section-bot-div-height: 376px;
     --section-top-div-height: 308px;
+
+    --year-font-size: 5rem;
   }
 }
 
