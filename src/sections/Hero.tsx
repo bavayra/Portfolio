@@ -30,7 +30,7 @@ const Hero = () => {
           Portfolio
         </p>
 
-        <p className="col-start-1 col-span-2 row-start-3 text-[7rem] leading-10 font-bold text-accent-red tracking-wider pl-[40%] phone-md:leading-12 tablet-sm:pl-[49%] tablet-sm:leading-14 tablet-md:pl-[36%] tablet-lg:pl-[45%] desktop-sm:pl-[34%] desktop-sm:leading-18  desktop-md:pl-[29%] desktop-lg:leading-20 desktop-xl:pl-[26%] desktop-2xl:leading-30">
+        <p className="col-start-1 col-span-2 row-start-3 text-(length:--name-font-size) leading-10 font-bold text-accent-red tracking-wider pl-[40%] phone-md:leading-12 tablet-sm:pl-[49%] tablet-sm:leading-14 tablet-md:pl-[36%] tablet-lg:pl-[45%] desktop-sm:pl-[34%] desktop-sm:leading-18  desktop-md:pl-[29%] desktop-lg:leading-20 desktop-xl:pl-[26%] desktop-2xl:leading-30">
           ALIX BELL
         </p>
       </div>

@@ -108,6 +108,9 @@
   ); /*the font size of the h1 in the hero section*/
 
   --year-font-size: 1.5rem;
+
+  --name-font-size: clamp(1.75rem, 0.25rem + 0.417vw, 2.75rem);
+
   --part-label: clamp(1.2rem, calc(0.618rem + 2.909vw), 2.8rem);
   /*1.2rem → 2.8rem font size for sections' parts' labels (Part 1, Part 2, etc.) */
 
@@ -217,6 +220,7 @@
     --contacts-div-bot-top: 82px;
 
     --year-font-size: clamp(2.25rem, 1.534rem + 0.893vw, 2.75rem);
+    --name-font-size: clamp(2.75rem, 2.04rem + 0.118vw, 3.25rem);
   }
 }
 
@@ -247,6 +251,8 @@
     --contacts-div-bot-top: 100px;
     --contacts-div-bot-height: 380px;
 
+    --name-font-size: clamp(3.25rem, 2.16rem + 0.107vw, 4rem);
+
     .section-vh {
       min-height: 70dvh;
     }
@@ -270,6 +276,7 @@
     --section-bot-div-height: 228px;
 
     --year-font-size: clamp(3rem, 1.875rem + 0.391vw, 3.75rem);
+    --name-font-size: 4rem;
   }
 }
 
