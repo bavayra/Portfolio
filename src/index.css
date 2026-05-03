@@ -102,9 +102,9 @@
   --contacts-div-bot-height: 550px; /*the height of the bottom divider in the contacts section*/
 
   --h1-size: clamp(
-    48px,
-    calc(20vw - 24px),
-    96px
+    3.125rem,
+    2.375rem + 0.208vw,
+    3.375rem
   ); /*the font size of the h1 in the hero section*/
 
   --year-font-size: 1.5rem;
@@ -203,6 +203,8 @@
     --section-top-div-height: 116px;
     --section-bot-div-top: clamp(228px, calc(-116px + 40vh), 244px);
     --section-bot-div-height: 184px;
+
+    --h1-size: clamp(3.375rem, -1.625rem + 1.042vw, 4.625rem);
   }
 }
 
@@ -221,6 +223,8 @@
 
     --year-font-size: clamp(2.25rem, 1.534rem + 0.893vw, 2.75rem);
     --name-font-size: clamp(2.75rem, 2.04rem + 0.118vw, 3.25rem);
+
+    --h1-size: clamp(4.625rem, 0.161rem + 0.744vw, 5.875rem);
   }
 }
 
@@ -230,6 +234,8 @@
     --section-bot-div-height: 204px;
 
     --contacts-div-bot-height: 540px;
+
+    --h1-size: clamp(5.875rem, 2.125rem + 0.488vw, 7.125rem);
   }
 }
 
@@ -238,8 +244,6 @@
     --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
     --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
     --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
-
-    --h1-size: clamp(96px, calc(-128px + 22.857vw), 128px);
 
     --year-font-size: clamp(2.75rem, 2.266rem + 0.403vw, 3rem);
   }
@@ -252,6 +256,8 @@
     --contacts-div-bot-height: 380px;
 
     --name-font-size: clamp(3.25rem, 2.16rem + 0.107vw, 4rem);
+
+    --h1-size: clamp(7.125rem, 4.761rem + 0.231vw, 8.75rem);
 
     .section-vh {
       min-height: 70dvh;
@@ -287,6 +293,8 @@
 
     --contacts-div-bot-height: 490px;
     --contacts-div-bot-top: 172px;
+
+    --h1-size: clamp(8.75rem, -9.25rem + 1.042vw, 10.75rem);
   }
 }
 
@@ -295,6 +303,8 @@
     --section-bot-div-top: 416px;
     --section-bot-div-height: 316px;
     --section-top-div-height: 260px;
+
+    --h1-size: clamp(10.75rem, 5.5rem + 0.273vw, 12.5rem);
   }
 }
 
@@ -324,6 +334,8 @@
     --section-top-div-height: 308px;
 
     --year-font-size: 5rem;
+
+    --h1-size: 14.5rem;
   }
 }
 

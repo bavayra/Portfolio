@@ -26,7 +26,7 @@ const Hero = () => {
           2026
         </p>
 
-        <p className="col-start-1 row-start-2 leading-10 pl-3 text-(length:--h1-size) font-semibold phone-md:leading-12 tablet-sm:leading-18 tablet-lg:text-[8rem] tablet-lg:leading-24 desktop-xl:text-[10rem] desktop-xl:leading-32 desktop-2xl:text-[14rem]  desktop-2xl:leading-44 text-grey-2">
+        <p className="col-start-1 row-start-2 leading-10 pl-3 text-(length:--h1-size) font-semibold phone-md:leading-12 tablet-sm:leading-18  tablet-lg:leading-24 desktop-xl:leading-32 desktop-2xl:leading-44 text-grey-2">
           Portfolio
         </p>
 
