@@ -148,12 +148,6 @@
     32.5rem
   ); /* max width of the text container for ~>768px */
 
-  --author-img-size: clamp(
-    6rem,
-    calc(1.227rem + 23.864vw),
-    27rem
-  ); /* the size of the author's image in the description section */
-
   --contact-title-size: clamp(
     3rem,
     2.1429rem + 4.2857vw,
@@ -169,31 +163,33 @@
 
 @media (min-width: 360px) {
   :root {
+    --hero-line-height: clamp(2.25rem, calc(0.353rem + 10.039vw), 3.5rem);
+    --hero-bot-div-top: clamp(7.5rem, calc(0.577rem + 30.769vw), 8.5rem);
+    --h1-font-size: clamp(3.5rem, calc(0.824rem + 11.765vw), 7rem);
+
     --section-top-div-top: 16px;
     --section-top-div-height: 100px;
     --section-bot-div-height: 124px;
     --section-bot-div-top: 186px;
-    --hero-line-height: clamp(3rem, calc(1.059rem + 8.529vw), 5rem);
-    --hero-bot-div-top: clamp(7.5rem, calc(0.577rem + 30.769vw), 8.5rem);
   }
 }
 
 @media (min-width: 375px) {
   :root {
+    --hero-bot-div-min-h: 18vh;
+
     --section-top-div-height: 86px;
     --section-bot-div-top: clamp(176px, calc(2.667px + 28.889vh), 228px);
     --section-bot-div-height: clamp(114px, calc(-25.2px + 23.2vh), 172px);
-
-    --hero-bot-div-min-h: 18vh;
   }
 }
 
 @media (min-width: 390px) {
   :root {
+    --hero-bot-div-min-h: 35vh;
+
     --section-top-div-height: 124px;
     --section-bot-div-top: 222px;
-
-    --hero-bot-div-min-h: 35vh;
   }
 }
 
@@ -204,6 +200,9 @@
     --contacts-div-bot-height: 572px;
 
     --hero-bot-div-top: clamp(8.5rem, calc(5.213rem + 12.766vw), 10rem);
+    --year-font-size: 1.75rem;
+    --h1-font-size: 4.5rem;
+    --hero-line-height: 3rem;
   }
 }
 
@@ -228,9 +227,10 @@
 @media (min-width: 600px) {
   :root {
     --hero-div-w: 3px;
-    --hero-bot-div-min-h: 25vh;
-    --hero-bot-div-top: 10rem;
+    --hero-bot-div-min-h: 25.5vh;
+    --hero-bot-div-top: 9.5rem;
     --hero-bot-div-left: 3.25rem;
+    --hero-line-height: 3.5rem;
 
     --section-title-size: clamp(3rem, 0.8571rem + 5.7143vw, 6rem);
 
@@ -239,6 +239,8 @@
 
     --contacts-div-bot-height: 520px;
     --contacts-div-bot-top: 82px;
+    --h1-font-size: 5.875rem;
+    --name-pl-size: 46%;
   }
 }
 
@@ -253,9 +255,9 @@
     --year-font-size: clamp(2.75rem, calc(2.554rem + 0.298vw), 3rem);
     --name-pl-size: 40%;
     --name-font-size: clamp(3.5rem, calc(2.786rem + 1.19vw), 4rem);
-    --hero-bot-div-top: 11rem;
+    --hero-bot-div-top: 11.5rem;
     --hero-bot-div-min-h: 23vh;
-    --hero-line-height: 5rem;
+    --hero-line-height: 4.5rem;
   }
 }
 
@@ -266,8 +268,8 @@
     --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
 
     --h1-font-size: clamp(7rem, calc(4.679rem + 3.721vw), 8.75rem);
-    --hero-bot-div-top: 11rem;
-    --hero-bot-div-min-h: 25vh;
+    --hero-bot-div-top: 11.375rem;
+    --hero-bot-div-min-h: 28vh;
   }
 }
 
@@ -277,10 +279,10 @@
     --contacts-div-bot-top: 100px;
     --contacts-div-bot-height: 380px;
 
-    --hero-bot-div-top: 11.5rem;
+    --hero-bot-div-top: 21.725rem;
     --hero-bot-div-left: 3.25rem;
-    --hero-bot-div-min-h: 28vh;
-    --name-pl-size: 38%;
+    --hero-bot-div-min-h: 48vh;
+    --name-pl-size: 30%;
 
     --hero-top-div-left: 1.25rem;
     --hero-top-div-min-h: 10.5rem;
@@ -301,9 +303,9 @@
     --contacts-div-bot-height: 384px;
 
     --h1-font-size: clamp(7rem, calc(2.071rem + 8.036vw), 8.75rem);
-    --hero-bot-div-top: 21.5rem;
+    --hero-bot-div-top: 22.25rem;
     --hero-bot-div-left: 3.25rem;
-    --hero-bot-div-min-h: 23vh;
+    --hero-bot-div-min-h: 48vh;
     --name-pl-size: 30%;
   }
 }
@@ -318,11 +320,11 @@
     --hero-line-height: clamp(5rem, calc(3.571rem + 1.786vw), 8rem);
     --name-font-size: clamp(4rem, calc(2.167rem + 2.604vw), 5.25rem);
     --name-pl-size: 26%;
-    --hero-bot-div-top: 24rem;
+    --hero-bot-div-top: 26rem;
     --hero-bot-div-left: 3.5rem;
-    --hero-bot-div-min-h: 28vh;
+    --hero-bot-div-min-h: 47vh;
     --hero-top-div-left: 1.5rem;
-    --hero-top-div-min-h: 11.5rem;
+    --hero-top-div-min-h: 12.5rem;
   }
 }
 
@@ -334,10 +336,10 @@
     --contacts-div-bot-height: 490px;
     --contacts-div-bot-top: 172px;
 
-    --hero-bot-div-top: 26rem;
-    --hero-bot-div-min-h: 25vh;
+    --hero-bot-div-top: 28rem;
+    --hero-bot-div-min-h: 52vh;
     --hero-top-div-left: 1.5rem;
-    --hero-top-div-min-h: 11.5rem;
+    --hero-top-div-min-h: 14rem;
   }
 }
 
@@ -347,11 +349,11 @@
     --section-bot-div-height: 316px;
     --section-top-div-height: 260px;
 
-    --name-font-size: clamp(5.25rem, calc(2.625rem + 3.125vw), 6.75rem);
+    --name-font-size: 4.5rem;
     --name-pl-size: 24%;
-    --hero-bot-div-top: 26rem;
-    --hero-bot-div-min-h: 23vh;
-    --hero-top-div-min-h: 11.5rem;
+    --hero-bot-div-top: 28rem;
+    --hero-bot-div-min-h: 56vh;
+    --hero-top-div-min-h: 13.5rem;
   }
 }
 
@@ -361,9 +363,9 @@
     --section-bot-div-height: 352px;
     --section-top-div-height: 300px;
 
-    --hero-bot-div-top: 26rem;
-    --hero-bot-div-min-h: 23vh;
-    --hero-top-div-min-h: 11.5rem;
+    --hero-bot-div-top: 28rem;
+    --hero-bot-div-min-h: 60vh;
+    --hero-top-div-min-h: 13.725rem;
   }
 }
 
@@ -373,10 +375,10 @@
     --section-bot-div-height: 300px;
     --section-top-div-height: 244px;
 
-    --hero-bot-div-top: 28.5rem;
-    --hero-bot-div-min-h: 25vh;
+    --hero-bot-div-top: 30rem;
+    --hero-bot-div-min-h: 65vh;
     --hero-line-height: 7rem;
-    --hero-top-div-min-h: 15rem;
+    --hero-top-div-min-h: 14.5rem;
 
     .section-vh {
       min-height: 50dvh;
@@ -393,16 +395,10 @@
     --year-font-size: 3.75rem;
     --h1-font-size: 14.375rem;
     --name-font-size: 6.75rem;
-    --hero-bot-div-top: 38.5rem;
-    --hero-bot-div-min-h: 23vh;
-    --hero-top-div-min-h: 16.5rem;
-  }
-}
-
-@media (min-width: 2560px) and (min-height: 1440px) {
-  :root {
-    --hero-bot-div-min-h: 25vh;
-    --hero-top-div-min-h: 19rem;
+    --hero-bot-div-top: 35rem;
+    --hero-bot-div-min-h: 59vh;
+    --hero-top-div-min-h: 17.5rem;
+    --hero-line-height: 8rem;
   }
 }
 

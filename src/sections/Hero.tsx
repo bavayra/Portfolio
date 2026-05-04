@@ -34,19 +34,8 @@ const Hero = () => {
           ALIX BELL
         </p>
       </div>
-      <div
-        className="absolute bg-grey-2 w-(--hero-div-w) left-(--hero-bot-div-left) desktop-sm:left-3.5rem top-(--hero-bot-div-top) min-h-(--hero-bot-div-min-h)"
-        style={{
-          minHeight:
-            window.innerWidth >= 2560 && window.innerHeight >= 1440
-              ? "66vh"
-              : window.innerWidth >= 1920 && window.innerHeight >= 1440
-                ? "60vh"
-                : window.innerWidth >= 1920 && window.innerHeight >= 1200
-                  ? "55vh"
-                  : undefined,
-        }}
-      />
+
+      <div className="absolute bg-grey-2 w-(--hero-div-w) left-(--hero-bot-div-left) desktop-sm:left-3.5rem top-(--hero-bot-div-top) min-h-(--hero-bot-div-min-h)" />
       <div className="mt-auto">
         <DotPattern />
       </div>
