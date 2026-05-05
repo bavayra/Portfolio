@@ -5,7 +5,7 @@ const Hero = () => {
     <section
       id="hero"
       aria-labelledby="hero-heading"
-      className="pt-8  min-h-screen relative overflow-hidden flex flex-col "
+      className="pt-8 h-screen relative overflow-hidden flex flex-col "
     >
       <h1 id="hero-heading" className="sr-only">
         Alix Bell — Junior Frontend Developer

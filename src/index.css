@@ -91,81 +91,45 @@
 
 :root {
   /*div = divider*/
-  --hero-div-w: 2px; /*the width of the dividers/
- 
+  --hero-div-w: 2px; /*the width of the dividers*/
+  --hero-line-height: 2.25rem; /*the line height of the h1 in the hero section*/
+  --h1-font-size: clamp(3.5rem, calc(0.824rem + 11.765vw), 7rem); /*the font size of the h1 (visible Portfolio element in the hero section*/
+  --year-font-size: clamp(1.5rem, calc(0.706rem + 3.529vw), 2.75rem); /*the font size of the year in the hero section*/
+  --name-font-size: clamp(1.75rem, calc(0.559rem + 5.294vw), 3.5rem); /*the font size of the name in the hero section*/
+  --name-pl-size: 40%; /*left padding for the name element*/
+
+  --hero-bot-div-top: clamp(7.5rem, calc(5.213rem + 12.766vw), 10rem); /*the top position of the bottom divider in the hero section*/
+  --hero-bot-div-min-h: 27vh; /*min-h of the bottom divider in the hero section*/
+  --hero-bot-div-left: clamp(1.75rem, calc(0.882rem + 3.846vw), 3.25rem); /*the left position of the bottom divider in the hero section*/
+  --hero-top-div-left: 1.25rem; /*the left position of the top divider in the hero section*/
+  --hero-top-div-min-h: 10.5rem; /*the min-h of the top divider in the hero section*/
+
+  --header-font-size: clamp(0.875rem, 0.1196rem + 4.3478vw, 1.25rem); /* font size for the header */
+
   --section-top-div-top: 18px; /*the top position of the top divider in the section*/
   --section-top-div-height: 64px; /*the height of the top divider in the section*/
   --section-bot-div-height: 88px; /*the height of the bottom divider in the section*/
   --section-bot-div-top: 148px; /*the top position of the bottom divider in the section*/
+  --part-label: clamp(1.2rem, calc(0.618rem + 2.909vw), 2.8rem);
+  /*font size for sections' parts' labels (Part 1, Part 2, etc.) */
 
+  --font-body-sm: clamp(0.75rem, -0.1196rem + 4.3478vw, 1rem); /*font size for projects' short descriptions */
+  --font-section-label: clamp(1.5rem, 0.1765rem + 5.8824vw, 3rem);
+  /* font size for sections' labels (titles), e.g., About, Projects, Contacts */
+  --font-page-number: clamp(1.25rem, 0.9868rem + 1.1696vw, 2.25rem); /*font size for page numbers */
+
+  --max-w-text-sm: clamp(15rem, calc(2.647rem + 54.902vw), 29rem); /* max-w of the text container for <768px */
+  --max-w-text-lg: clamp(23rem, calc(9.182rem + 21.591vw), 32.5rem); /* max-w of the text container for ~>768px */
+
+  --contact-title-size: clamp(3rem, 2.1429rem + 4.2857vw, 6rem); /* the font size of the title in the contacts section */
   --contacts-div-bot-top: 68px; /*the top position of the bottom divider in the contacts section*/
   --contacts-div-bot-height: 550px; /*the height of the bottom divider in the contacts section*/
-
-  --hero-line-height: 2.25rem;
-
-  --h1-font-size: clamp(
-    3.5rem,
-    calc(0.824rem + 11.765vw),
-    7rem
-  ); /*the font size of the h1 in the hero section*/
-
-  --year-font-size: clamp(1.5rem, calc(0.706rem + 3.529vw), 2.75rem);
-
-  --name-font-size: clamp(1.75rem, calc(0.559rem + 5.294vw), 3.5rem);
-  --name-pl-size: 40%;
-
-  --hero-bot-div-top: clamp(7.5rem, calc(5.213rem + 12.766vw), 10rem);
-  --hero-bot-div-min-h: 27vh;
-  --hero-bot-div-left: clamp(1.75rem, calc(0.882rem + 3.846vw), 3.25rem);
-  --hero-top-div-left: 1.25rem;
-  --hero-top-div-min-h: 10.5rem;
-
-  --part-label: clamp(1.2rem, calc(0.618rem + 2.909vw), 2.8rem);
-  /*1.2rem → 2.8rem font size for sections' parts' labels (Part 1, Part 2, etc.) */
-
-  --font-body-sm: clamp(
-    0.75rem,
-    -0.1196rem + 4.3478vw,
-    1rem
-  ); /* xs → base font size for projects' short descriptions */
-
-  --font-section-label: clamp(1.5rem, 0.1765rem + 5.8824vw, 3rem);
-  /* 3xl → 5xl font size for sections' labels (titles), e.g., About, Projects, Contacts */
-  --font-page-number: clamp(
-    1.25rem,
-    0.9868rem + 1.1696vw,
-    2.25rem
-  ); /* xl → 4xl font size for page numbers */
-
-  --max-w-text-sm: clamp(
-    15rem,
-    calc(2.647rem + 54.902vw),
-    29rem
-  ); /* max width of the text container for ~<768px */
-  --max-w-text-lg: clamp(
-    23rem,
-    calc(9.182rem + 21.591vw),
-    32.5rem
-  ); /* max width of the text container for ~>768px */
-
-  --contact-title-size: clamp(
-    3rem,
-    2.1429rem + 4.2857vw,
-    6rem
-  ); /* the font size of the title in the contacts section */
-
-  --header-font-size: clamp(
-    0.875rem,
-    0.1196rem + 4.3478vw,
-    1.25rem
-  ); /* xs -> 3xl font size for the header */
 }
 
 @media (min-width: 360px) {
   :root {
     --hero-line-height: clamp(2.25rem, calc(0.353rem + 10.039vw), 3.5rem);
     --hero-bot-div-top: clamp(7.5rem, calc(0.577rem + 30.769vw), 8.5rem);
-    --h1-font-size: clamp(3.5rem, calc(0.824rem + 11.765vw), 7rem);
 
     --section-top-div-top: 16px;
     --section-top-div-height: 100px;
@@ -195,14 +159,14 @@
 
 @media (min-width: 412px) {
   :root {
-    --section-bot-div-height: 188px;
-
-    --contacts-div-bot-height: 572px;
-
     --hero-bot-div-top: clamp(8.5rem, calc(5.213rem + 12.766vw), 10rem);
     --year-font-size: 1.75rem;
     --h1-font-size: 4.5rem;
     --hero-line-height: 3rem;
+
+    --section-bot-div-height: 188px;
+
+    --contacts-div-bot-height: 572px;
   }
 }
 
@@ -214,12 +178,12 @@
 
 @media (min-width: 480px) {
   :root {
+    --hero-bot-div-top: clamp(8.5rem, calc(7.192rem + 5.447vw), 10rem);
+    --hero-bot-div-min-h: 28vh;
+
     --section-top-div-height: 116px;
     --section-bot-div-top: clamp(228px, calc(-116px + 40vh), 244px);
     --section-bot-div-height: 184px;
-
-    --hero-bot-div-top: clamp(8.5rem, calc(7.192rem + 5.447vw), 10rem);
-    --hero-bot-div-min-h: 28vh;
   }
 }
 
@@ -231,26 +195,20 @@
     --hero-bot-div-top: 9.5rem;
     --hero-bot-div-left: 3.25rem;
     --hero-line-height: 3.5rem;
+    --h1-font-size: 5.875rem;
+    --name-pl-size: 46%;
 
     --section-title-size: clamp(3rem, 0.8571rem + 5.7143vw, 6rem);
-
     --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
     --section-top-div-height: 128px;
 
     --contacts-div-bot-height: 520px;
     --contacts-div-bot-top: 82px;
-    --h1-font-size: 5.875rem;
-    --name-pl-size: 46%;
   }
 }
 
 @media (min-width: 768px) {
   :root {
-    --section-top-div-height: 146px;
-    --section-bot-div-height: 204px;
-
-    --contacts-div-bot-height: 540px;
-
     --h1-font-size: clamp(7rem, calc(5.357rem + 2.679vw), 8.75rem);
     --year-font-size: clamp(2.75rem, calc(2.554rem + 0.298vw), 3rem);
     --name-pl-size: 40%;
@@ -258,34 +216,35 @@
     --hero-bot-div-top: 11.5rem;
     --hero-bot-div-min-h: 23vh;
     --hero-line-height: 4.5rem;
+
+    --section-top-div-height: 146px;
+    --section-bot-div-height: 204px;
+
+    --contacts-div-bot-height: 540px;
   }
 }
 
 @media (min-width: 820px) {
   :root {
-    --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
-    --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
-    --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
-
     --h1-font-size: clamp(7rem, calc(4.679rem + 3.721vw), 8.75rem);
     --hero-bot-div-top: 11.375rem;
     --hero-bot-div-min-h: 28vh;
+
+    --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
+    --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
+    --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
   }
 }
 
 /*DESKTOPS*/
 @media (min-width: 1024px) {
   :root {
-    --contacts-div-bot-top: 100px;
-    --contacts-div-bot-height: 380px;
-
     --hero-bot-div-top: 21.725rem;
-    --hero-bot-div-left: 3.25rem;
     --hero-bot-div-min-h: 48vh;
     --name-pl-size: 30%;
 
-    --hero-top-div-left: 1.25rem;
-    --hero-top-div-min-h: 10.5rem;
+    --contacts-div-bot-top: 100px;
+    --contacts-div-bot-height: 380px;
 
     .section-vh {
       min-height: 70dvh;
@@ -295,26 +254,20 @@
 
 @media (min-width: 1280px) {
   :root {
+    --h1-font-size: clamp(7rem, calc(2.071rem + 8.036vw), 8.75rem);
+    --hero-bot-div-top: 22.25rem;
+
     --section-top-div-height: 140px;
     --section-bot-div-height: 204px;
     --section-bot-div-top: clamp(280px, calc(-52.308px + 46.154vh), 400px);
 
     --contacts-div-bot-top: 112px;
     --contacts-div-bot-height: 384px;
-
-    --h1-font-size: clamp(7rem, calc(2.071rem + 8.036vw), 8.75rem);
-    --hero-bot-div-top: 22.25rem;
-    --hero-bot-div-left: 3.25rem;
-    --hero-bot-div-min-h: 48vh;
-    --name-pl-size: 30%;
   }
 }
 
 @media (min-width: 1440px) {
   :root {
-    --section-top-div-height: 172px;
-    --section-bot-div-height: 228px;
-
     --year-font-size: clamp(3rem, calc(1.5rem + 2.083vw), 3.75rem);
     --h1-font-size: clamp(8.75rem, calc(4.911rem + 4.821vw), 14.375rem);
     --hero-line-height: clamp(5rem, calc(3.571rem + 1.786vw), 8rem);
@@ -325,60 +278,60 @@
     --hero-bot-div-min-h: 47vh;
     --hero-top-div-left: 1.5rem;
     --hero-top-div-min-h: 12.5rem;
+
+    --section-top-div-height: 172px;
+    --section-bot-div-height: 228px;
   }
 }
 
 @media (min-width: 1728px) {
   :root {
+    --hero-bot-div-top: 28rem;
+    --hero-bot-div-min-h: 52vh;
+    --hero-top-div-min-h: 14rem;
+
     --section-bot-div-height: 272px;
     --section-top-div-height: 232px;
 
     --contacts-div-bot-height: 490px;
     --contacts-div-bot-top: 172px;
-
-    --hero-bot-div-top: 28rem;
-    --hero-bot-div-min-h: 52vh;
-    --hero-top-div-left: 1.5rem;
-    --hero-top-div-min-h: 14rem;
   }
 }
 
 @media (min-width: 1920px) {
   :root {
+    --name-font-size: 4.5rem;
+    --name-pl-size: 24%;
+    --hero-bot-div-min-h: 56vh;
+    --hero-top-div-min-h: 13.5rem;
+
     --section-bot-div-top: 416px;
     --section-bot-div-height: 316px;
     --section-top-div-height: 260px;
-
-    --name-font-size: 4.5rem;
-    --name-pl-size: 24%;
-    --hero-bot-div-top: 28rem;
-    --hero-bot-div-min-h: 56vh;
-    --hero-top-div-min-h: 13.5rem;
   }
 }
 
 @media (min-width: 1920px) and (min-height: 1200px) {
   :root {
+    --hero-bot-div-min-h: 60vh;
+    --hero-top-div-min-h: 13.725rem;
+
     --section-bot-div-top: 456px;
     --section-bot-div-height: 352px;
     --section-top-div-height: 300px;
-
-    --hero-bot-div-top: 28rem;
-    --hero-bot-div-min-h: 60vh;
-    --hero-top-div-min-h: 13.725rem;
   }
 }
 
 @media (min-width: 1920px) and (min-height: 1440px) {
   :root {
-    --section-bot-div-top: 400px;
-    --section-bot-div-height: 300px;
-    --section-top-div-height: 244px;
-
     --hero-bot-div-top: 30rem;
     --hero-bot-div-min-h: 65vh;
     --hero-line-height: 7rem;
     --hero-top-div-min-h: 14.5rem;
+
+    --section-bot-div-top: 400px;
+    --section-bot-div-height: 300px;
+    --section-top-div-height: 244px;
 
     .section-vh {
       min-height: 50dvh;
@@ -388,10 +341,6 @@
 
 @media (min-width: 2560px) {
   :root {
-    --section-bot-div-top: 488px;
-    --section-bot-div-height: 376px;
-    --section-top-div-height: 308px;
-
     --year-font-size: 3.75rem;
     --h1-font-size: 14.375rem;
     --name-font-size: 6.75rem;
@@ -399,6 +348,10 @@
     --hero-bot-div-min-h: 59vh;
     --hero-top-div-min-h: 18rem;
     --hero-line-height: 9rem;
+
+    --section-bot-div-top: 488px;
+    --section-bot-div-height: 376px;
+    --section-top-div-height: 308px;
   }
 }
 
