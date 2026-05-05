@@ -395,10 +395,10 @@
     --year-font-size: 3.75rem;
     --h1-font-size: 14.375rem;
     --name-font-size: 6.75rem;
-    --hero-bot-div-top: 35rem;
+    --hero-bot-div-top: 36rem;
     --hero-bot-div-min-h: 59vh;
-    --hero-top-div-min-h: 17.5rem;
-    --hero-line-height: 8rem;
+    --hero-top-div-min-h: 18rem;
+    --hero-line-height: 9rem;
   }
 }
 
