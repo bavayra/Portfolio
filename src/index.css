@@ -89,9 +89,11 @@
   src: url("/fonts/Raleway-ExtraBold.woff2") format("woff2");
 }
 
+/*Initially, I tested across all popular viewport sizes and identified visual issues at intermediate breakpoints. After optimization, I removed duplicates and maximized the use of clamp(). I understand that in production, 4-5 breakpoints are typically sufficient, but for pixel-perfect design accuracy in my portfolio, I decided to maintain detailed responsiveness. In a real project, I would coordinate this approach with the designer and team. Sorry.*/
+
 :root {
   /*div = divider*/
-  --hero-div-w: 2px; /*the width of the dividers*/
+  --hero-div-w: clamp(2px, calc(1.805px + 0.195vw), 4px); /*the width of the hero dividers*/
   --hero-line-height: 2.25rem; /*the line height of the h1 in the hero section*/
   --h1-font-size: clamp(3.5rem, calc(0.824rem + 11.765vw), 7rem); /*the font size of the h1 (visible Portfolio element in the hero section*/
   --year-font-size: clamp(1.5rem, calc(0.706rem + 3.529vw), 2.75rem); /*the font size of the year in the hero section*/
@@ -190,7 +192,6 @@
 /*600-820PX: TABLETS*/
 @media (min-width: 600px) {
   :root {
-    --hero-div-w: 3px;
     --hero-bot-div-min-h: 25.5vh;
     --hero-bot-div-top: 9.5rem;
     --hero-bot-div-left: 3.25rem;
