@@ -9,25 +9,14 @@ interface SectionTitleProps {
   headingId?: string;
 }
 
-const SectionTitle = ({
-  title,
-  partLabel = "Part",
-  dotsCount = 1,
-  headingId,
-}: SectionTitleProps) => {
+const SectionTitle = ({ title, partLabel = "Part", dotsCount = 1, headingId }: SectionTitleProps) => {
   const { ref, inViewOnce } = useInViewOnce<HTMLHeadingElement>({
     threshold: 0.1,
   });
 
   return (
     <div className="section-vh flex flex-col relative ml-3 justify-center phone-md:pb-10 tablet-sm:ml-9 desktop-lg:ml-10">
-      <Divider
-        widthPx="var(--hero-div-w)"
-        heightPx="var(--section-top-div-height)"
-        leftPx={0}
-        color="grey-2"
-        topPx="var(--section-top-div-top)"
-      />
+      <Divider widthPx="var(--hero-div-w)" heightPx="128px" leftPx={0} color="grey-2" topPx="var(--section-top-div-top)" />
       <div className="mb-4">
         <div className="flex items-center gap-2">
           <span className="text-(length:--part-label) leading-1 tracking-wide font-medium text-section-title desktop-sm:text-3xl desktop-md:text-4xl desktop-2xl:text-5xl">
@@ -50,19 +39,13 @@ const SectionTitle = ({
         <h2
           id={headingId}
           ref={ref}
-          className="font-extrabold tracking-[0.2em] text-[3rem] tablet-sm:leading-16 tablet-sm:text-[3.5rem] desktop-sm:text-[5rem] desktop-lg:text-[5.5rem] desktop-sm:leading-21 desktop-2xl:text-[7.5rem] desktop-2xl:leading-30 text-section-title"
+          className="font-extrabold tracking-[0.2em] text-[2.5rem] leading-10 desktop-sm:text-[5rem] desktop-lg:text-[5.5rem] desktop-sm:leading-21 desktop-2xl:text-[7.5rem] desktop-2xl:leading-30 text-section-title"
         >
           {title}
         </h2>
       </div>
 
-      <Divider
-        widthPx="var(--hero-div-w)"
-        heightPx="var(--section-bot-div-height)"
-        leftPx={0}
-        color="grey-2"
-        topPx="var(--section-bot-div-top)"
-      />
+      <Divider widthPx="var(--hero-div-w)" heightPx="var(--section-bot-div-height)" leftPx={0} color="grey-2" topPx="176px" />
     </div>
   );
 };

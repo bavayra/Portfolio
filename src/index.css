@@ -93,7 +93,7 @@
 
 :root {
   /*div = divider*/
-  --hero-div-w: clamp(2px, calc(1.805px + 0.195vw), 4px); /*the width of the hero dividers*/
+  --hero-div-w: 3px;
   --hero-line-height: 2.25rem; /*the line height of the h1 in the hero section*/
   --h1-font-size: clamp(3.5rem, calc(0.824rem + 11.765vw), 7rem); /*the font size of the h1 (visible Portfolio element in the hero section*/
   --year-font-size: clamp(1.5rem, calc(0.706rem + 3.529vw), 2.75rem); /*the font size of the year in the hero section*/
@@ -108,6 +108,9 @@
 
   --header-font-size: clamp(0.875rem, 0.1196rem + 4.3478vw, 1.25rem); /* font size for the header */
 
+  .section-vh {
+    min-height: 50dvh; /*the min-height of the sections, set in dvh to ensure it adapts to mobile browsers' dynamic viewport height changes*/
+  }
   --section-top-div-top: 18px; /*the top position of the top divider in the section*/
   --section-top-div-height: 64px; /*the height of the top divider in the section*/
   --section-bot-div-height: 88px; /*the height of the bottom divider in the section*/
@@ -243,6 +246,7 @@
     --hero-bot-div-top: 21.725rem;
     --hero-bot-div-min-h: 48vh;
     --name-pl-size: 30%;
+    --hero-div-w: 4px;
 
     --contacts-div-bot-top: 100px;
     --contacts-div-bot-height: 380px;
