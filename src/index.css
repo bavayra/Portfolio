@@ -101,7 +101,7 @@
   --name-pl-size: 40%; /*left padding for the name element*/
 
   --hero-bot-div-top: clamp(7.5rem, calc(0.577rem + 30.769vw), 8.5rem); /*the top position of the bottom divider in the hero section*/
-  --hero-bot-div-min-h: 40vh; /*min-h of the bottom divider in the hero section*/
+  --hero-bot-div-min-h: 36vh; /*min-h of the bottom divider in the hero section*/
   --hero-bot-div-left: clamp(1.75rem, calc(0.882rem + 3.846vw), 3.25rem); /*the left position of the bottom divider in the hero section*/
   --hero-top-div-left: 1rem; /*the left position of the top divider in the hero section*/
   --hero-top-div-min-h: 10.5rem; /*the min-h of the top divider in the hero section*/
@@ -133,25 +133,37 @@
 
 @media (min-width: 360px) {
   :root {
-    --section-top-div-top: 16px;
-    --section-top-div-height: 100px;
-    --section-bot-div-height: 124px;
-    --section-bot-div-top: 186px;
+    --section-top-div-height: 120px;
+    --section-bot-div-height: 144px;
+    --section-bot-div-top: 208px;
+  }
+}
+
+@media (min-width: 360px) and (min-height: 800px) {
+  :root {
+    --hero-bot-div-min-h: 40vh;
+
+    --section-top-div-height: 136px;
+    --section-bot-div-height: 154px;
+    --section-bot-div-top: 228px;
   }
 }
 
 @media (min-width: 375px) {
   :root {
-    --section-top-div-height: 86px;
-    --section-bot-div-top: clamp(176px, calc(2.667px + 28.889vh), 228px);
-    --section-bot-div-height: clamp(114px, calc(-25.2px + 23.2vh), 172px);
+    --section-bot-div-height: 164px;
   }
 }
 
 @media (min-width: 390px) {
   :root {
-    --section-top-div-height: 124px;
-    --section-bot-div-top: 222px;
+    --section-top-div-height: 104px;
+    --section-bot-div-top: 200px;
+    --section-bot-div-height: 128px;
+
+    .section-vh {
+      min-height: 40dvh;
+    }
   }
 }
 
@@ -162,15 +174,10 @@
     --h1-font-size: 4.5rem;
     --hero-line-height: 3rem;
 
-    --section-bot-div-height: 188px;
+    --section-bot-div-height: 168px;
+    --section-bot-div-top: 188px;
 
     --contacts-div-bot-height: 572px;
-  }
-}
-
-@media (min-width: 428px) {
-  :root {
-    --section-bot-div-top: 230px;
   }
 }
 
@@ -179,9 +186,9 @@
     --hero-bot-div-top: clamp(8.5rem, calc(7.192rem + 5.447vw), 10rem);
     --hero-bot-div-min-h: 28vh;
 
-    --section-top-div-height: 116px;
-    --section-bot-div-top: clamp(228px, calc(-116px + 40vh), 244px);
-    --section-bot-div-height: 184px;
+    --section-top-div-height: 88px;
+    --section-bot-div-top: 178px;
+    --section-bot-div-height: 152px;
   }
 }
 
@@ -195,9 +202,7 @@
     --h1-font-size: 5.875rem;
     --name-pl-size: 46%;
 
-    --section-title-size: clamp(3rem, 0.8571rem + 5.7143vw, 6rem);
-    --section-bot-div-top: clamp(244px, calc(-34.182px + 30.909vh), 312px);
-    --section-top-div-height: 128px;
+    --section-bot-div-top: 194px;
 
     --contacts-div-bot-height: 520px;
     --contacts-div-bot-top: 82px;
@@ -214,8 +219,12 @@
     --hero-bot-div-min-h: 26vh;
     --hero-line-height: 4.5rem;
 
-    --section-top-div-height: 146px;
-    --section-bot-div-height: 204px;
+    --section-top-div-height: 104px;
+    --section-bot-div-height: 168px;
+    --section-bot-div-top: 222px;
+    .section-vh {
+      min-height: 40dvh;
+    }
 
     --contacts-div-bot-height: 540px;
   }
@@ -227,9 +236,9 @@
     --hero-bot-div-top: 11.375rem;
     --hero-bot-div-min-h: 32vh;
 
-    --section-top-div-height: clamp(136px, calc(78.4px + 8vh), 168px);
-    --section-bot-div-top: clamp(280px, calc(222.4px + 8vh), 312px);
-    --section-bot-div-height: clamp(188px, calc(137.6px + 7vh), 216px);
+    --section-top-div-height: 132px;
+    --section-bot-div-top: 256px;
+    --section-bot-div-height: 196px;
   }
 }
 
@@ -243,16 +252,16 @@
 
     --contacts-div-bot-top: 100px;
     --contacts-div-bot-height: 380px;
-
-    .section-vh {
-      min-height: 70dvh;
-    }
   }
 }
 
-@media (min-height: 1366px) and (min-width: 1024px) {
+@media (min-width: 1024px) and (min-height: 1366px) {
   :root {
     --hero-bot-div-min-h: 14vh;
+
+    --section-bot-div-height: 228px;
+    --section-bot-div-top: 300px;
+    --section-top-div-height: 160px;
   }
 }
 
@@ -262,9 +271,11 @@
     --hero-bot-div-top: 22.25rem;
     --hero-bot-div-min-h: 53vh;
 
-    --section-top-div-height: 140px;
     --section-bot-div-height: 204px;
-    --section-bot-div-top: clamp(280px, calc(-52.308px + 46.154vh), 400px);
+    --section-bot-div-top: 264px;
+    .section-vh {
+      min-height: 60dvh;
+    }
 
     --contacts-div-bot-top: 112px;
     --contacts-div-bot-height: 384px;
@@ -284,8 +295,9 @@
     --hero-top-div-left: 1.5rem;
     --hero-top-div-min-h: 12.5rem;
 
-    --section-top-div-height: 172px;
+    --section-top-div-height: 160px;
     --section-bot-div-height: 228px;
+    --section-bot-div-top: 300px;
   }
 }
 
@@ -350,13 +362,13 @@
     --h1-font-size: 14.375rem;
     --name-font-size: 6.75rem;
     --hero-bot-div-top: 36rem;
-    --hero-bot-div-min-h: 59vh;
+    --hero-bot-div-min-h: 52vh;
     --hero-top-div-min-h: 18rem;
     --hero-line-height: 9rem;
 
-    --section-bot-div-top: 488px;
-    --section-bot-div-height: 376px;
-    --section-top-div-height: 308px;
+    --section-bot-div-top: 428px;
+    --section-bot-div-height: 316px;
+    --section-top-div-height: 240px;
   }
 }
 
