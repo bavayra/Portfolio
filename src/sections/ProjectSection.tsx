@@ -32,14 +32,14 @@ const ProjectSection = ({
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-4 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2 [@media(min-width:1920px)]:grid-cols-[auto_1fr] ">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12">
           <p
-            className="text-text text-[length:var(--font-page-number)] leading-5 desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
+            className="text-text text-[length:var(--font-page-number)] leading-7 desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
             aria-hidden="true"
           >
             {sectionNumber}
           </p>
           <h3
             id={`${projectId}-heading`}
-            className="text-[2.75rem] desktop-sm:text-5xl text-grey-2 font-medium uppercase desktop-sm:leading-15 desktop-2xl:text-7xl desktop-2xl:leading-23"
+            className="text-[2rem] phone-lg:text-[2.5rem] text-grey-2 font-medium uppercase desktop-sm:leading-15 tablet-sm:text-[3rem] desktop-sm:text-5xl desktop-2xl:text-7xl desktop-2xl:leading-23"
           >
             {project.title}
           </h3>
@@ -57,7 +57,6 @@ const ProjectSection = ({
           <ProjectScreen
             projectId={project.id}
             images={project.images}
-            technologies={project.technologies}
             imageClasses={project.imageClasses}
             className={projectScreenClassName}
           />
