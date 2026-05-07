@@ -3,7 +3,7 @@ import { useId } from "react";
 const DotPattern = () => {
   const uid = useId();
   return (
-    <div className="absolute bottom-0 inset-x-0 w-screen left-1/2 -translate-x-1/2 tablet-sm:translate-y-[12%] tablet-md:translate-y-[24%] desktop-sm:translate-x-[18%] desktop-md:translate-x-[10%]">
+    <div className="absolute bottom-0 inset-x-0 w-screen left-1/2 -translate-x-1/2 tablet-sm:translate-y-[12%] tablet-md:translate-y-[24%] desktop-sm:translate-x-[18%] [@media(min-height:1366px)_and_(min-width:1024px)]:-translate-x-[48%] desktop-md:translate-x-[10%]">
       <svg
         id={`${uid}-svg-sm`}
         width="100%"
@@ -12,12 +12,7 @@ const DotPattern = () => {
         className="tablet-sm:pl-8 w-full h-full pl-5 block desktop-sm:hidden"
       >
         <defs>
-          <pattern
-            id={`${uid}-dot`}
-            patternUnits="userSpaceOnUse"
-            width={20}
-            height={20}
-          >
+          <pattern id={`${uid}-dot`} patternUnits="userSpaceOnUse" width={20} height={20}>
             <circle cx="3" cy="3" fill="var(--color-accent-red)" r={3} />
           </pattern>
         </defs>
@@ -32,12 +27,7 @@ const DotPattern = () => {
         className="w-full h-full hidden desktop-sm:block desktop-sm:w-[calc(100%+48px)]"
       >
         <defs>
-          <pattern
-            id={`${uid}-dot-xl`}
-            patternUnits="userSpaceOnUse"
-            width={18}
-            height={18}
-          >
+          <pattern id={`${uid}-dot-xl`} patternUnits="userSpaceOnUse" width={18} height={18}>
             <circle cx="3" cy="3" fill="var(--color-accent-red)" r={3} />
           </pattern>
         </defs>
