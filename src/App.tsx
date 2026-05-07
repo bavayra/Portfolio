@@ -14,13 +14,8 @@ const Contacts = lazy(() => import("./sections/Contacts"));
 function ErrorFallback() {
   return (
     <div className="flex flex-col items-center justify-center py-20 text-center px-4">
-      <p className="text-text text-lg mb-4">
-        Something went wrong while loading the page.
-      </p>
-      <button
-        onClick={() => window.location.reload()}
-        className="text-accent-red underline text-sm"
-      >
+      <p className="text-text text-lg mb-4">Something went wrong while loading the page.</p>
+      <button onClick={() => window.location.reload()} className="text-accent-red underline text-sm">
         Try reloading
       </button>
     </div>
@@ -43,17 +38,9 @@ function App() {
           <Hero />
         </div>
         <ErrorBoundary fallback={<ErrorFallback />}>
-          <Suspense
-            fallback={
-              <div
-                className="min-h-screen bg-bg"
-                aria-busy="true"
-                aria-label="Loading page content"
-              />
-            }
-          >
+          <Suspense fallback={<div className="min-h-screen bg-bg" aria-busy="true" aria-label="Loading page content" />}>
             <section id="about-section" aria-labelledby="about-title">
-              <div className="bg-(--color-section-title-bg)">
+              <div className="bg-[var(--color-section-title-bg)]">
                 <div className="w-full mx-auto px-4">
                   <SectionTitle title="ABOUT ME" headingId="about-title" />
                 </div>
@@ -70,16 +57,9 @@ function App() {
               </div>
             </section>
 
-            <div
-              id="projects-section"
-              className="bg-(--color-section-title-bg)"
-            >
+            <div id="projects-section" className="bg-[var(--color-section-title-bg)]">
               <div className="w-full mx-auto px-4">
-                <SectionTitle
-                  title="PROJECTS"
-                  dotsCount={2}
-                  headingId="projects-title"
-                />
+                <SectionTitle title="PROJECTS" dotsCount={2} headingId="projects-title" />
               </div>
             </div>
             <div id="projects" className="w-full mx-auto">
@@ -104,16 +84,9 @@ function App() {
                 projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:mt-3  desktop-sm:mb-16"
               />
             </div>
-            <div
-              id="contacts-section"
-              className="bg-(--color-section-title-bg)"
-            >
+            <div id="contacts-section" className="bg-[var(--color-section-title-bg)]">
               <div className="w-full mx-auto px-4">
-                <SectionTitle
-                  title="CONTACTS"
-                  dotsCount={3}
-                  headingId="contacts-title"
-                />
+                <SectionTitle title="CONTACTS" dotsCount={3} headingId="contacts-title" />
               </div>
             </div>
             <div className="w-full mx-auto px-4">

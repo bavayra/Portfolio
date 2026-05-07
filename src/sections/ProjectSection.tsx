@@ -32,7 +32,7 @@ const ProjectSection = ({
       <div className="desktop-sm:grid desktop-sm:items-start desktop-sm:gap-y-4 desktop-sm:gap-x-8 desktop-sm:grid-cols-2 desktop-md:gap-y-2 [@media(min-width:1920px)]:grid-cols-[auto_1fr] ">
         <div className="desktop-sm:col-start-1 desktop-sm:row-start-1 leading-9 tablet-sm:leading-12">
           <p
-            className="text-text text-(length:--font-page-number) leading-5 desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
+            className="text-text text-[length:var(--font-page-number)] leading-5 desktop-md:text-[1.75rem] desktop-2xl:text-[2.5rem]"
             aria-hidden="true"
           >
             {sectionNumber}
@@ -43,18 +43,11 @@ const ProjectSection = ({
           >
             {project.title}
           </h3>
-          <div
-            className="border-l border-grey-2"
-            style={{ borderLeftWidth: "var(--hero-div-w)" }}
-          >
-            <p className="mt-2 text-(length:--font-body-sm) tablet-md:text-lg pl-2 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal max-w-(--max-w-text-sm) desktop-sm:max-w-(--max-w-text-lg) [@media(min-width:1920px)_and_(min-height:1440px)]:text-xl">
+          <div className="border-l border-grey-2" style={{ borderLeftWidth: "var(--hero-div-w)" }}>
+            <p className="mt-2 text-[length:var(--font-body-sm)] tablet-md:text-lg pl-2 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal max-w-[var(--max-w-text-sm)] desktop-sm:max-w-[var(--max-w-text-lg)] [@media(min-width:1920px)_and_(min-height:1440px)]:text-xl">
               {project.descriptionShort}
             </p>
-            <ExternalProjectLink
-              liveUrl={project.liveUrl}
-              githubUrl={project.githubUrl}
-              projectTitle={project.title}
-            />
+            <ExternalProjectLink liveUrl={project.liveUrl} githubUrl={project.githubUrl} projectTitle={project.title} />
           </div>
         </div>
 
