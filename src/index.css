@@ -94,16 +94,16 @@
 :root {
   /*div = divider*/
   --hero-div-w: 3px;
-  --hero-line-height: 2.25rem; /*the line height of the h1 in the hero section*/
+  --hero-line-height: clamp(2.25rem, calc(0.353rem + 10.039vw), 3.5rem); /*the line height of the h1 in the hero section*/
   --h1-font-size: clamp(3.5rem, calc(0.824rem + 11.765vw), 7rem); /*the font size of the h1 (visible Portfolio element in the hero section*/
   --year-font-size: clamp(1.5rem, calc(0.706rem + 3.529vw), 2.75rem); /*the font size of the year in the hero section*/
   --name-font-size: clamp(1.75rem, calc(0.559rem + 5.294vw), 3.5rem); /*the font size of the name in the hero section*/
   --name-pl-size: 40%; /*left padding for the name element*/
 
-  --hero-bot-div-top: clamp(7.5rem, calc(5.213rem + 12.766vw), 10rem); /*the top position of the bottom divider in the hero section*/
+  --hero-bot-div-top: clamp(7.5rem, calc(0.577rem + 30.769vw), 8.5rem); /*the top position of the bottom divider in the hero section*/
   --hero-bot-div-min-h: 27vh; /*min-h of the bottom divider in the hero section*/
   --hero-bot-div-left: clamp(1.75rem, calc(0.882rem + 3.846vw), 3.25rem); /*the left position of the bottom divider in the hero section*/
-  --hero-top-div-left: 1.25rem; /*the left position of the top divider in the hero section*/
+  --hero-top-div-left: 1rem; /*the left position of the top divider in the hero section*/
   --hero-top-div-min-h: 10.5rem; /*the min-h of the top divider in the hero section*/
 
   --header-font-size: clamp(0.875rem, 0.1196rem + 4.3478vw, 1.25rem); /* font size for the header */
@@ -133,9 +133,6 @@
 
 @media (min-width: 360px) {
   :root {
-    --hero-line-height: clamp(2.25rem, calc(0.353rem + 10.039vw), 3.5rem);
-    --hero-bot-div-top: clamp(7.5rem, calc(0.577rem + 30.769vw), 8.5rem);
-
     --section-top-div-top: 16px;
     --section-top-div-height: 100px;
     --section-bot-div-height: 124px;
