@@ -82,8 +82,7 @@ function validateFields(data: FormFields): FormErrors {
   if (!data.name) errors.name = "Name is required";
   if (!data.email) errors.email = "Email is required";
   else if (!isValidEmail(data.email)) errors.email = "Invalid email format";
-  if (!data.message || data.message.length < 5)
-    errors.message = "Message is too short";
+  if (!data.message || data.message.length < 5) errors.message = "Message is too short";
   return errors;
 }
 
@@ -144,8 +143,7 @@ const Contacts = () => {
             const json = JSON.parse(errBody);
             errBody = json.error || JSON.stringify(json);
           } catch (parseErr) {
-            if (import.meta.env.DEV)
-              console.warn("Failed to parse error body:", parseErr);
+            if (import.meta.env.DEV) console.warn("Failed to parse error body:", parseErr);
           }
         }
         throw new Error(`Server error: ${resp.status} ${errBody}`);
@@ -172,7 +170,7 @@ const Contacts = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={112}
+        heightPx={72}
         //72px = height of the top divider for screens <= 1024,
         //92px = height of the top divider for screens > 1024, will be overwritten with clamps.
         //112px = height of the top divider for screens > 1728, will be overwritten with clamps.
@@ -196,11 +194,7 @@ const Contacts = () => {
       <div className="flex flex-col desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-x-10 desktop-md:gap-x-48">
         <div className="relative flex justify-center">
           <div>
-            <form
-              id="contact-form"
-              onSubmit={handleSubmit}
-              className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88 desktop-xl:w-100"
-            >
+            <form id="contact-form" onSubmit={handleSubmit} className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88 desktop-xl:w-100">
               <div>
                 <TextInput
                   id="input-name"
@@ -221,11 +215,7 @@ const Contacts = () => {
                   aria-describedby={errors.name ? "name-error" : undefined}
                 />
                 {errors.name && (
-                  <p
-                    id="name-error"
-                    className="-mt-6 text-sm text-red-600"
-                    role="alert"
-                  >
+                  <p id="name-error" className="-mt-6 text-sm text-red-600" role="alert">
                     {errors.name}
                   </p>
                 )}
@@ -252,11 +242,7 @@ const Contacts = () => {
                   aria-describedby={errors.email ? "email-error" : undefined}
                 />
                 {errors.email && (
-                  <p
-                    id="email-error"
-                    className="-mt-6 text-sm text-red-600"
-                    role="alert"
-                  >
+                  <p id="email-error" className="-mt-6 text-sm text-red-600" role="alert">
                     {errors.email}
                   </p>
                 )}
@@ -264,10 +250,7 @@ const Contacts = () => {
 
               <div>
                 {/* TextInput exists as a component because it's reused across the form. The textarea is used once, so I kept it inline, creating a TextArea wrapper for a single use would be premature abstraction. I'm aware of the inconsistency and consider it an acceptable trade-off. */}
-                <label
-                  htmlFor="input-message"
-                  className="text-sm desktop-xl:text-xl phone-md:text-lg text-grey-3"
-                >
+                <label htmlFor="input-message" className="text-sm desktop-xl:text-xl phone-md:text-lg text-grey-3">
                   Message
                 </label>
                 <textarea
@@ -285,29 +268,17 @@ const Contacts = () => {
                   disabled={isSubmitting}
                   className={`focus:border-text mb-2 min-h-24 w-full resize-none rounded-lg border bg-transparent px-4 py-3 text-sm placeholder:opacity-100 focus:ring-0 focus:outline-none disabled:cursor-not-allowed disabled:opacity-50 desktop-xl:min-h-36 desktop-xl:text-lg ${errors.message ? "border-red-500" : "border-grey-2"}`}
                   aria-invalid={!!errors.message}
-                  aria-describedby={
-                    errors.message ? "message-error" : undefined
-                  }
+                  aria-describedby={errors.message ? "message-error" : undefined}
                 />
                 {errors.message && (
-                  <p
-                    id="message-error"
-                    className="-mt-6 text-sm text-red-600"
-                    role="alert"
-                  >
+                  <p id="message-error" className="-mt-6 text-sm text-red-600" role="alert">
                     {errors.message}
                   </p>
                 )}
               </div>
 
               <div className="flex justify-center">
-                <Button
-                  type="submit"
-                  variant="primary"
-                  size="small"
-                  disabled={isSubmitting}
-                  className="w-auto text-center"
-                >
+                <Button type="submit" variant="primary" size="small" disabled={isSubmitting} className="w-auto text-center">
                   {isSubmitting ? "Sending..." : "SEND MESSAGE"}
                 </Button>
               </div>
@@ -323,10 +294,7 @@ const Contacts = () => {
                 </div>
               )}
               {errorMessage && (
-                <div
-                  role="alert"
-                  className="mt-4 rounded-lg bg-red-100 p-3 text-center text-sm text-red-700"
-                >
+                <div role="alert" className="mt-4 rounded-lg bg-red-100 p-3 text-center text-sm text-red-700">
                   {errorMessage}
                 </div>
               )}
@@ -335,7 +303,7 @@ const Contacts = () => {
         </div>
         <SocialLinks
           size="md"
-          className="flex flex-wrap max-w-40 tablet-sm:max-w-88 tablet-sm:gap-x-10 tablet-sm:gap-y-4 mx-auto justify-center mt-6 desktop-xl:my-28 desktop-xl:mx-10 desktop-xl:max-w-100 desktop-xl:gap-x-16"
+          className="flex flex-wrap max-w-60 tablet-sm:max-w-88 tablet-sm:gap-x-10 tablet-sm:gap-y-4 mx-auto justify-center mt-6 desktop-xl:my-28 desktop-xl:mx-10 desktop-xl:max-w-100 desktop-xl:gap-x-16"
         />
       </div>
     </section>

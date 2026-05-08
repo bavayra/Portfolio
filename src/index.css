@@ -128,7 +128,7 @@
 
   --contact-title-size: clamp(3rem, 2.1429rem + 4.2857vw, 6rem); /* the font size of the title in the contacts section */
   --contacts-div-bot-top: 68px; /*the top position of the bottom divider in the contacts section*/
-  --contacts-div-bot-height: 550px; /*the height of the bottom divider in the contacts section*/
+  --contacts-div-bot-height: 540px; /*the height of the bottom divider in the contacts section*/
 }
 
 @media (min-width: 360px) {
