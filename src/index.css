@@ -414,6 +414,8 @@ body,
 
 .circle-drop {
   animation: dropBounce 800ms ease-out forwards;
+  opacity: 0;
+  transform: translateY(-96px);
 }
 
 @keyframes dropBounce {

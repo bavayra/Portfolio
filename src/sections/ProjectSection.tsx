@@ -64,7 +64,7 @@ const ProjectSection = ({
 
         <ProjectDesc
           text={project.descriptionFull ?? ""}
-          className={`desktop-sm:row-start-2 [@media(min-width:1920px)]:col-start-1 tablet-md:mt-6 ${projectDescClassName}`}
+          className={`desktop-sm:row-start-2 [@media(min-width:1920px)]:col-start-1 tablet-sm:mt-6 ${projectDescClassName}`}
         />
       </div>
     </section>
