@@ -102,8 +102,7 @@ export const projects = [
         height: 1783,
       },
       {
-        thumbnail:
-          "/screens/dog-shelter-screen/dog-shelter-1280-cards-thumb.webp",
+        thumbnail: "/screens/dog-shelter-screen/dog-shelter-1280-cards-thumb.webp",
         full: "/screens/dog-shelter-screen/dog-shelter-1280-cards.webp",
         alt: "Dog Shelter desktop view 1280px with cards expanded",
         width: 800,
@@ -130,7 +129,7 @@ export const projects = [
     githubUrl: "https://github.com/bavayra/portfolio.git",
     liveUrl: "https://alix-bell-portfolio.netlify.app",
     imageClasses: {
-      0: "mx-auto -mt-13 w-34 phone-md:w-36 phone-md:-mt-10 phone-lg:w-44 phone-lg:-mt-22 tablet-sm:w-52 tablet-md:-mt-34 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-sm:mt-0 desktop-xl:w-44",
+      0: "mx-auto -mt-13 w-34 phone-md:w-36 phone-md:-mt-10 phone-lg:w-44 phone-lg:-mt-22 tablet-sm:w-52 tablet-md:-mt-46 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-sm:mt-0 desktop-xl:w-44",
       1: "-mt-4 mx-auto w-34 phone-md:-mt-3 phone-md:w-36 phone-lg:-mt-12 phone-lg:w-44 tablet-sm:-mt-14 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-44 desktop-sm:mt-0 ",
       2: "-mt-12 mx-auto w-30 phone-md:-mt-13 phone-md:w-36 phone-lg:w-44 phone-lg:-mt-16 tablet-sm:-mt-15 tablet-sm:w-50 tablet-md:-mt-26 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-44 desktop-sm:-mt-20 desktop-md:-translate-y-[5%] [@media(min-width:1920px)]:translate-0 [@media(min-width:1920px)]:mt-0",
       3: "mx-auto w-30 phone-md:w-36 phone-lg:w-44 tablet-sm:mt-3 tablet-sm:w-54 tablet-md:w-60 border-2 border-grey-2 desktop-sm:w-44 desktop-xl:w-44 desktop-sm:mt-4 [@media(min-width:1920px)]:mt-0",
