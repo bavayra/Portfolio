@@ -42,7 +42,7 @@ const Skills = () => {
             <h4 className="mb-2 text-base font-bold uppercase tracking-widest text-accent-red desktop-sm:text-center tablet-sm:text-xl desktop-lg:text-2xl">
               {group.label}
             </h4>
-            <ul className="flex flex-wrap gap-2 desktop-sm:justify-center desktop-2xl:gap-x-4" aria-label={group.label}>
+            <ul className="flex flex-wrap gap-2 desktop-sm:justify-center desktop-2xl:gap-6" aria-label={group.label}>
               {group.skills.map((skill) => (
                 <li
                   key={skill}
