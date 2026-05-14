@@ -25,9 +25,12 @@ const Description = () => {
             className="mt-2 text-[length:var(--font-body-sm)] text-text leading-loose tracking-wide ml-3 w-full wrap-break-word  phone-lg:mt-4 whitespace-normal max-w-[var(--max-w-text-sm)] desktop-sm:max-w-[var(--max-w-text-lg)] tablet-lg:text-lg  desktop-2xl:text-2xl desktop-2xl:max-w-200 border-l-2 [@media(min-width:1920px)_and_(min-height:1440px)]:text-xl pl-2 border-grey-2"
             style={{ borderLeftWidth: "var(--hero-div-w)" }}
           >
-            I'm a curious and disciplined developer who enjoys solving UI problems with clean, maintainable code. I prioritize performance
-            and accessibility, and I'm committed to continuous learning. I work well in teams, bringing empathy and adaptability to
-            collaborations. I'm detail-oriented and strive for perfection, learn quickly, and stay self-motivated to deliver reliable
+            I'm a <span className="text-accent-red font-bold">curious and disciplined</span> developer who enjoys solving UI problems with
+            clean, maintainable code. I prioritize <span className="text-accent-red font-bold">performance and accessibility</span>, and I'm
+            committed to <span className="text-accent-red font-bold">continuous learning</span>. I work well in teams, bringing{" "}
+            <span className="text-accent-red font-bold">empathy and adaptability</span> to collaborations. I'm{" "}
+            <span className="text-accent-red font-bold">detail-oriented</span> and strive for{" "}
+            <span className="text-accent-red font-bold">perfection, learn quickly, and stay self-motivated</span> to deliver reliable
             results.
           </p>
         </div>

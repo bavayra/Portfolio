@@ -24,9 +24,12 @@ const About = () => {
         className="mt-2 text-[length:var(--font-body-sm)] phone-lg:mt-4 text-text leading-loose tracking-wide w-full wrap-break-word whitespace-normal pl-2 max-w-[var(--max-w-text-sm)] tablet-lg:text-lg desktop-sm:max-w-[var(--max-w-text-lg)] desktop-2xl:text-2xl desktop-2xl:max-w-200 border-l-2 [@media(min-width:1920px)_and_(min-height:1440px)]:text-xl border-grey-2"
         style={{ borderLeftWidth: "var(--hero-div-w)" }}
       >
-        I’m a junior front‑end developer focused on building polished, accessible interfaces with React and TypeScript. I care about
-        performance and maintainability—using Vite and Tailwind to deliver fast, responsive experiences—and enjoy turning designs into
-        clean, readable code. I’m eager to learn new technologies and contribute to real projects.
+        I’m a junior front‑end developer focused on building <span className="text-accent-red font-bold">polished, accessible</span>{" "}
+        interfaces with React and TypeScript. I care about{" "}
+        <span className="text-accent-red font-bold">performance and maintainability</span>—using Vite and Tailwind to deliver{" "}
+        <span className="text-accent-red font-bold">fast, responsive</span> experiences—and enjoy turning designs into{" "}
+        <span className="text-accent-red font-bold">clean, readable code</span>. I’m eager to learn new technologies and contribute to real
+        projects.
       </p>
 
       <a
