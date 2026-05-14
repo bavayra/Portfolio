@@ -1,0 +1,28 @@
+# Netlify configuration for SPA with SEO files
+
+# Force serve sitemap.xml as-is (don't redirect to index.html)
+[[redirects]]
+  from = "/sitemap.xml"
+  to = "/sitemap.xml"
+  status = 200
+  force = true
+
+# Force serve robots.txt as-is
+[[redirects]]
+  from = "/robots.txt"
+  to = "/robots.txt"
+  status = 200
+  force = true
+
+# Google verification file (if needed later)
+[[redirects]]
+  from = "/google9e150c7de588e37d.html"
+  to = "/google9e150c7de588e37d.html"
+  status = 200
+  force = true
+
+# SPA fallback - all other routes go to index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
