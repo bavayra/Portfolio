@@ -170,7 +170,7 @@ const Contacts = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={72}
+        heightPx={112}
         //72px = height of the top divider for screens <= 1024,
         //92px = height of the top divider for screens > 1024, will be overwritten with clamps.
         //112px = height of the top divider for screens > 1728, will be overwritten with clamps.
@@ -194,7 +194,11 @@ const Contacts = () => {
       <div className="flex flex-col desktop-sm:grid desktop-sm:grid-cols-2 desktop-sm:gap-x-10 desktop-md:gap-x-48">
         <div className="relative flex justify-center">
           <div>
-            <form id="contact-form" onSubmit={handleSubmit} className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88 desktop-xl:w-100">
+            <form
+              id="contact-form"
+              onSubmit={handleSubmit}
+              className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88 desktop-xl:w-100 desktop-2xl:mt-16"
+            >
               <div>
                 <TextInput
                   id="input-name"
