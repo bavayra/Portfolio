@@ -81,8 +81,8 @@ function App() {
                 projectId="portfolio-project"
                 sectionNumber="06"
                 sectionClassName=""
-                screenContainerClassName="tablet-md:mt-20"
-                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:mt-3 mb-6 desktop-sm:mb-16"
+                screenContainerClassName="tablet-md:mt-20 "
+                projectDescClassName="desktop-md:max-w-[26rem] desktop-sm:mt-3 mb-6 desktop-sm:mb-16 desktop-2xl:ml-0"
               />
             </div>
             <div id="contacts-section" className="bg-[var(--color-section-title-bg)]">
