@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+Disallow: /node_modules/
+Disallow: /*.json$
+Disallow: /*.map$
+
+Sitemap: https://alix-bell-portfolio.netlify.app/sitemap.xml
+
+Crawl-delay: 10
