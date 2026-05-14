@@ -170,10 +170,7 @@ const Contacts = () => {
     >
       <Divider
         widthPx="var(--hero-div-w)"
-        heightPx={112}
-        //72px = height of the top divider for screens <= 1024,
-        //92px = height of the top divider for screens > 1024, will be overwritten with clamps.
-        //112px = height of the top divider for screens > 1728, will be overwritten with clamps.
+        heightPx="var(--contacts-div-top-height)"
         leftPx={0}
         color="grey-2"
         topPx={-68} //-68px = top position of the top divider; doesn't depend on screen size
