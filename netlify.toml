@@ -1,5 +1,9 @@
 # Netlify configuration for SPA with SEO files
 
+[build]
+  publish = "dist"
+  command = "npm run build"
+
 # Force serve sitemap.xml as-is (don't redirect to index.html)
 [[redirects]]
   from = "/sitemap.xml"
@@ -26,3 +30,14 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Headers for SEO files - ensure correct Content-Type
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
