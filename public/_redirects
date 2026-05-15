@@ -1,9 +1,6 @@
 # Google Search Console verification file - serve as-is
-/google9e150c7de588e37d.html    /google9e150c7de588e37d.html    200
-
-# SEO files - serve as-is  
-/sitemap.xml    /sitemap.xml    200
-/robots.txt     /robots.txt     200
-
-# SPA fallback - all other routes go to index.html
-/*    /index.html    200
+/google9e150c7de588e37d.html /google9e150c7de588e37d.html 200
+/google9e150c7de588e37d.html /google9e150c7de588e37d.html 200
+/sitemap.xml /sitemap.xml 200
+/robots.txt /robots.txt 200
+/* /index.html 200
