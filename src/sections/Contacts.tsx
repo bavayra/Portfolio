@@ -61,7 +61,7 @@ function formReducer(state: FormState, action: FormAction): FormState {
         fields: { name: "", email: "", message: "" },
       };
     case "SUBMIT_FAILURE":
-      return { ...state, isSubmitting: false, errorMessage: action.message };
+      return { ...state, isSubmitting: false, errorMessage: action.message, successMessage: "" };
     default:
       return state;
   }
@@ -194,6 +194,7 @@ const Contacts = () => {
             <form
               id="contact-form"
               onSubmit={handleSubmit}
+              noValidate
               className="space-y-2 mt-6 phone-md:w-72 tablet-sm:w-88 desktop-xl:w-100 desktop-2xl:mt-16"
             >
               <div>
