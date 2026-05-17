@@ -16,7 +16,7 @@ describe("useInViewOnce", () => {
       constructor(callback: IntersectionObserverCallback) {
         observeCallback = callback;
       }
-      
+
       observe = observeMock;
       disconnect = disconnectMock;
       unobserve = vi.fn();
@@ -57,13 +57,13 @@ describe("useInViewOnce", () => {
 
   it("should observe element when mounted", () => {
     render(<TestComponent />);
-    
+
     expect(observeMock).toHaveBeenCalled();
   });
 
   it("should set inViewOnce to true when element intersects", async () => {
     render(<TestComponent />);
-    
+
     const element = screen.getByTestId("target");
     expect(element).toHaveAttribute("data-in-view", "false");
 
@@ -78,9 +78,9 @@ describe("useInViewOnce", () => {
 
   it("should disconnect observer after first intersection", async () => {
     render(<TestComponent />);
-    
+
     const element = screen.getByTestId("target");
-    
+
     act(() => {
       triggerIntersection(true, element);
     });
@@ -92,13 +92,13 @@ describe("useInViewOnce", () => {
 
   it("should not change inViewOnce back to false", async () => {
     render(<TestComponent />);
-    
+
     const element = screen.getByTestId("target");
-    
+
     act(() => {
       triggerIntersection(true, element);
     });
-    
+
     await waitFor(() => {
       expect(element).toHaveAttribute("data-in-view", "true");
     });
@@ -106,7 +106,7 @@ describe("useInViewOnce", () => {
     act(() => {
       triggerIntersection(false, element);
     });
-    
+
     expect(element).toHaveAttribute("data-in-view", "true");
   });
 });
